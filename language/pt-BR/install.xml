@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.9.8" client="site" type="language" method="upgrade">
+<extension version="3.9.11" client="site" type="language" method="upgrade">
 	<name>Português do Brasil (pt-BR)</name>
 	<tag>pt-BR</tag>
-	<version>3.9.8.1</version>
-	<creationDate>Junho de 2019</creationDate>
+	<version>3.9.11.1</version>
+	<creationDate>Agosto de 2019</creationDate>
 	<author>Projeto Joomla!</author>
 	<authorEmail>helvecio.dasilva@community.joomla.org</authorEmail>
 	<authorUrl>http://brasil.joomla.com</authorUrl>
