@@ -1,0 +1,111 @@
+#modservices {
+    width: 100%;
+    display: table;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+#services .service {
+    display: table;
+    float: left;
+    width: calc(25% - 30px);
+    margin: 0 15px;
+}
+
+#services .service:last-child {
+    border-right: 0;
+}
+
+#services .service .item-service {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #26375e;
+    display: table;
+}
+
+#services .service .item-service:hover {
+    background-color: #03143c;
+}
+
+#services .service .item-service a {
+    display: table;
+    margin: auto;
+    text-decoration: none;
+}
+
+#services .service .item-service a:hover {
+    text-decoration: none;
+}
+
+#services .service .item-service h1 {
+    height: 80px;
+    display: table;
+    width: calc(100% - 10px);
+    margin: 0;
+    padding: 0 5px;
+}
+
+#services .service .item-service h1 a {
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFF;
+    font-size: 24px;
+    font-family: 'fira_sans_extra_condensedRg';
+}
+
+#services .service .item-service a.img-service {
+    width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#services .service .item-service .desc {
+    padding: 10px 15px;
+}
+
+#services .service .item-service p {
+    font-family: 'fira_sans_extra_condensedXLt';
+    color: #FFF;
+    font-size: 18px;
+    line-height: 1.3;
+    display: table;
+}
+
+@media screen and (max-width: 1200px) {
+    #services .service {
+        width: calc(25% - 10px);
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #services .service {
+        width: calc(50% - 20px);
+        margin: 0 10px 30px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #modservices {
+        margin-bottom: 10px;
+    }
+
+    #services .service {
+        width: calc(50% - 10px);
+        margin: 0 5px 20px 5px;
+    }
+
+    #services .service {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto 20px auto;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #services .service {
+        max-width: 280px;
+    }
+}

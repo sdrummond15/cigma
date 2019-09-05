@@ -1,5 +1,4 @@
 #contact-social {
-    float: right;
     margin-top: 5px;
 }
 
@@ -8,11 +7,25 @@ ul.contact-social {
     display: table;
     margin: 0;
     padding: 0;
-    margin-right: 15px;
+}
+
+ul.contact-social.social-left {
+    float: left;
+    text-align: left;
+}
+
+ul.contact-social.social-right {
+    display: inline-flex;
+    float: right;
+    text-align: right;
+}
+
+ul.contact-social li.small {
+    display: none;
 }
 
 ul.contact-social li {
-    display: inline-block;
+    display: block;
     padding: 0 2px;
     vertical-align: top;
 }
@@ -34,7 +47,7 @@ ul.contact-social li a:hover {
 
 ul.contact-social li a.phone span {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 ul.contact-social li a b {
@@ -46,8 +59,8 @@ ul.contact-social li a i {
 }
 
 ul.contact-social li a span {
-    margin-right: 5px;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .moduletable-sociais #contact-social {

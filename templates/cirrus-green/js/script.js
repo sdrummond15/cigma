@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
 
     $(window).on('resize', function () {
         nextDiv.css('padding-top', $('#header_wrap').height() - 1);
+        $('.camera_wrap').height($(window).height() - $('#header_wrap').height());
     }).trigger('resize');
 
     /*MENU RESPONSIVO*/
@@ -60,11 +61,11 @@ jQuery(document).ready(function ($) {
         });
     }
 
-    $('#topmenu li').mouseover(function () {
-        $(this).children('ul').width($(this).width());
-    }).mouseout(function () {
-        $(this).children('ul').width('auto');
-    });
+    // $('#topmenu li').mouseover(function () {
+    //     $(this).children('ul').width($(this).width());
+    // }).mouseout(function () {
+    //     $(this).children('ul').width('auto');
+    // });
 
     $('.moduletable-endereco iframe').height(parseInt($('.moduletable-endereco iframe').width() * 0.6));
 
@@ -75,6 +76,9 @@ jQuery(document).ready(function ($) {
         $(this).find('i').toggleClass('fa-times', 'fa-bars');
     });
 
+    $('#btn-login').click(function () {
+        $('#login-form').slideToggle();
+    });
 });
 
 jQuery(window).load(function () {

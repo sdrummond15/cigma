@@ -6,17 +6,12 @@
  * @copyright	(C) 2009-2014 ACYBA S.A.R.L. All rights reserved.
  * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
-defined('_JEXEC') or die('Restricted access');
-?><?php
+defined('_JEXEC') or die;
 
 class plgSystemRegacymailing extends JPlugin
 {
 	var $option = '';
 	var $view = '';
-
-	function plgSystemRegacymailing(&$subject, $config){
-		parent::__construct($subject, $config);
-	}
 
 	function onAfterRoute(){
 		if(!empty($_POST['option']) && $_POST['option'] == 'com_virtuemart' && !empty($_POST['func']) && $_POST['func'] == 'shopperupdate'){

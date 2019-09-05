@@ -293,7 +293,6 @@ textarea {
 
 /** Buttoms **/
 
-#login-form input.button,
 #member-profile button.validate,
 #member-registration button.validate,
 #user-registration button.validate,
@@ -347,7 +346,6 @@ textarea {
     top: 0;
     left: 0;
     z-index: 999;
-    border-bottom: 5px solid #042a57;
 }
 
 #header {
@@ -358,8 +356,9 @@ textarea {
 }
 
 #logo {
-    float: left;
-    padding: 10px 20px;
+    display: table;
+    margin: auto;
+    padding: 20px 10px 10px 10px;
 }
 
 #logo a {
@@ -426,32 +425,38 @@ textarea {
     border: 0;
 }
 
-#search {
+#header_right_wrap {
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
 
+#header_left_wrap {
+    position: absolute;
+    left: 0;
+    margin-left: 15px;
 }
 
 /** Topmenu (added multi-level support v1.1) **/
 
-.menutop {
-    float: right;
-}
-
 #topmenu_wrap {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    width: 100%;
+    display: table;
 }
 
 #topmenu {
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    width: 1170px;
+    margin: auto;
+    display: table;
 }
 
 #topmenu ul {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #topmenu a {
@@ -459,7 +464,8 @@ textarea {
     display: block;
     color: #000;
     text-decoration: none;
-    padding: 5px 40px;
+    padding: 10px 30px;
+    text-transform: uppercase;
 }
 
 #topmenu a:hover {
@@ -487,7 +493,7 @@ textarea {
     font-size: 12px;
     width: 172px;
     left: -999em; /* "display: none" not seen by screen readers */
-    background-color: #000;
+    background-color: #FFF;
     border: 0;
     margin-left: -1px;
     z-index: 100;
@@ -496,12 +502,11 @@ textarea {
 #topmenu li li,
 #topmenu li li:first-child {
     border: 0;
-    margin-bottom: -1px; /* iPhone/iPad fix */
+    float: none;
 }
 
 #topmenu li li a {
     width: 172px;
-    background-color: #000;
     border: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1234,33 +1239,43 @@ p.counter {
 }
 
 #login-form ul {
-    margin-left: 0px;
+    margin: 0px;
+    display: table;
+    padding: 10px 0 0 0;
+    width: 100%;
+    list-style: none;
 }
 
 #login-form ul li {
     border: 0px;
-    line-height: 1.1em;
-    float: left;
-    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+
+#login-form ul li a{
+    color: #FFF;
+    font-weight: 600;
 }
 
 #login-form input.inputbox,
 #modlgn-username,
 #modlgn-passwd {
-    width: 80%;
-    margin-left: 0px;
-    padding: 6px;
-    padding-right: 24px;
+    width: calc(100% - 20px);
+    padding: 3px 10px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    border: 1px solid #e2e2e2;
+    border: 0;
     outline: none;
+    background-color: #FFF;
 }
 
 #login-form label {
     display: block;
-    margin-left: 0px;
+    margin: 0;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 #form-login-remember label {
@@ -1272,6 +1287,8 @@ p.counter {
 #form-login-remember input.inputbox {
     width: auto;
     border: 0;
+    vertical-align: middle;
+    margin-left: 3px;
 }
 
 .login fieldset {
@@ -1319,7 +1336,9 @@ p.counter {
 
 .userdata label,
 #form-login-remember {
-    margin-top: 9px;
+    margin-top: 5px;
+    display: table;
+    float: left;
 }
 
 .icon-lock.tip {
@@ -1328,6 +1347,25 @@ p.counter {
 
 fieldset div div input {
     margin-bottom: 5px;
+}
+
+#form-login-submit {
+    display: table;
+    float: right;
+    margin-top: 10px;
+}
+
+#login-form .login-button {
+    padding: 3px 10px;
+    background-color: #FFF;
+    color: #58595b;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#login-form .login-button:hover{
+    -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
 }
 
 /** User profile **/
@@ -2056,6 +2094,36 @@ body.contentpane a:hover {
     margin-bottom: 20px;
 }
 
+#login-box {
+    position: relative;
+    clear: both;
+    z-index: 9999;
+}
+
+#btn-login {
+    clear: both;
+    float: right;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+    display: table;
+    cursor: pointer;
+    color: #58595b;
+}
+
+#btn-login i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#login-form {
+    display: none;
+    background-color: #808285;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 1200px) {
     #header,
     #content-menu_wrap,
@@ -2202,7 +2270,7 @@ body.contentpane a:hover {
         width: calc(50% - 20px);
     }
 
-    #footer h3, .moduletable-fique-por-dentro h3{
+    #footer h3, .moduletable-fique-por-dentro h3 {
         font-size: 24px;
     }
 }
@@ -2211,6 +2279,7 @@ body.contentpane a:hover {
     .item-page-filiais .separator_article {
         width: calc(100% - 20px);
     }
+
     #login-form input.button,
     #member-profile button.validate,
     #member-registration button.validate,
@@ -2219,7 +2288,7 @@ body.contentpane a:hover {
     #searchForm button,
     #contact-form button.validate,
     #mailto-window button,
-    .btn{
+    .btn {
         font-size: 14px;
         padding: 3px 15px;
     }

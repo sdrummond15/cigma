@@ -1,5 +1,5 @@
 <div id="contact-social">
-    <ul class="contact-social">
+    <ul class="contact-social social<?= $params->get('moduleclass_sfx')?>">
         <?php
         //Telefone
         if (!empty($phone)): ?>
@@ -8,7 +8,7 @@
                     <span><?php echo $phone; ?></span>
                 </a>
             </li>
-            <li>
+            <li class="small">
                 <a href="tel:+<?php echo preg_replace("/[^0-9]/", "", $phone); ?>" target="_blank" class="phone">
                     <i class="fas fa-phone-square"></i>
                 </a>
@@ -63,6 +63,11 @@
         //E-mail
         if (!empty($email)): ?>
             <li>
+                <a href="mailto:<?php echo $email; ?>" target="_blank" class="email">
+                    <span><?php echo $email; ?></span>
+                </a>
+            </li>
+            <li class="small">
                 <a href="mailto:<?php echo $email; ?>" target="_blank" class="email">
                     <i class="fas fa-envelope-square"></i>
                 </a>
