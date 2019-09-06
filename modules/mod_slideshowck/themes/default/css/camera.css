@@ -191,7 +191,7 @@
 }
 
 .camera_caption {
-    top: 40%;
+    top: 48%;
     left: 50%;
     display: table !important;
     position: absolute;
@@ -386,7 +386,7 @@
 }
 
 .camera_prev > span {
-    background: url(../images/prev.png) no-repeat center;
+    background: url(../../../../../images/prev.png) no-repeat center;
     display: block;
     height: 50px;
     width: 50px;
@@ -397,7 +397,7 @@
 }
 
 .camera_next > span {
-    background: url(../images/next.png) no-repeat center;
+    background: url(../../../../../images/next.png) no-repeat center;
     display: block;
     height: 50px;
     width: 50px;
@@ -408,14 +408,14 @@
 }
 
 .camera_commands > .camera_play {
-    background: url(../images/play.png) no-repeat center;
+    background: url(../../../../../images/play.png) no-repeat center;
     display: block;
     height: 50px;
     width: 50px;
 }
 
 .camera_commands > .camera_stop {
-    background: url(../images/pause.png) no-repeat center;
+    background: url(../../../../../images/pause.png) no-repeat center;
     display: block;
     height: 50px;
     width: 50px;

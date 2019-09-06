@@ -2,56 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e8fbdb9-8544-4845-81b2-31569a1d29d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/cigma.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/WhatsApp Image 2019-06-26 at 15.46.08.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/banners/osmbanner1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/banners/osmbanner2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/banners/shop-ad-books.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/banners/shop-ad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/banners/white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/headers/blue-flower.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/headers/maple.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/headers/raindrops.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/headers/walden-pond.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/headers/windows.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/joomla_black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo-cigma.ai" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo-cigma.eps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo-cigma.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/powered_by.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/fruitshop/apple.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/fruitshop/bananas_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/fruitshop/fruits.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/fruitshop/tamarind.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/animals/180px_koala_ag1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/animals/180px_wobbegong.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/animals/200px_phyllopteryx_taeniolatus1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/animals/220px_spottedquoll_2005_seanmcclean.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/animals/789px_spottedquoll_2005_seanmcclean.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/animals/800px_koala_ag1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/animals/800px_phyllopteryx_taeniolatus1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/animals/800px_wobbegong.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/banner_cradle.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/landscape/120px_pinnacles_western_australia.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/landscape/120px_rainforest_bluemountainsnsw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/landscape/180px_ormiston_pound.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/landscape/250px_cradle_mountain_seen_from_barn_bluff.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/landscape/727px_rainforest_bluemountainsnsw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/landscape/800px_cradle_mountain_seen_from_barn_bluff.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/landscape/800px_ormiston_pound.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/landscape/800px_pinnacles_western_australia.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sampledata/parks/parks.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration.php" afterPath="$PROJECT_DIR$/configuration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/mod_contact_social/assets/css/style.css" afterPath="$PROJECT_DIR$/modules/mod_contact_social/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/mod_contact_social/tmpl/default.php" afterPath="$PROJECT_DIR$/modules/mod_contact_social/tmpl/default.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/mod_login/tmpl/default.php" afterPath="$PROJECT_DIR$/modules/mod_login/tmpl/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/mod_services/assets/css/style_services.css" afterPath="$PROJECT_DIR$/modules/mod_services/assets/css/style_services.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/mod_slideshowck/themes/default/css/camera.css" afterPath="$PROJECT_DIR$/modules/mod_slideshowck/themes/default/css/camera.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/system/regacymailing/regacymailing.php" afterPath="$PROJECT_DIR$/plugins/system/regacymailing/regacymailing.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/css/template.css" afterPath="$PROJECT_DIR$/templates/cirrus-green/css/template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/index.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/js/script.js" afterPath="$PROJECT_DIR$/templates/cirrus-green/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,7 +19,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/cirrus-green/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="17">
               <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding />
             </state>
@@ -76,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/modules/mod_services/tmpl/default.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -92,17 +46,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mod_services.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/mod_services/mod_services.php">
+      <file leaf-file-name="mod_article_home.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/mod_article_home/mod_article_home.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="44" column="40" lean-forward="false" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helper.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/mod_article_home/tmpl/default.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/mod_article_home/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/mod_services/helper.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -112,21 +86,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/cirrus-green/js/script.js">
+      <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+            <state relative-caret-position="323">
+              <caret line="307" column="29" lean-forward="false" selection-start-line="307" selection-start-column="23" selection-end-line="307" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/template.css">
+      <file leaf-file-name="style_services.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/mod_services/assets/css/style_services.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="1364" column="22" lean-forward="false" selection-start-line="1364" selection-start-column="22" selection-end-line="1364" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -135,28 +109,8 @@
       <file leaf-file-name="camera.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/mod_slideshowck/themes/default/css/camera.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="514" column="1" lean-forward="false" selection-start-line="514" selection-start-column="1" selection-end-line="514" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/mod_contact_social/tmpl/default.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="66" column="54" lean-forward="false" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/mod_login/tmpl/default.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="20" />
+            <state relative-caret-position="177">
+              <caret line="193" column="11" lean-forward="false" selection-start-line="193" selection-start-column="11" selection-end-line="193" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -171,6 +125,8 @@
       <find>fa-user</find>
       <find>min-he</find>
       <find>min-height: 500</find>
+      <find>prev</find>
+      <find>40%</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -184,11 +140,17 @@
         <option value="$PROJECT_DIR$/modules/mod_contact_social/tmpl/default.php" />
         <option value="$PROJECT_DIR$/modules/mod_contact_social/assets/css/style.css" />
         <option value="$PROJECT_DIR$/modules/mod_login/tmpl/default.php" />
-        <option value="$PROJECT_DIR$/templates/cirrus-green/css/template.css" />
         <option value="$PROJECT_DIR$/templates/cirrus-green/index.php" />
         <option value="$PROJECT_DIR$/templates/cirrus-green/js/script.js" />
-        <option value="$PROJECT_DIR$/modules/mod_slideshowck/themes/default/css/camera.css" />
         <option value="$PROJECT_DIR$/modules/mod_slideshowck/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/modules/mod_services/helper.php" />
+        <option value="$PROJECT_DIR$/modules/mod_services/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/modules/mod_slideshowck/themes/default/css/camera.css" />
+        <option value="$PROJECT_DIR$/templates/cirrus-green/css/template.css" />
+        <option value="$PROJECT_DIR$/modules/mod_services/assets/css/style_services.css" />
+        <option value="$PROJECT_DIR$/modules/mod_article_home/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/modules/mod_article_home/mod_article_home.xml" />
+        <option value="$PROJECT_DIR$/modules/mod_article_home/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -228,7 +190,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,19 +206,35 @@
               <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
               <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mod_services" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mod_article_home" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
               <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mod_services" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mod_article_home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mod_article_home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mod_article_home" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tmpl" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,12 +271,13 @@
       <workItem from="1566857790445" duration="1085000" />
       <workItem from="1566934298394" duration="11251000" />
       <workItem from="1567026739514" duration="2801000" />
-      <workItem from="1567636166371" duration="4944000" />
+      <workItem from="1567636166371" duration="5358000" />
+      <workItem from="1567726989724" duration="5642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20081000" />
+    <option name="totallyTimeSpent" value="26137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -335,6 +313,62 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/modules/mod_services/mod_services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_services/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23188">
+          <caret line="1364" column="22" lean-forward="false" selection-start-line="1364" selection-start-column="22" selection-end-line="1364" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_contact_social/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="54" lean-forward="false" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_login/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_slideshowck/themes/default/css/camera.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7089">
+          <caret line="417" column="34" lean-forward="false" selection-start-line="417" selection-start-column="34" selection-end-line="417" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/cirrus-green/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -387,7 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -395,7 +428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="75" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -451,7 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -459,7 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="75" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -505,7 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="75" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -513,7 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,7 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -558,14 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="1364" column="22" lean-forward="false" selection-start-line="1364" selection-start-column="22" selection-end-line="1364" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/cirrus-green/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -574,17 +593,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_slideshowck/themes/default/css/camera.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="514" column="1" lean-forward="false" selection-start-line="514" selection-start-column="1" selection-end-line="514" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/mod_contact_social/tmpl/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="1122">
           <caret line="66" column="54" lean-forward="false" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
           <folding />
         </state>
@@ -594,33 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="910">
           <caret line="139" column="31" lean-forward="true" selection-start-line="139" selection-start-column="31" selection-end-line="139" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_services/tmpl/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_services/mod_services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,6 +620,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_slideshowck/themes/default/css/camera.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="193" column="11" lean-forward="false" selection-start-line="193" selection-start-column="11" selection-end-line="193" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_services/assets/css/style_services.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_services/mod_services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_services/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_article_home/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="307" column="29" lean-forward="false" selection-start-line="307" selection-start-column="23" selection-end-line="307" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_article_home/mod_article_home.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="44" column="40" lean-forward="false" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_article_home/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>

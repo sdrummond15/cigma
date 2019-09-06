@@ -1,8 +1,12 @@
 #modservices {
     width: 100%;
     display: table;
-    position: relative;
-    margin-bottom: 60px;
+}
+
+#services{
+    width: 1170px;
+    display: table;
+    margin: 60px auto 40px auto;
 }
 
 #services .service {
