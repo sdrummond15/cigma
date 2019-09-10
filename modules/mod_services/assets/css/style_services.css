@@ -3,77 +3,49 @@
     display: table;
 }
 
-#services{
+#services {
     width: 1170px;
     display: table;
     margin: 60px auto 40px auto;
 }
 
 #services .service {
-    display: table;
-    float: left;
+    display: inline-table;
+    vertical-align: bottom;
     width: calc(25% - 30px);
     margin: 0 15px;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0 5px #000;
 }
 
-#services .service:last-child {
-    border-right: 0;
+#services .service:nth-child(2) {
+    clip-path: polygon(42% 0, 100% 24%, 100% 100%, 0 100%, 0 15%);
 }
 
-#services .service .item-service {
+#services .service:nth-child(4) {
+    clip-path: polygon(0 24%, 100% 0, 100% 100%, 0% 100%);
+}
+
+#services .service a.img-service {
     width: 100%;
-    margin: auto;
-    text-align: center;
-    background-color: #26375e;
+    height: 100%;
     display: table;
-}
-
-#services .service .item-service:hover {
-    background-color: #03143c;
-}
-
-#services .service .item-service a {
-    display: table;
-    margin: auto;
-    text-decoration: none;
-}
-
-#services .service .item-service a:hover {
-    text-decoration: none;
-}
-
-#services .service .item-service h1 {
-    height: 80px;
-    display: table;
-    width: calc(100% - 10px);
-    margin: 0;
-    padding: 0 5px;
-}
-
-#services .service .item-service h1 a {
-    display: table-cell;
-    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.6);
     color: #FFF;
     font-size: 24px;
-    font-family: 'fira_sans_extra_condensedRg';
+    opacity: 0;
+    transition: 300ms all;
 }
 
-#services .service .item-service a.img-service {
-    width: 100%;
-    background-size: cover !important;
-    background-position: center !important;
+#services .service a.img-service:hover {
+    opacity: 1;
 }
 
-#services .service .item-service .desc {
-    padding: 10px 15px;
-}
-
-#services .service .item-service p {
-    font-family: 'fira_sans_extra_condensedXLt';
-    color: #FFF;
-    font-size: 18px;
-    line-height: 1.3;
-    display: table;
+#services .service a.img-service span {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 @media screen and (max-width: 1200px) {
