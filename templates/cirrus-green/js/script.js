@@ -36,7 +36,7 @@ jQuery(document).ready(function ($) {
             }
         });
 
-
+        $('.blog-home .img-intro').height($('.blog-home .img-intro').width() * 0.6);
     }).trigger('resize');
 
     $('.menuresp').hide();

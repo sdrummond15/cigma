@@ -1,3 +1,9 @@
+<?php
+$sufixo = '';
+if ($params->get('moduleclass_sfx')) {
+    $sufixo = '-' . $params->get('moduleclass_sfx');
+}
+?>
 <div id="contact-social-footer">
 
 
@@ -11,25 +17,29 @@
         </div>
     <?php endif; ?>
 
-    <ul class="contact-social-footer">
+    <ul class="contact-social-footer footer<?= $params->get('moduleclass_sfx')?>">
+
         <?php
+        //E-mail
+        if (!empty($email)): ?>
+        <li>
+            <a href="mailto:<?= $email; ?>" target="_blank" class="email">
+                <?= $email; ?>
+            </a>
+        </li>
+        <?php endif;
+
+
         //Telefone
         if (!empty($phone)): ?>
             <li>
                 <a href="tel:+<?php echo preg_replace("/[^0-9]/", "", $phone); ?>" target="_blank" class="phone">
-                    <i class="fas fa-phone-square"></i>
+                    <?= $phone ?>
                 </a>
             </li>
         <?php endif;
 
-        //E-mail
-        if (!empty($email)): ?>
-            <li>
-                <a href="mailto:<?php echo $email; ?>" target="_blank" class="email">
-                    <i class="fas fa-envelope-square"></i>
-                </a>
-            </li>
-        <?php endif;
+
 
         //Facebook
         if (!empty($facebook)): ?>

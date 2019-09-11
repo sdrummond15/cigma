@@ -196,10 +196,14 @@ $sitedescription = $this->params->get('sitedescription');
 
         <div id="copyright">
             <div class="copyrightint">
+                <?php if ($this->countModules('position-15')): ?>
+                <jdoc:include type="modules" name="position-15" style="xhtml"/>
+                <?php else: ?>
                 <p>
                     Copyright &copy; <?php echo $sitename . ' - ' . $sitedescription . ' - ' . date('Y'); ?> | Todos os
                     direitos reservados
                 </p>
+                <?php endif; ?>
                 <a class="sd" href="http://www.sdrummond.com.br" title="Sdrummond Tecnologia" target="_blank">
                     <img src="images/sd.png" alt="Sdrummond Tecnologia" title="Sdrummond Tecnologia">
                 </a>
