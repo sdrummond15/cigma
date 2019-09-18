@@ -3,15 +3,63 @@
   <component name="ChangeListManager">
     <list default="true" id="6e8fbdb9-8544-4845-81b2-31569a1d29d1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/com_acymailing/css/module_default.css" afterPath="$PROJECT_DIR$/media/com_acymailing/css/module_default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/mod_contact_social_footer/assets/css/style.css" afterPath="$PROJECT_DIR$/modules/mod_contact_social_footer/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/mod_contact_social_footer/tmpl/default.php" afterPath="$PROJECT_DIR$/modules/mod_contact_social_footer/tmpl/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/contact.php" afterPath="$PROJECT_DIR$/components/com_contact/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/controller.php" afterPath="$PROJECT_DIR$/components/com_contact/controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/controllers/contact.php" afterPath="$PROJECT_DIR$/components/com_contact/controllers/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/helpers/association.php" afterPath="$PROJECT_DIR$/components/com_contact/helpers/association.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/helpers/category.php" afterPath="$PROJECT_DIR$/components/com_contact/helpers/category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/helpers/route.php" afterPath="$PROJECT_DIR$/components/com_contact/helpers/route.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/layouts/joomla/form/renderfield.php" afterPath="$PROJECT_DIR$/components/com_contact/layouts/joomla/form/renderfield.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/models/categories.php" afterPath="$PROJECT_DIR$/components/com_contact/models/categories.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/models/category.php" afterPath="$PROJECT_DIR$/components/com_contact/models/category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/models/contact.php" afterPath="$PROJECT_DIR$/components/com_contact/models/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/models/featured.php" afterPath="$PROJECT_DIR$/components/com_contact/models/featured.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/models/forms/contact.xml" afterPath="$PROJECT_DIR$/components/com_contact/models/forms/contact.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/models/forms/form.xml" afterPath="$PROJECT_DIR$/components/com_contact/models/forms/form.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/models/rules/contactemail.php" afterPath="$PROJECT_DIR$/components/com_contact/models/rules/contactemail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/models/rules/contactemailmessage.php" afterPath="$PROJECT_DIR$/components/com_contact/models/rules/contactemailmessage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/models/rules/contactemailsubject.php" afterPath="$PROJECT_DIR$/components/com_contact/models/rules/contactemailsubject.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/router.php" afterPath="$PROJECT_DIR$/components/com_contact/router.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/categories/tmpl/default.php" afterPath="$PROJECT_DIR$/components/com_contact/views/categories/tmpl/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/categories/tmpl/default.xml" afterPath="$PROJECT_DIR$/components/com_contact/views/categories/tmpl/default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/categories/tmpl/default_items.php" afterPath="$PROJECT_DIR$/components/com_contact/views/categories/tmpl/default_items.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/categories/view.html.php" afterPath="$PROJECT_DIR$/components/com_contact/views/categories/view.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/category/tmpl/default.php" afterPath="$PROJECT_DIR$/components/com_contact/views/category/tmpl/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/category/tmpl/default.xml" afterPath="$PROJECT_DIR$/components/com_contact/views/category/tmpl/default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/category/tmpl/default_children.php" afterPath="$PROJECT_DIR$/components/com_contact/views/category/tmpl/default_children.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/category/tmpl/default_items.php" afterPath="$PROJECT_DIR$/components/com_contact/views/category/tmpl/default_items.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/category/view.feed.php" afterPath="$PROJECT_DIR$/components/com_contact/views/category/view.feed.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/category/view.html.php" afterPath="$PROJECT_DIR$/components/com_contact/views/category/view.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default.php" afterPath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default.xml" afterPath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default_address.php" afterPath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default_address.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default_articles.php" afterPath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default_articles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default_form.php" afterPath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default_links.php" afterPath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default_links.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default_profile.php" afterPath="$PROJECT_DIR$/components/com_contact/views/contact/tmpl/default_profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/contact/view.html.php" afterPath="$PROJECT_DIR$/components/com_contact/views/contact/view.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/contact/view.vcf.php" afterPath="$PROJECT_DIR$/components/com_contact/views/contact/view.vcf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/featured/tmpl/default.php" afterPath="$PROJECT_DIR$/components/com_contact/views/featured/tmpl/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/featured/tmpl/default.xml" afterPath="$PROJECT_DIR$/components/com_contact/views/featured/tmpl/default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/featured/tmpl/default_items.php" afterPath="$PROJECT_DIR$/components/com_contact/views/featured/tmpl/default_items.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_contact/views/featured/view.html.php" afterPath="$PROJECT_DIR$/components/com_contact/views/featured/view.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/mod_contact_social/assets/css/style.css" afterPath="$PROJECT_DIR$/modules/mod_contact_social/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/css/template.css" afterPath="$PROJECT_DIR$/templates/cirrus-green/css/template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_content/category/blog.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_content/category/blog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_content/category/blog_item.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_content/category/blog_item.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/index.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/js/script.js" afterPath="$PROJECT_DIR$/templates/cirrus-green/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/language/pt-BR/pt-BR.tpl_cirrus-green.ini" afterPath="$PROJECT_DIR$/templates/cirrus-green/language/pt-BR/pt-BR.tpl_cirrus-green.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/categories/default.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/categories/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/categories/default_items.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/categories/default_items.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/categories/index.html" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/categories/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/category/default.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/category/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/category/default_children.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/category/default_children.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/category/default_items.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/category/default_items.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/category/index.html" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/category/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_address.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_address.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_articles.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_articles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_links.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_links.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_profile.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/encyclopedia.php" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/encyclopedia.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/index.html" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/index.html" afterPath="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,18 +73,48 @@
       <file leaf-file-name="default.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/mod_article_home/tmpl/default.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="0">
               <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="template.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="2096" column="29" lean-forward="false" selection-start-line="2096" selection-start-column="29" selection-end-line="2096" selection-end-column="29" />
+            <state relative-caret-position="466">
+              <caret line="2222" column="13" lean-forward="false" selection-start-line="2222" selection-start-column="13" selection-end-line="2222" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default_address.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_address.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1232">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,7 +123,7 @@
       <file leaf-file-name="module_default.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/media/com_acymailing/css/module_default.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
+            <state relative-caret-position="17">
               <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
               <caret line="65" column="35" lean-forward="false" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
               <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
@@ -57,11 +135,9 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/cirrus-green/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="2040">
               <caret line="205" column="29" lean-forward="false" selection-start-line="205" selection-start-column="29" selection-end-line="205" selection-end-column="29" />
-              <folding>
-                <element signature="e#7546#7552#0#HTML" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,50 +153,20 @@
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/mod_contact_social_footer/assets/css/style.css">
+        <entry file="file://$PROJECT_DIR$/modules/mod_contact_social/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+            <state relative-caret-position="493">
+              <caret line="44" column="15" lean-forward="false" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/mod_contact_social/tmpl/default.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="73" lean-forward="false" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_item.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/cirrus-green/html/com_content/category/blog_item.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2890">
-              <caret line="170" column="11" lean-forward="false" selection-start-line="170" selection-start-column="6" selection-end-line="170" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/cirrus-green/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="38" column="82" lean-forward="false" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pt-BR.tpl_cirrus-green.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/cirrus-green/language/pt-BR/pt-BR.tpl_cirrus-green.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="782">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,6 +193,7 @@
       <find>1151</find>
       <find>leia</find>
       <find>read</find>
+      <find>1px</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,7 +205,6 @@
         <option value="$PROJECT_DIR$/configuration.php" />
         <option value="$PROJECT_DIR$/plugins/system/regacymailing/regacymailing.php" />
         <option value="$PROJECT_DIR$/modules/mod_contact_social/tmpl/default.php" />
-        <option value="$PROJECT_DIR$/modules/mod_contact_social/assets/css/style.css" />
         <option value="$PROJECT_DIR$/modules/mod_login/tmpl/default.php" />
         <option value="$PROJECT_DIR$/modules/mod_slideshowck/tmpl/default.php" />
         <option value="$PROJECT_DIR$/modules/mod_services/helper.php" />
@@ -178,9 +224,11 @@
         <option value="$PROJECT_DIR$/modules/mod_contact_social_footer/tmpl/default.php" />
         <option value="$PROJECT_DIR$/modules/mod_contact_social_footer/assets/css/style.css" />
         <option value="$PROJECT_DIR$/templates/cirrus-green/index.php" />
-        <option value="$PROJECT_DIR$/templates/cirrus-green/css/template.css" />
         <option value="$PROJECT_DIR$/media/com_acymailing/css/module_default.css" />
         <option value="$PROJECT_DIR$/templates/cirrus-green/js/script.js" />
+        <option value="$PROJECT_DIR$/modules/mod_contact_social/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default.php" />
+        <option value="$PROJECT_DIR$/templates/cirrus-green/css/template.css" />
       </list>
     </option>
   </component>
@@ -230,6 +278,32 @@
             <path>
               <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
               <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mod_contact_social" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mod_contact_social" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mod_contact_social" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -243,7 +317,24 @@
               <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="cirrus-green" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cirrus-green" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="com_contact" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cirrus-green" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="com_contact" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contact" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -292,18 +383,22 @@
       <workItem from="1568074529834" duration="2978000" />
       <workItem from="1568143255926" duration="6640000" />
       <workItem from="1568152279922" duration="653000" />
-      <workItem from="1568156190112" duration="5851000" />
+      <workItem from="1568156190112" duration="6449000" />
+      <workItem from="1568326725144" duration="594000" />
+      <workItem from="1568333879389" duration="328000" />
+      <workItem from="1568666281007" duration="1331000" />
+      <workItem from="1568758260680" duration="4007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42646000" />
+    <option name="totallyTimeSpent" value="49504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35065886" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -333,27 +428,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/mod_contact_social/tmpl/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="54" lean-forward="false" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_contact_social/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_login/tmpl/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/fontawesome-all.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -505,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_contact_social/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/mod_login/tmpl/default.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -572,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -580,7 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="103" lean-forward="false" selection-start-line="7" selection-start-column="103" selection-end-line="7" selection-end-column="103" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -633,8 +697,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/mod_article_home/tmpl/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="0">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/com_acymailing/css/module_default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+          <caret line="65" column="35" lean-forward="false" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+          <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_contact_social_footer/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -647,46 +737,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_contact_social_footer/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/modules/mod_contact_social/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        <state relative-caret-position="493">
+          <caret line="44" column="15" lean-forward="false" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/cirrus-green/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="2040">
           <caret line="205" column="29" lean-forward="false" selection-start-line="205" selection-start-column="29" selection-end-line="205" selection-end-column="29" />
-          <folding>
-            <element signature="e#7546#7552#0#HTML" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1232">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default_address.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/html/com_contact/contact/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="2096" column="29" lean-forward="false" selection-start-line="2096" selection-start-column="29" selection-end-line="2096" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/com_acymailing/css/module_default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
-          <caret line="65" column="35" lean-forward="false" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
-          <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="38" column="82" lean-forward="false" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
+        <state relative-caret-position="466">
+          <caret line="2222" column="13" lean-forward="false" selection-start-line="2222" selection-start-column="13" selection-end-line="2222" selection-end-column="13" />
           <folding />
         </state>
       </provider>

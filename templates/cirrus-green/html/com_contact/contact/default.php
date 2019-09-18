@@ -50,8 +50,6 @@ $cparams = JComponentHelper::getParams('com_media');
 		</dl>
 	<?php endif; ?>
 
-	<?php echo $this->loadTemplate('address'); ?>
-
 	<?php if ($this->params->get('allow_vcard')) :	?>
 		<?php echo JText::_('COM_CONTACT_DOWNLOAD_INFORMATION_AS');?>
 			<a href="<?php echo JRoute::_('index.php?option=com_contact&amp;view=contact&amp;id='.$this->contact->id . '&amp;format=vcf'); ?>">
