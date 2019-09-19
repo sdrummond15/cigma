@@ -1,7 +1,8 @@
+<?php $count = 1; ?>
 <div id="modservices">
     <div id="services">
         <?php foreach ($services as $services): ?>
-            <?php
+            <?php if($count <= 4):
             $link = 'index.php/' . $services->link;
             $backgroundPort = 'style="background-image: url(\'' . $services->image . '\')"';
             ?>
@@ -10,6 +11,8 @@
                     <span><?php echo $services->name; ?></span>
                 </a>
             </div>
+            <?php endif;
+            $count ++; ?>
         <?php endforeach; ?>
     </div>
 </div>

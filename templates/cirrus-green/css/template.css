@@ -2223,6 +2223,9 @@ body.contentpane a:hover {
     margin: 20px 0;
     display: table;
 }
+.tooltip {
+    display: none !important;
+}
 
 @media screen and (max-width: 1200px) {
     #header,

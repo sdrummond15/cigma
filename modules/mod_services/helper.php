@@ -22,8 +22,7 @@ class modServicesHelper
         $query->from('#__services As s');
         $query->where('s.published = 1');
         $query->order('s.ordering ASC');
-        $query->setLimit(4);
-        
+
         $db->setQuery($query);
 	    $rows = (array) $db->loadObjectList();
         shuffle($rows);
