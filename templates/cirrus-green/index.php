@@ -32,6 +32,8 @@ $sitedescription = $this->params->get('sitedescription');
           type="text/css"/>
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/lity.min.css"
           type="text/css"/>
+    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/animate.css"
+          type="text/css"/>
     <script type="text/javascript"
             src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/script.js"></script>
     <script type="text/javascript"
@@ -45,17 +47,9 @@ $sitedescription = $this->params->get('sitedescription');
         <div id="header">
 
             <?php if ($this->countModules('position-0')): ?>
-                <div id="header_left_wrap">
-                    <div id="header_left">
-                        <jdoc:include type="modules" name="position-0"/>
-                    </div>
-                </div>
-            <?php endif; ?>
-
-            <?php if ($this->countModules('position-3')): ?>
                 <div id="header_right_wrap">
                     <div id="header_right">
-                        <jdoc:include type="modules" name="position-3"/>
+                        <jdoc:include type="modules" name="position-0"/>
                     </div>
                 </div>
             <?php endif; ?>
@@ -145,6 +139,7 @@ $sitedescription = $this->params->get('sitedescription');
             <!-- Right Menu -->
             <?php if ($RightMenuOn): ?>
                 <div id="rightmenu">
+                    <jdoc:include type="modules" name="position-3" style="xhtml"/>
                     <jdoc:include type="modules" name="position-6" style="xhtml"/>
                 </div>
             <?php endif; ?>

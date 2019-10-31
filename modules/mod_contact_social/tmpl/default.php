@@ -64,11 +64,6 @@
         if (!empty($email)): ?>
             <li>
                 <a href="mailto:<?php echo $email; ?>" target="_blank" class="email">
-                    <span><?php echo $email; ?></span>
-                </a>
-            </li>
-            <li class="small">
-                <a href="mailto:<?php echo $email; ?>" target="_blank" class="email">
                     <i class="fas fa-envelope-square"></i>
                 </a>
             </li>

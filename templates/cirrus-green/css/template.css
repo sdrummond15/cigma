@@ -355,6 +355,9 @@ textarea {
     top: 0;
     left: 0;
     z-index: 999;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 #header {
@@ -368,6 +371,7 @@ textarea {
     display: table;
     margin: auto;
     padding: 20px 10px 10px 10px;
+    float: left;
 }
 
 #logo a {
@@ -381,7 +385,8 @@ textarea {
 }
 
 #logo a img {
-
+    width: 320px;
+    transition: 300ms all;
 }
 
 #logo div.sitedescription {
@@ -416,13 +421,12 @@ textarea {
 /** Topmenu (added multi-level support v1.1) **/
 
 #topmenu_wrap {
-    width: 100%;
-    display: table;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 #topmenu {
-    width: 1170px;
-    margin: auto;
     display: table;
 }
 
@@ -441,7 +445,7 @@ textarea {
 
 #topmenu a,
 #topmenu span {
-    font-size: 20px;
+    font-size: 18px;
     display: block;
     color: #000;
     text-decoration: none;
@@ -2223,6 +2227,7 @@ body.contentpane a:hover {
     margin: 20px 0;
     display: table;
 }
+
 .tooltip {
     display: none !important;
 }

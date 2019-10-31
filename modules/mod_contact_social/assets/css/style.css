@@ -9,10 +9,7 @@ ul.contact-social {
     padding: 0;
 }
 
-ul.contact-social.social-left {
-    float: left;
-    text-align: left;
-}
+
 
 ul.contact-social.social-right {
     display: inline-flex;
@@ -38,7 +35,7 @@ ul.contact-social li a {
     color: #58595b;
     font-weight: normal;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 ul.contact-social li a:hover {
@@ -47,7 +44,7 @@ ul.contact-social li a:hover {
 
 ul.contact-social li a.phone span {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 ul.contact-social li a b {
