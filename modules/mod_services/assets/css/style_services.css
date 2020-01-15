@@ -1,0 +1,87 @@
+#modservices {
+    width: 100%;
+    display: table;
+}
+
+#services {
+    width: 1170px;
+    display: table;
+    margin: 60px auto 40px auto;
+}
+
+#services .service {
+    display: inline-table;
+    vertical-align: bottom;
+    width: calc(25% - 30px);
+    margin: 0 15px;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0 5px #000;
+}
+
+#services .service:nth-child(2) {
+    clip-path: polygon(42% 0, 100% 24%, 100% 100%, 0 100%, 0 15%);
+}
+
+#services .service:nth-child(4) {
+    clip-path: polygon(0 24%, 100% 0, 100% 100%, 0% 100%);
+}
+
+#services .service a.img-service {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    font-size: 24px;
+    opacity: 0;
+    transition: 300ms all;
+}
+
+#services .service a.img-service:hover {
+    opacity: 1;
+}
+
+#services .service a.img-service span {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1200px) {
+    #services .service {
+        width: calc(25% - 10px);
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #services .service {
+        width: calc(50% - 20px);
+        margin: 0 10px 30px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #modservices {
+        margin-bottom: 10px;
+    }
+
+    #services .service {
+        width: calc(50% - 10px);
+        margin: 0 5px 20px 5px;
+    }
+
+    #services .service {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto 20px auto;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #services .service {
+        max-width: 280px;
+    }
+}
