@@ -80,7 +80,6 @@
     #services .service {
         width: 100%;
         max-width: 240px;
-        margin: 0 auto 20px auto;
         float: none;
     }
     #services .service a.img-service{
