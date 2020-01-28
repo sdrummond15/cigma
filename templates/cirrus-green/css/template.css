@@ -2320,6 +2320,10 @@ body.contentpane a:hover {
         margin: 0;
     }
 
+    #topmenu a, #topmenu span {
+        padding: 5px 20px;
+    }
+    
     .img-intro-right {
         width: 40%;
     }
@@ -2334,8 +2338,13 @@ body.contentpane a:hover {
         padding: 10px 0;
     }
 
-    #topmenu a, #topmenu span {
-        padding: 5px 20px;
+    #topmenu > ul {
+        display: none;
+    }
+
+    .gotomenu {
+        display: table;
+        visibility: visible;
     }
 
     #box1 {
@@ -2415,15 +2424,6 @@ body.contentpane a:hover {
     body,
     p {
         font-size: 16px;
-    }
-
-    #topmenu > ul {
-        display: none;
-    }
-
-    .gotomenu {
-        display: table;
-        visibility: visible;
     }
 
     .blog-featured-home .img-intro-right {
