@@ -382,7 +382,7 @@ textarea {
 }
 
 #logo a img {
-    width: 320px;
+    width: 260px;
     transition: 300ms all;
 }
 
@@ -596,9 +596,10 @@ textarea {
 }
 
 #header_wrap .menuresp ul li.active,
+#header_wrap .menuresp ul li.active span,
 #header_wrap .menuresp ul li.active a {
     color: #FFF;
-    background-color: #00317B;
+    background-color: rgba(0,0,0,0.4);
 }
 
 #header_wrap .menuresp ul li button {
@@ -609,6 +610,7 @@ textarea {
     padding: 5px 8px;
 }
 
+#header_wrap .menuresp ul li.active span button,
 #header_wrap .menuresp span:hover button {
     color: #FFF;
 }
@@ -745,12 +747,12 @@ textarea {
     width: 100%;
     text-align: center;
     padding: 5px 0;
-    background-color: #dcddde;
     cursor: pointer;
     margin: 0;
     display: none;
     font-weight: bold;
-    color: #005f96;
+    color: #000;
+    border: 1px solid #dcddde;
 }
 
 .moduletable_menu {
@@ -2240,6 +2242,70 @@ body.contentpane a:hover {
     display: none !important;
 }
 
+.item-page-servicos h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+#servicos {
+    display: table;
+    width: 100%;
+}
+
+#servicos h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
+#servicos .servico {
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#servicos .servico .servico-img {
+    width: 100%;
+    display: table;
+}
+
+#servicos .servico .servico-img a {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#servicos .servico .servico-desc {
+    background-color: #2f4c12;
+    width: calc(100% - 20px);
+    display: table;
+    margin: -30px 10px 0 10px;
+}
+
+#servicos .servico .servico-desc .servico-box {
+    width: calc(100% - 42px);
+    margin: 10px;
+    border: 1px solid #FFF;
+    padding: 10px;
+}
+
+#servicos .servico .servico-desc .servico-box h4,
+#servicos .servico .servico-desc .servico-box p {
+    text-align: center;
+}
+
+#servicos .servico .servico-desc .servico-box h4 a {
+    color: #FFF;
+}
+
+#servicos .servico .servico-desc .servico-box p a {
+    color: #FFF;
+    font-size: 14px;
+}
+
 @media screen and (max-width: 1200px) {
     #header,
     #content-menu_wrap,
@@ -2430,6 +2496,14 @@ body.contentpane a:hover {
     #footer h3, .moduletable-fique-por-dentro h3 {
         font-size: 24px;
     }
+
+    #servicos .servico {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto 30px auto;
+        display: table;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
