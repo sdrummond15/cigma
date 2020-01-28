@@ -55,7 +55,7 @@ jQuery(document).ready(function ($) {
             $('#services .service:nth-child(4)').addClass('animated fadeInUp');
         }
 
-        if($('#header').height() - 74){
+        if($('#header').height() < 74){
             nextDiv.css('padding-top', 73);
         }else{
             nextDiv.css('padding-top', $('#header').height() - 1);

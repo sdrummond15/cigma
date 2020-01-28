@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="05c6a63c-7d7a-4691-9376-2d90407b493c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/css/template.css" afterPath="$PROJECT_DIR$/templates/cirrus-green/css/template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cirrus-green/js/script.js" afterPath="$PROJECT_DIR$/templates/cirrus-green/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/cirrus-green/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -44,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="478">
-              <caret line="2325" column="4" lean-forward="false" selection-start-line="2325" selection-start-column="4" selection-end-line="2325" selection-end-column="4" />
+              <caret line="2325" column="0" lean-forward="false" selection-start-line="2325" selection-start-column="0" selection-end-line="2325" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,8 +103,8 @@
         <option value="$PROJECT_DIR$/modules/mod_login/tmpl/default_logout.php" />
         <option value="$PROJECT_DIR$/modules/mod_slideshowck/themes/default/css/camera.css" />
         <option value="$PROJECT_DIR$/modules/mod_services/assets/css/style_services.css" />
-        <option value="$PROJECT_DIR$/templates/cirrus-green/js/script.js" />
         <option value="$PROJECT_DIR$/templates/cirrus-green/css/template.css" />
+        <option value="$PROJECT_DIR$/templates/cirrus-green/js/script.js" />
       </list>
     </option>
   </component>
@@ -249,12 +250,12 @@
       <option name="presentableId" value="Default" />
       <updated>1580156535028</updated>
       <workItem from="1580156536268" duration="10178000" />
-      <workItem from="1580234808741" duration="8768000" />
+      <workItem from="1580234808741" duration="9130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18946000" />
+    <option name="totallyTimeSpent" value="19308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -386,18 +387,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/js/script.js">
+    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="478">
+          <caret line="2325" column="0" lean-forward="false" selection-start-line="2325" selection-start-column="0" selection-end-line="2325" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/template.css">
+    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="2325" column="4" lean-forward="false" selection-start-line="2325" selection-start-column="4" selection-end-line="2325" selection-end-column="4" />
+        <state relative-caret-position="252">
+          <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
           <folding />
         </state>
       </provider>
