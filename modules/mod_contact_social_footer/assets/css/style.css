@@ -7,6 +7,13 @@
     margin: 0 auto 30px auto;
 }
 
+.logo-footer img {
+    filter: grayscale(100%) invert(100%) brightness(200%);
+    width: 75%;
+    display: table;
+    margin: auto;
+}
+
 #contact-social-footer p {
     text-align: center;
 }
@@ -34,7 +41,8 @@ ul.contact-social-footer {
     margin: 25px auto 20px auto;
     padding: 0;
 }
-ul.contact-social-footer.footer-contato{
+
+ul.contact-social-footer.footer-contato {
     margin: 0 auto;
 }
 
@@ -43,7 +51,7 @@ ul.contact-social-footer.footer-contato li {
     margin: auto;
 }
 
-ul.contact-social-footer.footer-contato li a{
+ul.contact-social-footer.footer-contato li a {
     font-size: 16px;
 }
 

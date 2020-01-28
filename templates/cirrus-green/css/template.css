@@ -310,9 +310,6 @@ textarea {
     background-color: #414042;
     border: 0;
     padding: 5px 20px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
     margin: 0;
     cursor: pointer;
     display: table;
@@ -355,9 +352,9 @@ textarea {
     top: 0;
     left: 0;
     z-index: 999;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 #header {
@@ -543,7 +540,7 @@ textarea {
     font-size: 20px;
     color: #f5ede6;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 5px 0;
     float: right;
     clear: right;
 }
@@ -551,9 +548,8 @@ textarea {
 #gotomenu {
     padding: 1px 8px;
     border-radius: 3px;
-    background-color: #00317B;
+    background-color: #313131;
     cursor: pointer;
-    border-bottom: 2px solid #50B4DD;
 }
 
 #gotomenu i {
@@ -574,7 +570,8 @@ textarea {
     padding: 5px 0;
     cursor: pointer !important;
     width: 100%;
-    color: #00317B;
+    color: #000;
+    text-transform: uppercase;
 }
 
 #header_wrap .menuresp a:hover,
@@ -604,16 +601,16 @@ textarea {
     background-color: #00317B;
 }
 
-#header_wrap .menuresp ul li:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
 #header_wrap .menuresp ul li button {
     border: 0;
-    color: #00317B;
+    color: #000;
     cursor: pointer;
     background: transparent;
     padding: 5px 8px;
+}
+
+#header_wrap .menuresp span:hover button {
+    color: #FFF;
 }
 
 #header_wrap .menuresp ul li button:focus {
@@ -633,12 +630,12 @@ textarea {
 #header_wrap .menuresp li.active ul li a:hover {
     text-decoration: none !important;
     color: #FFF;
-    background-color: #00317B;
+    background-color: #313131;
 }
 
 #header_wrap .menuresp li li.active,
 #header_wrap .menuresp li li.active:hover {
-    background-color: #00317B;
+    background-color: #313131;
 }
 
 #header_wrap .menuresp li li.active a,
@@ -2086,13 +2083,15 @@ body.contentpane a:hover {
     margin-bottom: 15px;
 }
 
-#login-box {
+#login-box,
+#logout-box {
     position: relative;
     clear: both;
     z-index: 9999;
 }
 
-#btn-login {
+#btn-login,
+#btn-logout {
     clear: both;
     float: right;
     font-size: 14px;
@@ -2103,17 +2102,26 @@ body.contentpane a:hover {
     color: #58595b;
 }
 
-#btn-login i {
+#btn-login i,
+#btn-logout i {
     font-size: 20px;
     margin-right: 5px;
 }
 
-#login-form {
+#login-form,
+#logout-form {
     display: none;
-    background-color: #4d4845;
+    background-color: #313131;
     padding: 10px 20px;
     width: 200px;
     border-radius: 5px;
+}
+
+.login-greeting,
+.pretext p {
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .blog-home {
@@ -2237,6 +2245,7 @@ body.contentpane a:hover {
     #content-menu_wrap,
     #footer,
     #box_placeholder,
+    .description,
     .copyrightint {
         width: 96%;
     }
@@ -2259,16 +2268,28 @@ body.contentpane a:hover {
         padding: 10px 0;
     }
 
-    #logo a img {
-        height: 60px;
+    #topmenu a, #topmenu span {
+        padding: 5px 20px;
     }
 
-    #topmenu a {
-        padding: 5px 20px;
+    #box1 {
+        width: calc(50% - 30px);
+        margin-right: 30px;
+    }
+
+    #box2 {
+        width: 50%;
+        margin: 0;
     }
 
     #box3 {
         width: 100%;
+        margin-top: 30px;
+    }
+
+    .moduletable-por-dentro {
+        max-width: 350px;
+        margin: auto;
     }
 
     p {
@@ -2297,6 +2318,30 @@ body.contentpane a:hover {
 
     #content-w2 {
         width: 100%;
+    }
+
+    .blog-home .items-row.row-0 {
+        width: calc(50% - 30px);
+    }
+
+    .blog-home .items-row {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .blog-home .items-row.row-0,
+    .blog-home .items-row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .blog-home .items-row.row-0 span.row-separator {
+        height: 1px;
+        width: 100%;
+        background-color: #58595b;
+        margin: 10px 0;
+        display: table;
     }
 }
 
@@ -2346,6 +2391,10 @@ body.contentpane a:hover {
     #box2 {
         margin-bottom: 30px;
         width: 100%;
+    }
+
+    #box3 {
+        margin-top: 0;
     }
 
     #footer {
