@@ -15,20 +15,37 @@ $canEdit = $this->item->params->get('access-edit');
 
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 
-//tratando item de menu quando home for categoria como blog
-$db = JFactory::getDbo();
-$query = $db->getQuery(true);
-$query->select('*');
-$query->from('#__menu As m');
-$query->where('link = \'index.php?option=com_content&view=category&layout=blog&id=' . $this->item->catid . '\'');
-$query->where('home <> ' . 1);
-$db->setQuery($query);
-$rows = (array)$db->loadObjectList();
-
 $globallink = '';
-if ($rows) {
-    $globallink = 'index.php' . DIRECTORY_SEPARATOR .$rows[0]->path . DIRECTORY_SEPARATOR . $this->item->id . '-' . $this->item->alias;
+
+//Buscando informações do menu ativo
+$menu = JFactory::getApplication()->getMenu();
+$active = $menu->getActive();
+
+//inicializando DB para consultas
+$db = JFactory::getDbo();
+
+//Buscando parametros do menu HOME
+$queryhome = $db->getQuery(true);
+$queryhome->select('link');
+$queryhome->from('#__menu As m');
+$queryhome->where('home = ' . 1);
+$db->setQuery($queryhome);
+$home = (array)$db->loadObjectList();
+
+//tratando item de menu quando home for categoria como blog OU menu igual a categoria como blog da home
+if($active->home == 1 || $home[0]->link == $active->link ){
+    $query = $db->getQuery(true);
+    $query->select('*');
+    $query->from('#__menu As m');
+    $query->where('link = \'index.php?option=com_content&view=category&layout=blog&id=' . $this->item->catid . '\'');
+    $query->where('home <> ' . 1);
+    $db->setQuery($query);
+    $rows = (array)$db->loadObjectList();
+    if ($rows) {
+        $globallink = 'index.php' . DIRECTORY_SEPARATOR .$rows[0]->path . DIRECTORY_SEPARATOR . $this->item->id . '-' . $this->item->alias;
+    }
 }
+
 
 ?>
 <?php if ($this->item->state == 0) : ?>
