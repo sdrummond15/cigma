@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class charsetType{
-	function charsetType(){
+
+	function __construct(){
 		$charsets = array(
 					'BIG5'=>'BIG5',//Iconv,mbstring
 					'ISO-8859-1'=>'ISO-8859-1',//Iconv,mbstring

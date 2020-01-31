@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class listsType{
-	function listsType(){
+
+	function __construct(){
 
 		$listClass = acymailing_get('class.list');
 		$this->data = $listClass->getLists('listid');

@@ -12,7 +12,7 @@ defined('_JEXEC') or die('Restricted access');
 class titlelinkType{
 	var $onclick="updateTag();";
 
-	function titlelinkType(){
+	function __construct(){
 		$this->values = array();
 		$this->values[] = JHTML::_('select.option', "|link",JText::_('JOOMEXT_YES'));
 		$this->values[] = JHTML::_('select.option', "",JText::_('JOOMEXT_NO'));

@@ -10,7 +10,7 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class queuemailType{
-	function queuemailType(){
+	function __construct(){
 
 		$db = JFactory::getDBO();
 		$db->setQuery('SELECT COUNT(*) as total, mailid FROM #__acymailing_queue GROUP BY mailid');

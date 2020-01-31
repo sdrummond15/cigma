@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class unsubType{
-	function unsubType(){
+
+	function __construct(){
 
 		$query = 'SELECT `subject`, `mailid` FROM '.acymailing_table('mail').' WHERE `type`= \'unsub\'';
 		$db = JFactory::getDBO();

@@ -15,7 +15,7 @@ class jflanguagesType{
 	var $jid = 'jlang';
 	var $found = false;
 
-	function jflanguagesType(){
+	function __construct(){
 		$this->values = array();
 
 		if((ACYMAILING_J16 && file_exists(JPATH_SITE.DS.'libraries'.DS.'joomfish'.DS.'manager.php')) || (!ACYMAILING_J16 && file_exists(JPATH_SITE.DS.'administrator'.DS.'components'.DS.'com_joomfish'.DS.'classes'.DS.'JoomfishManager.class.php')))

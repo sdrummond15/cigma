@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class testreceiverType{
-	function testreceiverType(){
+
+	function __construct(){
 		$this->values = array();
 		$user = JFactory::getUser();
 		$this->values[] = JHTML::_('select.option', 'user',$user->username.' ( '.$user->email.' )');

@@ -11,7 +11,8 @@ defined('_JEXEC') or die('Restricted access');
 
 class statusfilterlistType{
 	var $extra = '';
-	function statusfilterlistType(){
+
+	function __construct(){
 		$this->values = array();
 		$this->values[] = JHTML::_('select.option', '1', JText::_('SUBSCRIBERS') );
 		$this->values[] = JHTML::_('select.option', '2', JText::_('PENDING_SUBSCRIPTION') );

@@ -11,7 +11,8 @@ defined('_JEXEC') or die('Restricted access');
 
 class authornameType{
 	var $onclick = "updateTag();";
-	function authornameType(){
+
+	function __construct(){
 		$this->values = array();
 		$this->values[] = JHTML::_('select.option', "|author",JText::_('JOOMEXT_YES'));
 		$this->values[] = JHTML::_('select.option', "",JText::_('JOOMEXT_NO'));

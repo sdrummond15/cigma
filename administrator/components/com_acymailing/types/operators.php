@@ -11,7 +11,8 @@ defined('_JEXEC') or die('Restricted access');
 
 class operatorsType{
 	var $extra = '';
-	function operatorsType(){
+
+	function __construct(){
 
 		$this->values = array();
 

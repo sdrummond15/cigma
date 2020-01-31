@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class colorType{
-	function colorType(){
+
+	function __construct(){
 
 		$this->values = array();
 

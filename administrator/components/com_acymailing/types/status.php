@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class statusType{
-	function statusType(){
+
+	function __construct(){
 		$this->values = array();
 		$this->values[] = JHTML::_('select.option', '-1', JText::_('UNSUBSCRIBED') );
 		$this->values[] = JHTML::_('select.option', '0', JText::_('NO_SUBSCRIPTION') );

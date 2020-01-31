@@ -19,7 +19,7 @@ class frequencyType{
 	var $days = array();
 	var $txtPos = array();
 
-	function frequencyType(){
+	function __construct(){
 		$this->txtDays = array(JText::_('MONDAY'), JText::_('TUESDAY'), JText::_('WEDNESDAY'), JText::_('THURSDAY'), JText::_('FRIDAY'), JText::_('SATURDAY'), JText::_('SUNDAY'));
 		$this->txtPos = array(JText::_('FREQUENCY_FIRST'), JText::_('FREQUENCY_SECOND'), JText::_('FREQUENCY_THIRD'), JText::_('FREQUENCY_LAST'));
 		$this->days = array('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');

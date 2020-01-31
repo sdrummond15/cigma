@@ -11,7 +11,7 @@ defined('_JEXEC') or die('Restricted access');
 
 class deliverstatusType{
 
-	function deliverstatusType(){
+	function __construct(){
 
 		$this->values = array();
 		$this->values[] = JHTML::_('select.option', '0', JText::_('ALL_STATUS') );

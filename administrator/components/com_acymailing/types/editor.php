@@ -11,7 +11,7 @@ defined('_JEXEC') or die('Restricted access');
 
 class editorType{
 
-	function editorType(){
+	function __construct(){
 		if(!ACYMAILING_J16){
 			$query = 'SELECT DISTINCT element,name FROM '.acymailing_table('plugins',false).' WHERE folder=\'editors\' AND published=1 ORDER BY ordering ASC, name ASC';
  		}else{

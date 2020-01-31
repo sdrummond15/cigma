@@ -11,7 +11,8 @@ defined('_JEXEC') or die('Restricted access');
 
 class contentfilterType{
 	var $onclick = 'updateTag();';
-	function contentfilterType(){
+
+	function __construct(){
 		$this->values = array();
 		$this->values[] = JHTML::_('select.option', "",JText::_('ACY_ALL'));
 		$this->values[] = JHTML::_('select.option', "|filter:created",JText::_('ONLY_NEW_CREATED'));

@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class detailstatsmailType{
-	function detailstatsmailType(){
+
+	function __construct(){
 
 		$query = 'SELECT b.subject, a.mailid FROM '.acymailing_table('stats').' as a';
 		$query .= ' JOIN '.acymailing_table('mail').' as b on a.mailid = b.mailid ORDER BY a.senddate DESC LIMIT 200';

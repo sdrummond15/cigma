@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class bounceactionType{
-	function bounceactionType(){
+
+	function __construct(){
 
 		$this->values = array();
 		$this->values[] = JHTML::_('select.option', 'noaction',JText::_('DO_NOTHING'));

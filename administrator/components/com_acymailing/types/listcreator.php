@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class listcreatorType{
-	function listcreatorType(){
+
+	function __construct(){
 
 		$db = JFactory::getDBO();
 

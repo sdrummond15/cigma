@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class statusfilterType{
-	function statusfilterType(){
+
+	function __construct(){
 		$this->values = array();
 		$this->values[] = JHTML::_('select.option', '0', JText::_('ALL_STATUS') );
 		$this->values[] = JHTML::_('select.option',  '<OPTGROUP>', JText::_( 'ACCEPT_REFUSE' ) );

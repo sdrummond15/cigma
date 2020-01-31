@@ -11,7 +11,8 @@ defined('_JEXEC') or die('Restricted access');
 
 class contentorderType{
 	var $onclick = 'updateTag();';
-	function contentorderType(){
+
+	function __construct(){
 		$this->values = array();
 		$this->values[] = JHTML::_('select.option', "|order:id,DESC",JText::_('ACY_ID'));
 		$this->values[] = JHTML::_('select.option', "|order:ordering,ASC",JText::_('ACY_ORDERING'));

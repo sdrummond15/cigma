@@ -11,7 +11,8 @@ defined('_JEXEC') or die('Restricted access');
 
 class contentType{
 	var $onclick = 'updateTag();';
-	function contentType(){
+
+	function __construct(){
 		$this->values = array();
 		$this->values[] = JHTML::_('select.option', "|type:title",JText::_('TITLE_ONLY'));
 		$this->values[] = JHTML::_('select.option', "|type:intro",JText::_('INTRO_ONLY'));

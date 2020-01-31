@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class festatusType{
-	function festatusType(){
+
+	function __construct(){
 		$this->values = array();
 		$this->values[0] = JHTML::_('select.option', '-1', JText::_('JOOMEXT_NO') );
 		$this->values[1] = JHTML::_('select.option', '1', JText::_('JOOMEXT_YES') );

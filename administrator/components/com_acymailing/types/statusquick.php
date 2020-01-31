@@ -10,7 +10,8 @@ defined('_JEXEC') or die('Restricted access');
 ?><?php
 
 class statusquickType{
-	function statusquickType(){
+
+	function __construct(){
 		$this->values = array();
 		$this->values[] = JHTML::_('select.option', '0', JText::_('JOOMEXT_RESET') );
 		$this->values[] = JHTML::_('select.option', '1', JText::_('SUBSCRIBE_ALL') );

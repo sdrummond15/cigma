@@ -14,7 +14,7 @@ class delayType{
 	var $num = 0;
 	var $onChange = '';
 
-	function delayType(){
+	function __construct(){
 
 		static $i = 0;
 		$i++;

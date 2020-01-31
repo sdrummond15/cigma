@@ -11,7 +11,8 @@ defined('_JEXEC') or die('Restricted access');
 
 class operatorsinType{
 	var $js = '';
-	function operatorsinType(){
+
+	function __construct(){
 
 		$this->values = array();
 
