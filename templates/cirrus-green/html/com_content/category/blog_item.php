@@ -14,6 +14,22 @@ $app = JFactory::getApplication();
 $canEdit = $this->item->params->get('access-edit');
 
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
+
+//tratando item de menu quando home for categoria como blog
+$db = JFactory::getDbo();
+$query = $db->getQuery(true);
+$query->select('*');
+$query->from('#__menu As m');
+$query->where('link = \'index.php?option=com_content&view=category&layout=blog&id=' . $this->item->catid . '\'');
+$query->where('home <> ' . 1);
+$db->setQuery($query);
+$rows = (array)$db->loadObjectList();
+
+$globallink = '';
+if ($rows) {
+    $globallink = 'index.php' . DIRECTORY_SEPARATOR .$rows[0]->path . DIRECTORY_SEPARATOR . $this->item->id . '-' . $this->item->alias;
+}
+
 ?>
 <?php if ($this->item->state == 0) : ?>
 <div class="system-unpublished">
@@ -22,7 +38,7 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
     <?php if (isset($images->image_intro) and !empty($images->image_intro)) : ?>
         <?php $imgfloat = (empty($images->float_intro)) ? $params->get('float_intro') : $images->float_intro; ?>
         <div class="img-intro blog-img-<?php echo htmlspecialchars($imgfloat); ?>">
-            <a href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid)); ?>">
+            <a href="<?php echo (empty($globallink)) ? JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid)) : $globallink ; ?>">
                 <span style="background-image: url(<?php echo htmlspecialchars($images->image_intro); ?>)"></span>
             </a>
         </div>
@@ -30,7 +46,7 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
     <?php if ($params->get('show_title')) : ?>
         <h2>
             <?php if ($params->get('link_titles') && $params->get('access-view')) : ?>
-                <a href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid)); ?>">
+                <a href="<?php echo (empty($globallink)) ? JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid)) : $globallink ; ?>">
                     <?php echo $this->escape($this->item->title); ?></a>
             <?php else : ?>
                 <?php echo $this->escape($this->item->title); ?>
@@ -137,7 +153,7 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 
     <?php if ($params->get('show_readmore') && $this->item->readmore) :
         if ($params->get('access-view')) :
-            $link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid));
+            $link = (empty($globallink)) ? JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid)) : $globallink ;
         else :
             $menu = JFactory::getApplication()->getMenu();
             $active = $menu->getActive();
