@@ -14,7 +14,7 @@ class plgAcymailingManagetext extends JPlugin
 {
 	var $foundtags = array();
 
-	function plgAcymailingManagetext(&$subject, $config){
+	function __construct(&$subject, $config){
 		parent::__construct($subject, $config);
 		if(!isset($this->params)){
 			$plugin = JPluginHelper::getPlugin('acymailing', 'managetext');

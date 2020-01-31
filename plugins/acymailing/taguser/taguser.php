@@ -14,7 +14,7 @@ class plgAcymailingTaguser extends JPlugin
 
 	var $sendervalues =array();
 
-	function plgAcymailingTaguser(&$subject, $config){
+	function __construct(&$subject, $config){
 		parent::__construct($subject, $config);
 		if(!isset($this->params)){
 			$plugin = JPluginHelper::getPlugin('acymailing', 'taguser');

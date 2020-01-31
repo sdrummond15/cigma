@@ -13,7 +13,7 @@ class plgAcymailingTagsubscription extends JPlugin
 {
 	var $listunsubscribe = false;
 
-	function plgAcymailingTagsubscription(&$subject, $config){
+	function __construct(&$subject, $config){
 		parent::__construct($subject, $config);
 		if(!isset($this->params)){
 			$plugin = JPluginHelper::getPlugin('acymailing', 'tagsubscription');

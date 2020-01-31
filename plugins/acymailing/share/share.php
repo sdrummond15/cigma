@@ -13,7 +13,7 @@ class plgAcymailingShare extends JPlugin
 {
 	var $pictresults = array();
 
-	function plgAcymailingShare(&$subject, $config){
+	function __construct(&$subject, $config){
 		parent::__construct($subject, $config);
 		if(!isset($this->params)){
 			$plugin = JPluginHelper::getPlugin('acymailing', 'share');

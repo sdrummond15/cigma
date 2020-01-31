@@ -12,7 +12,7 @@ defined('_JEXEC') or die('Restricted access');
 class plgAcymailingTagsubscriber extends JPlugin
 {
 
-	function plgAcymailingTagsubscriber(&$subject, $config){
+	function __construct(&$subject, $config){
 		parent::__construct($subject, $config);
 		if(!isset($this->params)){
 			$plugin = JPluginHelper::getPlugin('acymailing', 'tagsubscriber');

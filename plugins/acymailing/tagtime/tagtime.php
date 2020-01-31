@@ -12,7 +12,7 @@ defined('_JEXEC') or die('Restricted access');
 class plgAcymailingTagtime extends JPlugin
 {
 
-	function plgAcymailingTagtime(&$subject, $config){
+	function __construct(&$subject, $config){
 		parent::__construct($subject, $config);
 		if(!isset($this->params)){
 			$plugin = JPluginHelper::getPlugin('acymailing', 'tagtime');

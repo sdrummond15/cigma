@@ -21,7 +21,7 @@ class plgAcymailingTemplate extends JPlugin
 	var $templateClass = '';
 	var $config;
 
-	function plgAcymailingTemplate(&$subject, $config){
+	function __construct(&$subject, $config){
 		parent::__construct($subject, $config);
 		if(!isset($this->params)){
 			$plugin = JPluginHelper::getPlugin('acymailing', 'template');
