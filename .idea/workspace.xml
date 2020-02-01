@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05c6a63c-7d7a-4691-9376-2d90407b493c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/authorname.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/authorname.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/bounceaction.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/bounceaction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/charset.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/charset.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/color.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/color.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/content.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/contentfilter.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/contentfilter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/contentorder.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/contentorder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/delay.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/delay.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/deliverstatus.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/deliverstatus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/detailstatsmail.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/detailstatsmail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/editor.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/editor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/festatus.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/festatus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/frequency.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/frequency.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/jflanguages.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/jflanguages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/listcreator.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/listcreator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/lists.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/lists.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/operators.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/operators.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/operatorsin.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/operatorsin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/queuemail.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/queuemail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/status.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/status.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/statusfilter.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/statusfilter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/statusfilterlist.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/statusfilterlist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/statusquick.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/statusquick.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/testreceiver.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/testreceiver.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/titlelink.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/titlelink.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_acymailing/types/unsub.php" afterPath="$PROJECT_DIR$/administrator/components/com_acymailing/types/unsub.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration.php" afterPath="$PROJECT_DIR$/configuration.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,110 +14,104 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mailcreator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/mailcreator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="17" />
-              <folding>
-                <marker date="1580155215376" expanded="true" signature="380:511" ph="SELECT COUNT... ##__acymailing_mail" />
-                <marker date="1580155215376" expanded="true" signature="627:726" ph="SELECT name,... ##__users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="operators.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/operators.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="operatorsin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/operatorsin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="status.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/status.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="statusfilterlist.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/statusfilterlist.php">
+      <file leaf-file-name="pt-BR.com_managements.ini" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statusquick.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/statusquick.php">
+      <file leaf-file-name="client.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/client.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="187">
+              <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testreceiver.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/testreceiver.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="titlelink.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/titlelink.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unsub.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/unsub.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-              <folding>
-                <marker date="1580509038878" expanded="true" signature="327:411" ph="SELECT `subj... ${acymailing_table('mail')}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="queuemail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/queuemail.php">
+      <file leaf-file-name="view.html.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/client/view.html.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
-                <marker date="1580509000201" expanded="true" signature="363:436" ph="SELECT COUNT... ##__acymailing_queue" />
-                <marker date="1580509000201" expanded="true" signature="552:675" ph="SELECT maili... ##__acymailing_mail" />
+                <element signature="e#7#150#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/client.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="circuit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/circuit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grid.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/grid.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="10" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_contact/models/forms/contact.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/client/tmpl/edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="39" column="61" lean-forward="false" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="city.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/fields/city.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="managements.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -151,11 +120,47 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fas fa-chevron-down</find>
-      <find>menuin</find>
       <find>read</find>
       <find>intro</find>
+      <find>com</find>
+      <find>compe</find>
+      <find>competiti</find>
+      <find>competitions</find>
+      <find>competition</find>
+      <find>Comp</find>
+      <find>Competi</find>
+      <find>Competitions</find>
+      <find>Competition</find>
+      <find>C</find>
+      <find>COMPE</find>
+      <find>COMPETITI</find>
+      <find>COMPETITION</find>
+      <find>JModelList</find>
+      <find>cJModelList</find>
+      <find>claJModelList</find>
+      <find>clasJModelList</find>
+      <find>classJModelList</find>
+      <find>class JModelList</find>
+      <find>class JModelLis</find>
+      <find>class JModelLi</find>
+      <find>class JModelL</find>
+      <find>class JModel</find>
+      <find>stat</find>
+      <find>state</find>
+      <find>resul</find>
+      <find>result</find>
+      <find>table</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>management</replace>
+      <replace>Management</replace>
+      <replace>MANAGEMENT</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\xamppNovo\htdocs\cigma\administrator\components\com_managements</dir>
+      <dir>C:\xamppNovo\htdocs\cigma</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -163,52 +168,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/mod_contact_social_footer/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/modules/mod_login/tmpl/default_logout.php" />
-        <option value="$PROJECT_DIR$/modules/mod_slideshowck/themes/default/css/camera.css" />
-        <option value="$PROJECT_DIR$/modules/mod_services/assets/css/style_services.css" />
-        <option value="$PROJECT_DIR$/templates/cirrus-green/css/template.css" />
-        <option value="$PROJECT_DIR$/templates/cirrus-green/js/script.js" />
-        <option value="$PROJECT_DIR$/templates/cirrus-green/html/com_content/category/blog_item.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/tagsubscription/tagsubscription.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/tagsubscriber/tagsubscriber.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/tagcontent/tagcontent.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/tagcbuser/tagcbuser.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/tablecontents/tablecontents.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/stats/stats.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/share/share.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/online/online.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/managetext/managetext.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/contentplugin/contentplugin.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/tagtime/tagtime.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/taguser/taguser.php" />
-        <option value="$PROJECT_DIR$/plugins/acymailing/template/template.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/statusfilter.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/lists.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/authorname.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/bounceaction.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/charset.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/color.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/content.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/contentfilter.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/contentorder.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/delay.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/deliverstatus.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/detailstatsmail.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/editor.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/festatus.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/frequency.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/jflanguages.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/listcreator.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/operators.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/queuemail.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/operatorsin.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/status.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/statusfilterlist.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/statusquick.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/testreceiver.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/titlelink.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_acymailing/types/unsub.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/forms/team.xml" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/championship/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/championship/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/championships/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/championships/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/circuit/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/circuit/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/circuits/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/circuits/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/grid/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/grid/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/grids/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/grids/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/karting/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/karting/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/kartings/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/kartings/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/pilot/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/pilot/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/pilots/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/pilots/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/previou/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/previou/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/previous/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/previous/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/result/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/result/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/results/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/results/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/stage/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/stage/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/stages/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/stages/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/team/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/team/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/teams/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/teams/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/managements.xml" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.sys.ini" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/controller.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/clients.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/clients/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/clients/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/client.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/client.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/tables/client.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/client/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/client/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/forms/client.xml" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini" />
       </list>
     </option>
   </component>
@@ -262,52 +272,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cigma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cigma" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cirrus-green" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cigma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cigma" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cigma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cigma" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="administrator" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -348,7 +312,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com_acymailing" />
+              <option name="myItemId" value="com_managements" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,11 +334,467 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com_acymailing" />
+              <option name="myItemId" value="com_managements" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="types" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_managements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clients" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_managements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clients" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmpl" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_managements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_managements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmpl" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_managements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tables" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_managements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_managements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_managements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fields" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_managements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_managements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_contact" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_contact" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contacts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_contact" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contact" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_contact" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tables" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_contact" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cigma" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administrator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_contact" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forms" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -481,12 +901,12 @@
       <updated>1580156535028</updated>
       <workItem from="1580156536268" duration="10178000" />
       <workItem from="1580234808741" duration="9400000" />
-      <workItem from="1580501827734" duration="7121000" />
+      <workItem from="1580501827734" duration="13684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26699000" />
+    <option name="totallyTimeSpent" value="33262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -496,6 +916,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -507,7 +928,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -522,92 +942,225 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/mod_contact_social_footer/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/grids/tmpl/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="204">
+          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_services/assets/css/style_services.css">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/grids/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
+        <state relative-caret-position="204">
+          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/css/template.css">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/karting/tmpl/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39525">
-          <caret line="2325" column="0" lean-forward="false" selection-start-line="2325" selection-start-column="0" selection-end-line="2325" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="68" column="107" lean-forward="false" selection-start-line="68" selection-start-column="107" selection-end-line="68" selection-end-column="107" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/js/script.js">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/karting/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="50" column="44" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+        <state relative-caret-position="204">
+          <caret line="50" column="53" lean-forward="false" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/html/com_content/category/blog.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/kartings/tmpl/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="1" />
+        <state relative-caret-position="204">
+          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_services/helper.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/kartings/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="204">
+          <caret line="58" column="44" lean-forward="false" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_content/helpers/route.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/pilot/tmpl/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="204">
+          <caret line="68" column="107" lean-forward="false" selection-start-line="68" selection-start-column="107" selection-end-line="68" selection-end-column="107" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cirrus-green/html/com_content/category/blog_item.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/pilot/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="204">
+          <caret line="48" column="53" lean-forward="false" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/pilots/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/pilots/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/previou/tmpl/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="33" column="107" lean-forward="false" selection-start-line="33" selection-start-column="107" selection-end-line="33" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/previou/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="49" column="53" lean-forward="false" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/previous/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/previous/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/result/tmpl/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="33" column="107" lean-forward="false" selection-start-line="33" selection-start-column="107" selection-end-line="33" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/result/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="49" column="53" lean-forward="false" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/results/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/results/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/stage/tmpl/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="35" column="107" lean-forward="false" selection-start-line="35" selection-start-column="107" selection-end-line="35" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/stage/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="48" column="53" lean-forward="false" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/stages/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/stages/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/team/tmpl/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="35" column="107" lean-forward="false" selection-start-line="35" selection-start-column="107" selection-end-line="35" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/team/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="48" column="53" lean-forward="false" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/teams/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/teams/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="77" column="9" lean-forward="false" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding>
-            <marker date="1580507311768" expanded="true" signature="1632:1806" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="1931:2240" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="2093:2225" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="2320:2356" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="2573:2646" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="2930:2966" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="3030:3071" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="3281:3322" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="3502:3543" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="4249:4308" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="4506:4603" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="5143:5242" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="5771:5814" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="6050:6093" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="6329:6372" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="6640:6881" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="7413:7456" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="7880:7937" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="8689:8774" ph="..." />
-            <marker date="1580507311768" expanded="true" signature="8733:8774" ph="..." />
+            <element signature="e#7#150#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/content/contact/contact.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_contact/contact.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_content/content.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -615,420 +1168,196 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/tagsubscription/tagsubscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <marker date="1580508289573" expanded="true" signature="1253:1407" ph="SELECT b.lis... ##__acymailing_listcampaign" />
-            <marker date="1580508289573" expanded="true" signature="2909:2919" ph="..." />
-            <marker date="1580508289573" expanded="true" signature="4321:4332" ph="..." />
-            <marker date="1580508289573" expanded="true" signature="4475:4486" ph="..." />
-            <marker date="1580508289573" expanded="true" signature="7204:7270" ph="SELECT listr... ##__acymailing_listsub" />
-            <marker date="1580508289573" expanded="true" signature="7702:7757" ph="SELECT sub.`... ##__acymailing_subscriber" />
-            <marker date="1580508289573" expanded="true" signature="15915:16119" ph="SELECT a.lis... ##__acymailing_listsub" />
-            <marker date="1580508289573" expanded="true" signature="16216:16404" ph="SELECT a.lis... ##__acymailing_listmail" />
-            <marker date="1580508289573" expanded="true" signature="16695:16911" ph="SELECT a.lis... ##__acymailing_list" />
-            <marker date="1580508289573" expanded="true" signature="17008:17181" ph="SELECT a.lis... ##__acymailing_list" />
-            <marker date="1580508289573" expanded="true" signature="17412:17597" ph="SELECT a.lis... ##__acymailing_listsub" />
-            <marker date="1580508289573" expanded="true" signature="17959:18008" ph="SELECT COUNT... ##__acymailing_subscriber" />
-            <marker date="1580508289573" expanded="true" signature="18039:18135" ph="SELECT COUNT... ##__acymailing_listsub" />
-            <marker date="1580508289573" expanded="true" signature="19120:19171" ph="SELECT name ##__acymailing_list" />
-            <marker date="1580508289573" expanded="true" signature="19621:19810" ph="SELECT s.ema... ##__acymailing_listsub" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/tagsubscriber/tagsubscriber.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <marker date="1580508535066" expanded="true" signature="10436:10447" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/tagcontent/tagcontent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <marker date="1580508542406" expanded="true" signature="5122:5231" ph="SELECT SQL_C... ${acymailing_table('content',false)}" />
-            <marker date="1580508542406" expanded="true" signature="5862:5968" ph="SELECT a.id,... " />
-            <marker date="1580508542406" expanded="true" signature="6707:6785" ph="SELECT * fro... ##__categories" />
-            <marker date="1580508542406" expanded="true" signature="28608:28771" ph="SELECT a.*,b... ${acymailing_table('content',false)}" />
-            <marker date="1580508542406" expanded="true" signature="29124:29245" ph="SELECT a.*,b... ${acymailing_table('content',false)}" />
-            <marker date="1580508542406" expanded="true" signature="29917:30183" ph="SELECT refer... ${((ACYMAILING_J16 &amp;&amp; file_exists(JPATH_SITE.DS.'components'.DS.'com_falang')) ? '`##__falang_content`' : '`##__jf_content`')}" />
-            <marker date="1580508542406" expanded="true" signature="33183:33298" ph="SELECT sef F... ##__languages" />
-            <marker date="1580508542406" expanded="true" signature="37865:37938" ph="SELECT displ... ##__attachments" />
-            <marker date="1580508542406" expanded="true" signature="41688:41698" ph="..." />
-            <marker date="1580508542406" expanded="true" signature="42097:42107" ph="..." />
-            <marker date="1580508542406" expanded="true" signature="42295:42326" ph="..." />
-            <marker date="1580508542406" expanded="true" signature="45804:45838" ph="SELECT a.id ##__content" />
-            <marker date="1580508542406" expanded="true" signature="46457:46535" ph="SELECT lft,r... ##__categories" />
-            <marker date="1580508542406" expanded="true" signature="46773:46842" ph="SELECT id FR... ##__categories" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/tagcbuser/tagcbuser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <marker date="1580508547710" expanded="true" signature="3263:3306" ph="SELECT name,... ##__comprofiler_fields" />
-            <marker date="1580508547710" expanded="true" signature="3389:3403" ph="..." />
-            <marker date="1580508547710" expanded="true" signature="3957:4034" ph="SELECT * FRO... ##__comprofiler_fields" />
-            <marker date="1580508547710" expanded="true" signature="4859:4956" ph="SELECT * FRO... ${acymailing_table('comprofiler',false)}" />
-            <marker date="1580508547710" expanded="true" signature="5994:6065" ph="SELECT * FRO... ##__comprofiler" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/tablecontents/tablecontents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/stats/stats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <marker date="1580508559925" expanded="true" signature="2595:2754" ph="SELECT `mail... ##__acymailing_mail" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/share/share.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/online/online.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <marker date="1580508568359" expanded="true" signature="2093:2114" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/managetext/managetext.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <marker date="1580508574559" expanded="true" signature="4702:4761" ph="SELECT group... ##__user_usergroup_map" />
-            <marker date="1580508574559" expanded="true" signature="4916:4950" ph="SELECT * FRO... ##__users" />
-            <marker date="1580508574559" expanded="true" signature="7819:7984" ph="SELECT `mail... ##__acymailing_mail" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/tagtime/tagtime.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/taguser/taguser.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.sys.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <marker date="1580508602125" expanded="true" signature="2546:2599" ph="SELECT DISTI... ##__user_profiles" />
-            <marker date="1580508602125" expanded="true" signature="4969:5056" ph="SELECT * FRO... ${acymailing_table('users',false)}" />
-            <marker date="1580508602125" expanded="true" signature="5172:5219" ph="SELECT * FRO... ##__user_profiles" />
-            <marker date="1580508602125" expanded="true" signature="5522:5608" ph="SELECT * FRO... ${acymailing_table('users',false)}" />
-            <marker date="1580508602125" expanded="true" signature="5704:5751" ph="SELECT * FRO... ##__user_profiles" />
-            <marker date="1580508602125" expanded="true" signature="6971:7024" ph="SELECT DISTI... ##__user_profiles" />
-            <marker date="1580508602125" expanded="true" signature="7982:8068" ph="SELECT a.*, " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/template/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="35" />
+          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="33" />
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="30" />
+          <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/acymailing/contentplugin/contentplugin.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/managements.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="57" />
-          <folding>
-            <marker date="1580508583890" expanded="true" signature="2090:2198" ph="UPDATE ##__ex... " />
-            <marker date="1580508583890" expanded="true" signature="2231:2338" ph="UPDATE ##__pl... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/statusfilter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/lists.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/managements.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/authorname.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/bounceaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/charset.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/color.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_contact/models/contacts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="385">
+          <caret line="128" column="33" lean-forward="false" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/clients/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
           <folding>
-            <marker date="1580508917544" expanded="true" signature="4979:5066" ph="..." />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/content.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_contact/views/contacts/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="84" column="9" lean-forward="true" selection-start-line="81" selection-start-column="8" selection-end-line="84" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/contentfilter.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/clients.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="283">
+          <caret line="50" column="56" lean-forward="false" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/contentorder.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/clients/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="714">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/delay.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_contact/tables/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="34" column="93" lean-forward="false" selection-start-line="34" selection-start-column="88" selection-end-line="34" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/tables/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="30" />
+          <folding>
+            <element signature="e#7#150#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_contact/views/contact/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/client/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#150#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/circuit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_contact/models/forms/contact.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/delaydisp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/deliverstatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/detailstatsmail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <marker date="1580508970969" expanded="true" signature="337:403" ph="SELECT b.sub... ${acymailing_table('stats')}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/editor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <marker date="1580508970938" expanded="true" signature="351:495" ph="SELECT DISTI... ${acymailing_table('plugins',false)}" />
-            <marker date="1580508970938" expanded="true" signature="521:686" ph="SELECT DISTI... ${acymailing_table('extensions',false)}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/festatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/frequency.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/jflanguages.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/grid.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <marker date="1580508970827" expanded="true" signature="2365:2442" ph="SELECT title... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/listcreator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <marker date="1580508992729" expanded="true" signature="367:477" ph="SELECT COUNT... ##__acymailing_list" />
-            <marker date="1580508992729" expanded="true" signature="593:692" ph="SELECT name,... ##__users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/listsmail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="20" />
-          <folding>
-            <marker date="1580155215375" expanded="true" signature="373:454" ph="SELECT a.lis... ##__acymailing_mail" />
-            <marker date="1580155215375" expanded="true" signature="737:860" ph="SELECT name,... ##__acymailing_list" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/mailcreator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <marker date="1580155215376" expanded="true" signature="380:511" ph="SELECT COUNT... ##__acymailing_mail" />
-            <marker date="1580155215376" expanded="true" signature="627:726" ph="SELECT name,... ##__users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/operators.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="17" column="10" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/queuemail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <marker date="1580509000201" expanded="true" signature="363:436" ph="SELECT COUNT... ##__acymailing_queue" />
-            <marker date="1580509000201" expanded="true" signature="552:675" ph="SELECT maili... ##__acymailing_mail" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/operatorsin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/status.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/statusfilterlist.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/client/tmpl/edit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <caret line="39" column="61" lean-forward="false" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/statusquick.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/fields/city.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/testreceiver.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="714">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/titlelink.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/client.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_acymailing/types/unsub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <marker date="1580509038878" expanded="true" signature="327:411" ph="SELECT `subj... ${acymailing_table('mail')}" />
-          </folding>
         </state>
       </provider>
     </entry>

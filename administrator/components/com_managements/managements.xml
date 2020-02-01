@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+    <name>com_managements</name>
+    <author>Wanderson ALves</author>
+    <creationDate>31/01/2020</creationDate>
+    <copyright>(C)2020 SDrummond.</copyright>
+    <license>GNU General Public License version 1 or later; see LICENSE.txt</license>
+    <authorEmail>wanderson@sdrummond.com.br</authorEmail>
+    <authorUrl>www.sdrummond.com.br</authorUrl>
+    <version>3.0</version>
+    <description>COM_MANAGEMENTS_XML_DESCRIPTION</description>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <files folder="site">
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>languages</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>management.php</folder>
+        <folder>controller.php</folder>
+        <folder>index.html</folder>
+        <folder>router.php</folder>
+    </files>
+    <languages folder="site">
+        <language tag="pt-BR">language/pt-BR.com_managements.ini</language>
+    </languages>
+    <administration>
+        <menu img="class:managements">com_managements</menu>
+        <submenu>
+            <menu link="option=com_managements&amp;view=clients" view="clients" img="class:clients" alt="Managements/Clients">com_managements_clients</menu>
+            <menu link="option=com_managements&amp;view=cities" view="cities" img="class:cities" alt="Managements/Cities">com_managements_cities</menu>
+            <menu link="option=com_managements&amp;view=cars" view="cars" img="class:cars" alt="Managements/Cars">com_managements_cars</menu>
+            <menu link="option=com_managements&amp;view=advanceds_money" view="advanceds_money" img="class:advanceds_money" alt="Managements/Advanceds_Money">com_managements_advanceds_money</menu>
+        </submenu>
+        <files folder="admin">
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>languages</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>management.php</filename>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+        </files>
+        <languages folder="admin">
+            <language tag="pt-BR">language/pt-BR.managements.ini</language>
+            <language tag="pt-BR">language/pt-BR.managements.sys.ini</language>
+        </languages>
+    </administration>
+</extension>

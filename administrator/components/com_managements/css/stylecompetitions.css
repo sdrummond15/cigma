@@ -1,0 +1,78 @@
+.fontend{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1em;
+    text-align: left;
+    color: #5F6565;    
+}
+.fontfiltro{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #E2EEE3;
+    padding-top: 20px
+}
+
+.btbusca{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1.0em;
+}
+
+#divletra {
+    padding: 0 20px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#divletra a{
+    text-decoration: none;
+}
+
+.fornecedor{
+    width:46%;
+    float:left;
+    padding: 10px 10px;
+}
+
+.descricao span{
+    
+    text-align: justify;
+    font-size: 12px;
+    display: inline-block;
+    color: #5F6565;
+    
+}
+.destaque{
+    padding-right: 155px;
+    float: right;
+    background: url('destaque.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-top: -90px;
+}
+.descricao p{
+    color: #000000; 
+    font-family: sans-serif; 
+    font-size: small;
+    text-align: left;
+    font-size: 12px;
+    display: inline-block;
+    color: #5F6565;
+    
+}
+.divhr{
+    width: 100%;
+    float:left;
+    
+}
+.divhr hr{
+   border: none;
+background-color:#A2ABC0;
+height: 1px;
+
+}
+
+.img {
+    text-align: center;
+}

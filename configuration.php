@@ -28,7 +28,7 @@ class JConfig {
 
 	public $dbtype = 'mysqli';
 
-	public $host = 'localhost';
+	public $host = '192.168.25.8';
 
 	public $user = 'root';
 
