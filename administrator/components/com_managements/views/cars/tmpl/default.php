@@ -23,7 +23,7 @@ $archived = $this->state->get('filter.published') == 2 ? true : false;
 $trashed = $this->state->get('filter.published') == -2 ? true : false;
 $saveOrder = $listOrder == 'a.ordering';
 if ($saveOrder) {
-    $saveOrderingUrl = 'index.php?option=com_managements&task=circuits.saveOrderAjax&tmpl=component';
+    $saveOrderingUrl = 'index.php?option=com_managements&task=cars.saveOrderAjax&tmpl=component';
     JHtml::_('sortablelist.sortable', 'managementList', 'adminForm', strtolower($listDirn), $saveOrderingUrl);
 }
 $sortFields = $this->getSortFields();
@@ -44,7 +44,7 @@ $assoc = JLanguageAssociations::isEnabled();
         Joomla.tableOrdering(order, dirn, '');
     }
 </script>
-<form action="<?php echo JRoute::_('index.php?option=com_managements&view=circuits'); ?>" method="post" name="adminForm" id="adminForm">
+<form action="<?php echo JRoute::_('index.php?option=com_managements&view=cars'); ?>" method="post" name="adminForm" id="adminForm">
 
     <div id="filter-bar" class="btn-toolbar">
         <div class="filter-search btn-group pull-left">
@@ -92,7 +92,7 @@ $assoc = JLanguageAssociations::isEnabled();
                 <?php echo JHtml::_('grid.sort', 'JSTATUS', 'a.published', $listDirn, $listOrder); ?>
             </th>
             <th width="40%" class="nowrap center">
-                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_HEADING_CIRCUIT', 'a.title', $listDirn, $listOrder); ?>
+                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_HEADING_STAGE', 'a.placa', $listDirn, $listOrder); ?>
             </th>
             <th width="1%" class="nowrap center hidden-phone">
                 <?php echo JHtml::_('grid.sort', 'JGRID_HEADING_ID', 'a.id', $listDirn, $listOrder); ?>
@@ -132,14 +132,14 @@ $assoc = JLanguageAssociations::isEnabled();
                 </td>
                 <td class="center">
                     <div class="btn-group">
-                        <?php echo JHtml::_('jgrid.published', $item->published, $i, 'circuits.', $canChange, 'cb', $item->publish_up, $item->publish_down); ?>
+                        <?php echo JHtml::_('jgrid.published', $item->published, $i, 'cars.', $canChange, 'cb', $item->publish_up, $item->publish_down); ?>
                         <?php
                         // Create dropdown items
                         $action = $archived ? 'unarchive' : 'archive';
-                        JHtml::_('actionsdropdown.' . $action, 'cb' . $i, 'circuits');
+                        JHtml::_('actionsdropdown.' . $action, 'cb' . $i, 'cars');
 
                         $action = $trashed ? 'untrash' : 'trash';
-                        JHtml::_('actionsdropdown.' . $action, 'cb' . $i, 'circuits');
+                        JHtml::_('actionsdropdown.' . $action, 'cb' . $i, 'cars');
 
                         // Render dropdown list
                         echo JHtml::_('actionsdropdown.render', $this->escape($item->id));
@@ -149,14 +149,14 @@ $assoc = JLanguageAssociations::isEnabled();
                 <td class="nowrap has-context">
                     <div class="center">
                         <?php if ($item->checked_out) : ?>
-                            <?php echo JHtml::_('jgrid.checkedout', $i, $item->editor, $item->checked_out_time, 'circuits.', $canCheckin); ?>
+                            <?php echo JHtml::_('jgrid.checkedout', $i, $item->editor, $item->checked_out_time, 'cars.', $canCheckin); ?>
                         <?php endif; ?>
                         <?php if ($canEdit || $canEditOwn) : ?>
-                            <a href="<?php echo JRoute::_('index.php?option=com_managements&task=circuit.edit&id=' . (int)$item->id); ?>">
-                                <?php echo $this->escape($item->title); ?>
+                            <a href="<?php echo JRoute::_('index.php?option=com_managements&task=car.edit&id=' . (int)$item->id); ?>">
+                                <?php echo $this->escape($item->placa); ?>
                             </a>
                         <?php else : ?>
-                            <?php echo $this->escape($item->title); ?>
+                            <?php echo $this->escape($item->placa); ?>
                         <?php endif; ?>
                     </div>
                 </td>

@@ -19,13 +19,13 @@ jimport('joomla.application.component.controlleradmin');
  * @subpackage	com_banners
  * @since		1.6
  */
-class ManagementsControllerStages extends JControllerAdmin
+class ManagementsControllerCars extends JControllerAdmin
 {
 	/**
 	 * @var		string	The prefix to use with controller messages.
 	 * @since	1.6
 	 */
-	protected $text_prefix = 'COM_MANAGEMENTS_STAGES';
+	protected $text_prefix = 'COM_MANAGEMENTS_CARS';
 
 	/**
 	 * Method to get a model object, loading it if required.
@@ -45,7 +45,7 @@ class ManagementsControllerStages extends JControllerAdmin
         }
 
 
-        public function getModel($name = 'Stage', $prefix = 'ManagementsModel', $config = array('ignore_request' => true))
+        public function getModel($name = 'Car', $prefix = 'ManagementsModel', $config = array('ignore_request' => true))
 	{
 		$model = parent::getModel($name, $prefix, $config);
 		return $model;

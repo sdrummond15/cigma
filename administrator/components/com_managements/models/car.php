@@ -13,10 +13,10 @@ defined('_JEXEC') or die;
 jimport('joomla.application.component.modeladmin');
 
 
-class ManagementsModelCircuit extends JModelAdmin
+class ManagementsModelCar extends JModelAdmin
 {
 	
-	public function getTable($type = 'Circuit', $prefix = 'ManagementsTable', $config = array())
+	public function getTable($type = 'Car', $prefix = 'ManagementsTable', $config = array())
 	{
 		return JTable::getInstance($type, $prefix, $config);
 	}
@@ -32,7 +32,7 @@ class ManagementsModelCircuit extends JModelAdmin
 	public function getForm($data = array(), $loadData = true)
 	{
 		// Get the form.
-		$form = $this->loadForm('com_managements.circuit', 'circuit', array('control' => 'jform', 'load_data' => $loadData));
+		$form = $this->loadForm('com_managements.car', 'car', array('control' => 'jform', 'load_data' => $loadData));
 		if (empty($form)) {
 			return false;
 		}
@@ -49,7 +49,7 @@ class ManagementsModelCircuit extends JModelAdmin
 	protected function loadFormData()
 	{
 		// Check the session for previously entered form data.
-		$data = JFactory::getApplication()->getUserState('com_managements.edit.circuit.data', array());
+		$data = JFactory::getApplication()->getUserState('com_managements.edit.car.data', array());
 
 		if (empty($data)) {
 			$data = $this->getItem();
@@ -57,5 +57,4 @@ class ManagementsModelCircuit extends JModelAdmin
 
 		return $data;
 	}
-        
 }

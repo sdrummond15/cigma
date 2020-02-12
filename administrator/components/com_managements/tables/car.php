@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 
 jimport('joomla.application.component.model');
 
-class ManagementsTableStage extends JTable
+class ManagementsTableCar extends JTable
 {
     /**
      * Constructor
@@ -21,7 +21,7 @@ class ManagementsTableStage extends JTable
      */
     function __construct(&$_db)
     {
-        parent::__construct('#__stages', 'id', $_db);
+        parent::__construct('#__cars', 'id', $_db);
     }
 
 
@@ -70,7 +70,7 @@ class ManagementsTableStage extends JTable
             }
         }
 
-        $table = JTable::getInstance('Stage', 'ManagementsTable');
+        $table = JTable::getInstance('Car', 'ManagementsTable');
 
 
         return parent::store($updateNulls);

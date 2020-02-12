@@ -7254,7 +7254,7 @@ class AKEncryptionAES
 		for ($b = 0; $b < $blockCount; $b++)
 		{
 			// set counter (block #) in last 8 bytes of counter block (leaving nonce in 1st 8 bytes)
-			// done in two stages for 32-bit ops: using two words allows us to go past 2^32 blocks (68GB)
+			// done in two cars for 32-bit ops: using two words allows us to go past 2^32 blocks (68GB)
 			for ($c = 0; $c < 4; $c++)
 			{
 				$counterBlock[15 - $c] = self::urs($b, $c * 8) & 0xff;

@@ -19,7 +19,7 @@ jimport('joomla.application.component.view');
  * @subpackage com_adminstration
  * @since 2.5
  */
-class ManagementsViewStages extends JViewLegacy
+class ManagementsViewCars extends JViewLegacy
 {
     protected $items;
     protected $paginaton;
@@ -61,36 +61,36 @@ class ManagementsViewStages extends JViewLegacy
     {
         require_once JPATH_COMPONENT . '/helpers/managements.php';
 
-        JToolBarHelper::title(JText::_('COM_MANAGEMENTS_MANAGER_STAGES'), 'etapa.png');
+        JToolBarHelper::title(JText::_('COM_MANAGEMENTS_MANAGER_STAGES'), 'carro.png');
 
-        JToolBarHelper::addNew('stage.add');
+        JToolBarHelper::addNew('car.add');
 
-        JToolBarHelper::editList('stage.edit');
+        JToolBarHelper::editList('car.edit');
 
 
         if ($this->state->get('filter.state') != -1) {
             JToolBarHelper::divider();
             if ($this->state->get('filter.state') != 2) {
-                JToolBarHelper::archiveList('stages.archive');
+                JToolBarHelper::archiveList('cars.archive');
             } elseif ($this->state->get('filter.state') == 2) {
-                JToolBarHelper::unarchiveList('stages.publish');
+                JToolBarHelper::unarchiveList('cars.publish');
             }
         }
 
-        JToolBarHelper::checkin('stages.checkin');
+        JToolBarHelper::checkin('cars.checkin');
 
         if ($this->state->get('filter.state') == -2) {
-            JToolBarHelper::deleteList('', 'stages.delete', 'JTOOLBAR_EMPTY_TRASH');
+            JToolBarHelper::deleteList('', 'cars.delete', 'JTOOLBAR_EMPTY_TRASH');
             JToolBarHelper::divider();
         }
 
-        JToolBarHelper::trash('stages.trash');
+        JToolBarHelper::trash('cars.trash');
         JToolBarHelper::divider();
 
         JToolBarHelper::preferences('com_managements');
         JToolBarHelper::divider();
 
-        JToolBarHelper::help('stages', $com = true);
+        JToolBarHelper::help('cars', $com = true);
     }
 
     protected function getSortFields()
@@ -98,12 +98,8 @@ class ManagementsViewStages extends JViewLegacy
         return array(
             'a.ordering' => JText::_('JGRID_HEADING_ORDERING'),
             'a.published' => JText::_('JSTATUS'),
-            'a.name' => JText::_('JGLOBAL_TITLE'),
-            'ul.name' => JText::_('COM_MANAGEMENTS_FIELD_LINKED_USER_LABEL'),
-            'a.featured' => JText::_('JFEATURED'),
-            'a.access' => JText::_('JGRID_HEADING_ACCESS'),
-            'a.language' => JText::_('JGRID_HEADING_LANGUAGE'),
-            'a.id' => JText::_('JGRID_HEADING_ID')
+            'a.placa' => JText::_('JGLOBAL_TITLE'),
+            'ul.name' => JText::_('COM_MANAGEMENTS_FIELD_LINKED_USER_LABEL')
         );
     }
 }

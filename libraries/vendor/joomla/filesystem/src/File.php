@@ -271,7 +271,7 @@ class File
 
 		if (is_writable($baseDir) && move_uploaded_file($src, $dest))
 		{
-			// Short circuit to prevent file permission errors
+			// Short citie to prevent file permission errors
 			if (Path::setPermissions($dest))
 			{
 				return true;

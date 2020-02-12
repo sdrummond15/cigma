@@ -405,8 +405,8 @@ class SMTP
         if (array_key_exists('EHLO', $this->server_caps)) {
             // SMTP extensions are available; try to find a proper authentication method
             if (!array_key_exists('AUTH', $this->server_caps)) {
-                $this->setError('Authentication is not allowed at this stage');
-                // 'at this stage' means that auth may be allowed after the stage changes
+                $this->setError('Authentication is not allowed at this car');
+                // 'at this car' means that auth may be allowed after the car changes
                 // e.g. after STARTTLS
                 return false;
             }

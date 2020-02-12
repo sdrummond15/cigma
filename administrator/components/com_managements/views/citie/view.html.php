@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 
 jimport('joomla.application.component.view');
 
-class ManagementsViewStage extends JViewLegacy
+class ManagementsViewCitie extends JViewLegacy
 {
     protected $form;
     protected $item;
@@ -44,29 +44,30 @@ class ManagementsViewStage extends JViewLegacy
         $user       = JFactory::getUser();
         $userId     = $user->get('id');
         $isNew      = ($this->item->id == 0);
-        $checkedOut = !($this->item->checked_out == 0 || $this->item->checked_out == $userId);
+        $checkedOut = 0;
+        $canDo      = ManagementsHelper::getActions($this->item);
         
-        JToolBarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_STAGE_ADD') : JText::_('COM_MANAGEMENTS_STAGE_EDIT'), 'etapa.png');
-        
-        
-			JToolBarHelper::apply('stage.apply');
-			JToolBarHelper::save('stage.save');
-		
-		
-
-			JToolBarHelper::save2new('stage.save2new');
-		
-		
-			JToolBarHelper::save2copy('stage.save2copy');
-		
+        JToolBarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_CITIE_ADD') : JText::_('COM_MANAGEMENTS_CITIE_EDIT'), 'cidade.png');
+       
+        if (!$checkedOut && $canDo->get('core.edit') > 0){
+                JToolBarHelper::apply('citie.apply');
+                JToolBarHelper::save('citie.save');
+                
+                if ($canDo->get('core.create')) {
+                JToolBarHelper::save2new('citie.save2new');
+                }
+        }
+        if (!$isNew && $canDo->get('core.create')) {
+                JToolBarHelper::save2copy('citie.save2copy');
+        }
 
 		if (empty($this->item->id))  {
-			JToolBarHelper::cancel('stage.cancel');
+			JToolBarHelper::cancel('citie.cancel');
 		} else {
-			JToolBarHelper::cancel('stage.cancel', 'JTOOLBAR_CLOSE');
+			JToolBarHelper::cancel('citie.cancel', 'JTOOLBAR_CLOSE');
 		}
 
 		JToolBarHelper::divider();
-		JToolBarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_STAGES_EDIT');
+		JToolBarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_CIRCUIT_EDIT');
 	}
 }

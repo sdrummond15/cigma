@@ -20,30 +20,27 @@ $assoc = JLanguageAssociations::isEnabled();
 ?>
 <script type="text/javascript">
     Joomla.submitbutton = function (task) {
-        if (task == 'stage.cancel' || document.formvalidator.isValid(document.id('stage-form'))) {
-            Joomla.submitform(task, document.getElementById('stage-form'));
+        if (task == 'citie.cancel' || document.formvalidator.isValid(document.id('citie-form'))) {
+            Joomla.submitform(task, document.getElementById('citie-form'));
         }
     }
 </script>
 
-<form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="stage-form" class="form-validate">
+<form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="citie-form" class="form-validate">
 
     <?php echo JLayoutHelper::render('joomla.edit.title_alias', $this); ?>
 
     <div class="form-horizontal">
         <?php echo JHtml::_('bootstrap.startTabSet', 'myTab', array('active' => 'details')); ?>
 
-        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'details', empty($this->item->id) ? JText::_('COM_MANAGEMENTS_NEW_STAGE', true) : JText::_('COM_MANAGEMENTS_EDIT_STAGE', true)); ?>
+        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'details', empty($this->item->id) ? JText::_('COM_MANAGEMENTS_NEW_CITIE', true) : JText::_('COM_MANAGEMENTS_EDIT_CITIE', true)); ?>
         <div class="row-fluid">
             <div class="span9">
                 <div class="row-fluid form-horizontal-desktop">
                     <div class="span6">
-                        <?php echo $this->form->renderField('id_circuit'); ?>
-                        <?php echo $this->form->renderField('date'); ?>
-                        <?php echo $this->form->renderField('hour'); ?>
-                        <?php echo $this->form->renderField('photo'); ?>
-                        <?php echo $this->form->renderField('grid_order'); ?>
-                        <?php echo $this->form->renderField('id_championship'); ?>
+                        <?php echo $this->form->renderField('id'); ?>
+                        <?php echo $this->form->renderField('description'); ?>
+
                     </div>
                 </div>
             </div>

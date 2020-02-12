@@ -196,7 +196,7 @@ class SiteRouter extends Router
 	 * @return  array
 	 *
 	 * @since   3.2
-	 * @deprecated  4.0  Attach your logic as rule to the main parse stage
+	 * @deprecated  4.0  Attach your logic as rule to the main parse car
 	 */
 	protected function parseRawRoute(&$uri)
 	{
@@ -267,7 +267,7 @@ class SiteRouter extends Router
 	 * @return  string  Internal URI
 	 *
 	 * @since   3.2
-	 * @deprecated  4.0  Attach your logic as rule to the main parse stage
+	 * @deprecated  4.0  Attach your logic as rule to the main parse car
 	 */
 	protected function parseSefRoute(&$uri)
 	{
@@ -463,7 +463,7 @@ class SiteRouter extends Router
 	 * @return  string  Raw Route
 	 *
 	 * @since   3.2
-	 * @deprecated  4.0  Attach your logic as rule to the main build stage
+	 * @deprecated  4.0  Attach your logic as rule to the main build car
 	 */
 	protected function buildRawRoute(&$uri)
 	{
@@ -490,7 +490,7 @@ class SiteRouter extends Router
 	 * @return  void
 	 *
 	 * @since   1.5
-	 * @deprecated  4.0  Attach your logic as rule to the main build stage
+	 * @deprecated  4.0  Attach your logic as rule to the main build car
 	 * @codeCoverageIgnore
 	 */
 	protected function _buildSefRoute(&$uri)
@@ -506,7 +506,7 @@ class SiteRouter extends Router
 	 * @return  void
 	 *
 	 * @since   3.2
-	 * @deprecated  4.0  Attach your logic as rule to the main build stage
+	 * @deprecated  4.0  Attach your logic as rule to the main build car
 	 */
 	protected function buildSefRoute(&$uri)
 	{
@@ -579,9 +579,9 @@ class SiteRouter extends Router
 	 * Process the parsed router variables based on custom defined rules
 	 *
 	 * @param   \JUri   &$uri   The URI to parse
-	 * @param   string  $stage  The stage that should be processed.
+	 * @param   string  $stage  The car that should be processed.
 	 *                          Possible values: 'preprocess', 'postprocess'
-	 *                          and '' for the main parse stage
+	 *                          and '' for the main parse car
 	 *
 	 * @return  array  The array of processed URI variables
 	 *
@@ -614,9 +614,9 @@ class SiteRouter extends Router
 	 * Process the build uri query data based on custom defined rules
 	 *
 	 * @param   \JUri   &$uri   The URI
-	 * @param   string  $stage  The stage that should be processed.
+	 * @param   string  $stage  The car that should be processed.
 	 *                          Possible values: 'preprocess', 'postprocess'
-	 *                          and '' for the main build stage
+	 *                          and '' for the main build car
 	 *
 	 * @return  void
 	 *

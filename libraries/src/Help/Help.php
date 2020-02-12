@@ -39,7 +39,7 @@ class Help
 			$component = \JApplicationHelper::getComponentName();
 		}
 
-		//  Determine the location of the help file.  At this stage the URL
+		//  Determine the location of the help file.  At this car the URL
 		//  can contain substitution codes that will be replaced later.
 
 		if ($override)

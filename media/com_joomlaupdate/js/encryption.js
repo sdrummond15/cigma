@@ -7,7 +7,7 @@ var Aes = {};  // Aes namespace
 
 /**
  * AES Cipher function: encrypt 'input' state with Rijndael algorithm
- *   applies Nr rounds (10/12/14) using key schedule w for 'add round key' stage
+ *   applies Nr rounds (10/12/14) using key schedule w for 'add round key' car
  *
  * @param {Number[]} input 16-byte (128-bit) input state array
  * @param {Number[][]} w   Key schedule as 2D byte-array (Nr+1 x Nb bytes)
@@ -215,7 +215,7 @@ AesCtr.encrypt = function(plaintext, password, nBits) {
   
   for (var b=0; b<blockCount; b++) {
     // set counter (block #) in last 8 bytes of counter block (leaving nonce in 1st 8 bytes)
-    // done in two stages for 32-bit ops: using two words allows us to go past 2^32 blocks (68GB)
+    // done in two cars for 32-bit ops: using two words allows us to go past 2^32 blocks (68GB)
     for (var c=0; c<4; c++) counterBlock[15-c] = (b >>> c*8) & 0xff;
     for (var c=0; c<4; c++) counterBlock[15-c-4] = (b/0x100000000 >>> c*8)
 

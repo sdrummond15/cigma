@@ -12,60 +12,16 @@
                        description ="JGLOBAL_FIELD_ID_DESC"
                 />
 
-		<field name="title" 
+		<field name="description"
                        type="text" 
                        class="inputbox"
                        size="40" 
-                       label="COM_MANAGEMENTS_FIELD_CIRCUIT_LABEL"
+                       label="COM_MANAGEMENTS_FIELD_DESCRIPTION_LABEL"
                        required="true" 
                 />
 
-		<field name="alias" 
-                       type="text" 
-                       class="inputbox"
-                       size="40" 
-                       label="JFIELD_ALIAS_LABEL"
-                />
                 
-                <field name="id_karting" 
-                       type="kartingcircuit"
-                       label="COM_MANAGEMENTS_FIELD_KARTING_LABEL"
-                />
-                
-                <field name="id_pilot" 
-                       type="pilotcircuit"
-                       label="COM_MANAGEMENTS_FIELD_PILOT_LABEL"
-                />
-                
-                <field name="mileage" 
-                       type="text" 
-                       class="inputbox"
-                       size="40" 
-                       label="COM_MANAGEMENTS_FIELD_MILEAGE_LABEL"
-                />
-                
-                <field name="best_time" 
-                       type="text" 
-                       class="inputbox"
-                       size="40" 
-                       label="COM_MANAGEMENTS_FIELD_BEST_TIME_LABEL"
-                />
-                
-                <field name="date_best_time" 
-                       type="calendar" 
-                       class="inputbox"
-                       size="40"
-                       format="%Y-%m-%d"
-                       label="COM_MANAGEMENTS_FIELD_DATE_BEST_TIME_LABEL"
-                />
-                
-                <field name="image" 
-                       type="media" 
-                       directory="circuitos"
-                       hide_none="1" 
-                       label="COM_MANAGEMENTS_FIELD_IMAGE_LABEL"
-                       size="40"
-                />
+
                 
                 <field name="published" 
                        type="list" 

@@ -22,7 +22,7 @@ use Joomla\CMS\Router\Exception\RouteNotFoundException;
 class Router
 {
 	/**
-	 * Mask for the before process stage
+	 * Mask for the before process car
 	 *
 	 * @var    string
 	 * @since  3.4
@@ -30,7 +30,7 @@ class Router
 	const PROCESS_BEFORE = 'preprocess';
 
 	/**
-	 * Mask for the during process stage
+	 * Mask for the during process car
 	 *
 	 * @var    string
 	 * @since  3.4
@@ -38,7 +38,7 @@ class Router
 	const PROCESS_DURING = '';
 
 	/**
-	 * Mask for the after process stage
+	 * Mask for the after process car
 	 *
 	 * @var    string
 	 * @since  3.4
@@ -208,11 +208,11 @@ class Router
 	 */
 	public function parse(&$uri)
 	{
-		// Do the preprocess stage of the URL build process
+		// Do the preprocess car of the URL build process
 		$vars = $this->processParseRules($uri, self::PROCESS_BEFORE);
 
 		// Process the parsed variables based on custom defined rules
-		// This is the main parse stage
+		// This is the main parse car
 		$vars += $this->_processParseRules($uri);
 
 		// Parse RAW URL
@@ -227,7 +227,7 @@ class Router
 			$vars += $this->_parseSefRoute($uri);
 		}
 
-		// Do the postprocess stage of the URL build process
+		// Do the postprocess car of the URL build process
 		$vars += $this->processParseRules($uri, self::PROCESS_AFTER);
 
 		// Check if all parts of the URL have been parsed.
@@ -262,11 +262,11 @@ class Router
 		// Create the URI object
 		$uri = $this->createUri($url);
 
-		// Do the preprocess stage of the URL build process
+		// Do the preprocess car of the URL build process
 		$this->processBuildRules($uri, self::PROCESS_BEFORE);
 
 		// Process the uri information based on custom defined rules.
-		// This is the main build stage
+		// This is the main build car
 		$this->_processBuildRules($uri);
 
 		// Build RAW URL
@@ -281,7 +281,7 @@ class Router
 			$this->_buildSefRoute($uri);
 		}
 
-		// Do the postprocess stage of the URL build process
+		// Do the postprocess car of the URL build process
 		$this->processBuildRules($uri, self::PROCESS_AFTER);
 
 		$this->cache[$key] = clone $uri;
@@ -395,7 +395,7 @@ class Router
 	 * Attach a build rule
 	 *
 	 * @param   callable  $callback  The function to be called
-	 * @param   string    $stage     The stage of the build process that
+	 * @param   string    $stage     The car of the build process that
 	 *                               this should be added to. Possible values:
 	 *                               'preprocess', '' for the main build process,
 	 *                               'postprocess'
@@ -408,7 +408,7 @@ class Router
 	{
 		if (!array_key_exists('build' . $stage, $this->_rules))
 		{
-			throw new \InvalidArgumentException(sprintf('The %s stage is not registered. (%s)', $stage, __METHOD__));
+			throw new \InvalidArgumentException(sprintf('The %s car is not registered. (%s)', $stage, __METHOD__));
 		}
 
 		$this->_rules['build' . $stage][] = $callback;
@@ -418,7 +418,7 @@ class Router
 	 * Attach a parse rule
 	 *
 	 * @param   callable  $callback  The function to be called.
-	 * @param   string    $stage     The stage of the parse process that
+	 * @param   string    $stage     The car of the parse process that
 	 *                               this should be added to. Possible values:
 	 *                               'preprocess', '' for the main parse process,
 	 *                               'postprocess'
@@ -431,7 +431,7 @@ class Router
 	{
 		if (!array_key_exists('parse' . $stage, $this->_rules))
 		{
-			throw new \InvalidArgumentException(sprintf('The %s stage is not registered. (%s)', $stage, __METHOD__));
+			throw new \InvalidArgumentException(sprintf('The %s car is not registered. (%s)', $stage, __METHOD__));
 		}
 
 		$this->_rules['parse' . $stage][] = $callback;
@@ -445,7 +445,7 @@ class Router
 	 * @return  boolean
 	 *
 	 * @since   1.5
-	 * @deprecated  4.0  Attach your logic as rule to the main parse stage
+	 * @deprecated  4.0  Attach your logic as rule to the main parse car
 	 */
 	protected function _parseRawRoute(&$uri)
 	{
@@ -460,7 +460,7 @@ class Router
 	 * @return  array  Array of variables
 	 *
 	 * @since   3.2
-	 * @deprecated  4.0  Attach your logic as rule to the main parse stage
+	 * @deprecated  4.0  Attach your logic as rule to the main parse car
 	 */
 	protected function parseRawRoute(&$uri)
 	{
@@ -475,7 +475,7 @@ class Router
 	 * @return  string  Internal URI
 	 *
 	 * @since   1.5
-	 * @deprecated  4.0  Attach your logic as rule to the main parse stage
+	 * @deprecated  4.0  Attach your logic as rule to the main parse car
 	 */
 	protected function _parseSefRoute(&$uri)
 	{
@@ -490,7 +490,7 @@ class Router
 	 * @return  array  Array of variables
 	 *
 	 * @since   3.2
-	 * @deprecated  4.0  Attach your logic as rule to the main parse stage
+	 * @deprecated  4.0  Attach your logic as rule to the main parse car
 	 */
 	protected function parseSefRoute(&$uri)
 	{
@@ -505,7 +505,7 @@ class Router
 	 * @return  string  Raw Route
 	 *
 	 * @since   1.5
-	 * @deprecated  4.0  Attach your logic as rule to the main build stage
+	 * @deprecated  4.0  Attach your logic as rule to the main build car
 	 */
 	protected function _buildRawRoute(&$uri)
 	{
@@ -520,7 +520,7 @@ class Router
 	 * @return  string  Raw Route
 	 *
 	 * @since   3.2
-	 * @deprecated  4.0  Attach your logic as rule to the main build stage
+	 * @deprecated  4.0  Attach your logic as rule to the main build car
 	 */
 	protected function buildRawRoute(&$uri)
 	{
@@ -534,7 +534,7 @@ class Router
 	 * @return  string  The SEF route
 	 *
 	 * @since   1.5
-	 * @deprecated  4.0  Attach your logic as rule to the main build stage
+	 * @deprecated  4.0  Attach your logic as rule to the main build car
 	 */
 	protected function _buildSefRoute(&$uri)
 	{
@@ -549,7 +549,7 @@ class Router
 	 * @return  string  The SEF route
 	 *
 	 * @since   3.2
-	 * @deprecated  4.0  Attach your logic as rule to the main build stage
+	 * @deprecated  4.0  Attach your logic as rule to the main build car
 	 */
 	protected function buildSefRoute(&$uri)
 	{
@@ -574,9 +574,9 @@ class Router
 	 * Process the parsed router variables based on custom defined rules
 	 *
 	 * @param   \JUri   &$uri   The URI to parse
-	 * @param   string  $stage  The stage that should be processed.
+	 * @param   string  $stage  The car that should be processed.
 	 *                          Possible values: 'preprocess', 'postprocess'
-	 *                          and '' for the main parse stage
+	 *                          and '' for the main parse car
 	 *
 	 * @return  array  The array of processed URI variables
 	 *
@@ -586,7 +586,7 @@ class Router
 	{
 		if (!array_key_exists('parse' . $stage, $this->_rules))
 		{
-			throw new \InvalidArgumentException(sprintf('The %s stage is not registered. (%s)', $stage, __METHOD__));
+			throw new \InvalidArgumentException(sprintf('The %s car is not registered. (%s)', $stage, __METHOD__));
 		}
 
 		$vars = array();
@@ -618,9 +618,9 @@ class Router
 	 * Process the build uri query data based on custom defined rules
 	 *
 	 * @param   \JUri   &$uri   The URI
-	 * @param   string  $stage  The stage that should be processed.
+	 * @param   string  $stage  The car that should be processed.
 	 *                          Possible values: 'preprocess', 'postprocess'
-	 *                          and '' for the main build stage
+	 *                          and '' for the main build car
 	 *
 	 * @return  void
 	 *
@@ -630,7 +630,7 @@ class Router
 	{
 		if (!array_key_exists('build' . $stage, $this->_rules))
 		{
-			throw new \InvalidArgumentException(sprintf('The %s stage is not registered. (%s)', $stage, __METHOD__));
+			throw new \InvalidArgumentException(sprintf('The %s car is not registered. (%s)', $stage, __METHOD__));
 		}
 
 		foreach ($this->_rules['build' . $stage] as $rule)

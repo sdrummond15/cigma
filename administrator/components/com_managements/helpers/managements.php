@@ -31,7 +31,7 @@ class ManagementsHelper
         JSubMenuHelper::addEntry(
             JText::_('COM_MANAGEMENTS_SUBMENU_CITIES'),
             'index.php?option=com_managements&view=cities',
-            $vName == 'cities'
+            $vName == 'citie'
         );
         JSubMenuHelper::addEntry(
             JText::_('COM_MANAGEMENTS_SUBMENU_CARS'),

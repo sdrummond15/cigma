@@ -19,7 +19,7 @@ jimport('joomla.application.component.modellist');
  * @subpackage com_adminstration
  * @since 2.5
  */
-class ManagementsModelStages extends JModelList
+class ManagementsModelCities extends JModelList
 {
     /**
      * Constructor.
@@ -33,7 +33,7 @@ class ManagementsModelStages extends JModelList
         if (empty($config['filter_fields'])) {
             $config['filter_fields'] = array(
                 'id', 'a.id',
-                'title', 'a.title',
+                'description', 'a.description',
                 'published', 'a.published',
                 'publish_up', 'a.publish_up',
                 'publish_down', 'a.publish_down',
@@ -69,7 +69,7 @@ class ManagementsModelStages extends JModelList
         $this->setState('filter.published', $published);
 
         // List state information.
-        parent::populateState('a.title', 'asc');
+        parent::populateState('a.description', 'asc');
     }
 
     /**
@@ -110,21 +110,20 @@ class ManagementsModelStages extends JModelList
                 'a.id AS id,' .
                 'a.checked_out,' .
                 'a.checked_out_time,' .
-                'a.title AS title,' .
+                'a.description AS description,' .
                 'a.created AS created,' .
                 'ua.name AS created_by,' .
-                'a.publish_up, a.publish_down,'.
+                'a.publish_up, a.publish_down,' .
                 'a.published AS published'
 
             )
         );
 
-        $query->from($db->quoteName('#__stages') . ' AS a');
-
+        $query->from($db->quoteName('#__cities') . ' AS a');
 
         // Join over the users for the checked out user.
         $query->select('uc.name AS editor');
-        $query->join('LEFT', '#__users AS uc ON uc.id=a.checked_out');
+        $query->join('LEFT', '#__users AS uc ON uc.id = a.checked_out');
 
         // Join over the users for the author.
         $query->select('ua.name AS author_name');
@@ -138,7 +137,6 @@ class ManagementsModelStages extends JModelList
             $query->where('(a.published IN (0, 1))');
         }
 
-
         // Filter by search in title
         $search = $this->getState('filter.search');
         if (!empty($search)) {
@@ -146,13 +144,16 @@ class ManagementsModelStages extends JModelList
                 $query->where('a.id = ' . (int)substr($search, 3));
             } else {
                 $search = $db->Quote('%' . $db->escape($search, true) . '%');
-                $query->where('a.title LIKE ' . $search);
+                $query->where('a.description LIKE ' . $search);
             }
         }
 
-        $orderCol = $this->state->get('list.ordering', 'a.title');
+        $orderCol = $this->state->get('list.ordering', 'a.id');
         $orderDirn = $this->state->get('list.direction', 'asc');
 
+        if ($orderCol == 'inst') {
+            $orderCol = 'i.description';
+        }
         $query->order($db->escape($orderCol . ' ' . $orderDirn));
 
         return $query;

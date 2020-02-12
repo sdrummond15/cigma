@@ -10,43 +10,27 @@
                        class="readonly"
                        label="JGLOBAL_FIELD_ID_LABEL"
                 />
-                <field name="title" 
+                <field name="placa"
                        type="text" 
                        class="inputbox"
                        size="40" 
-                       label="COM_MANAGEMENTS_FIELD_STAGE_LABEL"
+                       label="COM_MANAGEMENTS_FIELD_PLACA_LABEL"
                        required="true" 
                 />
 
-		<field name="alias" 
+		<field name="chassi"
                        type="text" 
                        class="inputbox"
-                       size="40" 
-                       label="JFIELD_ALIAS_LABEL"
+                       size="140"
+                       label="JFIELD_CHASSI_LABEL"
                 />
                 
-                <field name="id_circuit" 
-                       type="circuitstage" 
-                       label="JFIELD_ID_CIRCUIT_LABEL"
+                <field name="ano"
+                       type="text"
+                       size="4"
+                       label="JFIELD_ANO_LABEL"
                 />
-                
-                <field name="date" 
-                       type="calendar"
-                       label="COM_MANAGEMENTS_FIELD_DATE_LABEL"
-                       class="inputbox" 
-                       size="6" 
-                       format="%Y-%m-%d"
-                       filter="user_utc" 
-                       required="true"
-                />
-		
-                <field name="hour" 
-                       type="text" 
-                       class="inputbox"
-                       size="10" 
-                       label="JFIELD_HOUR_LABEL"
-                       maxlength="8"
-                />
+
                 
                 <field name="photo" 
                        type="media" 
@@ -55,11 +39,7 @@
                        label="COM_MANAGEMENTS_FIELD_PHOTO_PODIUM_LABEL"
                        size="40"
                 />
-                
-                <field name="id_championship" 
-                       type="championshipstage" 
-                       label="JFIELD_ID_CHAMPIONSHIP_LABEL"
-                />
+
                 
                 <field name="grid_order" 
                        type="text" 

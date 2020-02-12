@@ -20,30 +20,30 @@ $assoc = JLanguageAssociations::isEnabled();
 ?>
 <script type="text/javascript">
     Joomla.submitbutton = function (task) {
-        if (task == 'circuit.cancel' || document.formvalidator.isValid(document.id('circuit-form'))) {
-            Joomla.submitform(task, document.getElementById('circuit-form'));
+        if (task == 'car.cancel' || document.formvalidator.isValid(document.id('car-form'))) {
+            Joomla.submitform(task, document.getElementById('car-form'));
         }
     }
 </script>
 
-<form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="circuit-form" class="form-validate">
+<form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="stage-form" class="form-validate">
 
     <?php echo JLayoutHelper::render('joomla.edit.title_alias', $this); ?>
 
     <div class="form-horizontal">
         <?php echo JHtml::_('bootstrap.startTabSet', 'myTab', array('active' => 'details')); ?>
 
-        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'details', empty($this->item->id) ? JText::_('COM_MANAGEMENTS_NEW_CIRCUIT', true) : JText::_('COM_MANAGEMENTS_EDIT_CIRCUIT', true)); ?>
+        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'details', empty($this->item->id) ? JText::_('COM_MANAGEMENTS_NEW_CAR', true) : JText::_('COM_MANAGEMENTS_EDIT_CAR', true)); ?>
         <div class="row-fluid">
             <div class="span9">
                 <div class="row-fluid form-horizontal-desktop">
                     <div class="span6">
-                        <?php echo $this->form->renderField('id_karting'); ?>
-                        <?php echo $this->form->renderField('mileage'); ?>
-                        <?php echo $this->form->renderField('best_time'); ?>
-                        <?php echo $this->form->renderField('date_best_time'); ?>
-                        <?php echo $this->form->renderField('id_pilot'); ?>
-                        <?php echo $this->form->renderField('image'); ?>
+                        <?php echo $this->form->renderField('id'); ?>
+                        <?php echo $this->form->renderField('placa'); ?>
+                        <?php echo $this->form->renderField('chassi'); ?>
+                        <?php echo $this->form->renderField('photo'); ?>
+                        <?php echo $this->form->renderField('ano'); ?>
+                        <?php echo $this->form->renderField('grid_order'); ?>
                     </div>
                 </div>
             </div>

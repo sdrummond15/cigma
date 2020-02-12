@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 
 jimport('joomla.application.component.model');
 
-class ManagementsTableCircuit extends JTable
+class ManagementsTableCitie extends JTable
 {
     /**
      * Constructor
@@ -21,7 +21,7 @@ class ManagementsTableCircuit extends JTable
      */
     function __construct(&$_db)
     {
-        parent::__construct('#__circuits', 'id', $_db);
+        parent::__construct('#__cities', 'id', $_db);
     }
 
 
@@ -41,7 +41,7 @@ class ManagementsTableCircuit extends JTable
     public function check()
     {
         if (trim($this->alias) == '') {
-            $this->alias = $this->title;
+            $this->alias = $this->description;
         }
         $this->alias = JApplication::stringURLSafe($this->alias);
 
@@ -70,7 +70,7 @@ class ManagementsTableCircuit extends JTable
             }
         }
 
-        $table = JTable::getInstance('Circuit', 'ManagementsTable');
+        $table = JTable::getInstance('Citie', 'ManagementsTable');
         if ($table->load(array('alias' => $this->alias)) && ($table->id != $this->id || $this->id == 0)) {
             $this->setError(JText::_('JLIB_DATABASE_ERROR_ARTICLE_UNIQUE_ALIAS'));
             return false;

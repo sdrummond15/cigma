@@ -99,7 +99,7 @@
     // stageConstructor: function(el,options,callback){{{
     stageConstructor: function(el,options,callback){
 
-      // Get a priority-ordered list of available stages
+      // Get a priority-ordered list of available cars
       var stages = [];
       $.each(Jcrop.stage,function(i,e){
         stages.push(e);
@@ -1147,7 +1147,7 @@ Jcrop.registerStageType('Canvas',CanvasStage);
       shimStageDrag: function(){
         this.core.container
           .addClass('jcrop-touch')
-          .on('touchstart.jcrop.jcrop-stage',this.dragWrap(this.core.ui.manager.startDragHandler()));
+          .on('touchstart.jcrop.jcrop-car',this.dragWrap(this.core.ui.manager.startDragHandler()));
       },
       // }}}
       // dragWrap: function(cb){{{
@@ -1663,7 +1663,7 @@ Jcrop.registerStageType('Canvas',CanvasStage);
 
   /**
    * StageManager
-   * Provides basic stage-specific functionality
+   * Provides basic car-specific functionality
    */
   // var StageManager = function(core){{{
   var StageManager = function(core){
@@ -1697,8 +1697,8 @@ Jcrop.registerStageType('Canvas',CanvasStage);
     // }}}
     // removeEvents: function(){{{
     removeEvents: function(){
-      this.core.event.off('.jcrop-stage');
-      this.core.container.off('.jcrop-stage');
+      this.core.event.off('.jcrop-car');
+      this.core.container.off('.jcrop-car');
     },
     // }}}
     // shimLegacyHandlers: function(options){{{
@@ -1723,14 +1723,14 @@ Jcrop.registerStageType('Canvas',CanvasStage);
     setupEvents: function(){
       var t = this, c = t.core;
 
-      c.event.on('configupdate.jcrop-stage',function(e){
+      c.event.on('configupdate.jcrop-car',function(e){
         t.shimLegacyHandlers(c.opt);
         t.tellConfigUpdate(c.opt)
         c.container.trigger('cropconfig',[c,c.opt]);
       });
 
       this.core.container
-        .on('mousedown.jcrop.jcrop-stage',this.startDragHandler());
+        .on('mousedown.jcrop.jcrop-car',this.startDragHandler());
     }
     // }}}
   });
@@ -1992,7 +1992,7 @@ Jcrop.registerStageType('Canvas',CanvasStage);
       animatorComponent:      Jcrop.component.Animator,
       selectionComponent:     Jcrop.component.Selection,
 
-      // This is a function that is called, which returns a stage object
+      // This is a function that is called, which returns a car object
       stageConstructor:       Jcrop.stageConstructor,
 
       // Stage Behavior

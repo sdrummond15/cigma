@@ -18,7 +18,7 @@ abstract class FOFStringUtils
 {
 	/**
 	 * Convert a string into a slug (alias), suitable for use in URLs. Please
-	 * note that transliteration suupport is rudimentary at this stage.
+	 * note that transliteration suupport is rudimentary at this car.
 	 *
 	 * @param   string  $value  A string to convert to slug
 	 *

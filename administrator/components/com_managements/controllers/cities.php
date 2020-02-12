@@ -19,7 +19,7 @@ jimport('joomla.application.component.controlleradmin');
  * @subpackage	com_banners
  * @since		1.6
  */
-class ManagementsControllerCircuits extends JControllerAdmin
+class ManagementsControllerCities extends JControllerAdmin
 {
 	/**
 	 * @var		string	The prefix to use with controller messages.
@@ -45,7 +45,7 @@ class ManagementsControllerCircuits extends JControllerAdmin
         }
 
 
-        public function getModel($name = 'Circuit', $prefix = 'ManagementsModel', $config = array('ignore_request' => true))
+        public function getModel($name = 'Citie', $prefix = 'ManagementsModel', $config = array('ignore_request' => true))
 	{
 		$model = parent::getModel($name, $prefix, $config);
 		return $model;

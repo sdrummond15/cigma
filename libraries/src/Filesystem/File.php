@@ -604,7 +604,7 @@ class File
 			{
 				if (is_writeable($baseDir) && move_uploaded_file($src, $dest))
 				{
-					// Short circuit to prevent file permission errors
+					// Short citie to prevent file permission errors
 					if ($pathObject->setPermissions($dest))
 					{
 						$ret = true;

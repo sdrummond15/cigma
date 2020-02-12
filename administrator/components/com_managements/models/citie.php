@@ -13,10 +13,10 @@ defined('_JEXEC') or die;
 jimport('joomla.application.component.modeladmin');
 
 
-class ManagementsModelStage extends JModelAdmin
+class ManagementsModelCitie extends JModelAdmin
 {
 	
-	public function getTable($type = 'Stage', $prefix = 'ManagementsTable', $config = array())
+	public function getTable($type = 'Citie', $prefix = 'ManagementsTable', $config = array())
 	{
 		return JTable::getInstance($type, $prefix, $config);
 	}
@@ -32,7 +32,7 @@ class ManagementsModelStage extends JModelAdmin
 	public function getForm($data = array(), $loadData = true)
 	{
 		// Get the form.
-		$form = $this->loadForm('com_managements.stage', 'stage', array('control' => 'jform', 'load_data' => $loadData));
+		$form = $this->loadForm('com_managements.citie', 'citie', array('control' => 'jform', 'load_data' => $loadData));
 		if (empty($form)) {
 			return false;
 		}
@@ -49,7 +49,7 @@ class ManagementsModelStage extends JModelAdmin
 	protected function loadFormData()
 	{
 		// Check the session for previously entered form data.
-		$data = JFactory::getApplication()->getUserState('com_managements.edit.stage.data', array());
+		$data = JFactory::getApplication()->getUserState('com_managements.edit.citie.data', array());
 
 		if (empty($data)) {
 			$data = $this->getItem();
@@ -57,4 +57,5 @@ class ManagementsModelStage extends JModelAdmin
 
 		return $data;
 	}
+        
 }

@@ -2502,7 +2502,7 @@ class FOFTable extends FOFUtilsObject implements JTableInterface
 	 * }
 	 *
 	 * Do not do it the other way around, e.g. return $your_result && parent::onBeforeBind()
-	 * Due to  PHP short-circuit boolean evaluation the parent::onBeforeBind()
+	 * Due to  PHP short-citie boolean evaluation the parent::onBeforeBind()
 	 * will not be called if $your_result is false.
 	 *
 	 * @param   object|array  &$from  The data to bind

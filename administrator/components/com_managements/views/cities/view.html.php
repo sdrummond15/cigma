@@ -19,7 +19,7 @@ jimport('joomla.application.component.view');
  * @subpackage com_adminstration
  * @since 2.5
  */
-class ManagementsViewCircuits extends JViewLegacy
+class ManagementsViewCities extends JViewLegacy
 {
     protected $items;
     protected $paginaton;
@@ -56,41 +56,41 @@ class ManagementsViewCircuits extends JViewLegacy
     {
         require_once JPATH_COMPONENT . '/helpers/managements.php';
 
-        JToolBarHelper::title(JText::_('COM_MANAGEMENTS_MANAGER_CIRCUITS'), 'circuito.png');
+        JToolBarHelper::title(JText::_('COM_MANAGEMENTS_MANAGER_CITIES'), 'cidades.png');
 
-        JToolBarHelper::addNew('circuit.add');
+        JToolBarHelper::addNew('citie.add');
 
-        JToolBarHelper::editList('circuit.edit');
+        JToolBarHelper::editList('citie.edit');
 
         if ($this->state->get('filter.state') != 2) {
             JToolBarHelper::divider();
-            JToolBarHelper::publish('circuits.publish', 'JTOOLBAR_PUBLISH', true);
-            JToolBarHelper::unpublish('circuits.unpublish', 'JTOOLBAR_UNPUBLISH', true);
+            JToolBarHelper::publish('cities.publish', 'JTOOLBAR_PUBLISH', true);
+            JToolBarHelper::unpublish('cities.unpublish', 'JTOOLBAR_UNPUBLISH', true);
         }
 
         if ($this->state->get('filter.state') != -1) {
             JToolBarHelper::divider();
             if ($this->state->get('filter.state') != 2) {
-                JToolBarHelper::archiveList('circuits.archive');
+                JToolBarHelper::archiveList('cities.archive');
             } elseif ($this->state->get('filter.state') == 2) {
-                JToolBarHelper::unarchiveList('circuits.publish');
+                JToolBarHelper::unarchiveList('cities.publish');
             }
         }
 
-        JToolBarHelper::checkin('circuits.checkin');
+        JToolBarHelper::checkin('cities.checkin');
 
         if ($this->state->get('filter.state') == -2) {
-            JToolBarHelper::deleteList('', 'circuits.delete', 'JTOOLBAR_EMPTY_TRASH');
+            JToolBarHelper::deleteList('', 'cities.delete', 'JTOOLBAR_EMPTY_TRASH');
             JToolBarHelper::divider();
         }
 
-        JToolBarHelper::trash('circuits.trash');
+        JToolBarHelper::trash('cities.trash');
         JToolBarHelper::divider();
 
         JToolBarHelper::preferences('com_managements');
         JToolBarHelper::divider();
 
-        JToolBarHelper::help('circuits', $com = true);
+        JToolBarHelper::help('cities', $com = true);
     }
 
     protected function getSortFields()
@@ -100,9 +100,6 @@ class ManagementsViewCircuits extends JViewLegacy
             'a.published' => JText::_('JSTATUS'),
             'a.name' => JText::_('JGLOBAL_TITLE'),
             'ul.name' => JText::_('COM_MANAGEMENTS_FIELD_LINKED_USER_LABEL'),
-            'a.featured' => JText::_('JFEATURED'),
-            'a.access' => JText::_('JGRID_HEADING_ACCESS'),
-            'a.language' => JText::_('JGRID_HEADING_LANGUAGE'),
             'a.id' => JText::_('JGRID_HEADING_ID')
         );
     }

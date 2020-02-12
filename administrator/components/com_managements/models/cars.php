@@ -19,7 +19,7 @@ jimport('joomla.application.component.modellist');
  * @subpackage com_adminstration
  * @since 2.5
  */
-class ManagementsModelCircuits extends JModelList
+class ManagementsModelCars extends JModelList
 {
     /**
      * Constructor.
@@ -33,7 +33,9 @@ class ManagementsModelCircuits extends JModelList
         if (empty($config['filter_fields'])) {
             $config['filter_fields'] = array(
                 'id', 'a.id',
-                'title', 'a.title',
+                'placa', 'a.placa',
+                'chassi', 'a.chassi',
+                'ano', 'a.ano',
                 'published', 'a.published',
                 'publish_up', 'a.publish_up',
                 'publish_down', 'a.publish_down',
@@ -69,7 +71,7 @@ class ManagementsModelCircuits extends JModelList
         $this->setState('filter.published', $published);
 
         // List state information.
-        parent::populateState('a.title', 'asc');
+        parent::populateState('a.placa', 'asc');
     }
 
     /**
@@ -110,20 +112,21 @@ class ManagementsModelCircuits extends JModelList
                 'a.id AS id,' .
                 'a.checked_out,' .
                 'a.checked_out_time,' .
-                'a.title AS title,' .
+                'a.placa AS placa,' .
                 'a.created AS created,' .
                 'ua.name AS created_by,' .
-                'a.publish_up, a.publish_down,' .
+                'a.publish_up, a.publish_down,'.
                 'a.published AS published'
 
             )
         );
 
-        $query->from($db->quoteName('#__circuits') . ' AS a');
+        $query->from($db->quoteName('#__cars') . ' AS a');
+
 
         // Join over the users for the checked out user.
         $query->select('uc.name AS editor');
-        $query->join('LEFT', '#__users AS uc ON uc.id = a.checked_out');
+        $query->join('LEFT', '#__users AS uc ON uc.id=a.checked_out');
 
         // Join over the users for the author.
         $query->select('ua.name AS author_name');
@@ -137,6 +140,7 @@ class ManagementsModelCircuits extends JModelList
             $query->where('(a.published IN (0, 1))');
         }
 
+
         // Filter by search in title
         $search = $this->getState('filter.search');
         if (!empty($search)) {
@@ -144,16 +148,13 @@ class ManagementsModelCircuits extends JModelList
                 $query->where('a.id = ' . (int)substr($search, 3));
             } else {
                 $search = $db->Quote('%' . $db->escape($search, true) . '%');
-                $query->where('a.title LIKE ' . $search);
+                $query->where('a.placa LIKE ' . $search);
             }
         }
 
-        $orderCol = $this->state->get('list.ordering', 'a.title');
+        $orderCol = $this->state->get('list.ordering', 'a.placa');
         $orderDirn = $this->state->get('list.direction', 'asc');
 
-        if ($orderCol == 'inst') {
-            $orderCol = 'i.title';
-        }
         $query->order($db->escape($orderCol . ' ' . $orderDirn));
 
         return $query;

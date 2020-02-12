@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 
 jimport('joomla.application.component.view');
 
-class ManagementsViewCircuit extends JViewLegacy
+class ManagementsViewCar extends JViewLegacy
 {
     protected $form;
     protected $item;
@@ -44,30 +44,29 @@ class ManagementsViewCircuit extends JViewLegacy
         $user       = JFactory::getUser();
         $userId     = $user->get('id');
         $isNew      = ($this->item->id == 0);
-        $checkedOut = 0;
-        $canDo      = ManagementsHelper::getActions($this->item);
+        $checkedOut = !($this->item->checked_out == 0 || $this->item->checked_out == $userId);
         
-        JToolBarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_CIRCUIT_ADD') : JText::_('COM_MANAGEMENTS_CIRCUIT_EDIT'), 'circuito.png');
-       
-        if (!$checkedOut && $canDo->get('core.edit') > 0){
-                JToolBarHelper::apply('circuit.apply');
-                JToolBarHelper::save('circuit.save');
-                
-                if ($canDo->get('core.create')) {
-                JToolBarHelper::save2new('circuit.save2new');
-                }
-        }
-        if (!$isNew && $canDo->get('core.create')) {
-                JToolBarHelper::save2copy('circuit.save2copy');
-        }
+        JToolBarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_CAR_ADD') : JText::_('COM_MANAGEMENTS_CAR_EDIT'), 'car.png');
+        
+        
+			JToolBarHelper::apply('car.apply');
+			JToolBarHelper::save('car.save');
+		
+		
+
+			JToolBarHelper::save2new('car.save2new');
+		
+		
+			JToolBarHelper::save2copy('car.save2copy');
+		
 
 		if (empty($this->item->id))  {
-			JToolBarHelper::cancel('circuit.cancel');
+			JToolBarHelper::cancel('car.cancel');
 		} else {
-			JToolBarHelper::cancel('circuit.cancel', 'JTOOLBAR_CLOSE');
+			JToolBarHelper::cancel('car.cancel', 'JTOOLBAR_CLOSE');
 		}
 
 		JToolBarHelper::divider();
-		JToolBarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_CIRCUIT_EDIT');
+		JToolBarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_CARS_EDIT');
 	}
 }
