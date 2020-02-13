@@ -38,8 +38,8 @@ $assoc = JLanguageAssociations::isEnabled();
             <div class="span9">
                 <div class="row-fluid form-horizontal-desktop">
                     <div class="span6">
-                        <?php echo $this->form->renderField('id'); ?>
                         <?php echo $this->form->renderField('description'); ?>
+                        <?php echo $this->form->renderField('uf'); ?>
 
                     </div>
                 </div>

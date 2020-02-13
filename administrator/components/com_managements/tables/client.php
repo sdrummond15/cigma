@@ -10,7 +10,6 @@
 // no direct access
 defined('_JEXEC') or die;
 
-
 class ManagementsTableClient extends JTable
 {
     /**
@@ -39,6 +38,14 @@ class ManagementsTableClient extends JTable
 
     public function check()
     {
+        if (trim($this->alias) == '') {
+            $this->alias = $this->description;
+        }
+        $this->alias = JApplication::stringURLSafe($this->alias);
+
+        if (trim(str_replace('-', '', $this->alias)) == '') {
+            $this->alias = JFactory::getDate()->format('Y-m-d-H-i-s');
+        }
         return true;
     }
 
@@ -62,7 +69,10 @@ class ManagementsTableClient extends JTable
         }
 
         $table = JTable::getInstance('Client', 'ManagementsTable', array('dbo' => $this->_db));
-
+        if ($table->load(array('alias' => $this->alias)) && ($table->id != $this->id || $this->id == 0)) {
+            $this->setError(JText::_('JLIB_DATABASE_ERROR_ARTICLE_UNIQUE_ALIAS'));
+            return false;
+        }
 
         return parent::store($updateNulls);
     }

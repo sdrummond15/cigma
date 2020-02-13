@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 
 jimport('joomla.application.component.controllerform');
 
-class ManagementsControllerCitie extends JControllerForm
+class ManagementsControllerCity extends JControllerForm
 {
-    protected $text_prefix = 'COM_MANAGEMENTS_CIRCUIT';
+    protected $text_prefix = 'COM_MANAGEMENTS_CITY';
 }

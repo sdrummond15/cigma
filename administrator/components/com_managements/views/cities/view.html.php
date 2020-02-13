@@ -41,9 +41,15 @@ class ManagementsViewCities extends JViewLegacy
         $this->pagination = $this->get('Pagination');
         $this->state = $this->get('State');
 
-        if (count($errors = $this->get('Erros'))) {
-            JError::raiseError(500, implode("\n", $errors));
+        if (count($errors = $this->get('Errors')))
+        {
+            throw new Exception(implode("\n", $errors), 500);
         }
+
+        //get document
+        $doc = JFactory::getDocument();
+        $doc->addStyleSheet(JURI::root() . 'media/com_managements/css/backend.css');
+
         $this->addToolbar();
 
         // Include the component HTML helpers.
@@ -58,9 +64,9 @@ class ManagementsViewCities extends JViewLegacy
 
         JToolBarHelper::title(JText::_('COM_MANAGEMENTS_MANAGER_CITIES'), 'cidades.png');
 
-        JToolBarHelper::addNew('citie.add');
+        JToolBarHelper::addNew('city.add');
 
-        JToolBarHelper::editList('citie.edit');
+        JToolBarHelper::editList('city.edit');
 
         if ($this->state->get('filter.state') != 2) {
             JToolBarHelper::divider();
@@ -98,7 +104,7 @@ class ManagementsViewCities extends JViewLegacy
         return array(
             'a.ordering' => JText::_('JGRID_HEADING_ORDERING'),
             'a.published' => JText::_('JSTATUS'),
-            'a.name' => JText::_('JGLOBAL_TITLE'),
+            'a.description' => JText::_('JGLOBAL_TITLE'),
             'ul.name' => JText::_('COM_MANAGEMENTS_FIELD_LINKED_USER_LABEL'),
             'a.id' => JText::_('JGRID_HEADING_ID')
         );

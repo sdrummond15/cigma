@@ -21,31 +21,16 @@ jimport('joomla.application.component.controlleradmin');
  */
 class ManagementsControllerCities extends JControllerAdmin
 {
-	/**
-	 * @var		string	The prefix to use with controller messages.
-	 * @since	1.6
-	 */
+
 	protected $text_prefix = 'COM_MANAGEMENTS_CIRCUITS';
 
-	/**
-	 * Method to get a model object, loading it if required.
-	 *
-	 * @param   string  $name    The model name. Optional.
-	 * @param   string  $prefix  The class prefix. Optional.
-	 * @param   array   $config  Configuration array for model. Optional.
-	 *
-	 * @return  object  The model.
-	 *
-	 * @since   1.6
-	 */
-        
-        public function __construct($config = array()) 
+        public function __construct($config = array())
         {
             parent::__construct($config);
         }
 
 
-        public function getModel($name = 'Citie', $prefix = 'ManagementsModel', $config = array('ignore_request' => true))
+        public function getModel($name = 'City', $prefix = 'ManagementsModel', $config = array('ignore_request' => true))
 	{
 		$model = parent::getModel($name, $prefix, $config);
 		return $model;

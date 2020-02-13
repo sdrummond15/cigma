@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 
 jimport('joomla.application.component.view');
 
-class ManagementsViewCitie extends JViewLegacy
+class ManagementsViewCity extends JViewLegacy
 {
     protected $form;
     protected $item;
@@ -23,10 +23,9 @@ class ManagementsViewCitie extends JViewLegacy
         $this->form         = $this->get('Form');
         $this->item         = $this->get('Item');
         $this->state        = $this->get('State');
-        
-        if(count($erros = $this->get('Errors'))){
-            JError::raiseError(500, implode("\n", $errors));
-            return false;
+
+        if (count($errors = $this->get('Errors'))) {
+            throw new Exception(implode("\n", $errors), 500);
         }
         
         $doc = JFactory::getDocument();
@@ -47,27 +46,27 @@ class ManagementsViewCitie extends JViewLegacy
         $checkedOut = 0;
         $canDo      = ManagementsHelper::getActions($this->item);
         
-        JToolBarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_CITIE_ADD') : JText::_('COM_MANAGEMENTS_CITIE_EDIT'), 'cidade.png');
+        JToolBarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_CITY_ADD') : JText::_('COM_MANAGEMENTS_CITY_EDIT'), 'cidade.png');
        
         if (!$checkedOut && $canDo->get('core.edit') > 0){
-                JToolBarHelper::apply('citie.apply');
-                JToolBarHelper::save('citie.save');
+                JToolBarHelper::apply('city.apply');
+                JToolBarHelper::save('city.save');
                 
                 if ($canDo->get('core.create')) {
-                JToolBarHelper::save2new('citie.save2new');
+                JToolBarHelper::save2new('city.save2new');
                 }
         }
         if (!$isNew && $canDo->get('core.create')) {
-                JToolBarHelper::save2copy('citie.save2copy');
+                JToolBarHelper::save2copy('city.save2copy');
         }
 
 		if (empty($this->item->id))  {
-			JToolBarHelper::cancel('citie.cancel');
+			JToolBarHelper::cancel('city.cancel');
 		} else {
-			JToolBarHelper::cancel('citie.cancel', 'JTOOLBAR_CLOSE');
+			JToolBarHelper::cancel('city.cancel', 'JTOOLBAR_CLOSE');
 		}
 
 		JToolBarHelper::divider();
-		JToolBarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_CIRCUIT_EDIT');
+		JToolBarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_CITY_EDIT');
 	}
 }

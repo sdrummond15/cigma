@@ -10,9 +10,7 @@
 // no direct access
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.model');
-
-class ManagementsTableCitie extends JTable
+class ManagementsTableCity extends JTable
 {
     /**
      * Constructor
@@ -70,7 +68,7 @@ class ManagementsTableCitie extends JTable
             }
         }
 
-        $table = JTable::getInstance('Citie', 'ManagementsTable');
+        $table = JTable::getInstance('City', 'ManagementsTable');
         if ($table->load(array('alias' => $this->alias)) && ($table->id != $this->id || $this->id == 0)) {
             $this->setError(JText::_('JLIB_DATABASE_ERROR_ARTICLE_UNIQUE_ALIAS'));
             return false;

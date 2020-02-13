@@ -28,11 +28,11 @@ class JConfig {
 
 	public $dbtype = 'mysqli';
 
-	public $host = '192.168.25.8';
+	public $host = 'localhost';
 
 	public $user = 'root';
 
-	public $password = '';
+	public $password = 'admin';
 
 	public $db = 'db_cigma';
 

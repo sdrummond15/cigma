@@ -2,52 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05c6a63c-7d7a-4691-9376-2d90407b493c" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/controllers/circuit.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/controllers/citie.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/controllers/circuits.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/controllers/cities.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/controllers/stage.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/controllers/car.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/controllers/stages.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/controllers/cars.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/circuit.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/citie.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/circuits.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/cities.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/circuit.xml" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/citie.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/stage.xml" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/car.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/stage.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/car.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/stages.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/cars.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/tables/circuit.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/tables/citie.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/tables/stage.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/tables/car.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/circuit/index.html" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/car/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/circuit/tmpl/edit.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/tmpl/edit.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/circuit/tmpl/index.html" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/car/tmpl/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/circuit/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/view.html.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/circuits/index.html" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cars/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/circuits/tmpl/default.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/tmpl/default.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/circuits/tmpl/index.html" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cars/tmpl/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/circuits/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/stage/index.html" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/stage/tmpl/edit.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/car/tmpl/edit.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/stage/tmpl/index.html" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/tmpl/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/stage/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/car/view.html.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/stages/index.html" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/stages/tmpl/default.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cars/tmpl/default.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/stages/tmpl/index.html" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/tmpl/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/stages/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cars/view.html.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/tmpl/edit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/tmpl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/view.html.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/controllers/citie.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/controllers/city.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/citie.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/city.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/citie.xml" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/city.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/tables/citie.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/tables/city.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_joomlaupdate/restore.php" afterPath="$PROJECT_DIR$/administrator/components/com_joomlaupdate/restore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/controllers/cities.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/controllers/cities.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini" afterPath="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/fof/string/utils.php" afterPath="$PROJECT_DIR$/libraries/fof/string/utils.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/fof/table/table.php" afterPath="$PROJECT_DIR$/libraries/fof/table/table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/src/Filesystem/File.php" afterPath="$PROJECT_DIR$/libraries/src/Filesystem/File.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/src/Help/Help.php" afterPath="$PROJECT_DIR$/libraries/src/Help/Help.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/src/Router/Router.php" afterPath="$PROJECT_DIR$/libraries/src/Router/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/src/Router/SiteRouter.php" afterPath="$PROJECT_DIR$/libraries/src/Router/SiteRouter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/vendor/joomla/filesystem/src/File.php" afterPath="$PROJECT_DIR$/libraries/vendor/joomla/filesystem/src/File.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/vendor/leafo/lessphp/lessc.inc.php" afterPath="$PROJECT_DIR$/libraries/vendor/leafo/lessphp/lessc.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/vendor/phpmailer/phpmailer/class.smtp.php" afterPath="$PROJECT_DIR$/libraries/vendor/phpmailer/phpmailer/class.smtp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/com_joomlaupdate/js/encryption.js" afterPath="$PROJECT_DIR$/media/com_joomlaupdate/js/encryption.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/editors/codemirror/mode/puppet/puppet.js" afterPath="$PROJECT_DIR$/media/editors/codemirror/mode/puppet/puppet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/editors/codemirror/mode/puppet/puppet.min.js" afterPath="$PROJECT_DIR$/media/editors/codemirror/mode/puppet/puppet.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/system/js/jquery.Jcrop.js" afterPath="$PROJECT_DIR$/media/system/js/jquery.Jcrop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/system/js/jquery.Jcrop.min.js" afterPath="$PROJECT_DIR$/media/system/js/jquery.Jcrop.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/cities.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/cities.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/tables/client.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/tables/client.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/tmpl/default.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/tmpl/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration.php" afterPath="$PROJECT_DIR$/configuration.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,104 +29,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pt-BR.com_managements.ini" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pt-BR.com_managements.ini" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/citie/tmpl/edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configuration.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/configuration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="view.html.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/citie/view.html.php">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/city/view.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+            <state relative-caret-position="-249">
+              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pt-BR.com_managements.sys.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.sys.ini">
+      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/client/tmpl/edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="35" />
-              <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="33" />
-              <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="30" />
-              <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="48" />
+            <state relative-caret-position="357">
+              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="citie.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/tables/citie.php">
+      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/city/tmpl/edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            <state relative-caret-position="340">
+              <caret line="41" column="63" lean-forward="false" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cities.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/cities.php">
+      <file leaf-file-name="city.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/city.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2584">
-              <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+            <state relative-caret-position="159">
+              <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="managements.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php">
+      <file leaf-file-name="client.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/client.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="managements.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/managements.xml">
+      <file leaf-file-name="view.html.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/client/view.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="75" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="managements.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/managements.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="-76">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -213,11 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/previou/tmpl/edit.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/previou/view.html.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/previous/tmpl/default.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/previous/view.html.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/result/tmpl/edit.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/result/view.html.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/results/tmpl/default.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/results/view.html.php" />
@@ -237,14 +170,8 @@
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/clients/view.html.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/client.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/models/client.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/tables/client.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/client/view.html.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/client/tmpl/edit.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/models/forms/client.xml" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/cities/tmpl/default.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/citie.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/cities.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/tables/citie.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/models/citie.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/models/forms/citie.xml" />
@@ -259,11 +186,22 @@
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/cars/tmpl/default.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/car.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/cars.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/cities.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/citie/view.html.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/citie/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/citie.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/city.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/tables/city.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/tables/client.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/cities.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/citie/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/cities/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/cities.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/city/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/client/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/city/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/forms/city.xml" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini" />
       </list>
     </option>
   </component>
@@ -274,7 +212,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -295,7 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -429,7 +366,7 @@
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="car" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="city" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
@@ -438,64 +375,7 @@
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="car" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tmpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cars" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cars" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tmpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="citie" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="citie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tmpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cities" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cities" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="city" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tmpl" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -515,31 +395,13 @@
               <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tmpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="clients" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="clients" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tmpl" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -643,20 +505,22 @@
       <workItem from="1581426175352" duration="14777000" />
       <workItem from="1581511767176" duration="2860000" />
       <workItem from="1581545293569" duration="2421000" />
+      <workItem from="1581551966227" duration="5428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53875000" />
+    <option name="totallyTimeSpent" value="59303000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25036603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3511811" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32755905" sideWeight="0.49166667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -668,7 +532,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.49166667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -683,15 +546,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/results/tmpl/default.php" />
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/results/view.html.php" />
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/team/tmpl/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="35" column="107" lean-forward="false" selection-start-line="35" selection-start-column="107" selection-end-line="35" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/team/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -748,31 +602,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="34" column="93" lean-forward="false" selection-start-line="34" selection-start-column="88" selection-end-line="34" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/tables/client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_contact/views/contact/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/client/view.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -791,82 +624,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/client/tmpl/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="61" lean-forward="false" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
           <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/clients/view.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/clients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1349">
-          <caret line="50" column="56" lean-forward="false" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/clients/tmpl/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1003">
-          <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/cities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/citie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/citie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/client.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/citie.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,68 +711,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/cities/tmpl/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="94" column="79" lean-forward="false" selection-start-line="94" selection-start-column="79" selection-end-line="94" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/managements.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="75" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/tables/citie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/cities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.sys.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="35" />
-          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="33" />
-          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="30" />
-          <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/citie/view.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1024,17 +727,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/citie/tmpl/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="884">
           <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
           <folding />
         </state>
@@ -1044,6 +739,201 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding>
+            <element signature="e#7#150#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/city.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/city.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="51" column="83" lean-forward="false" selection-start-line="51" selection-start-column="83" selection-end-line="51" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="34" column="93" lean-forward="false" selection-start-line="34" selection-start-column="88" selection-end-line="34" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/tables/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/tables/city.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="47" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/cities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/clients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/citie/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="70" column="63" lean-forward="false" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/clients/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-487">
+          <caret line="57" column="30" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="57" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/clients/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2068">
+          <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.sys.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/cities/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="167" column="58" lean-forward="false" selection-start-line="167" selection-start-column="58" selection-end-line="167" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/clients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="56" column="77" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/cities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="116" column="27" lean-forward="false" selection-start-line="116" selection-start-column="27" selection-end-line="116" selection-end-column="27" />
+          <caret line="116" column="21" lean-forward="false" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/client/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/city/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/client.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/client/tmpl/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/city/tmpl/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="63" lean-forward="false" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/city.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
           <folding />
         </state>
       </provider>

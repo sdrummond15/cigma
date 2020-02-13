@@ -92,7 +92,10 @@ $assoc = JLanguageAssociations::isEnabled();
                 <?php echo JHtml::_('grid.sort', 'JSTATUS', 'a.published', $listDirn, $listOrder); ?>
             </th>
             <th width="40%" class="nowrap center">
-                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_HEADING_CITIE', 'a.description', $listDirn, $listOrder); ?>
+                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_CITY_DESCRIPTION', 'a.description', $listDirn, $listOrder); ?>
+            </th>
+            <th width="40%" class="nowrap center">
+                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_CITY_UF', 'a.uf', $listDirn, $listOrder); ?>
             </th>
             <th width="1%" class="nowrap center hidden-phone">
                 <?php echo JHtml::_('grid.sort', 'JGRID_HEADING_ID', 'a.id', $listDirn, $listOrder); ?>
@@ -152,12 +155,17 @@ $assoc = JLanguageAssociations::isEnabled();
                             <?php echo JHtml::_('jgrid.checkedout', $i, $item->editor, $item->checked_out_time, 'cities.', $canCheckin); ?>
                         <?php endif; ?>
                         <?php if ($canEdit || $canEditOwn) : ?>
-                            <a href="<?php echo JRoute::_('index.php?option=com_managements&task=citie.edit&id=' . (int)$item->id); ?>">
+                            <a href="<?php echo JRoute::_('index.php?option=com_managements&task=city.edit&id=' . (int)$item->id); ?>">
                                 <?php echo $this->escape($item->description); ?>
                             </a>
                         <?php else : ?>
                             <?php echo $this->escape($item->description); ?>
                         <?php endif; ?>
+                    </div>
+                </td>
+                <td class="nowrap has-context">
+                    <div class="center">
+                        <?php echo $this->escape($item->uf); ?>
                     </div>
                 </td>
                 <td align="center hidden-phone">

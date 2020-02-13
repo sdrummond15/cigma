@@ -34,6 +34,7 @@ class ManagementsModelCities extends JModelList
             $config['filter_fields'] = array(
                 'id', 'a.id',
                 'description', 'a.description',
+                'uf', 'a.uf',
                 'published', 'a.published',
                 'publish_up', 'a.publish_up',
                 'publish_down', 'a.publish_down',
@@ -52,15 +53,17 @@ class ManagementsModelCities extends JModelList
      *
      * @since    1.6
      */
-    protected function populateState($direction = null)
+    protected function populateState($ordering = 'a.description', $direction = 'asc')
     {
         // Initialise variables.
         $app = JFactory::getApplication();
 
 
-        if ($layout = JRequest::getVar('layout')) {
+        if ($layout = $app->input->get('layout'))
+        {
             $this->context .= '.' . $layout;
         }
+
         // Load the filter state.
         $search = $this->getUserStateFromRequest($this->context . '.filter.search', 'filter_search');
         $this->setState('filter.search', $search);
@@ -69,7 +72,7 @@ class ManagementsModelCities extends JModelList
         $this->setState('filter.published', $published);
 
         // List state information.
-        parent::populateState('a.description', 'asc');
+        parent::populateState($ordering, $direction);
     }
 
     /**
@@ -111,6 +114,7 @@ class ManagementsModelCities extends JModelList
                 'a.checked_out,' .
                 'a.checked_out_time,' .
                 'a.description AS description,' .
+                'a.uf AS uf,' .
                 'a.created AS created,' .
                 'ua.name AS created_by,' .
                 'a.publish_up, a.publish_down,' .
@@ -151,9 +155,6 @@ class ManagementsModelCities extends JModelList
         $orderCol = $this->state->get('list.ordering', 'a.id');
         $orderDirn = $this->state->get('list.direction', 'asc');
 
-        if ($orderCol == 'inst') {
-            $orderCol = 'i.description';
-        }
         $query->order($db->escape($orderCol . ' ' . $orderDirn));
 
         return $query;
