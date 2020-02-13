@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05c6a63c-7d7a-4691-9376-2d90407b493c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/tmpl/edit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/tmpl/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/citie/view.html.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/controllers/citie.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/controllers/city.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/citie.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/city.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/citie.xml" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/city.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/tables/citie.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/tables/city.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/controllers/cities.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/controllers/cities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini" afterPath="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/cities.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/cities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/tables/client.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/tables/client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/tmpl/default.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/tmpl/default.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration.php" afterPath="$PROJECT_DIR$/configuration.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +16,8 @@
       <file leaf-file-name="pt-BR.com_managements.ini" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="153">
+              <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -505,12 +489,12 @@
       <workItem from="1581426175352" duration="14777000" />
       <workItem from="1581511767176" duration="2860000" />
       <workItem from="1581545293569" duration="2421000" />
-      <workItem from="1581551966227" duration="5428000" />
+      <workItem from="1581551966227" duration="5728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59303000" />
+    <option name="totallyTimeSpent" value="59603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -932,8 +916,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="153">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding />
         </state>
       </provider>
