@@ -23,7 +23,7 @@ $archived = $this->state->get('filter.published') == 2 ? true : false;
 $trashed = $this->state->get('filter.published') == -2 ? true : false;
 $saveOrder = $listOrder == 'a.ordering';
 if ($saveOrder) {
-    $saveOrderingUrl = 'index.php?option=com_managements&task=cars.saveOrderAjax&tmpl=component';
+    $saveOrderingUrl = 'index.php?option=com_managements&task=advanceds_moneys.saveOrderAjax&tmpl=component';
     JHtml::_('sortablelist.sortable', 'managementList', 'adminForm', strtolower($listDirn), $saveOrderingUrl);
 }
 $sortFields = $this->getSortFields();
@@ -44,7 +44,7 @@ $assoc = JLanguageAssociations::isEnabled();
         Joomla.tableOrdering(order, dirn, '');
     }
 </script>
-<form action="<?php echo JRoute::_('index.php?option=com_managements&view=cars'); ?>" method="post" name="adminForm" id="adminForm">
+<form action="<?php echo JRoute::_('index.php?option=com_managements&view=advanceds_moneys'); ?>" method="post" name="adminForm" id="adminForm">
 
     <div id="filter-bar" class="btn-toolbar">
         <div class="filter-search btn-group pull-left">
@@ -91,17 +91,8 @@ $assoc = JLanguageAssociations::isEnabled();
             <th width="1%" style="min-width:55px" class="nowrap center">
                 <?php echo JHtml::_('grid.sort', 'JSTATUS', 'a.published', $listDirn, $listOrder); ?>
             </th>
-            <th width="10%" class="nowrap center">
-                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_MARK', 'a.mark', $listDirn, $listOrder); ?>
-            </th>
-            <th width="10%" class="nowrap center">
-                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_MODEL', 'a.model', $listDirn, $listOrder); ?>
-            </th>
-            <th width="10%" class="nowrap center">
-                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_PLATE', 'a.plate', $listDirn, $listOrder); ?>
-            </th>
-            <th width="10%" class="nowrap center">
-                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_YEAR', 'a.year', $listDirn, $listOrder); ?>
+            <th width="40%" class="nowrap center">
+                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_HEADING_ADVANCEDS_MONEYS', 'a.title', $listDirn, $listOrder); ?>
             </th>
             <th width="1%" class="nowrap center hidden-phone">
                 <?php echo JHtml::_('grid.sort', 'JGRID_HEADING_ID', 'a.id', $listDirn, $listOrder); ?>
@@ -141,47 +132,32 @@ $assoc = JLanguageAssociations::isEnabled();
                 </td>
                 <td class="center">
                     <div class="btn-group">
-                        <?php echo JHtml::_('jgrid.published', $item->published, $i, 'cars.', $canChange, 'cb', $item->publish_up, $item->publish_down); ?>
+                        <?php echo JHtml::_('jgrid.published', $item->published, $i, 'advanceds_moneys.', $canChange, 'cb', $item->publish_up, $item->publish_down); ?>
                         <?php
                         // Create dropdown items
                         $action = $archived ? 'unarchive' : 'archive';
-                        JHtml::_('actionsdropdown.' . $action, 'cb' . $i, 'cars');
+                        JHtml::_('actionsdropdown.' . $action, 'cb' . $i, 'advanceds_moneys');
 
                         $action = $trashed ? 'untrash' : 'trash';
-                        JHtml::_('actionsdropdown.' . $action, 'cb' . $i, 'cars');
+                        JHtml::_('actionsdropdown.' . $action, 'cb' . $i, 'advanceds_moneys');
 
                         // Render dropdown list
                         echo JHtml::_('actionsdropdown.render', $this->escape($item->id));
                         ?>
                     </div>
                 </td>
-                <td align="center hidden-phone">
-                    <div class="center">
-                        <?php echo $item->mark; ?>
-                    </div>
-                </td>
-                <td align="center hidden-phone">
-                    <div class="center">
-                        <?php echo $item->model; ?>
-                    </div>
-                </td>
                 <td class="nowrap has-context">
                     <div class="center">
                         <?php if ($item->checked_out) : ?>
-                            <?php echo JHtml::_('jgrid.checkedout', $i, $item->editor, $item->checked_out_time, 'cars.', $canCheckin); ?>
+                            <?php echo JHtml::_('jgrid.checkedout', $i, $item->editor, $item->checked_out_time, 'advanceds_moneys.', $canCheckin); ?>
                         <?php endif; ?>
                         <?php if ($canEdit || $canEditOwn) : ?>
-                            <a href="<?php echo JRoute::_('index.php?option=com_managements&task=car.edit&id=' . (int)$item->id); ?>">
-                                <?php echo $this->escape($item->plate); ?>
+                            <a href="<?php echo JRoute::_('index.php?option=com_managements&task=advanceds_money.edit&id=' . (int)$item->id); ?>">
+                                <?php echo $this->escape($item->title); ?>
                             </a>
                         <?php else : ?>
-                            <?php echo $this->escape($item->plate); ?>
+                            <?php echo $this->escape($item->title); ?>
                         <?php endif; ?>
-                    </div>
-                </td>
-                <td align="center hidden-phone">
-                    <div class="center">
-                        <?php echo $item->year; ?>
                     </div>
                 </td>
                 <td align="center hidden-phone">

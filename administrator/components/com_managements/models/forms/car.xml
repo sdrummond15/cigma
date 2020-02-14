@@ -1,93 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
-	<fieldset name="details"
-		addfieldpath="/administrator/components/com_managements/models/fields"
-	>
-		<field name="id" 
-                       type="text" 
-                       default="0"
-                       readonly="true"
-                       class="readonly"
-                       label="JGLOBAL_FIELD_ID_LABEL"
-                />
-                <field name="placa"
-                       type="text" 
-                       class="inputbox"
-                       size="40" 
-                       label="COM_MANAGEMENTS_FIELD_PLACA_LABEL"
-                       required="true" 
-                />
+    <fieldset name="details"
+              addfieldpath="/administrator/components/com_managements/models/fields"
+    >
+        <field name="id"
+               type="text"
+               default="0"
+               readonly="true"
+               class="readonly"
+               label="JGLOBAL_FIELD_ID_LABEL"
+        />
 
-		<field name="chassi"
-                       type="text" 
-                       class="inputbox"
-                       size="140"
-                       label="JFIELD_CHASSI_LABEL"
-                />
-                
-                <field name="ano"
-                       type="text"
-                       size="4"
-                       label="JFIELD_ANO_LABEL"
-                />
+        <field name="mark"
+               type="list"
+               label="COM_MANAGEMENTS_FIELD_MARK_LABEL"
+               class="inputbox"
+               size="1"
+               default=""
+               required="true"
+        >
+            <option value="">Selecione a marca</option>
+            <option value="Adamo">Adamo</option>
+            <option value="Agrale">Agrale</option>
+            <option value="Aldee">Aldee</option>
+            <option value="Alfa Romeo">Alfa Romeo</option>
+            <option value="Americar">Americar</option>
+            <option value="Avallone">Avallone</option>
+            <option value="Audi">Audi</option>
+            <option value="Aurora">Aurora</option>
+            <option value="Bianco">Bianco</option>
+            <option value="BMW">BMW</option>
+            <option value="Bola">Bola</option>
+            <option value="Brasinca">Brasinca</option>
+            <option value="BYD">BYD</option>
+            <option value="Cadillac">Cadillac</option>
+            <option value="CBP">CBP</option>
+            <option value="CBT">CBT</option>
+            <option value="Chamonix">Chamonix</option>
+            <option value="Chery">Chery</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Chrysler/Dodge">Chrysler/Dodge</option>
+            <option value="Citroën">Citroën</option>
+            <option value="Concorde">Concorde</option>
+            <option value="Corona">Corona</option>
+            <option value="Cross Lander">Cross Lander</option>
+            <option value="Daewoo">Daewoo</option>
+            <option value="Daihatsu">Daihatsu</option>
+            <option value="Dankar">Dankar</option>
+            <option value="DKW-Vemag">DKW-Vemag</option>
+            <option value="Edra">Edra</option>
+            <option value="Emis">Emis</option>
+            <option value="Engerauto">Engerauto</option>
+            <option value="Engesa">Engesa</option>
+            <option value="Envemo">Envemo</option>
+            <option value="Envesa">Envesa</option>
+            <option value="Effa">Effa</option>
+            <option value="Farus">Farus</option>
+            <option value="Fiat">Fiat</option>
+            <option value="FNM">FNM</option>
+            <option value="Ford">Ford</option>
+            <option value="Furglass">Furglass</option>
+            <option value="Geely">Geely</option>
+            <option value="Glaspac">Glaspac</option>
+            <option value="GMC">GMC</option>
+            <option value="Grancar">Grancar</option>
+            <option value="Gurgel">Gurgel</option>
+            <option value="Hofstetter">Hofstetter</option>
+            <option value="Honda">Honda</option>
+            <option value="Hummer">Hummer</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="IBAP">IBAP</option>
+            <option value="Inbrave">Inbrave</option>
+            <option value="Infiniti">Infiniti</option>
+            <option value="Ita">Ita</option>
+            <option value="JAC">JAC</option>
+            <option value="Jaguar">Jaguar</option>
+            <option value="Jeep">Jeep</option>
+            <option value="JPX">JPX</option>
+            <option value="Kia[59]">Kia[59]</option>
+            <option value="Lada">Lada</option>
+            <option value="L'Automobile/L'Auto Craft">L'Automobile/L'Auto Craft</option>
+            <option value="Lafer">Lafer</option>
+            <option value="Land Rover">Land Rover</option>
+            <option value="Lexus">Lexus</option>
+            <option value="LHM">LHM</option>
+            <option value="Lifan">Lifan</option>
+            <option value="Lincoln">Lincoln</option>
+            <option value="Lobini">Lobini</option>
+            <option value="Lorena">Lorena</option>
+            <option value="Macan">Macan</option>
+            <option value="Mahindra">Mahindra</option>
+            <option value="Malzoni">Malzoni</option>
+            <option value="Matra Veículos">Matra Veículos</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Megastar Veículos">Megastar Veículos</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="MG">MG</option>
+            <option value="Mini">Mini</option>
+            <option value="Mirage">Mirage</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+            <option value="Miura">Miura</option>
+            <option value="Monarca">Monarca</option>
+            <option value="NBM">NBM</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Nobre">Nobre</option>
+            <option value="PAG/Dacon">PAG/Dacon</option>
+            <option value="Peugeot">Peugeot</option>
+            <option value="Polystilo">Polystilo</option>
+            <option value="Puma">Puma</option>
+            <option value="Py Motors">Py Motors</option>
+            <option value="Ragge">Ragge</option>
+            <option value="Renault">Renault</option>
+            <option value="Romi">Romi</option>
+            <option value="Saab">Saab</option>
+            <option value="Simca">Simca</option>
+            <option value="Santa Matilde">Santa Matilde</option>
+            <option value="San Vito">San Vito</option>
+            <option value="SEAT">SEAT</option>
+            <option value="Smart">Smart</option>
+            <option value="STV">STV</option>
+            <option value="Spiller Mattei">Spiller Mattei</option>
+            <option value="SR Veículos Especiais">SR Veículos Especiais</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Suzuki">Suzuki</option>
+            <option value="SsangYong">SsangYong</option>
+            <option value="TAC Motors">TAC Motors</option>
+            <option value="Tanger">Tanger</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Trimax">Trimax</option>
+            <option value="Troller">Troller</option>
+            <option value="Villa">Villa</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="WMV">WMV</option>
+            <option value="Willys Overland">Willys Overland</option>
+        </field>
 
-                
-                <field name="photo" 
-                       type="media" 
-                       directory="podium"
-                       hide_none="1" 
-                       label="COM_MANAGEMENTS_FIELD_PHOTO_PODIUM_LABEL"
-                       size="40"
-                />
+        <field name="model"
+               type="text"
+               class="inputbox"
+               size="40"
+               label="COM_MANAGEMENTS_FIELD_MODEL_LABEL"
+               required="true"
+        />
 
-                
-                <field name="grid_order" 
-                       type="text" 
-                       class="inputbox"
-                       size="10" 
-                       label="JFIELD_GRID_ORDER_LABEL"
-                />
-                
-                <field name="published" 
-                       type="list" 
-                       label="JSTATUS" 
-                       class="inputbox" 
-                       size="1" 
-                       default="1">
-                    
-                     <option value="1">JPUBLISHED</option>
-                     <option value="0">JUNPUBLISHED</option>
-                     <option value="2">JARCHIVED</option>
-                     <option value="-2">JTRASHED</option>
+        <field name="plate"
+               type="text"
+               class="inputbox"
+               size="40"
+               label="COM_MANAGEMENTS_FIELD_PLATE_LABEL"
+               required="true"
+        />
 
-                 </field>
-                                
-	</fieldset>
-        <fieldset name="publish"
-                  label="COM_MANAGEMENTS_GROUP_LABEL_PUBLISHING_DETAILS"
-	>
+        <field name="frame"
+               type="text"
+               class="inputbox"
+               size="140"
+               label="COM_MANAGEMENTS_FIELD_FRAME_LABEL"
+               required="true"
+        />
 
-		<field name="created" type="calendar"
-			label="JGLOBAL_FIELD_CREATED_LABEL" description="JGLOBAL_FIELD_CREATED_Desc"
-			class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S"
-			filter="user_utc" />
-                
-                <field name="created_by" 
-                        type="user" 
-                        label="JGLOBAL_FIELD_CREATED_BY_LABEL" 
-                        description="JGLOBAL_FIELD_CREATED_BY_Desc" 
-                 />
+        <field name="year"
+               type="text"
+               size="4"
+               label="COM_MANAGEMENTS_FIELD_YEAR_LABEL"
+               required="true"
+        />
 
-		<field name="publish_up" type="calendar"
-			label="COM_MANAGEMENTS_FIELD_PUBLISH_UP_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_UP_DESC"
-			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
-			filter="user_utc" />
 
-		<field name="publish_down" type="calendar"
-			label="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_DESC"
-			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
-			filter="user_utc" />
+        <field name="photo"
+               type="media"
+               directory="carros"
+               hide_none="1"
+               label="COM_MANAGEMENTS_FIELD_PHOTO_LABEL"
+               size="20"
+        />
 
-	</fieldset>
-	
+        <field name="published"
+               type="list"
+               label="JSTATUS"
+               class="inputbox"
+               size="1"
+               default="1"
+        >
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+
+    </fieldset>
+    <fieldset name="publish"
+              label="COM_MANAGEMENTS_GROUP_LABEL_PUBLISHING_DETAILS"
+    >
+
+        <field name="created" type="calendar"
+               label="JGLOBAL_FIELD_CREATED_LABEL" description="JGLOBAL_FIELD_CREATED_Desc"
+               class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S"
+               filter="user_utc"/>
+
+        <field name="created_by"
+               type="user"
+               label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+               description="JGLOBAL_FIELD_CREATED_BY_Desc"
+        />
+
+        <field name="publish_up" type="calendar"
+               label="COM_MANAGEMENTS_FIELD_PUBLISH_UP_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_UP_DESC"
+               class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+               filter="user_utc"/>
+
+        <field name="publish_down" type="calendar"
+               label="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_DESC"
+               class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+               filter="user_utc"/>
+
+    </fieldset>
+
 </form>

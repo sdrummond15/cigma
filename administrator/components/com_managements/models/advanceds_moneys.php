@@ -19,7 +19,7 @@ jimport('joomla.application.component.modellist');
  * @subpackage com_adminstration
  * @since 2.5
  */
-class ManagementsModelCars extends JModelList
+class ManagementsModelAdvanceds_Moneys extends JModelList
 {
     /**
      * Constructor.
@@ -33,11 +33,7 @@ class ManagementsModelCars extends JModelList
         if (empty($config['filter_fields'])) {
             $config['filter_fields'] = array(
                 'id', 'a.id',
-                'mark', 'a.mark',
-                'model', 'a.model',
-                'plate', 'a.plate',
-                'frame', 'a.frame',
-                'year', 'a.year',
+                'title', 'a.title',
                 'published', 'a.published',
                 'publish_up', 'a.publish_up',
                 'publish_down', 'a.publish_down',
@@ -56,16 +52,15 @@ class ManagementsModelCars extends JModelList
      *
      * @since    1.6
      */
-    protected function populateState($ordering = 'a.plate', $direction = 'asc')
+    protected function populateState($direction = null)
     {
         // Initialise variables.
         $app = JFactory::getApplication();
 
-        if ($layout = $app->input->get('layout'))
-        {
+
+        if ($layout = JRequest::getVar('layout')) {
             $this->context .= '.' . $layout;
         }
-
         // Load the filter state.
         $search = $this->getUserStateFromRequest($this->context . '.filter.search', 'filter_search');
         $this->setState('filter.search', $search);
@@ -74,7 +69,7 @@ class ManagementsModelCars extends JModelList
         $this->setState('filter.published', $published);
 
         // List state information.
-        parent::populateState($ordering, $direction);
+        parent::populateState('a.title', 'asc');
     }
 
     /**
@@ -115,11 +110,8 @@ class ManagementsModelCars extends JModelList
                 'a.id AS id,' .
                 'a.checked_out,' .
                 'a.checked_out_time,' .
-                'a.mark AS mark,' .
-                'a.model AS model,' .
-                'a.plate AS plate,' .
-                'a.frame AS frame,' .
-                'a.year AS year,' .
+                'c.name AS client,' .
+                'a.id_consultant AS id_consultant,' .
                 'a.created AS created,' .
                 'ua.name AS created_by,' .
                 'a.publish_up, a.publish_down,'.
@@ -128,12 +120,15 @@ class ManagementsModelCars extends JModelList
             )
         );
 
-        $query->from($db->quoteName('#__cars') . ' AS a');
+        $query->from($db->quoteName('#__advanced_money') . ' AS a');
 
+        // Join over the users for the checked out user.
+        $query->select('c.name AS client');
+        $query->join('LEFT', '#__clients AS c ON c.id = a.id_client');
 
         // Join over the users for the checked out user.
         $query->select('uc.name AS editor');
-        $query->join('LEFT', '#__users AS uc ON uc.id=a.checked_out');
+        $query->join('LEFT', '#__users AS uc ON uc.id = a.checked_out');
 
         // Join over the users for the author.
         $query->select('ua.name AS author_name');
@@ -147,7 +142,6 @@ class ManagementsModelCars extends JModelList
             $query->where('(a.published IN (0, 1))');
         }
 
-
         // Filter by search in title
         $search = $this->getState('filter.search');
         if (!empty($search)) {
@@ -155,13 +149,16 @@ class ManagementsModelCars extends JModelList
                 $query->where('a.id = ' . (int)substr($search, 3));
             } else {
                 $search = $db->Quote('%' . $db->escape($search, true) . '%');
-                $query->where('a.plate LIKE ' . $search);
+                $query->where('c.name LIKE ' . $search);
             }
         }
 
-        $orderCol = $this->state->get('list.ordering', 'a.plate');
+        $orderCol = $this->state->get('list.ordering', 'c.name');
         $orderDirn = $this->state->get('list.direction', 'asc');
 
+        if ($orderCol == 'inst') {
+            $orderCol = 'c.name';
+        }
         $query->order($db->escape($orderCol . ' ' . $orderDirn));
 
         return $query;

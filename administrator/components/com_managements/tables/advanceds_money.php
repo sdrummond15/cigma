@@ -10,7 +10,9 @@
 // no direct access
 defined('_JEXEC') or die;
 
-class ManagementsTableCity extends JTable
+jimport('joomla.application.component.model');
+
+class ManagementsTableAdvanceds_Money extends JTable
 {
     /**
      * Constructor
@@ -19,7 +21,7 @@ class ManagementsTableCity extends JTable
      */
     function __construct(&$_db)
     {
-        parent::__construct('#__cities', 'id', $_db);
+        parent::__construct('#__advanced_money', 'id', $_db);
     }
 
 
@@ -38,6 +40,14 @@ class ManagementsTableCity extends JTable
 
     public function check()
     {
+        if (trim($this->alias) == '') {
+            $this->alias = $this->title;
+        }
+        $this->alias = JApplication::stringURLSafe($this->alias);
+
+        if (trim(str_replace('-', '', $this->alias)) == '') {
+            $this->alias = JFactory::getDate()->format('Y-m-d-H-i-s');
+        }
         return true;
     }
 
@@ -60,7 +70,7 @@ class ManagementsTableCity extends JTable
             }
         }
 
-        $table = JTable::getInstance('City', 'ManagementsTable');
+        $table = JTable::getInstance('Advanceds_Money', 'ManagementsTable');
 
         return parent::store($updateNulls);
     }

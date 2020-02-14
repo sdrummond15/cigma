@@ -26,7 +26,7 @@ $assoc = JLanguageAssociations::isEnabled();
     }
 </script>
 
-<form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="stage-form" class="form-validate">
+<form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="car-form" class="form-validate">
 
     <?php echo JLayoutHelper::render('joomla.edit.title_alias', $this); ?>
 
@@ -38,12 +38,12 @@ $assoc = JLanguageAssociations::isEnabled();
             <div class="span9">
                 <div class="row-fluid form-horizontal-desktop">
                     <div class="span6">
-                        <?php echo $this->form->renderField('id'); ?>
-                        <?php echo $this->form->renderField('placa'); ?>
-                        <?php echo $this->form->renderField('chassi'); ?>
+                        <?php echo $this->form->renderField('mark'); ?>
+                        <?php echo $this->form->renderField('model'); ?>
+                        <?php echo $this->form->renderField('plate'); ?>
+                        <?php echo $this->form->renderField('frame'); ?>
+                        <?php echo $this->form->renderField('year'); ?>
                         <?php echo $this->form->renderField('photo'); ?>
-                        <?php echo $this->form->renderField('ano'); ?>
-                        <?php echo $this->form->renderField('grid_order'); ?>
                     </div>
                 </div>
             </div>

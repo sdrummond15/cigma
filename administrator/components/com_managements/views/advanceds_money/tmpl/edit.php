@@ -20,27 +20,26 @@ $assoc = JLanguageAssociations::isEnabled();
 ?>
 <script type="text/javascript">
     Joomla.submitbutton = function (task) {
-        if (task == 'city.cancel' || document.formvalidator.isValid(document.id('city-form'))) {
-            Joomla.submitform(task, document.getElementById('city-form'));
+        if (task == 'advanceds_money.cancel' || document.formvalidator.isValid(document.id('advanceds_money-form'))) {
+            Joomla.submitform(task, document.getElementById('advanceds_money-form'));
         }
     }
 </script>
 
-<form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="city-form" class="form-validate">
+<form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="advanceds_money-form" class="form-validate">
 
     <?php echo JLayoutHelper::render('joomla.edit.title_alias', $this); ?>
 
     <div class="form-horizontal">
         <?php echo JHtml::_('bootstrap.startTabSet', 'myTab', array('active' => 'details')); ?>
 
-        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'details', empty($this->item->id) ? JText::_('COM_MANAGEMENTS_NEW_CITY', true) : JText::_('COM_MANAGEMENTS_EDIT_CITY', true)); ?>
+        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'details', empty($this->item->id) ? JText::_('COM_MANAGEMENTS_NEW_ADVANCEDS_MONEY', true) : JText::_('COM_MANAGEMENTS_EDIT_ADVANCEDS_MONEY', true)); ?>
         <div class="row-fluid">
             <div class="span9">
                 <div class="row-fluid form-horizontal-desktop">
                     <div class="span6">
-                        <?php echo $this->form->renderField('description'); ?>
-                        <?php echo $this->form->renderField('uf'); ?>
-
+                        <?php echo $this->form->renderField('year'); ?>
+                        <?php echo $this->form->renderField('lastro'); ?>
                     </div>
                 </div>
             </div>

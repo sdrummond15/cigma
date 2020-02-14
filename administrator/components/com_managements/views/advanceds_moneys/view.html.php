@@ -19,7 +19,7 @@ jimport('joomla.application.component.view');
  * @subpackage com_adminstration
  * @since 2.5
  */
-class ManagementsViewCars extends JViewLegacy
+class ManagementsViewAdvanceds_Moneys extends JViewLegacy
 {
     protected $items;
     protected $paginaton;
@@ -41,15 +41,9 @@ class ManagementsViewCars extends JViewLegacy
         $this->pagination = $this->get('Pagination');
         $this->state = $this->get('State');
 
-        if (count($errors = $this->get('Errors')))
-        {
-            throw new Exception(implode("\n", $errors), 500);
+        if (count($errors = $this->get('Erros'))) {
+            JError::raiseError(500, implode("\n", $errors));
         }
-
-        //get document
-        $doc = JFactory::getDocument();
-        $doc->addStyleSheet(JURI::root() . 'media/com_managements/css/backend.css');
-
         $this->addToolbar();
 
         // Include the component HTML helpers.
@@ -62,36 +56,41 @@ class ManagementsViewCars extends JViewLegacy
     {
         require_once JPATH_COMPONENT . '/helpers/managements.php';
 
-        JToolBarHelper::title(JText::_('COM_MANAGEMENTS_MANAGER_CARS'), 'carro.png');
+        JToolBarHelper::title(JText::_('COM_MANAGEMENTS_MANAGER_ADVANCEDS_MONEYS'), 'campeonato.png');
 
-        JToolBarHelper::addNew('car.add');
+        JToolBarHelper::addNew('advanceds_money.add');
 
-        JToolBarHelper::editList('car.edit');
+        JToolBarHelper::editList('advanceds_money.edit');
 
+        if ($this->state->get('filter.state') != 2) {
+            JToolBarHelper::divider();
+            JToolBarHelper::publish('advanceds_moneys.publish', 'JTOOLBAR_PUBLISH', true);
+            JToolBarHelper::unpublish('advanceds_moneys.unpublish', 'JTOOLBAR_UNPUBLISH', true);
+        }
 
         if ($this->state->get('filter.state') != -1) {
             JToolBarHelper::divider();
             if ($this->state->get('filter.state') != 2) {
-                JToolBarHelper::archiveList('cars.archive');
+                JToolBarHelper::archiveList('advanceds_moneys.archive');
             } elseif ($this->state->get('filter.state') == 2) {
-                JToolBarHelper::unarchiveList('cars.publish');
+                JToolBarHelper::unarchiveList('advanceds_moneys.publish');
             }
         }
 
-        JToolBarHelper::checkin('cars.checkin');
+        JToolBarHelper::checkin('advanceds_moneys.checkin');
 
         if ($this->state->get('filter.state') == -2) {
-            JToolBarHelper::deleteList('', 'cars.delete', 'JTOOLBAR_EMPTY_TRASH');
+            JToolBarHelper::deleteList('', 'advanceds_moneys.delete', 'JTOOLBAR_EMPTY_TRASH');
             JToolBarHelper::divider();
         }
 
-        JToolBarHelper::trash('cars.trash');
+        JToolBarHelper::trash('advanceds_moneys.trash');
         JToolBarHelper::divider();
 
         JToolBarHelper::preferences('com_managements');
         JToolBarHelper::divider();
 
-        JToolBarHelper::help('cars', $com = true);
+        JToolBarHelper::help('advanceds_moneys', $com = true);
     }
 
     protected function getSortFields()
@@ -99,8 +98,12 @@ class ManagementsViewCars extends JViewLegacy
         return array(
             'a.ordering' => JText::_('JGRID_HEADING_ORDERING'),
             'a.published' => JText::_('JSTATUS'),
-            'a.plate' => JText::_('JGLOBAL_TITLE'),
-            'ul.name' => JText::_('COM_MANAGEMENTS_FIELD_LINKED_USER_LABEL')
+            'a.id_client' => JText::_('JGLOBAL_TITLE'),
+            'ul.name' => JText::_('COM_MANAGEMENTS_FIELD_LINKED_USER_LABEL'),
+            'a.featured' => JText::_('JFEATURED'),
+            'a.access' => JText::_('JGRID_HEADING_ACCESS'),
+            'a.language' => JText::_('JGRID_HEADING_LANGUAGE'),
+            'a.id' => JText::_('JGRID_HEADING_ID')
         );
     }
 }
