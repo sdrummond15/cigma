@@ -21,7 +21,7 @@
                 required="true"
         />
 
-        <field name="city"
+        <field name="id_city"
                type="city"
                label="COM_MANAGEMENTS_FIELD_CITY"
                required="true"

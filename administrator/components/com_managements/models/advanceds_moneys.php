@@ -33,7 +33,7 @@ class ManagementsModelAdvanceds_Moneys extends JModelList
         if (empty($config['filter_fields'])) {
             $config['filter_fields'] = array(
                 'id', 'a.id',
-                'title', 'a.title',
+                'consultant', 'u.name',
                 'published', 'a.published',
                 'publish_up', 'a.publish_up',
                 'publish_down', 'a.publish_down',
@@ -52,7 +52,7 @@ class ManagementsModelAdvanceds_Moneys extends JModelList
      *
      * @since    1.6
      */
-    protected function populateState($direction = null)
+    protected function populateState($ordering = 'u.name', $direction = 'asc')
     {
         // Initialise variables.
         $app = JFactory::getApplication();
@@ -69,7 +69,7 @@ class ManagementsModelAdvanceds_Moneys extends JModelList
         $this->setState('filter.published', $published);
 
         // List state information.
-        parent::populateState('a.title', 'asc');
+        parent::populateState($ordering, $direction);
     }
 
     /**
@@ -110,8 +110,8 @@ class ManagementsModelAdvanceds_Moneys extends JModelList
                 'a.id AS id,' .
                 'a.checked_out,' .
                 'a.checked_out_time,' .
-                'c.name AS client,' .
-                'a.id_consultant AS id_consultant,' .
+                'a.date_in AS date_in,' .
+                'a.date_out AS date_out,' .
                 'a.created AS created,' .
                 'ua.name AS created_by,' .
                 'a.publish_up, a.publish_down,'.
@@ -123,8 +123,8 @@ class ManagementsModelAdvanceds_Moneys extends JModelList
         $query->from($db->quoteName('#__advanced_money') . ' AS a');
 
         // Join over the users for the checked out user.
-        $query->select('c.name AS client');
-        $query->join('LEFT', '#__clients AS c ON c.id = a.id_client');
+        $query->select('u.name AS consultant');
+        $query->join('LEFT', '#__users AS u ON u.id = a.id_consultant');
 
         // Join over the users for the checked out user.
         $query->select('uc.name AS editor');
@@ -149,15 +149,15 @@ class ManagementsModelAdvanceds_Moneys extends JModelList
                 $query->where('a.id = ' . (int)substr($search, 3));
             } else {
                 $search = $db->Quote('%' . $db->escape($search, true) . '%');
-                $query->where('c.name LIKE ' . $search);
+                $query->where('u.name LIKE ' . $search);
             }
         }
 
-        $orderCol = $this->state->get('list.ordering', 'c.name');
+        $orderCol = $this->state->get('list.ordering', 'u.name');
         $orderDirn = $this->state->get('list.direction', 'asc');
 
         if ($orderCol == 'inst') {
-            $orderCol = 'c.name';
+            $orderCol = 'u.name';
         }
         $query->order($db->escape($orderCol . ' ' . $orderDirn));
 

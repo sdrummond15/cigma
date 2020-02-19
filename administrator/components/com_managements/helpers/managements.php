@@ -89,4 +89,54 @@ class ManagementsHelper
         return $options;
     }
 
+    public static function getClientOptions()
+    {
+        // Initialize variables.
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+
+        $query->select('id As value, name As text');
+        $query->from('#__clients AS c');
+        $query->order('c.name');
+
+        // Get the options.
+        $db->setQuery($query);
+
+        $options = $db->loadObjectList();
+
+        // Check for a database error.
+        if ($db->getErrorNum()) {
+            JError::raiseWarning(500, $db->getErrorMsg());
+        }
+
+        return $options;
+    }
+
+    public static function getConsultantOptions()
+    {
+        // Initialize variables.
+        $groupConsultant = 10;
+
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+
+        $query->select('id As value, name As text');
+        $query->from('#__users AS u');
+        $query->join('LEFT','#__user_usergroup_map AS g ON u.id = g.user_id');
+        $query->where('g.group_id = ' . $groupConsultant);
+        $query->order('u.name');
+
+        // Get the options.
+        $db->setQuery($query);
+
+        $options = $db->loadObjectList();
+
+        // Check for a database error.
+        if ($db->getErrorNum()) {
+            JError::raiseWarning(500, $db->getErrorMsg());
+        }
+
+        return $options;
+    }
+
 }

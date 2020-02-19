@@ -58,5 +58,4 @@ class ManagementsModelAdvanceds_Money extends JModelAdmin
         return $data;
     }
 
-
 }

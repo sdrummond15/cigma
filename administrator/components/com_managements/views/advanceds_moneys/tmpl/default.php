@@ -91,8 +91,14 @@ $assoc = JLanguageAssociations::isEnabled();
             <th width="1%" style="min-width:55px" class="nowrap center">
                 <?php echo JHtml::_('grid.sort', 'JSTATUS', 'a.published', $listDirn, $listOrder); ?>
             </th>
-            <th width="40%" class="nowrap center">
-                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_HEADING_ADVANCEDS_MONEYS', 'a.title', $listDirn, $listOrder); ?>
+            <th width="30%" class="nowrap center">
+                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_HEADING_CONSULTANT', 'u.name', $listDirn, $listOrder); ?>
+            </th>
+            <th width="5%" class="nowrap center">
+                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_HEADING_DATE_IN', 'a.date_in', $listDirn, $listOrder); ?>
+            </th>
+            <th width="5%" class="nowrap center">
+                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_HEADING_DATE_OUT', 'a.date_out', $listDirn, $listOrder); ?>
             </th>
             <th width="1%" class="nowrap center hidden-phone">
                 <?php echo JHtml::_('grid.sort', 'JGRID_HEADING_ID', 'a.id', $listDirn, $listOrder); ?>
@@ -153,11 +159,21 @@ $assoc = JLanguageAssociations::isEnabled();
                         <?php endif; ?>
                         <?php if ($canEdit || $canEditOwn) : ?>
                             <a href="<?php echo JRoute::_('index.php?option=com_managements&task=advanceds_money.edit&id=' . (int)$item->id); ?>">
-                                <?php echo $this->escape($item->title); ?>
+                                <?php echo $this->escape($item->consultant); ?>
                             </a>
                         <?php else : ?>
-                            <?php echo $this->escape($item->title); ?>
+                            <?php echo $this->escape($item->consultant); ?>
                         <?php endif; ?>
+                    </div>
+                </td>
+                <td align="center hidden-phone">
+                    <div class="center">
+                        <?php echo JHtml::_('date', $item->date_in, 'DATE_FORMAT_JS2'); ?>
+                    </div>
+                </td>
+                <td align="center hidden-phone">
+                    <div class="center">
+                        <?php echo JHtml::_('date', $item->date_out, 'DATE_FORMAT_JS2'); ?>
                     </div>
                 </td>
                 <td align="center hidden-phone">

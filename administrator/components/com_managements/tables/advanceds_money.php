@@ -40,14 +40,6 @@ class ManagementsTableAdvanceds_Money extends JTable
 
     public function check()
     {
-        if (trim($this->alias) == '') {
-            $this->alias = $this->title;
-        }
-        $this->alias = JApplication::stringURLSafe($this->alias);
-
-        if (trim(str_replace('-', '', $this->alias)) == '') {
-            $this->alias = JFactory::getDate()->format('Y-m-d-H-i-s');
-        }
         return true;
     }
 

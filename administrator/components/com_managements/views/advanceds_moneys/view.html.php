@@ -41,9 +41,10 @@ class ManagementsViewAdvanceds_Moneys extends JViewLegacy
         $this->pagination = $this->get('Pagination');
         $this->state = $this->get('State');
 
-        if (count($errors = $this->get('Erros'))) {
-            JError::raiseError(500, implode("\n", $errors));
+        if (count($errors = $this->get('Errors'))) {
+            throw new Exception(implode("\n", $errors), 500);
         }
+
         $this->addToolbar();
 
         // Include the component HTML helpers.

@@ -41,8 +41,7 @@ class ManagementsViewClients extends JViewLegacy
         $this->pagination = $this->get('Pagination');
         $this->state = $this->get('State');
 
-        if (count($errors = $this->get('Errors')))
-        {
+        if (count($errors = $this->get('Errors'))) {
             throw new Exception(implode("\n", $errors), 500);
         }
 

@@ -24,11 +24,10 @@ class ManagementsViewAdvanceds_Money extends JViewLegacy
         $this->form         = $this->get('Form');
         $this->item         = $this->get('Item');
         $this->state        = $this->get('State');
-        
-        
-        if(count($erros = $this->get('Errors'))){
-            JError::raiseError(500, implode("\n", $errors));
-            return false;
+
+
+        if (count($errors = $this->get('Errors'))) {
+            throw new Exception(implode("\n", $errors), 500);
         }
         
         $doc = JFactory::getDocument();

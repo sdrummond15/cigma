@@ -57,5 +57,5 @@ class ManagementsModelClient extends JModelAdmin
 
 		return $data;
 	}
-        
+
 }

@@ -1,85 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
-	<fieldset name="details"
-		addfieldpath="/administrator/components/com_managements/models/fields"
-	>
-		<field name="id" 
-                       type="text" 
-                       default="0"
-                       readonly="true"
-                       class="readonly"
-                       label="JGLOBAL_FIELD_ID_LABEL"
-                />
-                <field name="title" 
-                       type="text" 
-                       class="inputbox"
-                       size="40" 
-                       label="COM_MANAGEMENTS_FIELD_TITLE_ADVANCEDS_MONEY_LABEL"
-                       required="true" 
-                />
+    <fieldset name="details"
+              addfieldpath="/administrator/components/com_managements/models/fields"
+    >
+        <field name="id"
+               type="text"
+               default="0"
+               readonly="true"
+               class="readonly"
+               label="JGLOBAL_FIELD_ID_LABEL"
+        />
 
-		<field name="alias" 
-                       type="text" 
-                       class="inputbox"
-                       size="40" 
-                       label="JFIELD_ALIAS_LABEL"
-                />
-                
-                <field name="year"
-                       type="text" 
-                       class="inputbox"
-                       size="10"
-                       maxlength="4"
-                       label="JFIELD_YEAR_LABEL"
-                />
-                
-                <field name="lastro"
-                       type="text" 
-                       class="inputbox"
-                       size="10"
-                       maxlength="3"
-                       label="JFIELD_LASTRO_LABEL"
-                />
-		
-                <field name="published" 
-                        type="list" 
-                        label="JSTATUS" 
-                        class="inputbox" 
-                        size="1" 
-                        default="1">
-                    
-                     <option value="1">JPUBLISHED</option>
-                     <option value="0">JUNPUBLISHED</option>
-                     <option value="2">JARCHIVED</option>
-                     <option value="-2">JTRASHED</option>
+        <field name="id_consultant"
+               type="consultant"
+               label="COM_MANAGEMENTS_FIELD_CONSULTANT"
+               required="true"
+        />
 
-                 </field>
-                
-	</fieldset>
-        <fieldset name="publish"
-		label="COM_MANAGEMENTS_GROUP_LABEL_PUBLISHING_DETAILS"
-	>
+        <field name="cash"
+               type="text"
+               class="inputbox"
+               size="40"
+               label="COM_MANAGEMENTS_FIELD_VALUE"
+        />
 
-		<field name="created" type="calendar"
-			label="JGLOBAL_FIELD_CREATED_LABEL" description="JGLOBAL_FIELD_CREATED_Desc"
-			class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S"
-			filter="user_utc" />
-                
-                <field name="created_by" 
-                        type="user" 
-                        label="JGLOBAL_FIELD_CREATED_BY_LABEL" 
-                        description="JGLOBAL_FIELD_CREATED_BY_Desc" 
-                 />
+        <field name="id_client"
+               type="client"
+               label="COM_MANAGEMENTS_FIELD_CLIENT"
+               required="true"
+               multiple="multiple"
+        />
 
-		<field name="publish_up" type="calendar"
-			label="COM_MANAGEMENTS_FIELD_PUBLISH_UP_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_UP_DESC"
-			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
-			filter="user_utc" />
+        <field name="published"
+               type="list"
+               label="JSTATUS"
+               class="inputbox"
+               size="1"
+               default="1">
 
-		<field name="publish_down" type="calendar"
-			label="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_DESC"
-			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
-			filter="user_utc" />
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
 
-	</fieldset>
+        </field>
+
+    </fieldset>
+    <fieldset name="publish"
+              label="COM_MANAGEMENTS_GROUP_LABEL_PUBLISHING_DETAILS"
+    >
+
+        <field name="created" type="calendar"
+               label="JGLOBAL_FIELD_CREATED_LABEL" description="JGLOBAL_FIELD_CREATED_Desc"
+               class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S"
+               filter="user_utc"/>
+
+        <field name="created_by"
+               type="user"
+               label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+               description="JGLOBAL_FIELD_CREATED_BY_Desc"
+        />
+
+        <field name="publish_up" type="calendar"
+               label="COM_MANAGEMENTS_FIELD_PUBLISH_UP_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_UP_DESC"
+               class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+               filter="user_utc"/>
+
+        <field name="publish_down" type="calendar"
+               label="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_DESC"
+               class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+               filter="user_utc"/>
+
+    </fieldset>
 </form>

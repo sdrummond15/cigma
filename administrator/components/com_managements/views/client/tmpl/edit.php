@@ -37,7 +37,7 @@ $assoc = JLanguageAssociations::isEnabled();
                 <div class="row-fluid form-horizontal-desktop">
                     <div class="span6">
                         <?php echo $this->form->renderField('name'); ?>
-                        <?php echo $this->form->renderField('city'); ?>
+                        <?php echo $this->form->renderField('id_city'); ?>
                     </div>
                 </div>
             </div>

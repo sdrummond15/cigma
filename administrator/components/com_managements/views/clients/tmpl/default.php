@@ -91,8 +91,11 @@ $assoc = JLanguageAssociations::isEnabled();
             <th width="1%" style="min-width:55px" class="nowrap center">
                 <?php echo JHtml::_('grid.sort', 'JSTATUS', 'a.published', $listDirn, $listOrder); ?>
             </th>
-            <th width="40%" class="nowrap center">
+            <th width="20%" class="nowrap center">
                 <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_NAME_CLIENT', 'a.name', $listDirn, $listOrder); ?>
+            </th>
+            <th width="20%" class="nowrap center">
+                <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_CITY_CLIENT', 'a.name', $listDirn, $listOrder); ?>
             </th>
             <th width="1%" class="nowrap center hidden-phone">
                 <?php echo JHtml::_('grid.sort', 'JGRID_HEADING_ID', 'a.id', $listDirn, $listOrder); ?>
@@ -158,6 +161,11 @@ $assoc = JLanguageAssociations::isEnabled();
                         <?php else : ?>
                             <?php echo $this->escape($item->name); ?>
                         <?php endif; ?>
+                    </div>
+                </td>
+                <td align="center hidden-phone">
+                    <div class="center">
+                        <?php echo $item->city; ?>
                     </div>
                 </td>
                 <td align="center hidden-phone">

@@ -38,7 +38,8 @@ class ManagementsModelClients extends JModelList
                 'publish_down', 'a.publish_down',
                 'created', 'a.created',
                 'created_by', 'a.created_by',
-                'name', 'a.name'
+                'name', 'a.name',
+                'city', 'c.description'
             );
         }
 
@@ -125,6 +126,10 @@ class ManagementsModelClients extends JModelList
         );
 
         $query->from($db->quoteName('#__clients') . ' AS a');
+
+        // Join over the users for the checked out user.
+        $query->select('c.description AS city');
+        $query->join('LEFT', '#__cities AS c ON c.id = a.id_city');
 
         // Join over the users for the checked out user.
         $query->select('uc.name AS editor');
