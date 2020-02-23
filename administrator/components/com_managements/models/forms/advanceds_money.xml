@@ -18,7 +18,7 @@
         />
 
         <field name="cash"
-               type="text"
+               type="price"
                class="inputbox"
                size="40"
                label="COM_MANAGEMENTS_FIELD_VALUE"
@@ -30,6 +30,23 @@
                required="true"
                multiple="multiple"
         />
+
+        <field name="date_in"
+               type="calendar"
+               label="COM_MANAGEMENTS_FIELD_DATE_IN"
+               class="inputbox"
+               size="22"
+               format="%d-%m-%Y"
+               filter="user_utc"
+        />
+
+        <field name="date_out"
+               type="calendar"
+               label="COM_MANAGEMENTS_FIELD_DATE_OUT"
+               class="inputbox"
+               size="22"
+               format="%d-%m-%Y"
+               filter="user_utc"/>
 
         <field name="published"
                type="list"

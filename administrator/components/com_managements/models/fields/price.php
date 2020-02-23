@@ -2,7 +2,7 @@
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die('Restricted access');
 
-jimport('joomla.form.formfield');
+JFormHelper::loadFieldClass('text');
 
 class JFormFieldPrice extends JFormFieldText {
 
@@ -10,7 +10,7 @@ class JFormFieldPrice extends JFormFieldText {
 
 	public function getInput() {
 
-            // Translate placeholder text
+        // Translate placeholder text
 		$hint = $this->translateHint ? JText::_($this->hint) : $this->hint;
 
 		// Initialize some field attributes.

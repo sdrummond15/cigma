@@ -2,26 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05c6a63c-7d7a-4691-9376-2d90407b493c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/assets/css/competition.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/assets/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/assets/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/assets/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/assets/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/assets/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/assets/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/assets/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/assets/js/jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/css/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/administrator/components/com_managements/css/stylecompetitions.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/assets/css/index.html" afterPath="$PROJECT_DIR$/administrator/components/com_managements/assets/css/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/assets/js/script.js" afterPath="$PROJECT_DIR$/administrator/components/com_managements/assets/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini" afterPath="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/advanceds_money.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/advanceds_money.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/advanceds_moneys.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/advanceds_moneys.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/client.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/clients.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/clients.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/fields/price.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/fields/price.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/advanceds_money.xml" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/advanceds_money.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/city.xml" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/city.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/client.xml" afterPath="$PROJECT_DIR$/administrator/components/com_managements/models/forms/client.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/tables/advanceds_money.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/tables/advanceds_money.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_money/tmpl/edit.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_money/tmpl/edit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_money/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_money/view.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_moneys/tmpl/default.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_moneys/tmpl/default.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_moneys/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_moneys/view.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/client/tmpl/edit.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/client/tmpl/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/clients/tmpl/default.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/clients/tmpl/default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/car/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/car/view.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/cars/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cars/view.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/city/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/city/view.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/client/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/client/view.html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/components/com_managements/views/clients/view.html.php" afterPath="$PROJECT_DIR$/administrator/components/com_managements/views/clients/view.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/language/en-GB/en-GB.ini" afterPath="$PROJECT_DIR$/administrator/language/en-GB/en-GB.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration.php" afterPath="$PROJECT_DIR$/configuration.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,83 +38,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/views/enterprise/tmpl/edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2558">
-              <caret line="44" column="109" lean-forward="false" selection-start-line="44" selection-start-column="80" selection-end-line="44" selection-end-column="109" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_money/tmpl/edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="28" column="194" lean-forward="false" selection-start-line="28" selection-start-column="194" selection-end-line="28" selection-end-column="194" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="enterprises.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/enterprises.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="enterprise.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/models/enterprise.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="105" column="30" lean-forward="false" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="advanceds_money.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/advanceds_money.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-              <folding>
-                <element signature="e#7#150#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="advanceds_money.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="advanceds_money.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/advanceds_money.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="663">
+              <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="advanceds_money.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/advanceds_money.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="price.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/fields/price.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -118,13 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>C</find>
-      <find>COMPE</find>
-      <find>COMPETITI</find>
-      <find>COMPETITION</find>
-      <find>JModelList</find>
-      <find>cJModelList</find>
-      <find>claJModelList</find>
       <find>clasJModelList</find>
       <find>classJModelList</find>
       <find>class JModelList</find>
@@ -148,6 +95,13 @@
       <find>DATE_FORMAT_LC3</find>
       <find>price</find>
       <find>fields</find>
+      <find>backend</find>
+      <find>$doc-&gt;addStyleSheet(JURI::root() . '../media/com_managements/css/backend.css');</find>
+      <find>$doc-&gt;addStyleSheet('/administrator/com_managements/assets/css/backend.css');</find>
+      <find>$doc-&gt;addStyleSheet('/components/com_managements/assets/css/backend.css');</find>
+      <find>$doc-&gt;addStyleSheet(JURI::root() . 'media/com_managements/css/backend.css');</find>
+      <find>backend.css');</find>
+      <find>/</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -159,13 +113,18 @@
       <replace>advanceds_money</replace>
       <replace>#__advanceds_money</replace>
       <replace>#__advanced_money</replace>
+      <replace>$doc-&gt;addStyleSheet('/administrator/com_managements/assets/css/backend.css');</replace>
+      <replace>$doc-&gt;addStyleSheet('/components/com_managements/assets/css/backend.css');</replace>
+      <replace>$doc-&gt;addStyleSheet('components/com_managements/assets/css/backend.css');</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\xamppNovo\htdocs\cigma\administrator\components\com_managements</dir>
       <dir>C:\xamppNovo\htdocs\cigma</dir>
-      <dir>C:\Apache24\htdocs\cigma\administrator\components\com_managements</dir>
       <dir>C:\Apache24\htdocs\cigma</dir>
       <dir>C:\Apache24\htdocs\cigma\administrator\components\com_enterprises</dir>
+      <dir>C:\Apache24\htdocs\cigma\administrator\components\com_managements\views</dir>
+      <dir>C:\Apache24\htdocs\cigma\administrator\components\com_managements</dir>
+      <dir>C:\Apache24\htdocs\cigma\language</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -174,26 +133,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/tables/citie.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/citie.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/forms/citie.xml" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/car.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/fields/city.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/car.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/cars.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/citie/tmpl/edit.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/citie.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/controllers/cities.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/citie/view.html.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/cities/tmpl/default.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/models/cities.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/models/cars.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/cars/tmpl/default.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/cars/view.html.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/models/forms/car.xml" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/city/view.html.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/car/view.html.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/city/tmpl/edit.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/car/tmpl/edit.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/tables/car.php" />
@@ -215,16 +165,25 @@
         <option value="$PROJECT_DIR$/administrator/language/en-GB/en-GB.ini" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_moneys/tmpl/default.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_moneys/view.html.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/clients/view.html.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/tables/advanceds_money.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_enterprises/models/enterprise.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_enterprises/models/fields/price.php" />
+        <option value="$PROJECT_DIR$/libraries/joomla/form/fields/text.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/assets/css/competition.css" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/css/backend.css" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/car/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/city/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/client/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/cars/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/views/clients/view.html.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_money/view.html.php" />
-        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/advanceds_money.php" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/models/fields/price.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_money/tmpl/edit.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/assets/js/script.js" />
         <option value="$PROJECT_DIR$/administrator/components/com_managements/models/forms/advanceds_money.xml" />
+        <option value="$PROJECT_DIR$/administrator/components/com_managements/models/advanceds_money.php" />
       </list>
     </option>
   </component>
@@ -243,10 +202,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="348" />
+    <option name="y" value="289" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -263,8 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,14 +245,40 @@
               <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_enterprises" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
               <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_enterprises" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="helpers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -303,61 +286,8 @@
               <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_enterprises" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_enterprises" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="fields" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_enterprises" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="forms" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_enterprises" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tables" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_enterprises" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_enterprises" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="enterprise" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_enterprises" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="enterprise" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tmpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="language" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
@@ -365,6 +295,8 @@
               <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="language" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pt-BR" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
@@ -436,31 +368,14 @@
               <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="advanceds_moneys" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tmpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="car" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cigma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cigma" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="com_managements" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="car" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tmpl" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -468,7 +383,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Apache24\htdocs\cigma\administrator\components\com_managements\assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Apache24\htdocs\cigma\administrator\components\com_managements\assets\js" />
       <recent name="C:\Apache24\htdocs\cigma\administrator\components\com_managements\models\fields" />
     </key>
   </component>
@@ -572,18 +491,19 @@
       <workItem from="1581551966227" duration="5728000" />
       <workItem from="1581641133113" duration="5426000" />
       <workItem from="1581721405544" duration="11165000" />
-      <workItem from="1582072590182" duration="2493000" />
+      <workItem from="1582072590182" duration="3231000" />
+      <workItem from="1582330859459" duration="15026000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78687000" />
+    <option name="totallyTimeSpent" value="94451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25036603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22693998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3511811" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -613,86 +533,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/cars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="117" column="23" lean-forward="false" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/cars/tmpl/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="51" column="60" lean-forward="true" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/car.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="166" column="30" lean-forward="false" selection-start-line="166" selection-start-column="30" selection-end-line="166" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/city/view.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="66" column="9" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="66" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/cars/view.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/city/tmpl/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" column="155" lean-forward="false" selection-start-line="28" selection-start-column="155" selection-end-line="28" selection-end-column="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/car.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/tables/car.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/tables/client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/advanceds_money.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controllers/city.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -704,14 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/fields/city.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,14 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="97" column="77" lean-forward="false" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="124" column="60" lean-forward="false" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/clients/view.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_moneys/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -844,21 +661,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/tables/enterprise.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1558">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/tables/enterprise.php" />
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_moneys/tmpl/default.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -868,22 +671,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/helpers/enterprises.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/joomla/form/fields/text.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="89" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/helpers/enterprises.php" />
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/car/tmpl/edit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-90">
@@ -892,55 +680,151 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/models/fields/price.php" />
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/views/enterprise/tmpl/edit.php" />
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/enterprises.php" />
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/controller.php" />
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/models/enterprise.php" />
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/models/forms/enterprise.xml" />
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/enterprises.xml" />
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/form.php" />
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/managements.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/joomla/form/fields/text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="171" column="5" lean-forward="true" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/helpers/managements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="124" column="60" lean-forward="false" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/fields/city.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/managements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/assets/css/competition.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/css/backend.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/city/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/cars/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/cities/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/clients/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/client/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/car/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="125">
+          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_money/view.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-246">
-          <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="40">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/models/fields/price.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/language/pt-BR/pt-BR.com_managements.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/fields/price.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/views/enterprise/tmpl/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2558">
-          <caret line="44" column="109" lean-forward="false" selection-start-line="44" selection-start-column="80" selection-end-line="44" selection-end-column="109" />
+        <state relative-caret-position="556">
+          <caret line="62" column="29" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/views/advanceds_money/tmpl/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="194" lean-forward="false" selection-start-line="28" selection-start-column="194" selection-end-line="28" selection-end-column="194" />
+        <state relative-caret-position="102">
+          <caret line="20" column="80" lean-forward="false" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/enterprises.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/assets/js/jquery.maskedinput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -948,60 +832,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/controller.php">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/models/enterprise.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="105" column="30" lean-forward="false" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/advanceds_money.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="e#7#150#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/models/forms/enterprise.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5032">
-          <caret line="296" column="26" lean-forward="false" selection-start-line="296" selection-start-column="26" selection-end-line="296" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/enterprises.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrator/components/com_enterprises/form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/forms/advanceds_money.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="663">
+          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/fields/price.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_managements/models/advanceds_money.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
           <folding />
         </state>
       </provider>

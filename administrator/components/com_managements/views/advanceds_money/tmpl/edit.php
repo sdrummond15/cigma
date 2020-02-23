@@ -17,6 +17,11 @@ JHtml::_('formbehavior.chosen', 'select');
 $app = JFactory::getApplication();
 $assoc = JLanguageAssociations::isEnabled();
 
+$document = JFactory::getDocument();
+$document->addScript('components/com_managements/assets/js/jquery.maskedinput.js');
+$document->addScript('components/com_managements/assets/js/jquery.maskMoney.js');
+$document->addScript('components/com_managements/assets/js/script.js');
+
 ?>
 <script type="text/javascript">
     Joomla.submitbutton = function (task) {
@@ -40,6 +45,8 @@ $assoc = JLanguageAssociations::isEnabled();
                     <div class="span6">
                         <?php echo $this->form->renderField('id_consultant'); ?>
                         <?php echo $this->form->renderField('cash'); ?>
+                        <?php echo $this->form->renderField('date_in'); ?>
+                        <?php echo $this->form->renderField('date_out'); ?>
                         <?php echo $this->form->renderField('id_client'); ?>
                     </div>
                 </div>

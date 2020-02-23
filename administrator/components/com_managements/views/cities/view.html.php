@@ -48,7 +48,7 @@ class ManagementsViewCities extends JViewLegacy
 
         //get document
         $doc = JFactory::getDocument();
-        $doc->addStyleSheet(JURI::root() . 'media/com_managements/css/backend.css');
+        $doc->addStyleSheet('components/com_managements/assets/css/backend.css');
 
         $this->addToolbar();
 

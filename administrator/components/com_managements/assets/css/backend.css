@@ -1,14 +1,3 @@
-#system-message-container{
-    width: 100% !important;
-}
-.thumbimg{
-    max-height: 40px;
-    max-width: 40px;
-}
-.deleteContact{
-    font-family: FontAwesome;
-}
-
 input[type="price"]{
     background-color: #fff;
     border: 1px solid #ccc;
@@ -30,11 +19,4 @@ input[type="price"]{
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-}
-.controls .contact{
-    margin-bottom: 5px;
-}
-
-#positions .control-group:first-child .remove{
-    visibility: hidden;
 }
