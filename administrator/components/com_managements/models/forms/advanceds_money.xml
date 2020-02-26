@@ -48,6 +48,22 @@
                format="%d-%m-%Y"
                filter="user_utc"/>
 
+        <field name="pendency"
+               type="radio"
+               default="1"
+               label="COM_MANAGEMENTS_FIELD_PENDENCY"
+        >
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+        </field>
+
+        <field name="observation" 
+               type="textarea" 
+               label="COM_MANAGEMENTS_FIELD_OBSERVATION" 
+               rows="10" 
+               cols="5" 
+        />
+
         <field name="published"
                type="list"
                label="JSTATUS"

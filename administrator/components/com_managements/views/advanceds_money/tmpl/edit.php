@@ -45,9 +45,11 @@ $document->addScript('components/com_managements/assets/js/script.js');
                     <div class="span6">
                         <?php echo $this->form->renderField('id_consultant'); ?>
                         <?php echo $this->form->renderField('cash'); ?>
+                        <?php echo $this->form->renderField('pendency'); ?>
                         <?php echo $this->form->renderField('date_in'); ?>
                         <?php echo $this->form->renderField('date_out'); ?>
                         <?php echo $this->form->renderField('id_client'); ?>
+                        <?php echo $this->form->renderField('observation'); ?>
                     </div>
                 </div>
             </div>
