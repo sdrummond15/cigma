@@ -1,0 +1,1119 @@
+.row-fluid .span12 {
+    margin: 0 !important;
+}
+
+#management h1 {
+    font-family: 'swiss_721_bold_condensed_bt';
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2A8EA8;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#management h2 {
+    font-family: 'swiss_721_bold_condensed_bt';
+    margin-bottom: 30px;
+    padding: 10px;
+    color: #2A8EA8;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #cae8f2;
+}
+
+#insert-management {
+    position: relative;
+}
+
+#insert-management fieldset {
+    width: 100%;
+    display: table;
+    position: absolute;
+}
+
+/*Hide all except first fieldset*/
+#insert-management fieldset:not(:first-of-type) {
+    display: none;
+}
+
+#insert-management fieldset > div {
+    width: 100%;
+    display: table;
+}
+
+#management form input,
+#management form textarea {
+    width: auto;
+}
+
+#management form input.width100,
+#management form textarea.width100 {
+    width: calc(100% - 14px);
+}
+
+#management .white {
+    color: #FFF;
+}
+
+#insert-management {
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+.cancel {
+    width: 100%;
+    display: table;
+    padding: 5px 0;
+}
+
+.right {
+    float: right;
+}
+
+.label-management {
+    font-family: 'swiss_721_bold_condensed_bt';
+}
+
+.focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 10px rgba(82, 168, 236, 0.8);
+    -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 10px rgba(82, 168, 236, 0.8);
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 10px rgba(82, 168, 236, 0.8);
+}
+
+#botoes {
+    width: 100%;
+    display: table;
+}
+
+#botoes ul {
+    display: table;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    float: left;
+}
+
+li.button_type {
+    float: left;
+    position: relative;
+    display: inline;
+}
+
+li.button_type label {
+    background: #223f4c no-repeat center center;
+    -webkit-box-shadow: inset 0 1px 1px rgba(42, 142, 168, 0.7);
+    -moz-box-shadow: inset 0 1px 1px rgba(42, 142, 168, 0.7);
+    box-shadow: inset 0 1px 1px rgba(42, 142, 168, 0.7);
+    border-right: 0;
+    color: #FFF;
+}
+
+li.button_type input {
+    position: absolute;
+    z-index: -1;
+    margin: 5px 5px;
+}
+
+li.button_type input[type="radio"]:checked ~ span {
+    background-color: #2a8ea8;
+}
+
+li.button_type label span {
+    position: relative;
+    padding: 5px 25px;
+    display: block;
+}
+
+#management .control-business {
+    display: inline;
+    margin-bottom: 5px;
+}
+
+#management .last-business {
+    margin-bottom: 20px;
+}
+
+#management .control-business input {
+    display: inline;
+    vertical-align: baseline;
+}
+
+#management .control-business label {
+    display: inline;
+}
+
+li.button_yes_no {
+    float: left;
+    position: relative;
+    display: inline;
+}
+
+li.button_yes_no label {
+    background: #223f4c no-repeat center center;
+    -webkit-box-shadow: inset 0 1px 1px rgba(42, 142, 168, 0.7);
+    -moz-box-shadow: inset 0 1px 1px rgba(42, 142, 168, 0.7);
+    box-shadow: inset 0 1px 1px rgba(42, 142, 168, 0.7);
+    border-right: 0;
+    color: #FFF;
+}
+
+li.button_yes_no input {
+    position: absolute;
+    z-index: -1;
+    margin: 5px 5px;
+}
+
+li.button_yes_no input[type="radio"]:checked ~ span.no {
+    background-color: #db0101;
+}
+
+li.button_yes_no input[type="radio"]:checked ~ span.yes {
+    background-color: #01a518;
+}
+
+li.button_yes_no label span {
+    position: relative;
+    padding: 2px 25px;
+    display: block;
+}
+
+li.button_three {
+    float: left;
+    position: relative;
+    display: inline;
+}
+
+li.button_three label {
+    background: #223f4c no-repeat center center;
+    -webkit-box-shadow: inset 0 1px 1px rgba(42, 142, 168, 0.7);
+    -moz-box-shadow: inset 0 1px 1px rgba(42, 142, 168, 0.7);
+    box-shadow: inset 0 1px 1px rgba(42, 142, 168, 0.7);
+    border-right: 0;
+    color: #FFF;
+}
+
+li.button_three input {
+    position: absolute;
+    z-index: -1;
+    margin: 5px 5px;
+}
+
+li.button_three input[type="radio"]:checked ~ span {
+    background-color: #2a8ea8;
+}
+
+li.button_three label span {
+    position: relative;
+    padding: 5px 25px;
+    display: block;
+}
+
+.select2-container .select2-selection--single,
+.select2-search--dropdown .select2-search__field {
+    height: auto !important;
+    font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ccc !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    -webkit-transition: border linear .2s, box-shadow linear .2s !important;
+    -moz-transition: border linear .2s, box-shadow linear .2s !important;
+    -o-transition: border linear .2s, box-shadow linear .2s !important;
+    transition: border linear .2s, box-shadow linear .2s !important;
+}
+
+.loading i {
+    font-size: 24px;
+}
+
+#detalhes-princiais > div > div {
+    width: 100%;
+    display: table;
+}
+
+#insert-management fieldset > div#number_energy,
+#insert-management fieldset > div#clock_energy,
+#insert-management fieldset > div#clock_water,
+#insert-management fieldset > div#number_water {
+    width: 100%;
+    display: block;
+}
+
+#management .btn:hover,
+#management .btn:focus,
+#management .btn:active {
+    background-color: #2a8ea8;
+    color: #FFF;
+}
+
+#lista-fotos {
+    display: table;
+    margin: 5px auto;
+}
+
+#lista-fotos .thumbimg {
+    width: 80px;
+    height: 80px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin: 0 3px 5px 3px;
+    text-align: center;
+}
+
+#lista-fotos .thumbimg img {
+    max-height: none !important;
+    max-width: none !important;
+    position: absolute;
+    z-index: 1;
+    display: block;
+}
+
+.sombra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    webkit-box-shadow: inset 0 0px 7px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 0px 7px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.delete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    -webkit-transition: opacity 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out;
+    -o-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
+    opacity: 0;
+}
+
+.thumbimg:hover .delete {
+    opacity: 1;
+    visibility: visible;
+}
+
+.deleteImg {
+    position: relative;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    font-family: FontAwesome;
+    display: table !important;
+    margin: auto !important;
+    border: 0;
+    border-radius: 50%;
+    background-color: #ce0000;
+    color: #FFF;
+    font-size: 22px;
+    line-height: 36px;
+    height: 36px;
+    width: 36px !important;
+}
+
+#management h3 {
+    font-family: 'swiss_721_bold_condensed_bt';
+    text-align: center;
+    margin: 20px 0 10px 0;
+    color: #2A8EA8;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.control-photo {
+    width: 100%;
+    display: table;
+    margin-bottom: 5px;
+}
+
+#management form input.photo {
+    display: none;
+}
+
+.desc-photo {
+    width: calc(100% - 164px);
+    line-height: 20px;
+    border: 1px solid #ccc;
+    height: 20px;
+    padding: 4px 6px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+    float: left;
+    -webkit-border-radius: 4px 0px 0px 4px;
+    -moz-border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0px 0px 4px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.btn-add {
+    padding: 5px 20px !important;
+    float: right;
+    width: 150px !important;
+    -webkit-border-radius: 0px 4px 4px 0px !important;
+    -moz-border-radius: 0px 4px 4px 0px !important;
+    border-radius: 0px 4px 4px 0px !important;
+}
+
+.msgs {
+    width: calc(100% - 42px);
+    display: none;
+    padding: 10px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    cursor: pointer;
+}
+
+.msgs span {
+    position: absolute;
+    right: 3px;
+    top: 0;
+}
+
+.noty_buttons .btn-primary:hover {
+    background-color: #2a8ea8;
+    color: #FFF;
+}
+
+.noty_buttons .btn-danger {
+    background-color: #b00000;
+    color: #FFF;
+}
+
+.noty_buttons .btn-danger:hover {
+    background-color: #ce0000;
+    color: #FFF;
+}
+
+.box {
+    display: table;
+    width: 100%;
+}
+
+#box-prop-usu {
+    display: block;
+    padding: 5px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    max-height: 150px;
+    background-color: #fcfcfc;
+    margin-bottom: 20px;
+}
+
+.control-owner {
+    display: inline-table;
+    width: 100%;
+    margin-bottom: 5px !important;
+}
+
+.control-owner input {
+    vertical-align: baseline !important;
+}
+
+.control-owner label {
+    display: inline;
+    margin-left: 5px;
+}
+
+label > span.required {
+    color: #f00;
+}
+
+.previous {
+    margin-right: 5px !important;
+}
+
+/*buttons*/
+#insert-management .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#insert-management .action-button:hover, #insert-management .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressbar {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+}
+
+#progressbar li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 20%;
+    float: left;
+    position: relative;
+    text-align: center;
+    transition: all 500ms;
+}
+
+#progressbar li:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    font-size: 10px;
+    font-family: 'swiss_721_bold_condensed_bt';
+    color: #223f4c;
+    background: #cae8f2;
+    border-radius: 50%;
+    margin: auto;
+    transition: all 500ms;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 8px;
+    background: #cae8f2;
+    position: absolute;
+    left: -50%;
+    top: 6px;
+    z-index: -1;
+    transition: all 500ms;
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #223f4c;
+    color: #FFF;
+}
+
+@media screen and (max-width: 1000px) {
+    #insert-management {
+        font-size: 15px;
+    }
+
+    li.button_type label span {
+        padding: 6px 15px;
+    }
+
+    #street > div {
+        width: auto;
+    }
+
+    #street > div:nth-child(2) {
+        width: calc(100% - 104px);
+        margin-left: 20px;
+    }
+
+    #number-complement > div:nth-child(1) {
+        width: 65px;
+    }
+
+    #number-complement > div:nth-child(2) {
+        width: calc(20% - 85px);
+        margin-left: 20px;
+    }
+
+    #number-complement > div:nth-child(3) {
+        width: 90px;
+        margin-left: 20px;
+    }
+
+    #number-complement > div:nth-child(4) {
+        width: calc(80% - 130px);
+        margin-left: 20px;
+    }
+
+    #district-region > div:nth-child(1) {
+        width: 60px;
+    }
+
+    #district-region > div:nth-child(2) {
+        width: calc(50% - 80px);
+        margin-left: 20px;
+    }
+
+    #district-region > div:nth-child(3) {
+        width: 50px;
+        margin-left: 20px;
+    }
+
+    #district-region > div:nth-child(4) {
+        width: calc(50% - 90px);
+        margin-left: 20px;
+    }
+
+    #state-city-cep .select2-container {
+        width: 100% !important;
+    }
+
+    #state-city-cep > div:nth-child(1) {
+        width: 60px;
+    }
+
+    #state-city-cep > div:nth-child(2) {
+        width: calc(40% - 80px);
+        margin-left: 20px;
+    }
+
+    #state-city-cep > div:nth-child(3) {
+        width: 60px;
+        margin-left: 20px;
+    }
+
+    #state-city-cep > div:nth-child(4) {
+        width: calc(60% - 100px);
+        margin-left: 20px;
+    }
+
+    #state-city-cep > div:nth-child(5) {
+        width: 50px;
+        margin-left: 0;
+    }
+
+    #state-city-cep > div:nth-child(5) label {
+        float: left;
+    }
+
+    #state-city-cep > div:nth-child(6) {
+        width: calc(100% - 70px);
+        margin-left: 20px;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(1) {
+        width: 140px;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(2) {
+        width: calc(36.66% - 160px);
+        margin-left: 20px;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(3) {
+        width: 60px;
+        margin-left: 20px;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(4) {
+        width: calc(33.33% - 100px);
+        margin-left: 20px;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(5) {
+        width: 80px;
+        margin-left: 20px;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(6) {
+        width: calc(30% - 120px);
+        margin-left: 20px;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(7) {
+        width: 50px;
+        margin-left: 0;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(8) {
+        width: calc(50% - 70px);
+        margin-left: 20px;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(9) {
+        width: 130px;
+        margin-left: 20px;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(10) {
+        width: calc(50% - 170px);
+        margin-left: 20px;
+    }
+
+    #garage-total_area-building_area > div:nth-child(1) {
+        width: 150px;
+    }
+
+    #garage-total_area-building_area > div:nth-child(2) {
+        width: calc(100% - 170px);
+        margin-left: 20px;
+    }
+
+    #garage-total_area-building_area > div:nth-child(3) {
+        width: 100px;
+        margin-left: 0;
+    }
+
+    #garage-total_area-building_area > div:nth-child(3) label {
+        float: left;
+    }
+
+    #garage-total_area-building_area > div:nth-child(4) {
+        width: calc(50% - 120px);
+        margin-left: 20px;
+    }
+
+    #garage-total_area-building_area > div:nth-child(5) {
+        width: 145px;
+        margin-left: 20px;
+    }
+
+    #garage-total_area-building_area > div:nth-child(6) {
+        width: calc(50% - 185px);
+        margin-left: 20px;
+    }
+
+    #description > div:nth-child(1) {
+        width: 120px;
+    }
+
+    #description > div:nth-child(2) {
+        width: calc(100% - 140px);
+        margin-left: 20px;
+    }
+
+    #registry-registry_office-iptu_register > div:nth-child(1) {
+        width: 65px;
+    }
+
+    #registry-registry_office-iptu_register > div:nth-child(2) {
+        width: calc(30% - 85px);
+        margin-left: 20px;
+    }
+
+    #registry-registry_office-iptu_register > div:nth-child(3) {
+        width: 55px;
+        margin-left: 20px;
+    }
+
+    #registry-registry_office-iptu_register > div:nth-child(3) label {
+        float: left;
+    }
+
+    #registry-registry_office-iptu_register > div:nth-child(4) {
+        width: calc(70% - 95px);
+        margin-left: 20px;
+    }
+
+    #registry-registry_office-iptu_register > div:nth-child(5) {
+        width: 135px;
+        margin-left: 0;
+    }
+
+    #registry-registry_office-iptu_register > div:nth-child(5) label {
+        float: left;
+    }
+
+    #registry-registry_office-iptu_register > div:nth-child(6) {
+        width: calc(100% - 155px);
+        margin-left: 20px;
+    }
+
+    #water > div:nth-child(1),
+    #energy > div:nth-child(1) {
+        width: 100px;
+    }
+
+    #water > div:nth-child(2),
+    #energy > div:nth-child(2) {
+        width: calc(100% - 120px);
+    }
+
+    #water > div:nth-child(2) ul,
+    #energy > div:nth-child(2) ul {
+        width: 100%;
+    }
+
+    #water > div:nth-child(2) li,
+    #energy > div:nth-child(2) li {
+        width: 33.33%;
+        text-align: center;
+        min-width: 140px;
+    }
+
+    #number_energy > div:nth-child(1) {
+        width: 255px;
+    }
+
+    #number_energy > div:nth-child(2) {
+        width: calc(100% - 275px);
+    }
+
+    #clock_energy > div:nth-child(1) {
+        width: 200px;
+    }
+
+    #clock_energy > div:nth-child(2) {
+        width: calc(100% - 220px);
+    }
+
+    #number_water > div:nth-child(1) {
+        width: 255px;
+    }
+
+    #number_water > div:nth-child(2) {
+        width: calc(100% - 275px);
+    }
+
+    #clock_water > div:nth-child(1) {
+        width: 200px;
+    }
+
+    #clock_water > div:nth-child(2) {
+        width: calc(100% - 220px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #insert-management {
+        font-size: 14px;
+    }
+
+    li.button_type label span {
+        padding: 4px 12px;
+    }
+
+    #management #business .control-business:nth-child(2) label {
+        width: 100%;
+        display: block;
+    }
+
+    #insert-management #detalhes-princiais > div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #insert-management #detalhes-princiais > div .label-management {
+        float: left;
+    }
+
+    li.button_type {
+        width: 50%;
+        text-align: center;
+        min-width: 160px;
+    }
+
+    #types > div {
+        width: 160px;
+    }
+
+    #types > div:nth-child(2) {
+        width: calc(100% - 180px);
+    }
+
+    #iptu > div {
+        width: 145px;
+    }
+
+    #iptu > div:nth-child(2) {
+        width: calc(100% - 165px);
+        margin-left: 20px;
+    }
+
+    #iptu > div:nth-child(2) input {
+        width: calc(100% - 14px);
+    }
+
+    #condominium > div {
+        width: 190px;
+    }
+
+    #condominium > div:nth-child(2) {
+        width: calc(100% - 210px);
+        margin-left: 20px;
+    }
+
+    #condominium > div:nth-child(2) input {
+        width: calc(100% - 14px);
+    }
+
+    #safe > div {
+        width: 160px;
+    }
+
+    #safe > div:nth-child(2) {
+        width: calc(100% - 180px);
+        margin-left: 20px;
+    }
+
+    #safe > div:nth-child(2) input {
+        width: calc(100% - 14px);
+    }
+
+    #market_value > div {
+        width: 90px;
+    }
+
+    #market_value > div:nth-child(2) {
+        width: calc(100% - 110px);
+        margin-left: 20px;
+    }
+
+    #market_value > div:nth-child(2) input {
+        width: calc(100% - 14px);
+    }
+
+    #proprietarios-usufrutarios > div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #progressbar {
+        width: 100%;
+    }
+
+    #number-complement > div:nth-child(2) {
+        width: calc(100% - 85px);
+        margin-left: 20px;
+    }
+
+    #number-complement > div:nth-child(3) {
+        margin-left: 0;
+    }
+
+    #number-complement > div:nth-child(3) label {
+        float: left;
+    }
+
+    #number-complement > div:nth-child(4) {
+        width: calc(100% - 110px);
+        margin-left: 20px;
+    }
+
+    #type > div {
+        width: 105px;
+    }
+
+    #type > div:nth-child(2) {
+        width: calc(100% - 125px);
+    }
+
+    #rented > div {
+        width: 105px;
+    }
+
+    #rented > div:nth-child(2) {
+        width: calc(100% - 125px);
+    }
+
+    #video-youtube > div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #imagem-capa > div:nth-child(1) {
+        width: 100%;
+    }
+
+    #imagem-capa > div:nth-child(2) {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    #imagem-capa > div:nth-child(3) {
+        width: calc(20% - 20px);
+        margin-left: 20px;
+    }
+
+    #fotos > div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #keys_controls_alarm > div:nth-child(1) {
+        width: 50px;
+    }
+
+    #keys_controls_alarm > div:nth-child(2) {
+        width: calc(50% - 70px);
+        margin-left: 20px;
+    }
+
+    #keys_controls_alarm > div:nth-child(3) {
+        width: 50px;
+        margin-left: 20px;
+    }
+
+    #keys_controls_alarm > div:nth-child(4) {
+        width: calc(50% - 90px);
+        margin-left: 20px;
+    }
+
+    #keys_controls_alarm > div:nth-child(5) {
+        width: 50px;
+        margin-left: 0;
+    }
+
+    #keys_controls_alarm > div:nth-child(6) {
+        width: calc(100% - 70px);
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #state-city-cep > div:nth-child(2) {
+        width: calc(100% - 80px);
+    }
+
+    #state-city-cep > div:nth-child(3) {
+        margin-left: 0;
+    }
+
+    #state-city-cep > div:nth-child(3) label {
+        float: left;
+    }
+
+    #state-city-cep > div:nth-child(4) {
+        width: calc(100% - 80px);
+    }
+
+    #district-region > div:nth-child(2) {
+        width: calc(100% - 80px);
+        margin-left: 20px;
+    }
+
+    #district-region > div:nth-child(3) {
+        margin-left: 0;
+    }
+
+    #district-region > div:nth-child(3) label {
+        float: left;
+    }
+
+    #district-region > div:nth-child(4) {
+        width: calc(100% - 70px);
+        margin-left: 20px;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(2) {
+        width: calc(100% - 160px);
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(4) {
+        width: calc(100% - 80px);
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(6) {
+        width: calc(100% - 100px);
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(8) {
+        width: calc(100% - 70px);
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(10) {
+        width: calc(100% - 150px);
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(3),
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(5),
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(7),
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(9) {
+        margin-left: 0;
+    }
+
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(3) label,
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(5) label,
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(7) label,
+    #suites-bedrooms-bathrooms-rooms > div:nth-child(9) label {
+        float: left;
+    }
+
+    #garage-total_area-building_area > div:nth-child(3) {
+        width: 100px;
+        margin-left: 0;
+    }
+
+    #garage-total_area-building_area > div:nth-child(4) {
+        width: calc(100% - 120px);
+    }
+
+    #garage-total_area-building_area > div:nth-child(5) {
+        margin-left: 0;
+    }
+
+    #garage-total_area-building_area > div:nth-child(5) label {
+        float: left;
+    }
+
+    #garage-total_area-building_area > div:nth-child(6) {
+        width: calc(100% - 165px);
+    }
+
+    #registry-registry_office-iptu_register > div:nth-child(2) {
+        width: calc(100% - 85px);
+    }
+
+    #registry-registry_office-iptu_register > div:nth-child(3) {
+        margin-left: 0;
+    }
+
+    #registry-registry_office-iptu_register > div:nth-child(4) {
+        width: calc(100% - 95px);
+    }
+
+    #water > div:nth-child(2) li,
+    #energy > div:nth-child(2) li {
+        width: 100%;
+    }
+
+    #number_energy > div:nth-child(1),
+    #clock_energy > div:nth-child(1),
+    #number_water > div:nth-child(1),
+    #clock_water > div:nth-child(1) {
+        width: 100%;
+    }
+
+    #number_energy > div:nth-child(2),
+    #clock_energy > div:nth-child(2),
+    #number_water > div:nth-child(2),
+    #clock_water > div:nth-child(2) {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}

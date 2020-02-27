@@ -50,11 +50,12 @@
 
         <field name="pendency"
                type="radio"
-               default="1"
+               default="0"
+               class="btn-group btn-group-yesno"
                label="COM_MANAGEMENTS_FIELD_PENDENCY"
         >
-            <option value="0">Não</option>
-            <option value="1">Sim</option>
+            <option value="0">JYES</option>
+            <option value="1">JNO</option>
         </field>
 
         <field name="observation" 
