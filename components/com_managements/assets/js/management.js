@@ -1,22 +1,69 @@
 jQuery(document).ready(function ($) {
 
     $('#clients').select2();
-
-    var click = 0;
-    $("#add").click(function (event) {
-        $(".accounts:last").clone().insertAfter(".accounts:last");
-        click += 1;
-        if(click == 1){
-            $(".accounts:last").append('<button type="button" class="btn btn-warning right remove"><i class="fas fa-trash"></i></button>');
+    $(".cash").maskMoney({ symbol: 'R$ ', showSymbol: true, thousands: '.', decimal: ',', symbolStay: true });
+    $('#date_in').mask('99/99/9999');
+    $('#date_out').mask('99/99/9999');
+    $('#date_in').focusout(function() {
+        if($(this).val()){
+            if(validarData($(this).val()) == false){
+                alert('Data de ida inválida!');
+                $(this).val('');
+                $(this).focus();
+                return false;
+            }
         }
+    });
+
+    $('#date_out').focusout(function() {
+        if($(this).val()){
+            if(!$('#date_in').val()){
+                alert('Informe a data de ida!');
+                $(this).val('');
+                $('#date_in').focus();
+                return false;
+            }
+            if($('#date_out').val() < $('#date_in').val()){
+                alert('A data de volta deve ser maior ou igual a data de ida!');
+                $(this).val('');
+                $(this).focus();
+                return false;
+            }
+            if(validarData($(this).val()) == false){
+                alert('Data de ida inválida!');
+                $(this).val('');
+                $(this).focus();
+                return false;
+            }
+        }
+    });
+
+
+    $("#add").click(function (event) {
+
+        //Adicionando novo box
+        $(".accounts").last().clone().insertAfter(".accounts:last");
+
+        //Adicionando Remove 
+        if($(".accounts").last().find('.remove').length == 0){
+            $(".accounts").last().append('<button type="button" class="btn btn-warning right remove"><i class="fas fa-trash"></i></button>');
+        }
+
+        //Limpando Campos
         $(".accounts:last :input").each(function(){
             $(this).val('');
         });
+
+        //Removendo box
+        $('.remove').click(function (event) {
+            $(this).parents('.accounts').remove();
+        });
     });
+    
 
     var value = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
 
-    $(".cash").maskMoney({ symbol: 'R$ ', showSymbol: true, thousands: '.', decimal: ',', symbolStay: true });
+    
 
     $("#submit").click(function (event) {
 

@@ -23,6 +23,7 @@ class ManagementsViewManagement extends JViewLegacy {
         $this->management = $this->get('Management');
         $this->clients = $this->get('Clients');
         $this->categories = $this->get('Categories');
+        $this->cars = $this->get('Cars');
 
         parent::display($tpl);
     }

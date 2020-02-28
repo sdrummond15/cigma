@@ -42,6 +42,36 @@ else :
                     </select>
                 </div>
             </div>
+            <div class="span12">
+                <div class="span6">
+                    <div class="label-date">
+                        <label class="label-management">Ida:</label>
+                    </div>
+                    <div class="input-date">
+                        <input type="text" id="date_in" name="date_in" />
+                    </div>
+                </div>
+                <div class="span6">
+                    <div class="label-date">
+                        <label class="label-management">Volta:</label>
+                    </div>
+                    <div class="input-date">
+                        <input type="text" id="date_out" name="date_out" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="label-car-solicit">
+                <label class="label-management">Selecione o Carro:</label>
+            </div>
+            <div class="input-car-solicit">
+                <select id="car" name="car" class="width100">
+                    <option value="">Sem Carro</option>
+                    <?php foreach ($this->cars as $car) : ?>
+                        <option value="<?= $car->id ?>"><?= $car->model . ' - ' . $car->plate ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
 
             <h4>
                 Contas

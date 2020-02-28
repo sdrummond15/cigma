@@ -76,5 +76,18 @@ class ManagementsModelManagement extends JModelLegacy
 
         return $results;
     }
+    
+    public function getCars()
+    {
+        $db = JFactory::getDBO();
+        $query = $db->getQuery(true);
+        $query->select('*');
+        $query->from('#__cars AS c');
+        $query->where('c.published = 1');
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
+
+        return $results;
+    }
 
 }
