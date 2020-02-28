@@ -28,13 +28,12 @@ JHtml::_('bootstrap.tooltip');
             </div>
         <?php endif; ?>
         <div class="userdata">
-            <div id="form-login-username" class="control-group">
+            <div id="form-login-username">
                 <div class="controls">
                     <?php if (!$params->get('usetext', 0)) : ?>
-                        <div class="input-prepend">
-						<span class="add-on">
-							<span class="icon-user hasTooltip"
-                                  title="<?php echo JText::_('MOD_LOGIN_VALUE_USERNAME'); ?>"></span>
+                        <div>
+						<span>
+							<span title="<?php echo JText::_('MOD_LOGIN_VALUE_USERNAME'); ?>"></span>
 							<label for="modlgn-username"
                                    class="element-invisible"><?php echo JText::_('MOD_LOGIN_VALUE_USERNAME'); ?></label>
 						</span>
@@ -48,12 +47,12 @@ JHtml::_('bootstrap.tooltip');
                     <?php endif; ?>
                 </div>
             </div>
-            <div id="form-login-password" class="control-group">
+            <div id="form-login-password">
                 <div class="controls">
                     <?php if (!$params->get('usetext', 0)) : ?>
-                        <div class="input-prepend">
-						<span class="add-on">
-							<span class="icon-lock hasTooltip" title="<?php echo JText::_('JGLOBAL_PASSWORD'); ?>">
+                        <div>
+						<span>
+							<span title="<?php echo JText::_('JGLOBAL_PASSWORD'); ?>">
 							</span>
 								<label for="modlgn-passwd"
                                        class="element-invisible"><?php echo JText::_('JGLOBAL_PASSWORD'); ?>
@@ -110,10 +109,10 @@ JHtml::_('bootstrap.tooltip');
                             id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
                 </div>
             <?php endif; ?>
-            <div id="form-login-submit" class="control-group">
+            <div id="form-login-submit">
                 <div class="controls">
                     <button type="submit" tabindex="0" name="Submit"
-                            class="btn btn-primary login-button"><?php echo JText::_('JLOGIN'); ?></button>
+                            class="btn-simple login-button"><?php echo JText::_('JLOGIN'); ?></button>
                 </div>
             </div>
             <?php

@@ -18,10 +18,10 @@ class ManagementsModelManagement extends JModelLegacy
             $db = JFactory::getDBO();
             $query = $db->getQuery(true);
             $query->select('*');
-            $query->from('#__managements AS e');
-            $query->where('id = ' . $id);
-            $query->where('e.published != -2 ');
-            $query->where('e.created_by = ' . $id_user);
+            $query->from('#__advanced_money AS am');
+            $query->where('am.id = ' . $id);
+            $query->where('am.published = 1');
+            $query->where('am.id_consultor = ' . $id_user);
             $db->setQuery($query);
             $results = $db->loadObjectList();
             if (empty($results)) {
@@ -42,28 +42,8 @@ class ManagementsModelManagement extends JModelLegacy
                 $db = JFactory::getDBO();
                 $query = $db->getQuery(true);
                 $query->select('*');
-                $query->from('#__managements AS e');
-                $query->where('id = ' . $id);
-                $db->setQuery($query);
-                $results = $db->loadObjectList();
-            }
-            return $results;
-        }
-
-    }
-
-    public function getPhotos($id = '')
-    {
-        if ($this->getCheck() === true) {
-            $id = JRequest::getVar('id');
-
-            $results = '';
-            if (!empty($id)) {
-                $db = JFactory::getDBO();
-                $query = $db->getQuery(true);
-                $query->select('*');
-                $query->from('#__management_photos AS ep');
-                $query->where('id_management = ' . $id);
+                $query->from('#__advanced_money AS am');
+                $query->where('am.id = ' . $id);
                 $db->setQuery($query);
                 $results = $db->loadObjectList();
             }
@@ -71,62 +51,30 @@ class ManagementsModelManagement extends JModelLegacy
         }
     }
 
-    public function getOwners()
+    public function getClients()
     {
-        if ($this->getCheck() === true) {
+        $db = JFactory::getDBO();
+        $query = $db->getQuery(true);
+        $query->select('*');
+        $query->from('#__clients AS c');
+        $query->where('c.published = 1');
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
 
-            $user = JFactory::getUser();
-            $id_user = $user->get('id');
-
-            $db = JFactory::getDBO();
-            $query = $db->getQuery(true);
-            $query->select('*');
-            $query->from('#__owners AS o');
-            $query->where('created_by = ' . $id_user);
-            $query->where('published = 1');
-            $query->order('name');
-            $db->setQuery($query);
-            $results = $db->loadObjectList();
-            return $results;
-        }
+        return $results;
     }
-
-    public function getStates()
+    
+    public function getCategories()
     {
-        if ($this->getCheck() === true) {
-            $db = JFactory::getDBO();
-            $query = $db->getQuery(true);
-            $query->select('s.id AS id, s.abbreviation AS uf, s.description AS state');
-            $query->from('#__state AS s');
-            $query->order('s.description');
-            $db->setQuery($query);
-            $results = $db->loadObjectList();
-            return $results;
-        }
-    }
+        $db = JFactory::getDBO();
+        $query = $db->getQuery(true);
+        $query->select('*');
+        $query->from('#__cat_expenses AS c');
+        $query->where('c.published = 1');
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
 
-    public function getCities()
-    {
-        if ($this->getCheck() === true) {
-            $id = JRequest::getVar('id');
-
-            $state = '';
-            if (!empty($id)) {
-                $state = $this->getManagement()[0]->state;
-            }
-
-            $db = JFactory::getDBO();
-            $query = $db->getQuery(true);
-            $query->select('c.id AS id, c.description AS city');
-            $query->from('#__city AS c');
-            if (!empty($state)) {
-                $query->where('c.id_state = ' . $state);
-            }
-            $query->order('c.description');
-            $db->setQuery($query);
-            $results = $db->loadObjectList();
-            return $results;
-        }
+        return $results;
     }
 
 }

@@ -3,7 +3,6 @@
 defined('_JEXEC') or die('Restricted access');
 
 jimport('joomla.application.component.view');
-JPluginHelper::importPlugin('content.joomplu');
 
 class ManagementsViewManagement extends JViewLegacy {
 
@@ -22,10 +21,8 @@ class ManagementsViewManagement extends JViewLegacy {
 
         $this->check = $this->get('Check');
         $this->management = $this->get('Management');
-        $this->photos = $this->get('Photos');
-        $this->owners = $this->get('Owners');
-        $this->states = $this->get('States');
-        $this->cities = $this->get('Cities');
+        $this->clients = $this->get('Clients');
+        $this->categories = $this->get('Categories');
 
         parent::display($tpl);
     }

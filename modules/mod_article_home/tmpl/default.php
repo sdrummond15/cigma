@@ -28,7 +28,7 @@ if ($params->get('moduleclass_sfx')) {
                     $paragraph = substr($article->introtext, $start, $end-$start+4);
                     ?>
                     <?= $paragraph ?>
-                    <a class="btn btn-linkpage" href="<?php echo JRoute::_("index.php?Itemid={$link}"); ?>">
+                    <a class="btn-simple btn-linkpage" href="<?php echo JRoute::_("index.php?Itemid={$link}"); ?>">
                         <?= $button_link ?>
                     </a>
                 </div>

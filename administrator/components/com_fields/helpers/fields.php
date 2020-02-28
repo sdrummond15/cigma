@@ -605,7 +605,7 @@ class FieldsHelper
 			'relation_type' => 'category_or_group',
 		);
 
-		return parent::countRelations($items, $config);
+		return countRelations($items, $config);
 	}
 
 	/**
