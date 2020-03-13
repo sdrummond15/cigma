@@ -33,8 +33,7 @@ class ManagementsRouter extends JComponentRouterBase{
         $vars['view'] = $segments[0];
 
         if(isset($segments[1])){
-            $id = explode('_', $segments[1]);
-            $vars['id'] = $id[0];
+            $vars['id'] = $segments[1];
         }
 
         return $vars;

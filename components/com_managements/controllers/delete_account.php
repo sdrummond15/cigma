@@ -21,19 +21,15 @@ $app->initialise();
 jimport('joomla.user.user');
 jimport('joomla.user.helper');
 
-$image = JRequest::get('image');
-
-//    $tamanhoImg = getimagesize($image['tmp_name']);
-//    $tamanhoImgX = $tamanhoImg[0];
-//    $tamanhoImgY = $tamanhoImg[1];
-//
-//    $mimeImg = explode('/', $image['type']);
-
-//    if($mimeImg[0] == 'image' && !empty($tamanhoImgX) && !empty($tamanhoImgY)){
-//        return true;
-//    }else{
-//        return false;
-//    }
-
-print_r($_FILES[$image]);
+$id = JRequest::getVar('id');
+$db = JFactory::getDbo();
+$query = $db->getQuery(true);
+$conditions = array(
+    $db->quoteName('id') . ' = ' . $id
+);
+$query->delete($db->quoteName('#__accountability_expenses'));
+$query->where($conditions);
+$db->setQuery($query);
+$result = $db->execute();
+echo true;
 exit;

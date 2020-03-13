@@ -23,14 +23,28 @@
             <tbody>
                 <?php foreach ($this->managements as $management) :
 
-                    $date_in = date("d/m/Y", strtotime($management->date_in));
-                    $date_out = date("d/m/Y", strtotime($management->date_out));
+                    if ($management->date_in != '0000-00-00') {
+                        $date_in = date("d/m/Y", strtotime($management->date_in));
+                    } else {
+                        $date_in = ' - ';
+                    }
+
+                    if ($management->date_out != '0000-00-00') {
+                        $date_out = date("d/m/Y", strtotime($management->date_out));
+                    } else {
+                        $date_out = ' - ';
+                    }
 
                     $clients = ManagementsModelManagements::getClients($management->id_client);
                     $arrayclient = [];
-                    foreach ($clients as $cli) {
-                        array_push($arrayclient, $cli->client);
+                    if (!empty($clients)) {
+                        foreach ($clients as $cli) {
+                            array_push($arrayclient, $cli->client);
+                        }
+                    }else{
+                        array_push($arrayclient, 'Nenhum Cliente');
                     }
+
                 ?>
                     <tr>
                         <td class="center" width="60%">

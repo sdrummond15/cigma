@@ -4,9 +4,9 @@ jQuery(document).ready(function ($) {
     $(".cash").maskMoney({ symbol: 'R$ ', showSymbol: true, thousands: '.', decimal: ',', symbolStay: true });
     $('#date_in').mask('99/99/9999');
     $('#date_out').mask('99/99/9999');
-    $('#date_in').focusout(function() {
-        if($(this).val()){
-            if(validarData($(this).val()) == false){
+    $('#date_in').focusout(function () {
+        if ($(this).val()) {
+            if (validarData($(this).val()) == false) {
                 alert('Data de ida inválida!');
                 $(this).val('');
                 $(this).focus();
@@ -15,21 +15,21 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $('#date_out').focusout(function() {
-        if($(this).val()){
-            if(!$('#date_in').val()){
+    $('#date_out').focusout(function () {
+        if ($(this).val()) {
+            if (!$('#date_in').val()) {
                 alert('Informe a data de ida!');
                 $(this).val('');
                 $('#date_in').focus();
                 return false;
             }
-            if($('#date_out').val() < $('#date_in').val()){
+            if (!validarDatas($('#date_in').val(), $('#date_out').val())) {
                 alert('A data de volta deve ser maior ou igual a data de ida!');
                 $(this).val('');
                 $(this).focus();
                 return false;
             }
-            if(validarData($(this).val()) == false){
+            if (validarData($(this).val()) == false) {
                 alert('Data de ida inválida!');
                 $(this).val('');
                 $(this).focus();
@@ -40,66 +40,54 @@ jQuery(document).ready(function ($) {
 
 
     $("#add").click(function (event) {
-
         //Adicionando novo box
         $(".accounts").last().clone().insertAfter(".accounts:last");
 
         //Adicionando Remove 
-        if($(".accounts").last().find('.remove').length == 0){
+        if ($(".accounts").last().find('.remove').length == 0) {
             $(".accounts").last().append('<button type="button" class="btn btn-warning right remove"><i class="fas fa-trash"></i></button>');
         }
 
         //Limpando Campos
-        $(".accounts:last :input").each(function(){
+        $(".accounts:last :input").each(function () {
             $(this).val('');
         });
+
+        $(".cash").maskMoney({ symbol: 'R$ ', showSymbol: true, thousands: '.', decimal: ',', symbolStay: true });
 
         //Removendo box
         $('.remove').click(function (event) {
             $(this).parents('.accounts').remove();
         });
     });
-    
+
 
     var value = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
 
-    
+
 
     $("#submit").click(function (event) {
 
         var msg = '';
         var focus = '';
 
-        //Dados Adicionais
-        if (($('input[name="energy"]:checked').val() == 2 && $.trim($('#numero-energia').val()) == '') ||
-            ($('input[name="energy"]:checked').val() == 3 && $.trim($('#numero-energia').val()) == '')) {
-            msg += '<p>Informe o número da conta de energia</p>';
-            if (focus == '') {
-                focus = $('#numero-energia');
+        if ($('#clients').length > 0) {
+            if (!$('#clients').val()) {
+                msg += '<p>Selecione pelo menos um cliente!</p>';
+                if (focus == '') {
+                    focus = $('#clients');
+                }
             }
         }
 
-        if (($('input[name="energy"]:checked').val() == 2 && $.trim($('#relogio-energia').val()) == '') ||
-            ($('input[name="energy"]:checked').val() == 3 && $.trim($('#relogio-energia').val()) == '')) {
-            msg += '<p>Informe o número do relógio</p>';
-            if (focus == '') {
-                focus = $('#relogio-energia');
-            }
-        }
-
-        if (($('input[name="water"]:checked').val() == 2 && $.trim($('#numero-agua').val()) == '') ||
-            ($('input[name="water"]:checked').val() == 3 && $.trim($('#numero-agua').val()) == '')) {
-            msg += '<p>Informe o número da conta de água</p>';
-            if (focus == '') {
-                focus = $('#numero-agua');
-            }
-        }
-
-        if (($('input[name="water"]:checked').val() == 2 && $.trim($('#hidrometro-agua').val()) == '') ||
-            ($('input[name="water"]:checked').val() == 3 && $.trim($('#hidrometro-agua').val()) == '')) {
-            msg += '<p>Informe o número do hidrômetro de água</p>';
-            if (focus == '') {
-                focus = $('#hidrometro-agua');
+        if ($('#date_in').length > 0) {
+            if ($('#date_in')) {
+                if (!$('#date_in').val()) {
+                    msg += '<p>Informe a data e ida!</p>';
+                    if (focus == '') {
+                        focus = $('#date_in');
+                    }
+                }
             }
         }
 
@@ -114,31 +102,6 @@ jQuery(document).ready(function ($) {
             focus.focus();
 
             event.preventDefault();
-        }
-
-        //Limpar campos de acordo com seleção antes de Salvar
-        if ($('#vender').attr("checked") === undefined) {
-            $('#valor-venda').val('');
-        }
-
-        if ($('#alugar').attr("checked") === undefined) {
-            $('#valor-aluguel').val('');
-        }
-
-        if ($('#partilhar').attr("checked") === undefined) {
-            $('#valor-partilha').val('');
-        }
-
-        if ($('input[name="rented"]:checked').val() == 0) {
-            $('#data-locacao').val('');
-        }
-
-        if ($('input[name="energy"]:checked').val() != 2 && $('input[name="energy"]:checked').val() != 3) {
-            $('#numero-energia').val('');
-        }
-
-        if ($('input[name="water"]:checked').val() != 2 && $('input[name="water"]:checked').val() != 3) {
-            $('#numero-agua').val('');
         }
 
         if (msg != '') {
@@ -156,10 +119,7 @@ jQuery(document).ready(function ($) {
 
         var idUrl = value.split('_');
         $('form').prepend('<input type="hidden" id="id" name="id" value="' + idUrl[0] + '" />');
-        $('.select_state, .select_city').select2({
-            disabled: false
-        });
-
+        
     });
 
 
@@ -195,6 +155,70 @@ jQuery(document).ready(function ($) {
 
         return true;
     }
+
+    $('button.delete-account').click(function () {
+        var id = $(this).val();
+        var line = $(this).parents('.line');
+        noty({
+            text: 'Tem certeza que deseja remover a despesa?',
+            layout: 'center',
+            modal: true,
+            buttons: [
+                {
+                    addClass: 'btn btn-primary',
+                    text: 'Ok',
+                    onClick: function ($noty) {
+                        $noty.close();
+                        $.ajax({
+                            url: getBaseURL() + 'components/com_managements/controllers/delete_account.php',
+                            data: {
+                                'id': id
+                            },
+                            type: 'POST'
+                        }).done(function (msg) {
+                            if (msg == 1) {
+                                line.hide('slow', function () {
+                                    line.remove();
+                                    if ($('.line').length == 0) {
+                                        $("#list-accounts").slideUp('slow');
+                                    }
+                                    noty({
+                                        text: 'Despesa removida com sucesso.',
+                                        layout: 'center',
+                                        type: 'success',
+                                        timeout: 1000,
+                                        modal: true,
+                                        onClick: function ($noty) {
+                                            $noty.close();
+                                        }
+                                    });
+                                });
+                            } else {
+                                noty({
+                                    text: 'Erro ao excluir despesa.',
+                                    layout: 'center',
+                                    type: 'error',
+                                    timeout: 2000,
+                                    modal: true,
+                                    onClick: function ($noty) {
+                                        $noty.close();
+                                    }
+                                });
+                            }
+                        });
+                    }
+                },
+                {
+                    addClass: 'btn btn-danger',
+                    text: 'Cancel',
+                    onClick: function ($noty) {
+                        $noty.close();
+                    }
+                }
+            ]
+        });
+        var id = $(this).val();
+    });
 
 });
 
@@ -257,3 +281,20 @@ function validarData(dateString) {
     // Check the range of the day
     return day > 0 && day <= monthLength[month - 1];
 };
+
+function validarDatas(datein, dateout) {
+    var indate = datein.split("/");
+    var dayIn = parseInt(parts[0], 10);
+    var monthIn = parseInt(parts[1], 10);
+    var yearIn = parseInt(parts[2], 10);
+    var outdate = datein.split("/");
+    var dayOut = parseInt(parts[0], 10);
+    var monthOut = parseInt(parts[1], 10);
+    var yearOut = parseInt(parts[2], 10);
+    if (yearOut + monthOut + dayOut < yearIn + monthIn + dayIn) {
+        return false;
+    }
+    return true;
+}
+
+
