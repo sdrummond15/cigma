@@ -17,6 +17,11 @@
                required="true"
         />
 
+        <field name="id_car"
+               type="car"
+               label="COM_MANAGEMENTS_FIELD_CAR"
+        />
+
         <field name="cash"
                type="price"
                class="inputbox"

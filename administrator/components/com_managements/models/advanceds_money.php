@@ -90,5 +90,27 @@ class ManagementsModelAdvanceds_Money extends JModelAdmin
         return false;
     }
 
+    public static function getAccounts($id_adv_money = '')
+    {
+        $results = '';
+        $id_adv_money = JRequest::getVar('id');
+
+        if (!empty($id_adv_money)) {
+            $db = JFactory::getDBO();
+            $query = $db->getQuery(true);
+            $query->select('ae.*, 
+                            ce.descricao AS category');
+            $query->from('#__accountability_expenses AS ae');
+            $query->join('LEFT', '#__cat_expenses AS ce ON ce.id = ae.cat_expenses');
+            $query->where('ae.published = 1');
+            $query->where('id_adv_money = ' . $id_adv_money);
+            $db->setQuery($query);
+            $results = $db->loadObjectList();
+        }
+
+        return $results;
+
+    }
+
 
 }

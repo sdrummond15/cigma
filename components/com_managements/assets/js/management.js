@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
     $(".cash").maskMoney({ symbol: 'R$ ', showSymbol: true, thousands: '.', decimal: ',', symbolStay: true });
     $('#date_in').mask('99/99/9999');
     $('#date_out').mask('99/99/9999');
+    $('.date-expenses').mask('99/99/9999');
     $('#date_in').focusout(function () {
         if ($(this).val()) {
             if (validarData($(this).val()) == false) {
@@ -38,6 +39,16 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    $('.date-expenses').focusout(function () {
+        if ($(this).val()) {
+            if (validarData($(this).val()) == false) {
+                alert('Data inválida!');
+                $(this).val('');
+                $(this).focus();
+                return false;
+            }
+        }
+    });
 
     $("#add").click(function (event) {
         //Adicionando novo box
@@ -59,12 +70,21 @@ jQuery(document).ready(function ($) {
         $('.remove').click(function (event) {
             $(this).parents('.accounts').remove();
         });
+
+        $('.date-expenses').mask('99/99/9999');
+        $('.date-expenses').focusout(function () {
+            if ($(this).val()) {
+                if (validarData($(this).val()) == false) {
+                    alert('Data inválida!');
+                    $(this).val('');
+                    $(this).focus();
+                    return false;
+                }
+            }
+        });
     });
 
-
     var value = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
-
-
 
     $("#submit").click(function (event) {
 

@@ -20,3 +20,9 @@ input[type="price"]{
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
+
+.total {
+    background-color: #dfdfdf;
+    text-align: right !important;
+    font-size: 16px;
+}

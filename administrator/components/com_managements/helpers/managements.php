@@ -139,4 +139,34 @@ class ManagementsHelper
         return $options;
     }
 
+    public static function getCarOptions()
+    {
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+
+        $query->select('id AS value, CONCAT(mark, " - ", model, " - ", plate) AS text');
+        $query->from('#__cars AS c');
+        $query->where('c.published = 1');
+        $query->order('c.mark');
+
+        // Get the options.
+        $db->setQuery($query);
+
+        $options = $db->loadObjectList();
+
+        $noCar = [
+            'value' => 0,
+            'text' => 'Sem Carro',
+        ];
+
+        array_unshift($options, $noCar);
+
+        // Check for a database error.
+        if ($db->getErrorNum()) {
+            JError::raiseWarning(500, $db->getErrorMsg());
+        }
+
+        return $options;
+    }
+
 }

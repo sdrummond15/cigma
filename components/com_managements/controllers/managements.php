@@ -21,9 +21,14 @@ class ManagementsControllerManagements extends JControllerForm
         $arrCash = $_POST['cash'];
         $arrCategory = $_POST['category'];
         $arrNF = $_POST['nf'];
+        $arrDateExpenses = $_POST['expense_date'];
         $arrDescription = $_POST['description'];
 
-        if (!empty(implode('', $arrCash)) || !empty(implode('', $arrNF)) || !empty(implode('', $arrDescription))) {
+        if (!empty(implode('', $arrCash)) ||
+            !empty(implode('', $arrNF)) ||
+            !empty(implode('', $arrDateExpenses)) ||
+            !empty(implode('', $arrDescription))
+            ) {
             foreach ($_POST['cash'] as $key => $value) {
                 if(!empty($arrCash[$key]) || !empty($arrNF[$key]) || !empty($arrDescription[$key])){
                     array_push(
@@ -32,6 +37,7 @@ class ManagementsControllerManagements extends JControllerForm
                             'cash' => $arrCash[$key],
                             'category' => $arrCategory[$key],
                             'nf' => $arrNF[$key],
+                            'expense_date' => $arrDateExpenses[$key],
                             'description' => $arrDescription[$key]
                         )
                     );
@@ -43,12 +49,12 @@ class ManagementsControllerManagements extends JControllerForm
 
             $id = intval($_POST['id']);
             $idRoute = '';
-            $msgSuccess = 'Solicitação cadastrada com sucesso. <b>Aguarde o reembolso.</b>';
+            $msgSuccess = 'Solicitação cadastrada com sucesso.';
 
             //Identifica se é INSERT ou UPDATE
             if (!empty($id)) {
                 $idRoute = '&id=' . $id;
-                $msgSuccess = 'Solicitação alterada com sucesso. <b>Aguarde o reembolso.</b>';
+                $msgSuccess = 'Solicitação alterada com sucesso.';
             }
 
             if (isset($_POST['clients'])) {
@@ -124,12 +130,22 @@ class ManagementsControllerManagements extends JControllerForm
                     $object->id_adv_money = $id;
 
                     $cash = trim($data['cash']);
-                    if (!empty($cash))
+                    if (!empty($cash)) {
                         $cash = $this->convertMoeda($cash);
+                    }
+
+
+                    $expense_date = trim($data['expense_date']);
+                    if (!empty($expense_date)) {
+                        $expense_date = explode('/', $expense_date);
+                        $expense_date = $expense_date[2] . '-' . $expense_date[1] . '-' . $expense_date[0];
+                    }
+
 
                     $object->cash = $cash;
                     $object->note = $data['nf'];
                     $object->cat_expenses = $data['category'];
+                    $object->expense_date = $expense_date;
                     $object->description = $data['description'];
                     $object->created = $date_management;
                     $object->created_by = $id_user;

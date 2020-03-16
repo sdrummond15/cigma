@@ -2,6 +2,14 @@
     margin: 0 !important;
 }
 
+#management small {
+    font-size: 14px;
+    float: right;
+    padding: 3px 10px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+}
+
 #management h1 {
     margin-bottom: 30px;
     text-align: center;
@@ -81,7 +89,7 @@ h4.account {
 }
 
 .box-account {
-    width: 33.33%;
+    width: 25%;
     display: inline-block;
     margin-bottom: 5px;
 }
@@ -198,7 +206,7 @@ h4.account {
 
 #list-accounts .value.value-cash,
 #list-accounts .head.head-cash {
-    width: 15%;
+    width: 10%;
 }
 
 #list-accounts .value.value-category,
@@ -211,8 +219,13 @@ h4.account {
     width: 10%;
 }
 
+#list-accounts .value.value-expense-date,
+#list-accounts .head.head-expense-date {
+    width: 10%;
+}
+
 #list-accounts .value.value-description {
-    width: 50%;
+    width: 45%;
     text-overflow: clip;
     text-align: justify;
 }

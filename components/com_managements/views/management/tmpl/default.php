@@ -33,6 +33,7 @@ else :
     ?>
 
     <div id="management" class="row-fluid">
+        <?= (!empty($id_management))? '<small>nº <b>' . str_pad($id_management, 10, 0, STR_PAD_LEFT) . '</b></small>' : '' ?>
         <h1><?php echo (!empty($id_management)) ? 'Prestação de Conta' : 'Solicitação de Reembolso'; ?></h1>
 
         <?php if ($cash != '0.00' && !empty($cash)): ?>
@@ -66,12 +67,12 @@ else :
                     }
                 }
 
-                if (!empty($date_in)) {
+                if (!empty($date_in) && $date_in != '0000-00-00') {
                     $date_in = explode('-', $date_in);
                     $this_date_in = $date_in[2] . '/' . $date_in[1] . '/' . $date_in[0];
                 }
 
-                if (!empty($date_out)) {
+                if (!empty($date_out) && $date_out != '0000-00-00') {
                     $date_out = explode('-', $date_out);
                     $this_date_out = $date_out[2] . '/' . $date_out[1] . '/' . $date_out[0];
                 }
@@ -87,21 +88,10 @@ else :
                     <h4>Clientes:</h4>
                     <p><?= implode(', ', $arrayclient); ?></p>
                 </div>
-                <div class="span12">
-                    <div class="span3">
-                        <p><b>Data de ida:</b> <?= $this_date_in ?></p>
-                    </div>
-                    <div class="span3">
-                        <p><b>Data de volta:</b> <?= $this_date_out ?></p>
-                    </div>
-                    <div class="span6">
-                        <p><b>Carro:</b> <?= $thiscar[0]->model . ' - ' . $thiscar[0]->plate ?></p>
-                    </div>
-                </div>
-
                 <?php
-            else :
-                ?>
+            else:
+            ?>
+
                 <div class="box-clients">
                     <label class="label-management">Cliente(s):<span class="required">*</span></label>
                     <div class="control-group">
@@ -121,7 +111,9 @@ else :
                         </select>
                     </div>
                 </div>
-
+                <?php
+            endif;
+            ?>
                 <div class="span12">
                     <div class="span3">
                         <div class="label-date">
@@ -147,7 +139,7 @@ else :
                         </div>
                         <div class="input-car-solicit">
                             <select id="car" name="car" class="width100">
-                                <option value="">Sem Carro</option>
+                                <option value="0">Sem Carro</option>
                                 <?php foreach ($this->cars as $carro) : ?>
                                     <option
                                         value="<?= $carro->id ?>" <?php echo ($car == $carro->id) ? 'selected' : ''; ?>>
@@ -158,10 +150,6 @@ else :
                         </div>
                     </div>
                 </div>
-
-                <?php
-            endif;
-            ?>
 
             <h4 class="account">Contas</h4>
 
@@ -180,6 +168,9 @@ else :
                 <div class="box-account">
                     <input type="text" name="nf[]" class="nf" placeholder="Nota Fiscal"/>
                 </div>
+                <div class="box-account">
+                    <input type="text" name="expense_date[]" class="date-expenses" placeholder="Data"/>
+                </div>
                 <div class="box-description width100">
                     <label class="label-account label-desc">Descrição:</label>
                     <textarea class="description" name="description[]"></textarea>
@@ -195,11 +186,12 @@ else :
 
             <?php if (!empty($this->advanceds_money)): ?>
                 <div id="list-accounts">
-                    <h3>Contas prestadas</h3>
+                    <h3>Despesas</h3>
                     <div class="line-head">
                         <div class="head head-cash">Valor</div>
                         <div class="head head-category">Categoria</div>
                         <div class="head head-nf">Nota Fiscal</div>
+                        <div class="head head-expense-date">Data</div>
                         <div class="head head-description">Anotações</div>
                         <div class="head head-delete">Remover</div>
                     </div>
@@ -207,11 +199,17 @@ else :
                     $totalCash = 0;
                     foreach ($this->advanceds_money as $advanceds_money):
                         $totalCash += $advanceds_money->cash;
+                        $dateExpenses = '-';
+                        if (!empty($advanceds_money->expense_date) && $advanceds_money->expense_date != '0000-00-00') {
+                            $dateExpenses = explode('-', $advanceds_money->expense_date);
+                            $dateExpenses = $dateExpenses[2] . '/' . $dateExpenses[1] . '/' . $dateExpenses[0];
+                        }
                         ?>
                         <div class="line">
                             <div class="value value-cash">R$ <?= number_format($advanceds_money->cash, 2, ',', '.') ?></div>
                             <div class="value value-category"><?= $advanceds_money->category ?></div>
                             <div class="value value-nf"><?= $advanceds_money->note ?></div>
+                            <div class="value value-expense-date"><?= $dateExpenses ?></div>
                             <div class="value value-description"><?= $advanceds_money->description ?></div>
                             <div class="value value-delete">
                                 <button type="button" value="<?= $advanceds_money->id ?>" class="delete-account">
@@ -226,5 +224,12 @@ else :
                 </div>
             <?php endif; ?>
         </form>
+
+        <?php if(!empty($this->management)): ?>
+            <a href="expenses.php?option=com_managements&view=pdfreport&format=pdf&id=<?= $id_management ?>" class="btn-pdf" target="_blank" title="Fazer Download">
+                <i class="fas fa-print"></i> Imprimir
+            </a>
+        <?php endif; ?>
+
     </div>
 <?php endif; ?>
