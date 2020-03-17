@@ -271,6 +271,12 @@ button.delete-account {
     width: calc(100% - 20px);
 }
 
+.btn.btn-pdf{
+    display: table;
+    margin: auto;
+    font-size: 18px;
+    padding: 10px 30px;
+}
 @media screen and (max-width: 1000px) {
     #insert-management {
         font-size: 15px;

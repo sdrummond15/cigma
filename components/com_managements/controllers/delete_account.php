@@ -21,7 +21,9 @@ $app->initialise();
 jimport('joomla.user.user');
 jimport('joomla.user.helper');
 
-$id = JRequest::getVar('id');
+$id = $_POST['id'];
+$expense = $_POST['expense'];
+
 $db = JFactory::getDbo();
 $query = $db->getQuery(true);
 $conditions = array(
@@ -31,5 +33,15 @@ $query->delete($db->quoteName('#__accountability_expenses'));
 $query->where($conditions);
 $db->setQuery($query);
 $result = $db->execute();
-echo true;
+
+$db = JFactory::getDbo();
+$queryCash = $db->getQuery(true);
+$queryCash->select('SUM(cash) AS cash');
+$queryCash->from('#__accountability_expenses AS ae');
+$queryCash->where('ae.id_adv_money = ' . $expense);
+$db->setQuery($queryCash);
+$db->query();
+$cash = (array)$db->loadObjectList();
+
+echo 'R$ ' .number_format($cash[0]->cash, 2, ',', '.');
 exit;

@@ -49,21 +49,32 @@ $expenses = (array)$db->loadObjectList();
 foreach ($expenses as $expense) {
     $cash = $expense->cash;
     $client = $expense->client;
-    $date_in = $expense->date_in;
-    $date_out = $expense->date_out;
+
+    $date_in = ' - ';
+    if (!empty($expense->date_in) && $expense->date_in != '0000-00-00') {
+        $date_in = explode('-', $expense->date_in);
+        $date_in = $date_in[2] . '/' . $date_in[1] . '/' . $date_in[0];
+    }
+
+    $date_out = ' - ';
+    if (!empty($expense->date_out) && $expense->date_out != '0000-00-00') {
+        $date_out = explode('-', $expense->date_out);
+        $date_out = $date_out[2] . '/' . $date_out[1] . '/' . $date_out[0];
+    }
+
     $car = [];
-    if(!empty($expense->mark)){
+    if (!empty($expense->mark)) {
         array_push($car, $expense->mark);
     }
-    if(!empty($expense->mark)) {
+    if (!empty($expense->mark)) {
         array_push($car, $expense->model);
     }
-    if(!empty($expense->mark)) {
+    if (!empty($expense->mark)) {
         array_push($car, $expense->plate);
     }
 
     $thisCar = 'Sem Carro';
-    if(!empty($car)){
+    if (!empty($car)) {
         $thisCar = implode(' - ', $car);
     }
 
@@ -79,16 +90,16 @@ $db->setQuery($queryClient);
 $db->query();
 $clients = (array)$db->loadObjectList();
 $clientes = [];
-foreach ($clients as $client){
+foreach ($clients as $client) {
     array_push($clientes, $client->name);
 }
 
 $thisClient = '';
-if(!empty($clientes)){
+if (!empty($clientes)) {
     $thisClient = implode(', ', $clientes);
 }
 
-$id = str_pad($id, 10, '0', STR_PAD_LEFT);
+$id_num = str_pad($id, 10, '0', STR_PAD_LEFT);
 
 setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
 date_default_timezone_set('America/Sao_Paulo');
@@ -102,138 +113,81 @@ $pdf->SetMargins(10, 10, 10);
 $pdf->SetAutoPageBreak(1, 10);
 $pdf->SetFont('Helvetica', 'B', 10);
 $pdf->SetX(173);
-$pdf->Multicell(27, 6, utf8_decode('nº ' . $id ), 1, 'L');
+$pdf->Multicell(27, 6, utf8_decode('nº ' . $id_num), 1, 'L');
 $pdf->SetFont('Helvetica', 'B', 15);
 $pdf->Ln(10);
-$pdf->Multicell(190, 15, 'DESPESAS', 1, 'C');
+$pdf->Multicell(190, 15, 'DESPESAS', 0, 'C');
 $pdf->SetFont('Arial', '', 11);
-$pdf->Cell(190, 7, utf8_decode('Consultor: ' . $consultant), 1, 1, 'L');
-$pdf->Cell(190, 7, utf8_decode('E-mail: ' . $email), 1, 1, 'L');
+$pdf->Cell(190, 7, utf8_decode('Consultor: ' . $consultant), 0, 1, 'L');
+$pdf->Cell(190, 7, utf8_decode('E-mail: ' . $email), 0, 1, 'L');
+$pdf->Ln(5);
+$pdf->Multicell(190, 5, utf8_decode('Cliente(s): ' . $thisClient), 0, 'L');
 $pdf->Ln(2);
-$pdf->Multicell(190, 5, utf8_decode('Cliente(s): ' . $thisClient), 1, 'L');
-//$pdf->Cell(276, 5, 'RLO 75348681/2019 v�lida at� 21/08/2023, 39066558/2018 V�lida at� 26/11/2022 e IBAMA 7186489 / 6284774 ', 0, 1, 'C');
-//$pdf->Cell(276, 5, 'Rua Geraldino Jos� dos Santos, 1701 - Maravilhas, S�o Jos� da Lapa - MG, 35350-000,', 0, 1, 'C');
-//$pdf->Cell(276, 5, 'confere o certificado que prestou servi�o de tratamento de res�duo, conforme os dados abaixo', 0, 1, 'C');
-//$pdf->Ln(1);
-//$pdf->SetFont('Helvetica', 'I', 9);
-//$pdf->Cell(276, 5, 'Obs.: os efluentes s�o tratados conforme padr�es estabelecidos pela COPAM 01/2018', 0, 1, 'C');
-//
-//$pdf->Ln(1);
-//$pdf->SetFont('Helvetica', 'B', 9);
-//$pdf->Cell(276, 5, 'DADOS DO RES�DUO', 1, 1, 'C');
-//$pdf->SetFont('Helvetica', '', 9);
-//$pdf->Multicell(276, 5, 'Caracteriza��o do Res�duo:' . "  " . strtoupper(utf8_decode($caracterizacao)), 1, 'L');
-//$pdf->Multicell(40, 5, 'Quantidade:' . "\n" . strtoupper(utf8_decode($quantidade)), 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(50);
-//$pdf->Multicell(40, 5, 'Rer�odo de Recebimento:' . "\n" . strtoupper($data_recebimento), 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(90);
-//$pdf->Multicell(70, 5, 'Tipo de Tratamento:' . "\n" . strtoupper(utf8_decode($tipo_tratamento)), 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(160);
-//$pdf->Multicell(50, 5, 'Classe do Res�duo:' . "\n" . strtoupper($classe_residuo), 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(210);
-//$pdf->Multicell(76, 5, 'Estado(s) F�sico(s):' . "\n" . strtoupper(utf8_decode($estado_fisico)), 1, 'L');
-//$pdf->Multicell(276, 5, 'Observa��o:' . strtoupper(utf8_decode($observacao)), 1, 'L');
-//
-//
-////Identificando tipo de cliente PF ou PJ
-//if (empty($type)) {
-//    $descCliente = 'Nome:';
-//    $documento = 'CPF:';
-//} else {
-//    $descCliente = 'Empresa/Raz�o Social:';
-//    $documento = 'CNPJ:';
-//}
-//
-//$endere�o = $street;
-//if (!empty($number))
-//    $endere�o .= ', ' . $number;
-//if (!empty($complement))
-//    $endere�o .= ' - ' . $complement;
-//
-//
-//if (!empty($city)):
-//    $city = explode(' - ', $city);
-//    $cidade = $city[0];
-//    $uf = $city[1];
-//endif;
-//
-//$pdf->Ln(2);
-//$pdf->SetFont('Helvetica', 'B', 9);
-//$pdf->Cell(276, 5, 'DADOS DA GERADORA DO RES�DUO', 1, 1, 'C');
-//$pdf->SetFont('Helvetica', '', 9);
-//$pdf->Multicell(276, 5, $descCliente . "\n" . strtoupper(utf8_decode($cliente)), 1, 'L');
-//$pdf->Multicell(138, 5, $documento . "\n" . $identification, 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(148);
-//$pdf->Multicell(138, 5, 'Contato:' . "\n" . $phone, 1, 'L');
-//$pdf->Multicell(276, 5, 'Endere�o:' . "\n" . strtoupper(utf8_decode($endere�o)), 1, 'L');
-//$pdf->Multicell(110, 5, 'Bairro:' . "\n" . strtoupper(utf8_decode($district)), 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(120);
-//$pdf->Multicell(110, 5, 'Cidade:' . "\n" . strtoupper(utf8_decode($cidade)), 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(230);
-//$pdf->Multicell(20, 5, 'UF:' . "\n" . strtoupper(utf8_decode($uf)), 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(250);
-//$pdf->Multicell(36, 5, 'CEP:' . "\n" . strtoupper(utf8_decode($postal_code)), 1, 'L');
-//
-//$transendere�o = $transstreet;
-//if (!empty($transnumber))
-//    $transendere�o .= ', ' . $transnumber;
-//if (!empty($transcomplement))
-//    $transendere�o .= ' - ' . $transcomplement;
-//
-//if (!empty($transcity)):
-//    $transcity = explode(' - ', $transcity);
-//    $transcidade = $transcity[0];
-//    $transuf = $transcity[1];
-//endif;
-//
-//$pdf->Ln(2);
-//$pdf->SetFont('Helvetica', 'B', 9);
-//$pdf->Cell(276, 5, 'DADOS DA TRANSPORTADORA DO RES�DUO', 1, 1, 'C');
-//$pdf->SetFont('Helvetica', '', 9);
-//$pdf->Multicell(276, 5, 'Raz�o Social:' . "  " . strtoupper(utf8_decode($transportadora)), 1, 'L');
-//$pdf->Multicell(138, 5, 'CNPJ:' . "\n" . $transcnpj, 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(148);
-//$pdf->Multicell(138, 5, 'Contato:' . "\n" . $transphone, 1, 'L');
-//$pdf->Multicell(276, 5, 'Endere�o:' . "\n" . strtoupper(utf8_decode($transendere�o)), 1, 'L');
-//$pdf->Multicell(110, 5, 'Bairro:' . "\n" . strtoupper(utf8_decode($transdistrict)), 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(120);
-//$pdf->Multicell(110, 5, 'Cidade:' . "\n" . strtoupper(utf8_decode($transcidade)), 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(230);
-//$pdf->Multicell(20, 5, 'UF:' . "\n" . strtoupper(utf8_decode($transuf)), 1, 'L');
-//$pdf->Ln(-10);
-//$pdf->SetX(250);
-//$pdf->Multicell(36, 5, 'CEP:' . "\n" . strtoupper(utf8_decode($transpostal_code)), 1, 'L');
-//
-//
-//$pdf->Ln(5);
-//$pdf->SetFont('Helvetica', 'B', 10);
-//$pdf->Multicell(276, 6, 'S�O JOS� DA LAPA, ' . strtoupper($data) , 0, 'C');
-//$pdf->Ln(10);
-//$pdf->SetX(60);
-//$pdf->Multicell(80, 5, '____________________________________', 0, 'C');
-//$pdf->Ln(-5);
-//$pdf->SetX(150);
-//$pdf->Multicell(80, 5, '____________________________________', 0, 'C');
-//$pdf->Ln(0);
-//$pdf->SetX(60);
-//$pdf->Multicell(80, 5, 'Odilon Vila�a Silva', 0, 'C');
-//$pdf->Ln(-5);
-//$pdf->SetX(150);
-//$pdf->Multicell(80, 5, 'Braz Jos� de Freitas | CRQMG-03210236', 0, 'C');
-//
-//$pdf->Image(JPATH_SITE . '/images/assinaturabetel.png', 70, 183, 65);
-//$pdf->Image(JPATH_SITE . '/images/assinaturaengenheiro.png', 160, 183, 65);
+$pdf->Cell(95, 7, utf8_decode('Adiantamento: R$ ' . number_format($cash, 2, ',', '.')), 0, 0, 'L');
+$pdf->Cell(95, 7, utf8_decode('Carro: ' . $thisCar), 0, 1, 'L');
+$pdf->Cell(95, 7, utf8_decode('Data de Ida: ' . $date_in), 0, 0, 'L');
+$pdf->Cell(95, 7, utf8_decode('Data de Volta: ' . $date_out), 0, 1, 'L');
+
+
+$queryExpenses = $db->getQuery(true);
+$queryExpenses->select('ae.*, ce.descricao AS category');
+$queryExpenses->from('#__accountability_expenses AS ae');
+$queryExpenses->join('LEFT','#__cat_expenses AS ce ON ce.id = ae.cat_expenses');
+$queryExpenses->where('ae.id_adv_money = ' . $id);
+$db->setQuery($queryExpenses);
+$db->query();
+$accounts = (array)$db->loadObjectList();
+
+$pdf->Ln(5);
+$pdf->SetFont('Helvetica', 'B', 10);
+$pdf->Cell(20, 6, utf8_decode('Data'), 1, 0, 'C');
+$pdf->Cell(30, 6, utf8_decode('Nota'), 1, 0, 'C');
+$pdf->Cell(80, 6, utf8_decode('Descrição'), 1, 0, 'C');
+$pdf->Cell(30, 6, utf8_decode('Categoria'), 1, 0, 'C');
+$pdf->Cell(30, 6, utf8_decode('Valor'), 1, 1, 'C');
+
+$pdf->SetFont('Helvetica', '', 10);
+$totalCash = 0;
+foreach ($accounts as $account) {
+    $expense_date = ' - ';
+    if (!empty($account->expense_date) && $account->expense_date != '0000-00-00') {
+        $expense_date = explode('-', $account->expense_date);
+        $expense_date = $expense_date[2] . '/' . $expense_date[1] . '/' . $expense_date[0];
+    }
+
+    $note = ' - ';
+    if(!empty($account->note)){
+        $note = substr($account->note, 0, 15);
+    }
+    $description = substr($account->description, 0, 50);
+    $pos = strrpos($description, ' ');
+    if(!empty($pos)) {
+        $description = substr($description, 0, $pos) . '...';
+    }
+
+    $totalCash += $account->cash;
+
+    $pdf->Cell(20, 6, $expense_date, 1, 0, 'C');
+    $pdf->Cell(30, 6, utf8_decode($note), 1, 0, 'C');
+    $pdf->Cell(80, 6, utf8_decode($description), 1, 0, 'L');
+    $pdf->Cell(30, 6, utf8_decode($account->category), 1, 0, 'C');
+    $pdf->Cell(30, 6, utf8_decode('R$ '.number_format($account->cash, 2, ',', '.')), 1, 1, 'C');
+}
+
+$pdf->SetFont('Helvetica', 'B', 11);
+$pdf->Cell(190, 8, utf8_decode('TOTAL   R$ '.number_format($totalCash, 2, ',', '.')), 1, 1, 'R');
+$pdf->Ln(15);
+$pdf->SetFont('Helvetica', 'B', 10);
+$pdf->Multicell(190, 6, 'Belo Horizonte, ' . date("d/m/Y") , 0, 'C');
+$pdf->Ln(10);
+$pdf->Cell(90, 5, '___________________________________________', 0, 0, 'C');
+$pdf->Cell(10, 5, '', 0, 'C');
+$pdf->Cell(90, 5, '___________________________________________', 0, 1, 'C');
+$pdf->Cell(90, 3, $consultant, 0, 0, 'C');
+$pdf->Cell(10, 3, '', 0, 'C');
+$pdf->Cell(90, 3, 'CIGMA - Consultoria', 0, 1, 'C');
+
+
 
 ob_start();
 

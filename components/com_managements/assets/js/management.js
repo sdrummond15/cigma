@@ -177,7 +177,10 @@ jQuery(document).ready(function ($) {
     }
 
     $('button.delete-account').click(function () {
-        var id = $(this).val();
+        var thisValues = $(this).val().split('_');
+        var id = thisValues[0];
+        var id_expense = thisValues[1];
+
         var line = $(this).parents('.line');
         noty({
             text: 'Tem certeza que deseja remover a despesa?',
@@ -192,13 +195,15 @@ jQuery(document).ready(function ($) {
                         $.ajax({
                             url: getBaseURL() + 'components/com_managements/controllers/delete_account.php',
                             data: {
-                                'id': id
+                                'id': id,
+                                'expense': id_expense
                             },
                             type: 'POST'
                         }).done(function (msg) {
-                            if (msg == 1) {
+                            if (msg) {
                                 line.hide('slow', function () {
                                     line.remove();
+                                    $('.sum-cash > b').html(msg);
                                     if ($('.line').length == 0) {
                                         $("#list-accounts").slideUp('slow');
                                     }
@@ -237,7 +242,6 @@ jQuery(document).ready(function ($) {
                 }
             ]
         });
-        var id = $(this).val();
     });
 
 });

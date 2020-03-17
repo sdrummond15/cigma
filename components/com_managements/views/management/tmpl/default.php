@@ -212,7 +212,7 @@ else :
                             <div class="value value-expense-date"><?= $dateExpenses ?></div>
                             <div class="value value-description"><?= $advanceds_money->description ?></div>
                             <div class="value value-delete">
-                                <button type="button" value="<?= $advanceds_money->id ?>" class="delete-account">
+                                <button type="button" value="<?= $advanceds_money->id . '_' . $id_management ?>" class="delete-account">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                             </div>
@@ -226,7 +226,7 @@ else :
         </form>
 
         <?php if(!empty($this->management)): ?>
-            <a href="expenses.php?option=com_managements&view=pdfreport&format=pdf&id=<?= $id_management ?>" class="btn-pdf" target="_blank" title="Fazer Download">
+            <a href="expenses.php?option=com_managements&view=pdfreport&format=pdf&id=<?= $id_management ?>" class="btn btn-warning btn-pdf" target="_blank" title="Fazer Download">
                 <i class="fas fa-print"></i> Imprimir
             </a>
         <?php endif; ?>

@@ -341,6 +341,10 @@ textarea.inputbox {
     background-position: unset;
 }
 
+.btn{
+    background-image: none !important;
+}
+
 .readmore {
     display: table;
     width: 100%;
