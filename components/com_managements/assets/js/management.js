@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
 
     $('#clients').select2();
+    $('#consultants').select2();
     $(".cash").maskMoney({ symbol: 'R$ ', showSymbol: true, thousands: '.', decimal: ',', symbolStay: true });
     $('#date_in').mask('99/99/9999');
     $('#date_out').mask('99/99/9999');
@@ -90,7 +91,12 @@ jQuery(document).ready(function ($) {
 
         var msg = '';
         var focus = '';
-
+        if ($('#consultants').length > 0) {
+            if ($('#consultants').val()) {
+                alert('Consultores FDP');
+                $(this).val('');
+            }
+        }
         if ($('#clients').length > 0) {
             if (!$('#clients').val()) {
                 msg += '<p>Selecione pelo menos um cliente!</p>';

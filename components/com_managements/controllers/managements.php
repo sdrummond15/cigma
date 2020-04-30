@@ -20,6 +20,7 @@ class ManagementsControllerManagements extends JControllerForm
         $arrData = [];
         $arrCash = $_POST['cash'];
         $arrCategory = $_POST['category'];
+        $arrPayment = $_POST['payment'];
         $arrNF = $_POST['nf'];
         $arrDateExpenses = $_POST['expense_date'];
         $arrDescription = $_POST['description'];
@@ -36,6 +37,7 @@ class ManagementsControllerManagements extends JControllerForm
                         array(
                             'cash' => $arrCash[$key],
                             'category' => $arrCategory[$key],
+                            'payment' => $arrPayment[$key],
                             'nf' => $arrNF[$key],
                             'expense_date' => $arrDateExpenses[$key],
                             'description' => $arrDescription[$key]
@@ -59,6 +61,14 @@ class ManagementsControllerManagements extends JControllerForm
 
             if (isset($_POST['clients'])) {
                 $clients = implode(",", $_POST['clients']);
+            }
+            if (isset($_POST['consultants'])) {
+                if (!empty($_POST['consultants'])) {
+                    $consultants = implode(",", $_POST['consultants']);
+                }else{
+                    $consultants = "";
+                }
+
             }
 
             if (isset($_POST['date_in'])) {
@@ -90,7 +100,7 @@ class ManagementsControllerManagements extends JControllerForm
                     return false;
                 }
             }
-
+            $description1 = $_POST['description1'];
             //Buscando usuário que está logado
             $user = JFactory::getUser();
             $id_user = $user->get('id');
@@ -111,6 +121,8 @@ class ManagementsControllerManagements extends JControllerForm
             $object->date_out = $date_out;
             $object->id_car = $car;
             $object->id_consultant = $id_user;
+            $object->id_consultants = $consultants;
+            $object->description1 = $description1;
 
             if (empty($id)) {
                 $object->created = $date_management;
@@ -145,6 +157,7 @@ class ManagementsControllerManagements extends JControllerForm
                     $object->cash = $cash;
                     $object->note = $data['nf'];
                     $object->cat_expenses = $data['category'];
+                    $object->cat_payments = $data['payment'];
                     $object->expense_date = $expense_date;
                     $object->description = $data['description'];
                     $object->created = $date_management;

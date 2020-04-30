@@ -88,6 +88,19 @@ h4.account {
     width: 100% !important;
 }
 
+.box-consultants .label-management {
+    display: inline-block;
+}
+
+.box-consultants .control-group {
+    width: calc(100% - 80px) !important;
+    display: inline-block;
+}
+
+.box-consultants .select2 {
+    width: 100% !important;
+}
+
 .box-account {
     width: 25%;
     display: inline-block;
@@ -123,6 +136,12 @@ h4.account {
     display: inline-block;
     margin-left: 20px;
     margin-bottom: 10px;
+}
+textarea.description1 {
+    width: calc(100% - 100px);
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .btn-add {
@@ -201,6 +220,7 @@ h4.account {
     display: inline-block;
     text-align: center;
     font-weight: bold;
+    font-size: 14px;
     padding: 5px 0;
 }
 
@@ -211,7 +231,12 @@ h4.account {
 
 #list-accounts .value.value-category,
 #list-accounts .head.head-category {
-    width: 15%;
+    width: 10%;
+}
+
+#list-accounts .value.value-payment,
+#list-accounts .head.head-payment {
+    width: 10%;
 }
 
 #list-accounts .value.value-nf,
@@ -225,13 +250,13 @@ h4.account {
 }
 
 #list-accounts .value.value-description {
-    width: 45%;
+    width: 40%;
     text-overflow: clip;
-    text-align: justify;
+    text-align: center;
 }
 
 #list-accounts .head.head-description {
-    width: 50%;
+    width: 40%;
 }
 
 #list-accounts .value.value-delete,
@@ -252,6 +277,7 @@ h4.account {
 
 #list-accounts .value {
     display: inline-block;
+    font-size: 14px;
     text-align: center;
     vertical-align: middle;
 }
@@ -262,6 +288,7 @@ button.delete-account {
     border-radius: 3px;
     color: #FFF;
     margin-top: -5px;
+    font-size: 13px;
 }
 
 #list-accounts .sum-cash {
@@ -370,87 +397,6 @@ button.delete-account {
         margin-left: 20px;
     }
 
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(1) {
-        width: 140px;
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(2) {
-        width: calc(36.66% - 160px);
-        margin-left: 20px;
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(3) {
-        width: 60px;
-        margin-left: 20px;
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(4) {
-        width: calc(33.33% - 100px);
-        margin-left: 20px;
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(5) {
-        width: 80px;
-        margin-left: 20px;
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(6) {
-        width: calc(30% - 120px);
-        margin-left: 20px;
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(7) {
-        width: 50px;
-        margin-left: 0;
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(8) {
-        width: calc(50% - 70px);
-        margin-left: 20px;
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(9) {
-        width: 130px;
-        margin-left: 20px;
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(10) {
-        width: calc(50% - 170px);
-        margin-left: 20px;
-    }
-
-    #garage-total_area-building_area > div:nth-child(1) {
-        width: 150px;
-    }
-
-    #garage-total_area-building_area > div:nth-child(2) {
-        width: calc(100% - 170px);
-        margin-left: 20px;
-    }
-
-    #garage-total_area-building_area > div:nth-child(3) {
-        width: 100px;
-        margin-left: 0;
-    }
-
-    #garage-total_area-building_area > div:nth-child(3) label {
-        float: left;
-    }
-
-    #garage-total_area-building_area > div:nth-child(4) {
-        width: calc(50% - 120px);
-        margin-left: 20px;
-    }
-
-    #garage-total_area-building_area > div:nth-child(5) {
-        width: 145px;
-        margin-left: 20px;
-    }
-
-    #garage-total_area-building_area > div:nth-child(6) {
-        width: calc(50% - 185px);
-        margin-left: 20px;
-    }
 
     #description > div:nth-child(1) {
         width: 120px;
@@ -599,18 +545,6 @@ button.delete-account {
         width: calc(100% - 14px);
     }
 
-    #condominium > div {
-        width: 190px;
-    }
-
-    #condominium > div:nth-child(2) {
-        width: calc(100% - 210px);
-        margin-left: 20px;
-    }
-
-    #condominium > div:nth-child(2) input {
-        width: calc(100% - 14px);
-    }
 
     #safe > div {
         width: 160px;
@@ -686,53 +620,6 @@ button.delete-account {
         margin-left: 0;
     }
 
-    #imagem-capa > div:nth-child(1) {
-        width: 100%;
-    }
-
-    #imagem-capa > div:nth-child(2) {
-        width: 80%;
-        margin-left: 0;
-    }
-
-    #imagem-capa > div:nth-child(3) {
-        width: calc(20% - 20px);
-        margin-left: 20px;
-    }
-
-    #fotos > div {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    #keys_controls_alarm > div:nth-child(1) {
-        width: 50px;
-    }
-
-    #keys_controls_alarm > div:nth-child(2) {
-        width: calc(50% - 70px);
-        margin-left: 20px;
-    }
-
-    #keys_controls_alarm > div:nth-child(3) {
-        width: 50px;
-        margin-left: 20px;
-    }
-
-    #keys_controls_alarm > div:nth-child(4) {
-        width: calc(50% - 90px);
-        margin-left: 20px;
-    }
-
-    #keys_controls_alarm > div:nth-child(5) {
-        width: 50px;
-        margin-left: 0;
-    }
-
-    #keys_controls_alarm > div:nth-child(6) {
-        width: calc(100% - 70px);
-        margin-left: 20px;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -768,55 +655,6 @@ button.delete-account {
     #district-region > div:nth-child(4) {
         width: calc(100% - 70px);
         margin-left: 20px;
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(2) {
-        width: calc(100% - 160px);
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(4) {
-        width: calc(100% - 80px);
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(6) {
-        width: calc(100% - 100px);
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(8) {
-        width: calc(100% - 70px);
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(10) {
-        width: calc(100% - 150px);
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(3), #suites-bedrooms-bathrooms-rooms > div:nth-child(5), #suites-bedrooms-bathrooms-rooms > div:nth-child(7), #suites-bedrooms-bathrooms-rooms > div:nth-child(9) {
-        margin-left: 0;
-    }
-
-    #suites-bedrooms-bathrooms-rooms > div:nth-child(3) label, #suites-bedrooms-bathrooms-rooms > div:nth-child(5) label, #suites-bedrooms-bathrooms-rooms > div:nth-child(7) label, #suites-bedrooms-bathrooms-rooms > div:nth-child(9) label {
-        float: left;
-    }
-
-    #garage-total_area-building_area > div:nth-child(3) {
-        width: 100px;
-        margin-left: 0;
-    }
-
-    #garage-total_area-building_area > div:nth-child(4) {
-        width: calc(100% - 120px);
-    }
-
-    #garage-total_area-building_area > div:nth-child(5) {
-        margin-left: 0;
-    }
-
-    #garage-total_area-building_area > div:nth-child(5) label {
-        float: left;
-    }
-
-    #garage-total_area-building_area > div:nth-child(6) {
-        width: calc(100% - 165px);
     }
 
     #registry-registry_office-iptu_register > div:nth-child(2) {

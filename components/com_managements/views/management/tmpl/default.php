@@ -4,7 +4,6 @@
 
 if ($this->check === false) :
 
-    echo '<h1 class="nopertence">Este imóvel não existe ou não pertence a esse usuário.</h1>';
     echo '<input type="button" class="btn btn-return" value="voltar" onclick="history.back();" />';
     echo "<script>setTimeout('history.go(-1)', 5000)</script>";
 
@@ -12,6 +11,7 @@ else :
 
     $id_management = '';
     $id_clients = '';
+    $id_consultants = '';
     $date_in = '';
     $date_out = '';
     $car = '';
@@ -22,11 +22,13 @@ else :
         foreach ($this->management as $management) :
             $id_management = $management->id;
             $id_clients = $management->id_client;
+            $id_consultants = $management->id_consultants;
             $date_in = $management->date_in;
             $date_out = $management->date_out;
             $car = $management->id_car;
             $author = $management->created_by;
             $cash = $management->cash;
+            $description1 = $management->description1;
         endforeach;
     endif;
 
@@ -34,7 +36,7 @@ else :
 
     <div id="management" class="row-fluid">
         <?= (!empty($id_management))? '<small>nº <b>' . str_pad($id_management, 10, 0, STR_PAD_LEFT) . '</b></small>' : '' ?>
-        <h1><?php echo (!empty($id_management)) ? 'Prestação de Conta' : 'Solicitação de Reembolso'; ?></h1>
+        <h1>CADASTRO – RELATÓRIO DE DESPESAS DE VIAGEM</h1>
 
         <?php if ($cash != '0.00' && !empty($cash)): ?>
             <h4>O valor adiantado foi <b>R$ <?= number_format($cash, 2, ',', '.') ?></b></h4><br>
@@ -54,6 +56,8 @@ else :
 
             $arrayclient = [];
             $arrayclientid = [];
+            $arrayconsultant = [];
+            $arrayconsultantid = [];
             $this_date_in = '';
             $this_date_out = '';
             $thiscar = '';
@@ -64,6 +68,13 @@ else :
                     foreach ($clients as $cli) {
                         array_push($arrayclient, $cli->name);
                         array_push($arrayclientid, $cli->id);
+                    }
+                }
+                $consultants = ManagementsModelManagement::getConsultants($id_consultants, false);
+                if (!empty($consultants)) {
+                    foreach ($consultants as $consultant) {
+                        array_push($arrayconsultant, $consultant->nome);
+                        array_push($arrayconsultantid, $consultant->id);
                     }
                 }
 
@@ -149,6 +160,30 @@ else :
                             </select>
                         </div>
                     </div>
+                    <div class="box-consultants">
+                        <label class="label-management">Consultor(es):</label>
+                        <div class="control-group">
+                            <select id="consultants" name="consultants[]" multiple="multiple" class="width100">
+                                <?php foreach ($this->consultants as $consultant) : ?>
+                                    <?php
+                                    $selected_consultant = '';
+                                    if (!empty($arrayconsultantid)) {
+                                        $consultant_sel = array_search($consultant->id, $arrayconsultantid);
+                                        if ($consultant_sel !== false) {
+                                            $selected_consultant = 'selected';
+                                        }
+                                    }
+                                    ?>
+                                    <option value="<?= $consultant->id ?>" <?= $selected_consultant ?>><?= $consultant->nome ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-description width100">
+                    <label class="label-desc">Descrição:</label>
+                    <textarea id="description1" class="description1" name="description1"><?= $description1 ?></textarea>
                 </div>
 
             <h4 class="account">Contas</h4>
@@ -162,6 +197,13 @@ else :
                     <select id="category" name="category[]" required>
                         <?php foreach ($this->categories as $category) : ?>
                             <option value="<?= $category->id ?>"><?= $category->descricao ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <div class="box-account">
+                    <select id="payment" name="payment[]" required>
+                        <?php foreach ($this->payments as $payment) : ?>
+                            <option value="<?= $payment->id ?>"><?= $payment->descricao ?></option>
                         <?php endforeach; ?>
                     </select>
                 </div>
@@ -190,6 +232,7 @@ else :
                     <div class="line-head">
                         <div class="head head-cash">Valor</div>
                         <div class="head head-category">Categoria</div>
+                        <div class="head head-payment">F. Pagamento</div>
                         <div class="head head-nf">Nota Fiscal</div>
                         <div class="head head-expense-date">Data</div>
                         <div class="head head-description">Anotações</div>
@@ -208,6 +251,7 @@ else :
                         <div class="line">
                             <div class="value value-cash">R$ <?= number_format($advanceds_money->cash, 2, ',', '.') ?></div>
                             <div class="value value-category"><?= $advanceds_money->category ?></div>
+                            <div class="value value-payment"><?= $advanceds_money->payment ?></div>
                             <div class="value value-nf"><?= $advanceds_money->note ?></div>
                             <div class="value value-expense-date"><?= $dateExpenses ?></div>
                             <div class="value value-description"><?= $advanceds_money->description ?></div>
@@ -220,6 +264,7 @@ else :
                         <?php
                     endforeach;
                     ?>
+                    <div class="sum-cash">Adiantamento: <b>R$ <?= number_format($cash, 2, ',', '.') ?></b></div>
                     <div class="sum-cash">Total: <b>R$ <?= number_format($totalCash, 2, ',', '.') ?></b></div>
                 </div>
             <?php endif; ?>

@@ -69,9 +69,6 @@ $cparams = JComponentHelper::getParams('com_media');
 				<div id="display-form" class="accordion-body collapse">
 					<div class="accordion-inner">
 		<?php endif; ?>
-		<?php if ($this->params->get('presentation_style') == 'plain'):?>
-			<?php  echo '<h3>'. JText::_('COM_CONTACT_EMAIL_FORM').'</h3>';  ?>
-		<?php endif; ?>
 		<?php  echo $this->loadTemplate('form');  ?>
 		<?php if ($this->params->get('presentation_style') == 'sliders'):?>
 					</div>
