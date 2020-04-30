@@ -25,13 +25,14 @@ class ManagementsControllerManagements extends JControllerForm
         $arrDateExpenses = $_POST['expense_date'];
         $arrDescription = $_POST['description'];
 
-        if (!empty(implode('', $arrCash)) ||
+        if (
+            !empty(implode('', $arrCash)) ||
             !empty(implode('', $arrNF)) ||
             !empty(implode('', $arrDateExpenses)) ||
             !empty(implode('', $arrDescription))
-            ) {
+        ) {
             foreach ($_POST['cash'] as $key => $value) {
-                if(!empty($arrCash[$key]) || !empty($arrNF[$key]) || !empty($arrDescription[$key])){
+                if (!empty($arrCash[$key]) || !empty($arrNF[$key]) || !empty($arrDescription[$key])) {
                     array_push(
                         $arrData,
                         array(
@@ -62,13 +63,11 @@ class ManagementsControllerManagements extends JControllerForm
             if (isset($_POST['clients'])) {
                 $clients = implode(",", $_POST['clients']);
             }
-            if (isset($_POST['consultants'])) {
-                if (!empty($_POST['consultants'])) {
-                    $consultants = implode(",", $_POST['consultants']);
-                }else{
-                    $consultants = "";
-                }
 
+            if (isset($_POST['consultants']) && !empty($_POST['consultants'])) {
+                $consultants = implode(",", $_POST['consultants']);
+            } else {
+                $consultants = "";
             }
 
             if (isset($_POST['date_in'])) {
@@ -166,8 +165,6 @@ class ManagementsControllerManagements extends JControllerForm
                     $result = $db->insertObject('#__accountability_expenses', $object);
                 }
             }
-
-
         } catch (Exception $e) {
             // catch any database errors.
             JErrorPage::render($e);

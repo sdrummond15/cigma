@@ -91,12 +91,7 @@ jQuery(document).ready(function ($) {
 
         var msg = '';
         var focus = '';
-        if ($('#consultants').length > 0) {
-            if ($('#consultants').val()) {
-                alert('Consultores FDP');
-                $(this).val('');
-            }
-        }
+        
         if ($('#clients').length > 0) {
             if (!$('#clients').val()) {
                 msg += '<p>Selecione pelo menos um cliente!</p>';

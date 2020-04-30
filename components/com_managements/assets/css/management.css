@@ -31,11 +31,11 @@
 }
 
 .accounts input.cash {
-    width: calc(100% - 70px);
+    width: calc(100% - 59px);
 }
 
 .accounts textarea.description {
-    width: calc(100% - 100px);
+    width: calc(100% - 88px);
     height: 40px;
     margin-left: 5px;
     margin-bottom: 5px;
@@ -93,7 +93,7 @@ h4.account {
 }
 
 .box-consultants .control-group {
-    width: calc(100% - 80px) !important;
+    width: calc(100% - 98px) !important;
     display: inline-block;
 }
 
@@ -102,14 +102,21 @@ h4.account {
 }
 
 .box-account {
-    width: 25%;
+    width: 20%;
     display: inline-block;
     margin-bottom: 5px;
 }
 
-.box-description {
+.box-description .label-management {
     display: inline-block;
-    margin-top: 10px;
+    vertical-align: top;
+}
+
+.box-description textarea.description1 {
+    width: calc(100% - 92px);
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 20px;
 }
 
 .label-date {
@@ -120,7 +127,7 @@ h4.account {
 .input-date {
     display: inline-block;
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .input-width100 {
@@ -135,13 +142,7 @@ h4.account {
 .input-car-solicit {
     display: inline-block;
     margin-left: 20px;
-    margin-bottom: 10px;
-}
-textarea.description1 {
-    width: calc(100% - 100px);
-    height: 40px;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .btn-add {
