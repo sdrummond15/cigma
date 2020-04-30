@@ -1563,9 +1563,10 @@ div#display-misc div div dl dt span img {
 
 }
 
-.contact-form input {
+.contact-form input,
+.contact-form textarea {
     width: calc(100% - 24px);
-    padding: 5px 12px;
+    padding: 6px 12px;
     border: 0;
     color: #383838;
     margin-bottom: 10px;
@@ -1573,21 +1574,18 @@ div#display-misc div div dl dt span img {
     font-family: 'Libre Franklin', Helvetica, Arial;
     background-color: #EEE;
     display: table;
+    box-shadow: none;
+    transition: none;
+    height: auto;
+    line-height: 1.4;
+    border-radius: 5px;
 }
 
 .contact-form textarea {
-    width: 96%;
-    padding: 8px 2%;
-    margin-bottom: 14px;
-    border: 0;
-    background-color: #ededed;
-    color: #000;
-    font-size: 18px;
-    border-radius: 0;
-    height: 178px;
+    height: 155px;
 }
 
-.contact-form .form-actions button {
+.contact-form button {
     float: right;
 }
 
