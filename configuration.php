@@ -16,7 +16,7 @@ class JConfig {
 	public $host = 'localhost';
 	public $user = 'root';
 	public $password = '';
-	public $db = 'db_cigma';
+	public $db = 'db_cigma_new';
 	public $dbprefix = 'sd9cc_';
 	public $live_site = '';
 	public $secret = 'r9M32UVKeKzJY1ti';
