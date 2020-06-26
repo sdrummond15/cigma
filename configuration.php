@@ -1,5 +1,6 @@
 <?php
-class JConfig {
+class JConfig
+{
 	public $offline = '0';
 	public $offline_message = 'Este site está fora do ar para manutenção.<br />Tente novamente mais tarde.';
 	public $display_offline_message = '1';
@@ -15,8 +16,8 @@ class JConfig {
 	public $dbtype = 'mysqli';
 	public $host = 'localhost';
 	public $user = 'root';
-	public $password = '';
-	public $db = 'db_cigma_new';
+	public $password = 'admin';
+	public $db = 'db_cigma';
 	public $dbprefix = 'sd9cc_';
 	public $live_site = '';
 	public $secret = 'r9M32UVKeKzJY1ti';

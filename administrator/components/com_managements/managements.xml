@@ -40,6 +40,7 @@
             <menu link="option=com_managements&amp;view=cities" view="cities" img="class:cities" alt="Managements/Cities">com_managements_cities</menu>
             <menu link="option=com_managements&amp;view=cars" view="cars" img="class:cars" alt="Managements/Cars">com_managements_cars</menu>
             <menu link="option=com_managements&amp;view=advanceds_moneys" view="advanceds_moneys" img="class:advanceds_moneys" alt="Managements/Advanceds_Money">com_managements_advanceds_moneys</menu>
+            <menu link="option=com_managements&amp;view=reports" view="reports" img="class:reports" alt="Managements/Reports">com_managements_reports</menu>
         </submenu>
         <files folder="admin">
             <folder>controllers</folder>

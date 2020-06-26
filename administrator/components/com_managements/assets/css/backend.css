@@ -26,3 +26,50 @@ input[type="price"]{
     text-align: right !important;
     font-size: 16px;
 }
+
+.icon-client:before {
+    content: "\e01f";
+}
+
+.icon-cidades:before {
+    content: "\63";
+}
+
+.icon-carro:before {
+    content: "\46";
+}
+
+.icon-money:before {
+	content: "\6d";
+}
+
+.icon-report:before {
+	content: "\e239";
+}
+
+#relatorio {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#relatorio h2 {
+    text-align: center;
+    background-color: #eee;
+    padding: 5px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#relatorio th,
+#relatorio .center {
+    text-align: center;
+}
+
+.btn-pdf {
+    margin-top: 10px;
+    float: right;
+}
+
+.icon-download:before {
+	content: "\e021";
+}

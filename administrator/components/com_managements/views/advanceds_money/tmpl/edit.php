@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package     Joomla.Administrator
  * @subpackage  com_managements
@@ -24,15 +25,14 @@ $document->addScript('components/com_managements/assets/js/script.js');
 
 ?>
 <script type="text/javascript">
-    Joomla.submitbutton = function (task) {
+    Joomla.submitbutton = function(task) {
         if (task == 'advanceds_money.cancel' || document.formvalidator.isValid(document.id('advanceds_money-form'))) {
             Joomla.submitform(task, document.getElementById('advanceds_money-form'));
         }
     }
 </script>
 
-<form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int)$this->item->id); ?>"
-      method="post" name="adminForm" id="advanceds_money-form" class="form-validate">
+<form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="advanceds_money-form" class="form-validate">
 
     <?php echo JLayoutHelper::render('joomla.edit.title_alias', $this); ?>
 
@@ -66,8 +66,8 @@ $document->addScript('components/com_managements/assets/js/script.js');
             <div class="span12">
                 <?php
                 $accounts = ManagementsModelAdvanceds_Money::getAccounts($this->item->id);
-                if (!empty($accounts)):
-                    ?>
+                if (!empty($accounts)) :
+                ?>
                     <table class="table table-striped">
                         <thead>
                             <tr width="100%">
@@ -79,38 +79,38 @@ $document->addScript('components/com_managements/assets/js/script.js');
                             </tr>
                         </thead>
                         <tbody>
-                        <?php
-                        $totalCash = 0;
-                        foreach ($accounts as $account):
-                            $totalCash += $account->cash;
-                            $dateExpenses = '-';
-                            if (!empty($account->expense_date) && $account->expense_date != '0000-00-00') {
-                                $dateExpenses = explode('-', $account->expense_date);
-                                $dateExpenses = $dateExpenses[2] . '/' . $dateExpenses[1] . '/' . $dateExpenses[0];
-                            }
-                            ?>
-                            <tr>
-                                <td><?= $account->description ?></td>
-                                <td class="center"><?= $account->category ?></td>
-                                <td class="center"><?= $account->note ?></td>
-                                <td class="center"><?= $dateExpenses ?></td>
-                                <td class="center">R$ <?= number_format($account->cash, 2, ',', '.') ?></td>
-                            </tr>
                             <?php
-                        endforeach;
-                        ?>
-                        <tr width="100%">
-                            <td class="total" colspan="5">
-                                Total: <b>R$ <?= number_format($totalCash, 2, ',', '.') ?></b>
-                            </td>
-                        </tr>
+                            $totalCash = 0;
+                            foreach ($accounts as $account) :
+                                $totalCash += $account->cash;
+                                $dateExpenses = '-';
+                                if (!empty($account->expense_date) && $account->expense_date != '0000-00-00') {
+                                    $dateExpenses = explode('-', $account->expense_date);
+                                    $dateExpenses = $dateExpenses[2] . '/' . $dateExpenses[1] . '/' . $dateExpenses[0];
+                                }
+                            ?>
+                                <tr>
+                                    <td><?= $account->description ?></td>
+                                    <td class="center"><?= $account->category ?></td>
+                                    <td class="center"><?= $account->note ?></td>
+                                    <td class="center"><?= $dateExpenses ?></td>
+                                    <td class="center">R$ <?= number_format($account->cash, 2, ',', '.') ?></td>
+                                </tr>
+                            <?php
+                            endforeach;
+                            ?>
+                            <tr width="100%">
+                                <td class="total" colspan="5">
+                                    Total: <b>R$ <?= number_format($totalCash, 2, ',', '.') ?></b>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
-                    <?php
-                else:
+                <?php
+                else :
                 ?>
                     <p>Nenhuma despesa informada!</p>
-                    <?php
+                <?php
                 endif;
                 ?>
             </div>
@@ -139,6 +139,6 @@ $document->addScript('components/com_managements/assets/js/script.js');
         <?php echo JHtml::_('bootstrap.endTabSet'); ?>
     </div>
 
-    <input type="hidden" name="task" value=""/>
+    <input type="hidden" name="task" value="" />
     <?php echo JHtml::_('form.token'); ?>
 </form>
