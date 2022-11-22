@@ -44,6 +44,11 @@ class ManagementsHelper
             $vName == 'advanceds_moneys'
         );
         JSubMenuHelper::addEntry(
+            JText::_('COM_MANAGEMENTS_SUBMENU_TAX_DELIVERIES'),
+            'index.php?option=com_managements&view=tax_deliveries',
+            $vName == 'tax_deliveries'
+        );
+        JSubMenuHelper::addEntry(
             JText::_('COM_MANAGEMENTS_SUBMENU_REPORTS'),
             'index.php?option=com_managements&view=reports',
             $vName == 'reports'
