@@ -1,73 +1,103 @@
 <?php
 
-/*
- * @package Managements
- * @com_admininistrations
- * @copyright Copyright (C) Sdrummond, Inc. All rights reserved.
- * @license Sdrummond
+/**
+ * @package     Joomla.Administrator
+ * @subpackage  com_managements
+ *
+ * @copyright   Copyright (C) 2005 - 2019 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-// no direct access
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.view');
+JLoader::register('ManagementsHelper', JPATH_ADMINISTRATOR . '/components/com_managements/helpers/tax_deliveries.php');
 
+/**
+ * View to edit a client.
+ *
+ * @since  1.5
+ */
 class ManagementsViewTax_Delivery extends JViewLegacy
 {
+    /**
+     * The JForm object
+     *
+     * @var  JForm
+     */
     protected $form;
+
+    /**
+     * The active item
+     *
+     * @var  object
+     */
     protected $item;
+
+    /**
+     * The model state
+     *
+     * @var  object
+     */
     protected $state;
-    
-    
-    public function display($tpl = null) 
+
+    /**
+     * Display the view
+     *
+     * @param   string  $tpl  The name of the template file to parse; automatically searches through the template paths.
+     *
+     * @return  mixed  A string if successful, otherwise an Error object.
+     */
+    public function display($tpl = null)
     {
-        $this->form         = $this->get('Form');
-        $this->item         = $this->get('Item');
-        $this->state        = $this->get('State');
+        // Initialiase variables.
+        $this->form  = $this->get('Form');
+        $this->item  = $this->get('Item');
+        $this->state = $this->get('State');
 
-
+        // Check for errors.
         if (count($errors = $this->get('Errors'))) {
             throw new Exception(implode("\n", $errors), 500);
         }
-        
+
         $doc = JFactory::getDocument();
         $doc->addStyleSheet('components/com_managements/assets/css/backend.css');
-        
+
         $this->addToolbar();
-        
-        parent::display($tpl);
+
+        return parent::display($tpl);
     }
-    
+
+    /**
+     * Add the page title and toolbar.
+     *
+     * @return  void
+     *
+     * @since   1.6
+     */
     protected function addToolbar()
     {
-        JRequest::setVar('hidemainmenu', true);
-        
+        JFactory::getApplication()->input->set('hidemainmenu', true);
+
         $user       = JFactory::getUser();
-        $userId     = $user->get('id');
+        $userId     = $user->id;
         $isNew      = ($this->item->id == 0);
         $checkedOut = !($this->item->checked_out == 0 || $this->item->checked_out == $userId);
-        $canDo      = ManagementsHelper::getActions($this->item);
-        
-        JToolBarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_TAX_DELIVERY_ADD') : JText::_('COM_MANAGEMENTS_TAX_DELIVERY_EDIT'), 'campeonato.png');
-        if ($canDo->get('core.edit')){
-                JToolBarHelper::apply('tax_delivery.apply');
-                JToolBarHelper::save('tax_delivery.save');
-                
-                if ($canDo->get('core.create')) {
-                JToolBarHelper::save2new('tax_delivery.save2new');
-                }
-        }
-        if (!$isNew && $canDo->get('core.create')) {
-                JToolBarHelper::save2copy('tax_delivery.save2copy');
+
+        JToolbarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_TAX_DELIVERY_ADD') : JText::_('COM_MANAGEMENTS_TAX_DELIVERY_EDIT'), 'tax_delivery');
+
+        // If not checked out, can save the item.
+        if (!$checkedOut) {
+            JToolbarHelper::apply('tax_delivery.apply');
+            JToolbarHelper::save('tax_delivery.save');
         }
 
-		if (empty($this->item->id))  {
-			JToolBarHelper::cancel('tax_delivery.cancel');
-		} else {
-			JToolBarHelper::cancel('tax_delivery.cancel', 'JTOOLBAR_CLOSE');
-		}
+        if (empty($this->item->id)) {
+            JToolbarHelper::cancel('tax_delivery.cancel');
+        } else {
+            JToolbarHelper::cancel('tax_delivery.cancel', 'JTOOLBAR_CLOSE');
+        }
 
-		JToolBarHelper::divider();
-		JToolBarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_TAX_DELIVERY_EDIT');
-	}
+        JToolbarHelper::divider();
+        JToolbarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_TAX_DELIVERY_EDIT');
+    }
 }

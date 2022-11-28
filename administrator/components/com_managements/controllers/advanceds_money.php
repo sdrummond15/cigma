@@ -7,10 +7,7 @@
  * @license Sdrummond
  */
 
-// no direct access
 defined('_JEXEC') or die;
-
-jimport('joomla.application.component.controllerform');
 
 class ManagementsControllerAdvanceds_Money extends JControllerForm
 {

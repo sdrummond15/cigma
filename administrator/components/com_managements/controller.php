@@ -10,8 +10,7 @@
 // no direct access
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.controller');
-
+JLoader::register('ManagementsHelper', JPATH_ADMINISTRATOR . '/components/com_managements/helpers/managements.php');
 
 class ManagementsController extends JControllerLegacy
 {
@@ -33,12 +32,8 @@ class ManagementsController extends JControllerLegacy
 	 * @return	JController		This object to support chaining.
 	 * @since	1.5
 	 */
-	public function display($cachable = false, $urlparams = false)
+	public function display($cachable = false, $urlparams = array())
 	{
-		require_once JPATH_COMPONENT.'/helpers/managements.php';
-
-		// Load the submenu.
-		ManagementsHelper::addSubmenu(JRequest::getCmd('view', 'managements'));
 
 		$view	= JRequest::getCmd('view', 'managements');
 		$layout = JRequest::getCmd('layout', 'default');

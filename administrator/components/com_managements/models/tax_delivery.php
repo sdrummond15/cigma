@@ -54,8 +54,8 @@ class ManagementsModelTax_Delivery extends JModelAdmin
         if (empty($data)) {
             $data = $this->getItem();
         }
-        $business = explode(',', $data->get('id_client'));
-        $data->set('id_client', $business);
+        // $business = explode(',', $data->get('id_client'));
+        // $data->set('id_client', $business);
 
 //        $date_in = explode('-',$data->get('date_in'));
 //        $date_in = $date_in[2].'-'.$date_in[1].'-'.$date_in[0];
@@ -71,17 +71,10 @@ class ManagementsModelTax_Delivery extends JModelAdmin
 
     public function save($data)
     {
-        if (isset($data['cash'])) {
-            $preco = substr($data['cash'], 3);
-            $preco = str_replace('.', '', $preco);
-            $preco = str_replace(',', '.', $preco);
-            $preco = number_format($preco, 2, '.', '');
-            $data['cash'] = $preco;
-        }
-        
-        if (isset($data['id_client'])) {
-            $data['id_client'] = implode(',', $data['id_client']);
-        }
+        // var_dump($data);
+        // if (isset($data['id_client'])) {
+        //     $data['id_client'] = implode(',', $data['id_client']);
+        // }
 
         if (parent::save($data)) {
             return true;

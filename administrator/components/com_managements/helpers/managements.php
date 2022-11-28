@@ -10,7 +10,7 @@
 // no direct access
 defined('_JEXEC') or die;
 
-class ManagementsHelper
+class ManagementsHelper extends JHelperContent
 {
     /**
      * Configure the Linkbar.
@@ -23,32 +23,38 @@ class ManagementsHelper
 
     public static function addSubmenu($vName)
     {
-        JSubMenuHelper::addEntry(
+
+        JHtmlSidebar::addEntry(
             JText::_('COM_MANAGEMENTS_SUBMENU_CLIENTS'),
             'index.php?option=com_managements&view=clients',
             $vName == 'clients'
         );
-        JSubMenuHelper::addEntry(
+        JHtmlSidebar::addEntry(
             JText::_('COM_MANAGEMENTS_SUBMENU_CITIES'),
             'index.php?option=com_managements&view=cities',
             $vName == 'cities'
         );
-        JSubMenuHelper::addEntry(
+        JHtmlSidebar::addEntry(
             JText::_('COM_MANAGEMENTS_SUBMENU_CARS'),
             'index.php?option=com_managements&view=cars',
             $vName == 'cars'
         );
-        JSubMenuHelper::addEntry(
+        JHtmlSidebar::addEntry(
             JText::_('COM_MANAGEMENTS_SUBMENU_ADVANCEDS_MONEYS'),
             'index.php?option=com_managements&view=advanceds_moneys',
             $vName == 'advanceds_moneys'
         );
-        JSubMenuHelper::addEntry(
+        JHtmlSidebar::addEntry(
             JText::_('COM_MANAGEMENTS_SUBMENU_TAX_DELIVERIES'),
             'index.php?option=com_managements&view=tax_deliveries',
             $vName == 'tax_deliveries'
         );
-        JSubMenuHelper::addEntry(
+        JHtmlSidebar::addEntry(
+            JText::_('COM_MANAGEMENTS_SUBMENU_TASKS'),
+            'index.php?option=com_managements&view=tasks',
+            $vName == 'tasks'
+        );
+        JHtmlSidebar::addEntry(
             JText::_('COM_MANAGEMENTS_SUBMENU_REPORTS'),
             'index.php?option=com_managements&view=reports',
             $vName == 'reports'
@@ -56,22 +62,22 @@ class ManagementsHelper
     }
 
 
-    public static function getActions()
-    {
-        $user = JFactory::getUser();
-        $result = new JObject;
-        $assetName = 'com_managements';
+    // public static function getActions()
+    // {
+    //     $user = JFactory::getUser();
+    //     $result = new JObject;
+    //     $assetName = 'com_managements';
 
-        $actions = array(
-            'core.admin', 'core.manage', 'core.create', 'core.edit', 'core.edit.state', 'core.delete'
-        );
+    //     $actions = array(
+    //         'core.admin', 'core.manage', 'core.create', 'core.edit', 'core.edit.state', 'core.delete'
+    //     );
 
-        foreach ($actions as $action) {
-            $result->set($action, $user->authorise($action, $assetName));
-        }
+    //     foreach ($actions as $action) {
+    //         $result->set($action, $user->authorise($action, $assetName));
+    //     }
 
-        return $result;
-    }
+    //     return $result;
+    // }
 
 
     public static function getCityOptions()
@@ -204,6 +210,70 @@ class ManagementsHelper
         ];
 
         array_unshift($options, $noConsultant);
+        // Check for a database error.
+        if ($db->getErrorNum()) {
+            JError::raiseWarning(500, $db->getErrorMsg());
+        }
+
+        return $options;
+    }
+
+    public static function getClientTaskOptions()
+    {
+        // Initialize variables.
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+
+        $query->select('id As value, name As text');
+        $query->from('#__clients AS c');
+        $query->order('c.name');
+
+        // Get the options.
+        $db->setQuery($query);
+
+        $options = $db->loadObjectList();
+
+
+        $todos = [
+            'value' => 'Todos',
+            'text' => 'Todos os Clientes',
+        ];
+        $prefeituras = [
+            'value' => 'Prefeituras',
+            'text' => 'Todas as Prefeituras',
+        ];
+        $camaras = [
+            'value' => 'Câmaras',
+            'text' => 'Todas as Câmaras',
+        ];
+
+        array_unshift($options, $todos);
+        array_unshift($options, $prefeituras);
+        array_unshift($options, $camaras);
+        
+        // Check for a database error.
+        if ($db->getErrorNum()) {
+            JError::raiseWarning(500, $db->getErrorMsg());
+        }
+
+        return $options;
+    }
+
+    public static function getTaskOptions()
+    {
+        // Initialize variables.
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+
+        $query->select('id As value, CONCAT(id, " - ", task, " (", deadline, ")") As text');
+        $query->from('#__tasks AS t');
+        $query->order('t.task');
+
+        // Get the options.
+        $db->setQuery($query);
+
+        $options = $db->loadObjectList();
+
         // Check for a database error.
         if ($db->getErrorNum()) {
             JError::raiseWarning(500, $db->getErrorMsg());

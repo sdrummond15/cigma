@@ -1,62 +1,108 @@
 <?php
 
-/*
- * @package Managements
- * @com_admininistrations
- * @copyright Copyright (C) Sdrummond, Inc. All rights reserved.
- * @license Sdrummond
+/**
+ * @package     Joomla.Administrator
+ * @subpackage  com_managements
+ *
+ * @copyright   Copyright (C) 2005 - 2019 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-// no direct access
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.view');
+JLoader::register('ManagementsHelper', JPATH_ADMINISTRATOR . '/components/com_managements/helpers/clients.php');
 
+/**
+ * View to edit a client.
+ *
+ * @since  1.5
+ */
 class ManagementsViewClient extends JViewLegacy
 {
-    protected $form;
-    protected $item;
-    protected $state;
+	/**
+	 * The JForm object
+	 *
+	 * @var  JForm
+	 */
+	protected $form;
 
+	/**
+	 * The active item
+	 *
+	 * @var  object
+	 */
+	protected $item;
 
-    public function display($tpl = null)
-    {
-        $this->form = $this->get('Form');
-        $this->item = $this->get('Item');
-        $this->state = $this->get('State');
+	/**
+	 * The model state
+	 *
+	 * @var  object
+	 */
+	protected $state;
 
-        if (count($errors = $this->get('Errors'))) {
-            throw new Exception(implode("\n", $errors), 500);
-        }
+	/**
+	 * Display the view
+	 *
+	 * @param   string  $tpl  The name of the template file to parse; automatically searches through the template paths.
+	 *
+	 * @return  mixed  A string if successful, otherwise an Error object.
+	 */
+	public function display($tpl = null)
+	{
+		// Initialiase variables.
+		$this->form  = $this->get('Form');
+		$this->item  = $this->get('Item');
+		$this->state = $this->get('State');
 
-        $doc = JFactory::getDocument();
-        $doc->addStyleSheet('components/com_managements/assets/css/backend.css');
+		// Check for errors.
+		if (count($errors = $this->get('Errors'))) {
+			throw new Exception(implode("\n", $errors), 500);
+		}
 
-        $this->addToolbar();
+		$doc = JFactory::getDocument();
+		$doc->addStyleSheet('components/com_managements/assets/css/backend.css');
 
-        parent::display($tpl);
-    }
+		$this->addToolbar();
 
-    protected function addToolbar()
-    {
-        JRequest::setVar('hidemainmenu', true);
+		return parent::display($tpl);
+	}
 
-        $isNew = ($this->item->id == 0);
+	/**
+	 * Add the page title and toolbar.
+	 *
+	 * @return  void
+	 *
+	 * @since   1.6
+	 */
+	protected function addToolbar()
+	{
+		JFactory::getApplication()->input->set('hidemainmenu', true);
 
-        JToolBarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_CLIENT_ADD') : JText::_('COM_MANAGEMENTS_CLIENT_EDIT'), 'client.png');
+		$user       = JFactory::getUser();
+		$userId     = $user->id;
+		$isNew      = ($this->item->id == 0);
+		$checkedOut = !($this->item->checked_out == 0 || $this->item->checked_out == $userId);
 
-        JToolBarHelper::apply('client.apply');
-        JToolBarHelper::save('client.save');
-        JToolBarHelper::save2new('client.save2new');
-        JToolBarHelper::save2copy('client.save2copy');
+		JToolbarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_CLIENT_NEW') : JText::_('COM_MANAGEMENTS_CLIENT_EDIT'), 'clients');
 
-        if (empty($this->item->id)) {
-            JToolBarHelper::cancel('client.cancel');
-        } else {
-            JToolBarHelper::cancel('client.cancel', 'JTOOLBAR_CLOSE');
-        }
+		// If not checked out, can save the item.
+		if (!$checkedOut) {
+			JToolbarHelper::apply('client.apply');
+			JToolbarHelper::save('client.save');
+		}
 
-        JToolBarHelper::divider();
-        JToolBarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_CLIENTS_EDIT');
-    }
+		// If an existing item, can save to a copy.
+		if (!$isNew) {
+			JToolbarHelper::save2copy('client.save2copy');
+		}
+
+		if (empty($this->item->id)) {
+			JToolbarHelper::cancel('client.cancel');
+		} else {
+			JToolbarHelper::cancel('client.cancel', 'JTOOLBAR_CLOSE');
+		}
+
+		JToolbarHelper::divider();
+		JToolbarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_CLIENTS_EDIT');
+	}
 }

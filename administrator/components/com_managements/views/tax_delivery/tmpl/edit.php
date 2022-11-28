@@ -7,30 +7,47 @@
  * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
+
 defined('_JEXEC') or die;
 
 // Include the component HTML helpers.
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
-
-JHtml::_('behavior.formvalidation');
+JHtml::_('jquery.framework');
+JHtml::_('behavior.formvalidator');
 JHtml::_('formbehavior.chosen', 'select');
 
-$app = JFactory::getApplication();
-$assoc = JLanguageAssociations::isEnabled();
+JFactory::getDocument()->addScriptDeclaration('
+	Joomla.submitbutton = function(task)
+	{
+		if (task == "tax_delivery.cancel" || document.formvalidator.isValid(document.getElementById("tax_delivery-form")))
+		{
+			Joomla.submitform(task, document.getElementById("tax_delivery-form"));
+		}
+	};
+	jQuery(document).ready(function ($){
+		$("#jform_type").on("change", function (a, params) {
 
-$document = JFactory::getDocument();
-$document->addScript('components/com_managements/assets/js/jquery.maskedinput.js');
-$document->addScript('components/com_managements/assets/js/jquery.maskMoney.js');
-$document->addScript('components/com_managements/assets/js/script.js');
+			var v = typeof(params) !== "object" ? $("#jform_type").val() : params.selected;
 
+			var img_url = $("#image, #url");
+			var custom  = $("#custom");
+
+			switch (v) {
+				case "0":
+					// Image
+					img_url.show();
+					custom.hide();
+					break;
+				case "1":
+					// Custom
+					img_url.hide();
+					custom.show();
+					break;
+			}
+		}).trigger("change");
+	});
+');
 ?>
-<script type="text/javascript">
-    Joomla.submitbutton = function(task) {
-        if (task == 'tax_delivery.cancel' || document.formvalidator.isValid(document.id('tax_delivery-form'))) {
-            Joomla.submitform(task, document.getElementById('tax_delivery-form'));
-        }
-    }
-</script>
 
 <form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="tax_delivery-form" class="form-validate">
 
@@ -45,12 +62,10 @@ $document->addScript('components/com_managements/assets/js/script.js');
                 <div class="row-fluid form-horizontal-desktop">
                     <div class="span6">
                         <?php echo $this->form->renderField('id_consultant'); ?>
-                        <?php echo $this->form->renderField('id_car'); ?>
-                        <?php echo $this->form->renderField('cash'); ?>
-                        <?php echo $this->form->renderField('pendency'); ?>
-                        <?php echo $this->form->renderField('date_in'); ?>
-                        <?php echo $this->form->renderField('date_out'); ?>
                         <?php echo $this->form->renderField('id_client'); ?>
+                        <?php echo $this->form->renderField('id_task'); ?>
+                        <?php echo $this->form->renderField('delivery'); ?>
+                        <?php echo $this->form->renderField('date_delivery'); ?>
                         <?php echo $this->form->renderField('observation'); ?>
                     </div>
                 </div>
@@ -61,80 +76,16 @@ $document->addScript('components/com_managements/assets/js/script.js');
         </div>
         <?php echo JHtml::_('bootstrap.endTab'); ?>
 
-        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'accounts', JText::_('JGLOBAL_FIELDSET_ACCOUNTS', true)); ?>
-        <div class="row-fluid form-horizontal-desktop">
-            <div class="span12">
-                <?php
-                $accounts = ManagementsModelTax_Delivery::getAccounts($this->item->id);
-                if (!empty($accounts)) :
-                ?>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr width="100%">
-                                <th width="30%" class="center">Descrição</th>
-                                <th width="20%" class="center">Categoria</th>
-                                <th width="20%" class="center">Nota</th>
-                                <th width="15%" class="center">Data</th>
-                                <th width="15%" class="center">Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            $totalCash = 0;
-                            foreach ($accounts as $account) :
-                                $totalCash += $account->cash;
-                                $dateExpenses = '-';
-                                if (!empty($account->expense_date) && $account->expense_date != '0000-00-00') {
-                                    $dateExpenses = explode('-', $account->expense_date);
-                                    $dateExpenses = $dateExpenses[2] . '/' . $dateExpenses[1] . '/' . $dateExpenses[0];
-                                }
-                            ?>
-                                <tr>
-                                    <td><?= $account->description ?></td>
-                                    <td class="center"><?= $account->category ?></td>
-                                    <td class="center"><?= $account->note ?></td>
-                                    <td class="center"><?= $dateExpenses ?></td>
-                                    <td class="center">R$ <?= number_format($account->cash, 2, ',', '.') ?></td>
-                                </tr>
-                            <?php
-                            endforeach;
-                            ?>
-                            <tr width="100%">
-                                <td class="total" colspan="5">
-                                    Total: <b>R$ <?= number_format($totalCash, 2, ',', '.') ?></b>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                <?php
-                else :
-                ?>
-                    <p>Nenhuma despesa informada!</p>
-                <?php
-                endif;
-                ?>
-            </div>
-        </div>
-        <?php echo JHtml::_('bootstrap.endTab'); ?>
-
-        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'publishing', JText::_('JGLOBAL_FIELDSET_PUBLISHING', true)); ?>
+        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'publishing', JText::_('JGLOBAL_FIELDSET_PUBLISHING')); ?>
         <div class="row-fluid form-horizontal-desktop">
             <div class="span6">
                 <?php echo JLayoutHelper::render('joomla.edit.publishingdata', $this); ?>
             </div>
             <div class="span6">
-                <?php echo JLayoutHelper::render('joomla.edit.metadata', $this); ?>
+                <?php echo $this->form->renderFieldset('metadata'); ?>
             </div>
         </div>
         <?php echo JHtml::_('bootstrap.endTab'); ?>
-
-
-
-        <?php if ($assoc) : ?>
-            <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'associations', JText::_('JGLOBAL_FIELDSET_ASSOCIATIONS', true)); ?>
-            <?php echo $this->loadTemplate('associations'); ?>
-            <?php echo JHtml::_('bootstrap.endTab'); ?>
-        <?php endif; ?>
 
         <?php echo JHtml::_('bootstrap.endTabSet'); ?>
     </div>

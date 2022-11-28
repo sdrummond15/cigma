@@ -22,10 +22,27 @@ jimport('joomla.application.component.controlleradmin');
 class ManagementsControllerAdvanceds_Moneys extends JControllerAdmin
 {
 	/**
-	 * @var		string	The prefix to use with controller messages.
-	 * @since	1.6
+	 * The prefix to use with controller messages.
+	 *
+	 * @var    string
+	 * @since  1.6
 	 */
 	protected $text_prefix = 'COM_MANAGEMENTS_ADVANCEDS_MONEYS';
+
+	/**
+	 * Constructor.
+	 *
+	 * @param   array  $config  An optional associative array of configuration settings.
+	 *
+	 * @see     JControllerLegacy
+	 * @since   1.6
+	 */
+	public function __construct($config = array())
+	{
+		parent::__construct($config);
+
+		$this->registerTask('sticky_unpublish', 'sticky_publish');
+	}
 
 	/**
 	 * Method to get a model object, loading it if required.
@@ -34,20 +51,53 @@ class ManagementsControllerAdvanceds_Moneys extends JControllerAdmin
 	 * @param   string  $prefix  The class prefix. Optional.
 	 * @param   array   $config  Configuration array for model. Optional.
 	 *
-	 * @return  object  The model.
+	 * @return  JModelLegacy  The model.
 	 *
 	 * @since   1.6
 	 */
-        
-        public function __construct($config = array()) 
-        {
-            parent::__construct($config);
-        }
-
-
-        public function getModel($name = 'Advanceds_Money', $prefix = 'ManagementsModel', $config = array('ignore_request' => true))
+	public function getModel($name = 'Advanceds_Money', $prefix = 'ManagementsModel', $config = array('ignore_request' => true))
 	{
-		$model = parent::getModel($name, $prefix, $config);
-		return $model;
+		return parent::getModel($name, $prefix, $config);
+	}
+
+	/**
+	 * Stick items
+	 *
+	 * @return  void
+	 *
+	 * @since   1.6
+	 */
+	public function sticky_publish()
+	{
+		// Check for request forgeries.
+		$this->checkToken();
+
+		$ids    = $this->input->get('cid', array(), 'array');
+		$values = array('sticky_publish' => 1, 'sticky_unpublish' => 0);
+		$task   = $this->getTask();
+		$value  = ArrayHelper::getValue($values, $task, 0, 'int');
+
+		if (empty($ids)) {
+			JError::raiseWarning(500, JText::_('COM_MANAGEMENTS_NO_ADVANCEDS_MONEYS_SELECTED'));
+		} else {
+			// Get the model.
+			/** @var ManagementsModelAdvanceds_Moneys $model */
+			$model = $this->getModel();
+
+			// Change the state of the records.
+			if (!$model->stick($ids, $value)) {
+				JError::raiseWarning(500, $model->getError());
+			} else {
+				if ($value == 1) {
+					$ntext = 'COM_MANAGEMENTS_N_ADVANCEDS_MONEYS_STUCK';
+				} else {
+					$ntext = 'COM_MANAGEMENTS_N_ADVANCEDS_MONEYS_UNSTUCK';
+				}
+
+				$this->setMessage(JText::plural($ntext, count($ids)));
+			}
+		}
+
+		$this->setRedirect('index.php?option=com_managements&view=advanceds_moneys');
 	}
 }

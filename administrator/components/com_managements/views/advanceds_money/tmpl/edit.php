@@ -7,30 +7,52 @@
  * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
+
 defined('_JEXEC') or die;
 
 // Include the component HTML helpers.
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
-
-JHtml::_('behavior.formvalidation');
+JHtml::_('jquery.framework');
+JHtml::_('behavior.formvalidator');
 JHtml::_('formbehavior.chosen', 'select');
 
-$app = JFactory::getApplication();
-$assoc = JLanguageAssociations::isEnabled();
+JFactory::getDocument()->addScriptDeclaration('
+	Joomla.submitbutton = function(task)
+	{
+		if (task == "advanceds_money.cancel" || document.formvalidator.isValid(document.getElementById("advanceds_money-form")))
+		{
+			Joomla.submitform(task, document.getElementById("advanceds_money-form"));
+		}
+	};
+	jQuery(document).ready(function ($){
+		$("#jform_type").on("change", function (a, params) {
+
+			var v = typeof(params) !== "object" ? $("#jform_type").val() : params.selected;
+
+			var img_url = $("#image, #url");
+			var custom  = $("#custom");
+
+			switch (v) {
+				case "0":
+					// Image
+					img_url.show();
+					custom.hide();
+					break;
+				case "1":
+					// Custom
+					img_url.hide();
+					custom.show();
+					break;
+			}
+		}).trigger("change");
+	});
+');
 
 $document = JFactory::getDocument();
 $document->addScript('components/com_managements/assets/js/jquery.maskedinput.js');
 $document->addScript('components/com_managements/assets/js/jquery.maskMoney.js');
 $document->addScript('components/com_managements/assets/js/script.js');
-
 ?>
-<script type="text/javascript">
-    Joomla.submitbutton = function(task) {
-        if (task == 'advanceds_money.cancel' || document.formvalidator.isValid(document.id('advanceds_money-form'))) {
-            Joomla.submitform(task, document.getElementById('advanceds_money-form'));
-        }
-    }
-</script>
 
 <form action="<?php echo JRoute::_('index.php?option=com_managements&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="advanceds_money-form" class="form-validate">
 
@@ -117,24 +139,16 @@ $document->addScript('components/com_managements/assets/js/script.js');
         </div>
         <?php echo JHtml::_('bootstrap.endTab'); ?>
 
-        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'publishing', JText::_('JGLOBAL_FIELDSET_PUBLISHING', true)); ?>
+        <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'publishing', JText::_('JGLOBAL_FIELDSET_PUBLISHING')); ?>
         <div class="row-fluid form-horizontal-desktop">
             <div class="span6">
                 <?php echo JLayoutHelper::render('joomla.edit.publishingdata', $this); ?>
             </div>
             <div class="span6">
-                <?php echo JLayoutHelper::render('joomla.edit.metadata', $this); ?>
+                <?php echo $this->form->renderFieldset('metadata'); ?>
             </div>
         </div>
         <?php echo JHtml::_('bootstrap.endTab'); ?>
-
-
-
-        <?php if ($assoc) : ?>
-            <?php echo JHtml::_('bootstrap.addTab', 'myTab', 'associations', JText::_('JGLOBAL_FIELDSET_ASSOCIATIONS', true)); ?>
-            <?php echo $this->loadTemplate('associations'); ?>
-            <?php echo JHtml::_('bootstrap.endTab'); ?>
-        <?php endif; ?>
 
         <?php echo JHtml::_('bootstrap.endTabSet'); ?>
     </div>

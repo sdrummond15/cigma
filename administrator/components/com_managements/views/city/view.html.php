@@ -1,29 +1,60 @@
 <?php
 
-/*
- * @package Managements
- * @com_admininistrations
- * @copyright Copyright (C) Sdrummond, Inc. All rights reserved.
- * @license Sdrummond
+/**
+ * @package     Joomla.Administrator
+ * @subpackage  com_managements
+ *
+ * @copyright   Copyright (C) 2005 - 2019 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-// no direct access
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.view');
+JLoader::register('ManagementsHelper', JPATH_ADMINISTRATOR . '/components/com_managements/helpers/city.php');
 
+/**
+ * View to edit a client.
+ *
+ * @since  1.5
+ */
 class ManagementsViewCity extends JViewLegacy
 {
+    /**
+     * The JForm object
+     *
+     * @var  JForm
+     */
     protected $form;
+
+    /**
+     * The active item
+     *
+     * @var  object
+     */
     protected $item;
+
+    /**
+     * The model state
+     *
+     * @var  object
+     */
     protected $state;
 
+    /**
+     * Display the view
+     *
+     * @param   string  $tpl  The name of the template file to parse; automatically searches through the template paths.
+     *
+     * @return  mixed  A string if successful, otherwise an Error object.
+     */
     public function display($tpl = null)
     {
-        $this->form = $this->get('Form');
-        $this->item = $this->get('Item');
+        // Initialiase variables.
+        $this->form  = $this->get('Form');
+        $this->item  = $this->get('Item');
         $this->state = $this->get('State');
 
+        // Check for errors.
         if (count($errors = $this->get('Errors'))) {
             throw new Exception(implode("\n", $errors), 500);
         }
@@ -33,40 +64,39 @@ class ManagementsViewCity extends JViewLegacy
 
         $this->addToolbar();
 
-        parent::display($tpl);
+        return parent::display($tpl);
     }
 
+    /**
+     * Add the page title and toolbar.
+     *
+     * @return  void
+     *
+     * @since   1.6
+     */
     protected function addToolbar()
     {
-        JRequest::setVar('hidemainmenu', true);
+        JFactory::getApplication()->input->set('hidemainmenu', true);
 
-        $user = JFactory::getUser();
-        $userId = $user->get('id');
-        $isNew = ($this->item->id == 0);
-        $checkedOut = 0;
-        $canDo = ManagementsHelper::getActions($this->item);
+        $user       = JFactory::getUser();
+        $userId     = $user->get('id');
+        $isNew      = ($this->item->id == 0);
+        $checkedOut = !($this->item->checked_out == 0 || $this->item->checked_out == $userId);
 
-        JToolBarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_CITY_ADD') : JText::_('COM_MANAGEMENTS_CITY_EDIT'), 'cidade.png');
+        JToolbarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_CITY_ADD') : JText::_('COM_MANAGEMENTS_CITY_EDIT'), 'cidade.png');
 
-        if (!$checkedOut && $canDo->get('core.edit') > 0) {
-            JToolBarHelper::apply('city.apply');
-            JToolBarHelper::save('city.save');
-
-            if ($canDo->get('core.create')) {
-                JToolBarHelper::save2new('city.save2new');
-            }
-        }
-        if (!$isNew && $canDo->get('core.create')) {
-            JToolBarHelper::save2copy('city.save2copy');
+        if (!$checkedOut) {
+            JToolbarHelper::apply('city.apply');
+            JToolbarHelper::save('city.save');
         }
 
         if (empty($this->item->id)) {
-            JToolBarHelper::cancel('city.cancel');
+            JToolbarHelper::cancel('city.cancel');
         } else {
-            JToolBarHelper::cancel('city.cancel', 'JTOOLBAR_CLOSE');
+            JToolbarHelper::cancel('city.cancel', 'JTOOLBAR_CLOSE');
         }
 
-        JToolBarHelper::divider();
-        JToolBarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_CITY_EDIT');
+        JToolbarHelper::divider();
+        JToolbarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_CITY_EDIT');
     }
 }

@@ -7,32 +7,44 @@
  * @license Sdrummond
  */
 
-// no direct access
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.view');
-
 /**
- * View class for a list of management.
+ * View class for a list of managements.
  *
- * @package  management
- * @subpackage com_adminstration
- * @since 2.5
+ * @since  1.6
  */
 class ManagementsViewCities extends JViewLegacy
 {
-    protected $items;
-    protected $paginaton;
-    protected $state;
+     /**
+	 * An array of items
+	 *
+	 * @var  array
+	 */
+	protected $items;
 
-    /*
+	/**
+	 * The pagination object
+	 *
+	 * @var  JPagination
+	 */
+	protected $pagination;
+
+	/**
+	 * The model state
+	 *
+	 * @var  object
+	 */
+	protected $state;
+
+    /**
      * Method to display the view.
      * 
-     * @param string $tpl  A template file to load. [optional]
+	 * @param   string  $tpl  A template file to load. [optional]
      * 
-     * @return mixed   A string if successful, otherwise a JError object.
+	 * @return  mixed  A string if successful, otherwise a JError object.
      * 
-     * @since 1.6
+	 * @since   1.6
      */
     public function display($tpl = null)
     {
@@ -40,6 +52,7 @@ class ManagementsViewCities extends JViewLegacy
         $this->items = $this->get('Items');
         $this->pagination = $this->get('Pagination');
         $this->state = $this->get('State');
+        $this->filterForm = $this->get('FilterForm');
 
         if (count($errors = $this->get('Errors')))
         {
@@ -50,19 +63,33 @@ class ManagementsViewCities extends JViewLegacy
         $doc = JFactory::getDocument();
         $doc->addStyleSheet('components/com_managements/assets/css/backend.css');
 
+        ManagementsHelper::addSubmenu('managements');
+
         $this->addToolbar();
 
         // Include the component HTML helpers.
         JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 
-        parent::display($tpl);
+        $this->sidebar = JHtmlSidebar::render();
+
+        return parent::display($tpl);
     }
 
+    /**
+	 * Add the page title and toolbar.
+	 *
+	 * @return  void
+	 *
+	 * @since   1.6
+	 */
     protected function addToolbar()
     {
-        require_once JPATH_COMPONENT . '/helpers/managements.php';
 
-        JToolBarHelper::title(JText::_('COM_MANAGEMENTS_MANAGER_CITIES'), 'cidades.png');
+        JLoader::register('ManagementsHelper', JPATH_ADMINISTRATOR . '/components/com_managements/helpers/managements.php');
+
+        $user  = JFactory::getUser();
+        
+        JToolBarHelper::title(JText::_('COM_MANAGEMENTS_MANAGER_CITIES'), 'city');
 
         JToolBarHelper::addNew('city.add');
 
@@ -85,20 +112,37 @@ class ManagementsViewCities extends JViewLegacy
 
         JToolBarHelper::checkin('cities.checkin');
 
-        if ($this->state->get('filter.state') == -2) {
-            JToolBarHelper::deleteList('', 'cities.delete', 'JTOOLBAR_EMPTY_TRASH');
-            JToolBarHelper::divider();
+        // Add a batch button
+        if (
+            $user->authorise('core.create', 'com_managements')
+            && $user->authorise('core.edit', 'com_managements')
+            && $user->authorise('core.edit.state', 'com_managements')
+        ) {
+            $title = JText::_('JTOOLBAR_BATCH');
+
+            // Instantiate a new JLayoutFile instance and render the batch button
+            $layout = new JLayoutFile('joomla.toolbar.batch');
+
+            $dhtml = $layout->render(array('title' => $title));
+            JToolbar::getInstance('toolbar')->appendButton('Custom', $dhtml, 'batch');
         }
 
-        JToolBarHelper::trash('cities.trash');
-        JToolBarHelper::divider();
+        JToolbarHelper::trash('cities.trash');
 
-        JToolBarHelper::preferences('com_managements');
-        JToolBarHelper::divider();
+        if ($user->authorise('core.admin', 'com_managements') || $user->authorise('core.options', 'com_managements')) {
+            JToolbarHelper::preferences('com_managements');
+        }
 
-        JToolBarHelper::help('cities', $com = true);
+        JToolbarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_CITIES');
     }
 
+    /**
+	 * Returns an array of fields the table can be sorted by
+	 *
+	 * @return  array  Array containing the field name to sort by as the key and display text as value
+	 *
+	 * @since   3.0
+	 */
     protected function getSortFields()
     {
         return array(

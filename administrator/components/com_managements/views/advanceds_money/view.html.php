@@ -1,73 +1,103 @@
 <?php
 
-/*
- * @package Managements
- * @com_admininistrations
- * @copyright Copyright (C) Sdrummond, Inc. All rights reserved.
- * @license Sdrummond
+/**
+ * @package     Joomla.Administrator
+ * @subpackage  com_managements
+ *
+ * @copyright   Copyright (C) 2005 - 2019 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-// no direct access
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.view');
+JLoader::register('ManagementsHelper', JPATH_ADMINISTRATOR . '/components/com_managements/helpers/advanceds_moneys.php');
 
+/**
+ * View to edit a client.
+ *
+ * @since  1.5
+ */
 class ManagementsViewAdvanceds_Money extends JViewLegacy
 {
+    /**
+     * The JForm object
+     *
+     * @var  JForm
+     */
     protected $form;
+
+    /**
+     * The active item
+     *
+     * @var  object
+     */
     protected $item;
+
+    /**
+     * The model state
+     *
+     * @var  object
+     */
     protected $state;
-    
-    
-    public function display($tpl = null) 
+
+    /**
+     * Display the view
+     *
+     * @param   string  $tpl  The name of the template file to parse; automatically searches through the template paths.
+     *
+     * @return  mixed  A string if successful, otherwise an Error object.
+     */
+    public function display($tpl = null)
     {
-        $this->form         = $this->get('Form');
-        $this->item         = $this->get('Item');
-        $this->state        = $this->get('State');
+        // Initialiase variables.
+        $this->form  = $this->get('Form');
+        $this->item  = $this->get('Item');
+        $this->state = $this->get('State');
 
-
+        // Check for errors.
         if (count($errors = $this->get('Errors'))) {
             throw new Exception(implode("\n", $errors), 500);
         }
-        
+
         $doc = JFactory::getDocument();
         $doc->addStyleSheet('components/com_managements/assets/css/backend.css');
-        
+
         $this->addToolbar();
-        
-        parent::display($tpl);
+
+        return parent::display($tpl);
     }
-    
+
+    /**
+     * Add the page title and toolbar.
+     *
+     * @return  void
+     *
+     * @since   1.6
+     */
     protected function addToolbar()
     {
-        JRequest::setVar('hidemainmenu', true);
-        
+        JFactory::getApplication()->input->set('hidemainmenu', true);
+
         $user       = JFactory::getUser();
-        $userId     = $user->get('id');
+        $userId     = $user->id;
         $isNew      = ($this->item->id == 0);
         $checkedOut = !($this->item->checked_out == 0 || $this->item->checked_out == $userId);
-        $canDo      = ManagementsHelper::getActions($this->item);
-        
-        JToolBarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_ADVANCEDS_MONEY_ADD') : JText::_('COM_MANAGEMENTS_ADVANCEDS_MONEY_EDIT'), 'campeonato.png');
-        if ($canDo->get('core.edit')){
-                JToolBarHelper::apply('advanceds_money.apply');
-                JToolBarHelper::save('advanceds_money.save');
-                
-                if ($canDo->get('core.create')) {
-                JToolBarHelper::save2new('advanceds_money.save2new');
-                }
-        }
-        if (!$isNew && $canDo->get('core.create')) {
-                JToolBarHelper::save2copy('advanceds_money.save2copy');
+
+        JToolbarHelper::title($isNew ? JText::_('COM_MANAGEMENTS_ADVANCEDS_MONEY_ADD') : JText::_('COM_MANAGEMENTS_ADVANCEDS_MONEY_EDIT'), 'advanceds_money');
+
+        // If not checked out, can save the item.
+        if (!$checkedOut) {
+            JToolbarHelper::apply('advanceds_money.apply');
+            JToolbarHelper::save('advanceds_money.save');
         }
 
-		if (empty($this->item->id))  {
-			JToolBarHelper::cancel('advanceds_money.cancel');
-		} else {
-			JToolBarHelper::cancel('advanceds_money.cancel', 'JTOOLBAR_CLOSE');
-		}
+        if (empty($this->item->id)) {
+            JToolbarHelper::cancel('advanceds_money.cancel');
+        } else {
+            JToolbarHelper::cancel('advanceds_money.cancel', 'JTOOLBAR_CLOSE');
+        }
 
-		JToolBarHelper::divider();
-		JToolBarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_ADVANCEDS_MONEY_EDIT');
-	}
+        JToolbarHelper::divider();
+        JToolbarHelper::help('JHELP_COMPONENTS_MANAGEMENTS_ADVANCEDS_MONEY_EDIT');
+    }
 }
