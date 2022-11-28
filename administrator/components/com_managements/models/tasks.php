@@ -63,6 +63,7 @@ class ManagementsModelTasks extends JModelList
                 'a.checked_out_time,' .
                 'a.deadline AS deadline,' .
                 'a.task AS task,' .
+                'a.period AS period,' .
                 'a.created AS created,' .
                 'ua.name AS created_by,' .
                 'a.publish_up, a.publish_down,'.

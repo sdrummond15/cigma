@@ -82,6 +82,9 @@ $assoc = JLanguageAssociations::isEnabled();
                         <th width="5%" class="nowrap center">
                             <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_HEADING_DATE_DELIVERY', 'a.date_delivery', $listDirn, $listOrder); ?>
                         </th>
+                        <th width="5%" class="nowrap center">
+                            <?php echo JHtml::_('grid.sort', 'COM_MANAGEMENTS_HEADING_PERIOD', 'a.period', $listDirn, $listOrder); ?>
+                        </th>
                         <th width="1%" class="nowrap center hidden-phone">
                             <?php echo JHtml::_('grid.sort', 'JGRID_HEADING_ID', 'a.id', $listDirn, $listOrder); ?>
                         </th>
@@ -191,7 +194,7 @@ $assoc = JLanguageAssociations::isEnabled();
         <input type="hidden" name="task" value="" />
         <input type="hidden" name="boxchecked" value="0" />
         <input type="hidden" name="filter_order" value="<?php echo $listOrder; ?>" />
-        <input type="hidden" name="filter_order_Dir" value="<?php echo $listDirn; ?>" />
+        <input type="hidden" name="filter_order_dir" value="<?php echo $listDirn; ?>" />
         <?php echo JHtml::_('form.token'); ?>
     </div>
 </form>

@@ -65,6 +65,7 @@ JFactory::getDocument()->addScriptDeclaration('
                         <?php echo $this->form->renderField('id_consultants'); ?>
                         <?php echo $this->form->renderField('id_clients'); ?>
                         <?php echo $this->form->renderField('deadline'); ?>
+                        <?php echo $this->form->renderField('period'); ?>
                         <?php echo $this->form->renderField('observation'); ?>
                     </div>
                 </div>
