@@ -123,19 +123,19 @@ class AdministratorApplication extends CMSApplication
 		$this->initialiseApp($options);
 
 		// Test for magic quotes
-		if (get_magic_quotes_gpc())
-		{
-			$lang = $this->getLanguage();
+		// if (get_magic_quotes_gpc())
+		// {
+		// 	$lang = $this->getLanguage();
 
-			if ($lang->hasKey('JERROR_MAGIC_QUOTES'))
-			{
-				$this->enqueueMessage(\JText::_('JERROR_MAGIC_QUOTES'), 'error');
-			}
-			else
-			{
-				$this->enqueueMessage('Your host needs to disable magic_quotes_gpc to run this version of Joomla!', 'error');
-			}
-		}
+		// 	if ($lang->hasKey('JERROR_MAGIC_QUOTES'))
+		// 	{
+		// 		$this->enqueueMessage(\JText::_('JERROR_MAGIC_QUOTES'), 'error');
+		// 	}
+		// 	else
+		// 	{
+		// 		$this->enqueueMessage('Your host needs to disable magic_quotes_gpc to run this version of Joomla!', 'error');
+		// 	}
+		// }
 
 		// Mark afterInitialise in the profiler.
 		JDEBUG ? $this->profiler->mark('afterInitialise') : null;

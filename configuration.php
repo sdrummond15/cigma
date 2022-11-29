@@ -1,6 +1,5 @@
 <?php
-class JConfig
-{
+class JConfig {
 	public $offline = '0';
 	public $offline_message = 'Este site está fora do ar para manutenção.<br />Tente novamente mais tarde.';
 	public $display_offline_message = '1';
@@ -10,19 +9,19 @@ class JConfig
 	public $captcha = '0';
 	public $list_limit = '20';
 	public $access = '1';
-	public $debug = '0';
+	public $debug = '1';
 	public $debug_lang = '0';
 	public $debug_lang_const = '1';
 	public $dbtype = 'mysqli';
 	public $host = 'localhost';
 	public $user = 'root';
-	public $password = 'admin';
+	public $password = '';
 	public $db = 'db_cigma';
 	public $dbprefix = 'sd9cc_';
 	public $live_site = '';
 	public $secret = 'r9M32UVKeKzJY1ti';
 	public $gzip = '0';
-	public $error_reporting = 'development';
+	public $error_reporting = 'maximum';
 	public $helpurl = 'https://help.joomla.org/proxy?keyref=Help{major}{minor}:{keyref}&lang={langcode}';
 	public $ftp_host = '';
 	public $ftp_port = '';

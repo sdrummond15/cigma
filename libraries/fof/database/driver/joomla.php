@@ -596,7 +596,7 @@ class FOFDatabaseDriverJoomla extends FOFDatabase implements FOFDatabaseInterfac
 			}
 			else
 			{
-				$parts[] = $q{0} . $part . $q{1};
+				$parts[] = $q[0] . $part . $q[1];
 			}
 		}
 
