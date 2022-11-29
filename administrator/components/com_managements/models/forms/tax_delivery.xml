@@ -53,7 +53,6 @@
                      label="COM_MANAGEMENTS_FIELD_OBSERVATION"
                      rows="10"
                      cols="5"
-                     showon="delivery:1"
               />
 
               <field name="published"
