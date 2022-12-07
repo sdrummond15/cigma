@@ -1,10 +1,22 @@
 jQuery(document).ready(function ($) {
 
     $('#clients').select2();
+    $('#tasks').select2();
     $('#consultants').select2();
     $(".cash").maskMoney({ symbol: 'R$ ', showSymbol: true, thousands: '.', decimal: ',', symbolStay: true });
     $('#date_in').mask('99/99/9999');
     $('#date_out').mask('99/99/9999');
+    $('#date_delivery').mask('99/99/9999');
+    $('#date_delivery').focusout(function () {
+        if ($(this).val()) {
+            if (validarData($(this).val()) == false) {
+                alert('Data inválida!');
+                $(this).val('');
+                $(this).focus();
+                return false;
+            }
+        }
+    });
     $('.date-expenses').mask('99/99/9999');
     $('#date_in').focusout(function () {
         if ($(this).val()) {
@@ -143,6 +155,61 @@ jQuery(document).ready(function ($) {
         
     });
 
+    $("#submit-tax-delivery").click(function (event) {
+
+        var msg = '';
+        var focus = '';
+        
+        if ($('#clients').length > 0) {
+            if (!$('#clients').val()) {
+                msg += '<p>Selecione pelo menos um cliente!</p>';
+                if (focus == '') {
+                    focus = $('#clients');
+                }
+            }
+        }
+
+        if ($('#deadline').length > 0) {
+            if ($('#deadline')) {
+                if (!$('#deadline').val()) {
+                    msg += '<p>Informe a data de entrega!</p>';
+                    if (focus == '') {
+                        focus = $('#deadline');
+                    }
+                }
+            }
+        }
+
+        //Exibir mensagem de Erro
+        if (msg != '') {
+            $(".msgs").append(msg);
+            $(".msgs").css('border-color', '#b52200');
+            $(".msgs").css('color', '#b52200');
+            $(".msgs").css('background-color', '#FFD5D5');
+            $(".msgs").slideDown();
+
+            focus.focus();
+
+            event.preventDefault();
+        }
+
+        if (msg != '') {
+            var timeClose = setTimeout(function () {
+                $(".msgs").slideUp();
+                $(".msgs p").remove();
+            }, 5000);
+
+            $(".msgs").click(function () {
+                clearTimeout(timeClose);
+                $(".msgs").slideUp();
+                $(".msgs p").remove();
+            });
+        }
+
+        var idUrl = value.split('_');
+        $('form').prepend('<input type="hidden" id="id" name="id" value="' + idUrl[0] + '" />');
+        
+    });
 
     function msgClose(msg, focus) {
 

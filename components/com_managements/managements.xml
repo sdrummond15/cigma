@@ -37,12 +37,13 @@
         <menu img="../media/com_managements/images/menu/management.png">com_managements</menu>
         <submenu>
             <menu link="option=com_managements&amp;view=managements" view="managements" img="../media/com_managements/images/menu/management.png" alt="Managements/Managements">com_managements_managements</menu>
+            <menu link="option=com_managements&amp;view=deliveries" view="deliveries" img="../media/com_managements/images/menu/delivery.png" alt="Managements/Deliveries">com_managements_deliveries</menu>
         </submenu>
         <files folder="admin">
             <folder>controllers</folder>
             <folder>helpers</folder>
             <folder>models</folder>
-            <folder>languages</folder>
+            <folder>language</folder>
             <folder>sql</folder>
             <folder>tables</folder>
             <folder>views</folder>
@@ -53,8 +54,8 @@
             <filename>index.html</filename>
         </files>
         <languages folder="admin">
-            <language tag="pt-BR">language/pt-BR.com_managements.ini</language>
-            <language tag="pt-BR">language/pt-BR.com_managements.sys.ini</language>
+            <language tag="pt-BR">language/pt-BR/pt-BR.com_managements.ini</language>
+            <language tag="pt-BR">language/pt-BR/pt-BR.com_managements.sys.ini</language>
         </languages>
     </administration>
 </extension>

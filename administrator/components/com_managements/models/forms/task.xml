@@ -34,12 +34,12 @@
               />
 
               <field name="deadline"
-                     type="calendar"
+                     type="customdate"
                      label="COM_MANAGEMENTS_FIELD_DEADLINE"
                      class="inputbox"
                      size="22"
-                     format="%d-%m-%Y"
-                     filter="user_utc"
+                     format="%d/%m/%Y"
+                     translateformat="true"
               />
 
               <field name="period"

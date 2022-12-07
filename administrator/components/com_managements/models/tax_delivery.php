@@ -54,16 +54,6 @@ class ManagementsModelTax_Delivery extends JModelAdmin
         if (empty($data)) {
             $data = $this->getItem();
         }
-        // $business = explode(',', $data->get('id_client'));
-        // $data->set('id_client', $business);
-
-//        $date_in = explode('-',$data->get('date_in'));
-//        $date_in = $date_in[2].'-'.$date_in[1].'-'.$date_in[0];
-//        $data['date_in'] = $date_in;
-//
-//        $date_out = explode('-',$data->get('date_out'));
-//        $date_out = $date_out[2].'-'.$date_out[1].'-'.$date_out[0];
-//        $data['date_out'] = $date_out;
 
         return $data;
     }
@@ -71,11 +61,10 @@ class ManagementsModelTax_Delivery extends JModelAdmin
 
     public function save($data)
     {
-        // var_dump($data);
-        // if (isset($data['id_client'])) {
-        //     $data['id_client'] = implode(',', $data['id_client']);
-        // }
-
+        $date_delivery = explode('/', $data['date_delivery']);
+        $date_delivery = $date_delivery[2] . '-' . $date_delivery[1] . '-' . $date_delivery[0];
+        $data['date_delivery'] = $date_delivery;
+    
         if (parent::save($data)) {
             return true;
         }

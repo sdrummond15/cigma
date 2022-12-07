@@ -1,114 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
-    <fieldset name="details"
+       <fieldset name="details"
               addfieldpath="/administrator/components/com_managements/models/fields"
-    >
-        <field name="id"
-               type="text"
-               default="0"
-               readonly="true"
-               class="readonly"
-               label="JGLOBAL_FIELD_ID_LABEL"
-        />
+       >
+              <field name="id"
+                     type="text"
+                     default="0"
+                     readonly="true"
+                     class="readonly"
+                     label="JGLOBAL_FIELD_ID_LABEL"
+              />
 
-        <field name="id_consultant"
-               type="consultant"
-               label="COM_MANAGEMENTS_FIELD_CONSULTANT"
-               required="true"
-        />
+              <field name="id_consultant"
+                     type="consultant"
+                     label="COM_MANAGEMENTS_FIELD_CONSULTANT"
+                     required="true"
+              />
 
-        <field name="id_car"
-               type="car"
-               label="COM_MANAGEMENTS_FIELD_CAR"
-        />
+              <field name="id_car"
+                     type="car"
+                     label="COM_MANAGEMENTS_FIELD_CAR"
+              />
 
-        <field name="cash"
-               type="price"
-               class="inputbox"
-               size="40"
-               label="COM_MANAGEMENTS_FIELD_VALUE"
-        />
+              <field name="cash"
+                     type="price"
+                     class="inputbox"
+                     size="40"
+                     label="COM_MANAGEMENTS_FIELD_VALUE"
+              />
 
-        <field name="id_client"
-               type="client"
-               label="COM_MANAGEMENTS_FIELD_CLIENT"
-               required="true"
-               multiple="multiple"
-        />
+              <field name="id_client"
+                     type="client"
+                     label="COM_MANAGEMENTS_FIELD_CLIENT"
+                     required="true"
+                     multiple="multiple"
+              />
 
-        <field name="date_in"
-               type="calendar"
-               label="COM_MANAGEMENTS_FIELD_DATE_IN"
-               class="inputbox"
-               size="22"
-               format="%d-%m-%Y"
-               filter="user_utc"
-        />
+              <field name="date_in"
+                     type="customdate"
+                     label="COM_MANAGEMENTS_FIELD_DATE_IN"
+                     class="inputbox"
+                     size="22"
+                     format="%d/%m/%Y"
+                     translateformat="true"
+              />
 
-        <field name="date_out"
-               type="calendar"
-               label="COM_MANAGEMENTS_FIELD_DATE_OUT"
-               class="inputbox"
-               size="22"
-               format="%d-%m-%Y"
-               filter="user_utc"/>
+              <field name="date_out"
+                     type="customdate"
+                     label="COM_MANAGEMENTS_FIELD_DATE_OUT"
+                     class="inputbox"
+                     size="22"
+                     format="%d/%m/%Y"
+                     translateformat="true"
+              />
 
-        <field name="pendency"
-               type="radio"
-               default="0"
-               class="btn-group btn-group-yesno"
-               label="COM_MANAGEMENTS_FIELD_PENDENCY"
-        >
-            <option value="0">JYES</option>
-            <option value="1">JNO</option>
-        </field>
+              <field name="pendency"
+                     type="radio"
+                     default="0"
+                     class="btn-group btn-group-yesno"
+                     label="COM_MANAGEMENTS_FIELD_PENDENCY"
+              >
+                     <option value="0">JYES</option>
+                     <option value="1">JNO</option>
+              </field>
 
-        <field name="observation" 
-               type="textarea" 
-               label="COM_MANAGEMENTS_FIELD_OBSERVATION" 
-               rows="10" 
-               cols="5" 
-        />
+              <field name="observation"
+                     type="textarea"
+                     label="COM_MANAGEMENTS_FIELD_OBSERVATION"
+                     rows="10"
+                     cols="5"
+              />
 
-        <field name="published"
-               type="list"
-               label="JSTATUS"
-               class="inputbox"
-               size="1"
-               default="1">
+              <field name="published"
+                     type="list"
+                     label="JSTATUS"
+                     class="inputbox"
+                     size="1"
+                     default="1">
 
-            <option value="1">JPUBLISHED</option>
-            <option value="0">JUNPUBLISHED</option>
-            <option value="2">JARCHIVED</option>
-            <option value="-2">JTRASHED</option>
+                     <option value="1">JPUBLISHED</option>
+                     <option value="0">JUNPUBLISHED</option>
+                     <option value="2">JARCHIVED</option>
+                     <option value="-2">JTRASHED</option>
 
-        </field>
+              </field>
 
-    </fieldset>
-    <fieldset name="publish"
+       </fieldset>
+       <fieldset name="publish"
               label="COM_MANAGEMENTS_GROUP_LABEL_PUBLISHING_DETAILS"
-    >
+       >
 
-        <field name="created" type="calendar"
-               label="JGLOBAL_FIELD_CREATED_LABEL" description="JGLOBAL_FIELD_CREATED_Desc"
-               class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S"
-               filter="user_utc"/>
+              <field name="created" type="calendar"
+                     label="JGLOBAL_FIELD_CREATED_LABEL" description="JGLOBAL_FIELD_CREATED_Desc"
+                     class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S"
+                     filter="user_utc" />
 
-        <field name="created_by"
-               type="user"
-               label="JGLOBAL_FIELD_CREATED_BY_LABEL"
-               description="JGLOBAL_FIELD_CREATED_BY_Desc"
-        />
+              <field name="created_by"
+                     type="user"
+                     label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+                     description="JGLOBAL_FIELD_CREATED_BY_Desc"
+              />
 
-        <field name="publish_up" type="calendar"
-               label="COM_MANAGEMENTS_FIELD_PUBLISH_UP_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_UP_DESC"
-               class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
-               filter="user_utc"/>
+              <field name="publish_up" type="calendar"
+                     label="COM_MANAGEMENTS_FIELD_PUBLISH_UP_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_UP_DESC"
+                     class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+                     filter="user_utc" />
 
-        <field name="publish_down" type="calendar"
-               label="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_DESC"
-               class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
-               filter="user_utc"/>
+              <field name="publish_down" type="calendar"
+                     label="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_LABEL" description="COM_MANAGEMENTS_FIELD_PUBLISH_DOWN_DESC"
+                     class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+                     filter="user_utc" />
 
-    </fieldset>
+       </fieldset>
 </form>

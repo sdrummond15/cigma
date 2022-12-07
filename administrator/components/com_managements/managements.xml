@@ -22,7 +22,7 @@
     <files folder="site">
         <folder>controllers</folder>
         <folder>helpers</folder>
-        <folder>languages</folder>
+        <folder>language</folder>
         <folder>models</folder>
         <folder>views</folder>
         <folder>management.php</folder>
@@ -31,7 +31,8 @@
         <folder>router.php</folder>
     </files>
     <languages folder="site">
-        <language tag="pt-BR">language/pt-BR.com_managements.ini</language>
+        <language tag="pt-BR">language/pt-BR/pt-BR.com_managements.sys.ini</language>
+        <language tag="pt-BR">language/pt-BR/pt-BR.com_managements.ini</language>
     </languages>
     <administration>
         <menu img="class:managements">com_managements</menu>
@@ -48,7 +49,7 @@
             <folder>controllers</folder>
             <folder>helpers</folder>
             <folder>models</folder>
-            <folder>languages</folder>
+            <folder>language</folder>
             <folder>sql</folder>
             <folder>tables</folder>
             <folder>views</folder>
@@ -59,8 +60,8 @@
             <filename>index.html</filename>
         </files>
         <languages folder="admin">
-            <language tag="pt-BR">language/pt-BR.managements.ini</language>
-            <language tag="pt-BR">language/pt-BR.managements.sys.ini</language>
+            <language tag="pt-BR">language/pt-BR/pt-BR.managements.ini</language>
+            <language tag="pt-BR">language/pt-BR/pt-BR.managements.sys.ini</language>
         </languages>
     </administration>
 </extension>

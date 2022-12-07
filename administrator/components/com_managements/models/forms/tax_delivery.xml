@@ -29,12 +29,12 @@
               />
 
               <field name="date_delivery"
-                     type="calendar"
+                     type="customdate"
                      label="COM_MANAGEMENTS_FIELD_DATE_DELIVERY"
                      class="inputbox"
                      size="22"
-                     format="%d-%m-%Y"
-                     filter="user_utc"
+                     format="%d/%m/%Y"
+                     translateformat="true"
                      showon="delivery:1"
               />
 

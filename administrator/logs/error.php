@@ -9,3 +9,4 @@
 2022-11-22T15:31:35+00:00	INFO ::1	joomlafailure	Nome de usuário e/ou senha não correspondem ou você ainda não possui uma conta.
 2022-11-24T23:59:29+00:00	INFO ::1	joomlafailure	Nome de usuário e/ou senha não correspondem ou você ainda não possui uma conta.
 2022-11-24T23:59:30+00:00	INFO ::1	joomlafailure	Nome de usuário e/ou senha não correspondem ou você ainda não possui uma conta.
+2022-11-30T23:57:16+00:00	INFO ::1	joomlafailure	Nome de usuário e/ou senha não correspondem ou você ainda não possui uma conta.

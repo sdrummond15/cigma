@@ -45,11 +45,67 @@ JFactory::getDocument()->addScriptDeclaration('
 					break;
 			}
 		}).trigger("change");
+
+        var frm = $("#advanceds_money-form");
+        frm.submit(function (ev) {
+            var data = new FormData(this);
+            ev.preventDefault();
+
+            //TRATANDO DATAS
+            var date_in = "";
+            if(data.get("jform[date_in]")){
+                fctValidaData("#jform_date_in",data.get("jform[date_in]"));
+                date_in = FormataStringData(data.get("jform[date_in]"));
+            }
+
+            var date_out = "";
+            if(data.get("jform[date_out]")){
+                fctValidaData("#jform_date_out",data.get("jform[date_out]"));
+                date_out = FormataStringData(data.get("jform[date_out]"));
+            }
+
+            if((date_in && date_out) && (date_in > date_out)){
+                alert("Favor revisar a data de volta, pois ela deve ser maior ou igual a data de ida!");
+                $("#jform_date_out").focus();
+                return false;
+            }
+            this.submit();
+        });
+
+        function FormataStringData(data) {
+            var dia  = data.split("/")[0];
+            var mes  = data.split("/")[1];
+            var ano  = data.split("/")[2];
+          
+            return ano + "-" + ("0"+mes).slice(-2) + "-" + ("0"+dia).slice(-2);
+        }
+
+        function fctValidaData(campo, data)
+        {
+            var dia = data.substring(0,2)
+            var mes = data.substring(3,5)
+            var ano = data.substring(6,10)
+
+            //Criando um objeto Date usando os valores ano, mes e dia.
+            var novaData = new Date(ano,(mes-1),dia);
+
+            var mesmoDia = parseInt(dia,10) == parseInt(novaData.getDate());
+            var mesmoMes = parseInt(mes,10) == parseInt(novaData.getMonth())+1;
+            var mesmoAno = parseInt(ano) == parseInt(novaData.getFullYear());
+
+            if (!((mesmoDia) && (mesmoMes) && (mesmoAno)))
+            {
+                alert("Data informada é inválida!");   
+                campo.focus();    
+                return false;
+            }  
+            return true;
+        }
+
 	});
 ');
 
 $document = JFactory::getDocument();
-$document->addScript('components/com_managements/assets/js/jquery.maskedinput.js');
 $document->addScript('components/com_managements/assets/js/jquery.maskMoney.js');
 $document->addScript('components/com_managements/assets/js/script.js');
 ?>

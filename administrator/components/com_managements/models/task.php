@@ -65,6 +65,12 @@ class ManagementsModelTask extends JModelAdmin
 
     public function save($data)
     {
+
+        $deadline = explode('/', $data['deadline']);
+        $deadline = $deadline[2] . '-' . $deadline[1] . '-' . $deadline[0];
+        $data['deadline'] = $deadline;
+        
+
         if (isset($data['id_clients'])) {
             $data['id_clients'] = implode(',', $data['id_clients']);
         }
@@ -79,5 +85,4 @@ class ManagementsModelTask extends JModelAdmin
 
         return false;
     }
-
 }

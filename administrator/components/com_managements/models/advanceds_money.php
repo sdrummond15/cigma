@@ -22,13 +22,13 @@ class ManagementsModelAdvanceds_Money extends JModelAdmin
     }
 
     /**
-	 * Method to get the record form.
-	 *
-	 * @param	array	$data		Data for the form.
-	 * @param	boolean	$loadData	True if the form is to load its own data (default case), false if not.
-	 * @return	mixed	A JForm object on success, false on failure
-	 * @since	1.6
-	 */
+     * Method to get the record form.
+     *
+     * @param	array	$data		Data for the form.
+     * @param	boolean	$loadData	True if the form is to load its own data (default case), false if not.
+     * @return	mixed	A JForm object on success, false on failure
+     * @since	1.6
+     */
     public function getForm($data = array(), $loadData = true)
     {
         // Get the form.
@@ -41,11 +41,11 @@ class ManagementsModelAdvanceds_Money extends JModelAdmin
     }
 
     /**
-	 * Method to get the data that should be injected in the form.
-	 *
-	 * @return	mixed	The data for the form.
-	 * @since	1.6
-	 */
+     * Method to get the data that should be injected in the form.
+     *
+     * @return	mixed	The data for the form.
+     * @since	1.6
+     */
     protected function loadFormData()
     {
         // Check the session for previously entered form data.
@@ -57,13 +57,15 @@ class ManagementsModelAdvanceds_Money extends JModelAdmin
         $business = explode(',', $data->get('id_client'));
         $data->set('id_client', $business);
 
-//        $date_in = explode('-',$data->get('date_in'));
-//        $date_in = $date_in[2].'-'.$date_in[1].'-'.$date_in[0];
-//        $data['date_in'] = $date_in;
-//
-//        $date_out = explode('-',$data->get('date_out'));
-//        $date_out = $date_out[2].'-'.$date_out[1].'-'.$date_out[0];
-//        $data['date_out'] = $date_out;
+
+        // var_dump($data);
+        // $date_in = explode('-', $data->get('date_in'));
+        // $date_in = $date_in[0] . '-' . $date_in[1] . '-' . $date_in[2];
+        // $data->date_in = $date_in;
+
+        //    $date_out = explode('-',$data->get('date_out'));
+        //    $date_out = $date_out[0].'-'.$date_out[2].'-'.$date_out[1];
+        //    $data->date_out = $date_out;
 
         return $data;
     }
@@ -71,6 +73,14 @@ class ManagementsModelAdvanceds_Money extends JModelAdmin
 
     public function save($data)
     {
+        $date_in = explode('/', $data['date_in']);
+        $date_in = $date_in[2] . '-' . $date_in[1] . '-' . $date_in[0];
+        $data['date_in'] = $date_in;
+
+        $date_out = explode('/', $data['date_out']);
+        $date_out = $date_out[2] . '-' . $date_out[1] . '-' . $date_out[0];
+        $data['date_out'] = $date_out;
+
         if (isset($data['cash'])) {
             $preco = substr($data['cash'], 3);
             $preco = str_replace('.', '', $preco);
@@ -78,7 +88,7 @@ class ManagementsModelAdvanceds_Money extends JModelAdmin
             $preco = number_format($preco, 2, '.', '');
             $data['cash'] = $preco;
         }
-        
+
         if (isset($data['id_client'])) {
             $data['id_client'] = implode(',', $data['id_client']);
         }
@@ -109,8 +119,5 @@ class ManagementsModelAdvanceds_Money extends JModelAdmin
         }
 
         return $results;
-
     }
-
-
 }
