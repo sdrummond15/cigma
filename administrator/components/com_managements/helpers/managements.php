@@ -59,6 +59,11 @@ class ManagementsHelper extends JHelperContent
             'index.php?option=com_managements&view=reports',
             $vName == 'reports'
         );
+        JHtmlSidebar::addEntry(
+            JText::_('COM_MANAGEMENTS_SUBMENU_REPORTS_DELIVERIES'),
+            'index.php?option=com_managements&view=reports_deliveries',
+            $vName == 'reports_deliveries'
+        );
     }
 
 
