@@ -1,0 +1,570 @@
+.row-fluid .span12 {
+    margin: 0 !important;
+}
+
+.btn {
+    font-family: 'Encode Sans Condensed', Helvetica, Arial;
+}
+
+.middle {
+    display: table !important;
+    margin: auto !important;
+}
+
+.label-account {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.cancel {
+    width: 100%;
+    display: table;
+    padding: 5px 0;
+}
+
+.width100 {
+    width: 100% !important;
+}
+
+h4.account {
+    display: table;
+    width: 100%;
+}
+
+.box-clients .label-management {
+    display: inline-block;
+}
+
+.box-clients .control-group {
+    width: calc(100% - 72px) !important;
+    display: inline-block;
+}
+
+.box-clients .select2 {
+    width: 100% !important;
+}
+
+.box-tasks .label-management {
+    display: inline-block;
+}
+
+.box-tasks .control-group {
+    width: calc(100% - 68px) !important;
+    display: inline-block;
+}
+
+.box-tasks .select2 {
+    width: 100% !important;
+}
+
+.box-consultants .label-management {
+    display: inline-block;
+}
+
+.box-consultants .control-group {
+    width: calc(100% - 73px) !important;
+    display: inline-block;
+}
+
+.box-consultants select {
+    width: 100% !important;
+    border-color: #aaa;
+    min-height: 34px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.box-account {
+    width: 20%;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.box-description .label-management {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.box-description textarea.description1 {
+    width: calc(100% - 92px);
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.box-description textarea.observation {
+    width: calc(100% - 108px);
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.label-date {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.input-date {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.input-width100 {
+    width: calc(100% - 14px);
+}
+
+.label-car-solicit {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.input-car-solicit {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.date_delivery {
+    width: calc(100% - 140px);
+}
+
+.radio-obs .inline {
+    float: left;
+    margin-right: 20px;
+}
+
+.radio-obs .inline>label {
+    vertical-align: middle;
+}
+
+.radio-order .inline {
+    float: left;
+    margin-right: 20px;
+}
+
+.radio-order .inline>label {
+    vertical-align: middle;
+}
+
+.msgs {
+    width: calc(100% - 42px);
+    display: none;
+    padding: 10px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    cursor: pointer;
+}
+
+.msgs span {
+    position: absolute;
+    right: 3px;
+    top: 0;
+}
+
+.required {
+    color: #ca0000;
+}
+
+.btn-pdf>span.icon-download {
+    filter: grayscale(100%) brightness(0) invert(100%);
+    margin-right: 3px;
+}
+
+#results-reports table th {
+    text-align: center;
+}
+
+.right-align {
+    float: right;
+}
+
+td.center {
+    text-align: center !important;
+}
+
+@media screen and (max-width: 1000px) {
+    #insert-management {
+        font-size: 15px;
+    }
+
+    li.button_type label span {
+        padding: 6px 15px;
+    }
+
+    #street>div {
+        width: auto;
+    }
+
+    #street>div:nth-child(2) {
+        width: calc(100% - 104px);
+        margin-left: 20px;
+    }
+
+    #number-complement>div:nth-child(1) {
+        width: 65px;
+    }
+
+    #number-complement>div:nth-child(2) {
+        width: calc(20% - 85px);
+        margin-left: 20px;
+    }
+
+    #number-complement>div:nth-child(3) {
+        width: 90px;
+        margin-left: 20px;
+    }
+
+    #number-complement>div:nth-child(4) {
+        width: calc(80% - 130px);
+        margin-left: 20px;
+    }
+
+    #district-region>div:nth-child(1) {
+        width: 60px;
+    }
+
+    #district-region>div:nth-child(2) {
+        width: calc(50% - 80px);
+        margin-left: 20px;
+    }
+
+    #district-region>div:nth-child(3) {
+        width: 50px;
+        margin-left: 20px;
+    }
+
+    #district-region>div:nth-child(4) {
+        width: calc(50% - 90px);
+        margin-left: 20px;
+    }
+
+    #state-city-cep .select2-container {
+        width: 100% !important;
+    }
+
+    #state-city-cep>div:nth-child(1) {
+        width: 60px;
+    }
+
+    #state-city-cep>div:nth-child(2) {
+        width: calc(40% - 80px);
+        margin-left: 20px;
+    }
+
+    #state-city-cep>div:nth-child(3) {
+        width: 60px;
+        margin-left: 20px;
+    }
+
+    #state-city-cep>div:nth-child(4) {
+        width: calc(60% - 100px);
+        margin-left: 20px;
+    }
+
+    #state-city-cep>div:nth-child(5) {
+        width: 50px;
+        margin-left: 0;
+    }
+
+    #state-city-cep>div:nth-child(5) label {
+        float: left;
+    }
+
+    #state-city-cep>div:nth-child(6) {
+        width: calc(100% - 70px);
+        margin-left: 20px;
+    }
+
+
+    #description>div:nth-child(1) {
+        width: 120px;
+    }
+
+    #description>div:nth-child(2) {
+        width: calc(100% - 140px);
+        margin-left: 20px;
+    }
+
+    #registry-registry_office-iptu_register>div:nth-child(1) {
+        width: 65px;
+    }
+
+    #registry-registry_office-iptu_register>div:nth-child(2) {
+        width: calc(30% - 85px);
+        margin-left: 20px;
+    }
+
+    #registry-registry_office-iptu_register>div:nth-child(3) {
+        width: 55px;
+        margin-left: 20px;
+    }
+
+    #registry-registry_office-iptu_register>div:nth-child(3) label {
+        float: left;
+    }
+
+    #registry-registry_office-iptu_register>div:nth-child(4) {
+        width: calc(70% - 95px);
+        margin-left: 20px;
+    }
+
+    #registry-registry_office-iptu_register>div:nth-child(5) {
+        width: 135px;
+        margin-left: 0;
+    }
+
+    #registry-registry_office-iptu_register>div:nth-child(5) label {
+        float: left;
+    }
+
+    #registry-registry_office-iptu_register>div:nth-child(6) {
+        width: calc(100% - 155px);
+        margin-left: 20px;
+    }
+
+    #water>div:nth-child(1), #energy>div:nth-child(1) {
+        width: 100px;
+    }
+
+    #water>div:nth-child(2), #energy>div:nth-child(2) {
+        width: calc(100% - 120px);
+    }
+
+    #water>div:nth-child(2) ul, #energy>div:nth-child(2) ul {
+        width: 100%;
+    }
+
+    #water>div:nth-child(2) li, #energy>div:nth-child(2) li {
+        width: 33.33%;
+        text-align: center;
+        min-width: 140px;
+    }
+
+    #number_energy>div:nth-child(1) {
+        width: 255px;
+    }
+
+    #number_energy>div:nth-child(2) {
+        width: calc(100% - 275px);
+    }
+
+    #clock_energy>div:nth-child(1) {
+        width: 200px;
+    }
+
+    #clock_energy>div:nth-child(2) {
+        width: calc(100% - 220px);
+    }
+
+    #number_water>div:nth-child(1) {
+        width: 255px;
+    }
+
+    #number_water>div:nth-child(2) {
+        width: calc(100% - 275px);
+    }
+
+    #clock_water>div:nth-child(1) {
+        width: 200px;
+    }
+
+    #clock_water>div:nth-child(2) {
+        width: calc(100% - 220px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #insert-management {
+        font-size: 14px;
+    }
+
+    li.button_type label span {
+        padding: 4px 12px;
+    }
+
+    #management #business .control-business:nth-child(2) label {
+        width: 100%;
+        display: block;
+    }
+
+    #insert-management #detalhes-princiais>div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #insert-management #detalhes-princiais>div .label-management {
+        float: left;
+    }
+
+    li.button_type {
+        width: 50%;
+        text-align: center;
+        min-width: 160px;
+    }
+
+    #types>div {
+        width: 160px;
+    }
+
+    #types>div:nth-child(2) {
+        width: calc(100% - 180px);
+    }
+
+    #iptu>div {
+        width: 145px;
+    }
+
+    #iptu>div:nth-child(2) {
+        width: calc(100% - 165px);
+        margin-left: 20px;
+    }
+
+    #iptu>div:nth-child(2) input {
+        width: calc(100% - 14px);
+    }
+
+
+    #safe>div {
+        width: 160px;
+    }
+
+    #safe>div:nth-child(2) {
+        width: calc(100% - 180px);
+        margin-left: 20px;
+    }
+
+    #safe>div:nth-child(2) input {
+        width: calc(100% - 14px);
+    }
+
+    #market_value>div {
+        width: 90px;
+    }
+
+    #market_value>div:nth-child(2) {
+        width: calc(100% - 110px);
+        margin-left: 20px;
+    }
+
+    #market_value>div:nth-child(2) input {
+        width: calc(100% - 14px);
+    }
+
+    #proprietarios-usufrutarios>div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #progressbar {
+        width: 100%;
+    }
+
+    #number-complement>div:nth-child(2) {
+        width: calc(100% - 85px);
+        margin-left: 20px;
+    }
+
+    #number-complement>div:nth-child(3) {
+        margin-left: 0;
+    }
+
+    #number-complement>div:nth-child(3) label {
+        float: left;
+    }
+
+    #number-complement>div:nth-child(4) {
+        width: calc(100% - 110px);
+        margin-left: 20px;
+    }
+
+    #type>div {
+        width: 105px;
+    }
+
+    #type>div:nth-child(2) {
+        width: calc(100% - 125px);
+    }
+
+    #rented>div {
+        width: 105px;
+    }
+
+    #rented>div:nth-child(2) {
+        width: calc(100% - 125px);
+    }
+
+    #video-youtube>div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #state-city-cep>div:nth-child(2) {
+        width: calc(100% - 80px);
+    }
+
+    #state-city-cep>div:nth-child(3) {
+        margin-left: 0;
+    }
+
+    #state-city-cep>div:nth-child(3) label {
+        float: left;
+    }
+
+    #state-city-cep>div:nth-child(4) {
+        width: calc(100% - 80px);
+    }
+
+    #district-region>div:nth-child(2) {
+        width: calc(100% - 80px);
+        margin-left: 20px;
+    }
+
+    #district-region>div:nth-child(3) {
+        margin-left: 0;
+    }
+
+    #district-region>div:nth-child(3) label {
+        float: left;
+    }
+
+    #district-region>div:nth-child(4) {
+        width: calc(100% - 70px);
+        margin-left: 20px;
+    }
+
+    #registry-registry_office-iptu_register>div:nth-child(2) {
+        width: calc(100% - 85px);
+    }
+
+    #registry-registry_office-iptu_register>div:nth-child(3) {
+        margin-left: 0;
+    }
+
+    #registry-registry_office-iptu_register>div:nth-child(4) {
+        width: calc(100% - 95px);
+    }
+
+    #water>div:nth-child(2) li, #energy>div:nth-child(2) li {
+        width: 100%;
+    }
+
+    #number_energy>div:nth-child(1), #clock_energy>div:nth-child(1), #number_water>div:nth-child(1), #clock_water>div:nth-child(1) {
+        width: 100%;
+    }
+
+    #number_energy>div:nth-child(2), #clock_energy>div:nth-child(2), #number_water>div:nth-child(2), #clock_water>div:nth-child(2) {
+        width: 100%;
+        margin-left: 0;
+    }
+}
